@@ -244,7 +244,7 @@ Without this, prompt quality degrades silently as models, inputs, and context ev
 ---
 ## Related Topics
 
-* [[Agents-and-Tool-Use]] - Scaling prompts into workflows
+* [[Agents & Tool Use (Function Calling)]] - Scaling prompts into workflows
 * [[Evaluation-and-Testing]] - Validating outputs
 * [[RAG-Implementation]] - Grounding prompts with enterprise data
 

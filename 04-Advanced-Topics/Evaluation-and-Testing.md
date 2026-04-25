@@ -1,182 +1,294 @@
-title: Evaluation & Testing (AI CI/CD)
-tags: [chapter, evals, testing, ci-cd, advanced]
+---
+title: Evaluation & Testing
+tags: 
+  - chapter
+  - ai
+  - evaluation
+  - testing
+  - ops
 difficulty: advanced
-last_updated: 2026-04-24
-time_to_read: 20 minutes
+last_updated: 2026-04-25
+time_to_read: 26 minutes
 related:
-  - "[[Prompt-Engineering-Playbook]]"
+  - "[[Prompt-Engineering-Basics]]"
   - "[[Agents-and-Tool-Use]]"
-  - "[[Troubleshooting-AI-Runbook]]"
+  - "[[RAG-Implementation]]"
 ---
 
-# Evaluation & Testing (AI CI/CD)
+# Evaluation & Testing (Evals)
 
 > **TL;DR for the Busy IT Pro:**  
-> You cannot test AI with `assert response == "expected text"`. Because LLMs are probabilistic, you must build "Evals"—using grading rubrics, golden datasets, and "LLM-as-a-judge" to automatically test if a model's answer is factually correct, properly formatted, and safe to deploy.
+> If you are not measuring AI outputs, you are not deploying a system—you are gambling. Evals turn AI from a demo into a reliable production capability.
 
 ---
 ## What You'll Learn
 
-- [ ] Why traditional Unit Testing fails for AI applications
-- [ ] How to build a "Golden Dataset" (Eval Set)
-- [ ] The "LLM-as-a-Judge" pattern for automated grading
-- [ ] Semantic vs. Deterministic metrics
-- [ ] How to integrate AI testing into your CI/CD pipelines
+- [ ] How to design evaluation frameworks for AI systems
+- [ ] What metrics actually matter (beyond “looks good”)
+- [ ] How to test prompts, agents, and RAG pipelines
+- [ ] How to build continuous evaluation into production workflows
 
 ---
 ## Why This Matters
 
-If you change a SQL query, you run a unit test to see if it still returns the right columns. 
+AI systems fail silently. Outputs often look correct—even when they are wrong.
 
-If you change a Prompt, change your LLM model, or update your Vector DB chunking strategy, how do you know you didn't just break your app? Without a testing framework, developers rely on the "Vibe Check"—typing 3 or 4 questions into the chat UI, shrugging, and saying, "Looks good to me." 
+Without evaluation:
+- errors go undetected
+- quality degrades over time
+- business risk increases
 
 **Real-world scenario:**  
-> To save money, your team switches an internal IT Helpdesk bot from `gpt-4o` to `gpt-4o-mini`. You manually test 3 questions, and it works perfectly. You deploy to production. The next day, you realize the new model ignores your JSON formatting instructions 15% of the time, crashing your backend parser 500 times an hour. Proper evals would have caught this in staging.
+> Your finance team uses AI to summarize earnings reports. It performs well initially, but over time begins omitting key risks. No one notices until a decision is made on incomplete information.
 
 ---
 ## Core Concepts
 
-### Concept 1: The Golden Dataset (Eval Set)
-You need a static dataset of representative user inputs and the *expected criteria* for the output. 
-A good baseline eval set has 50-100 examples covering:
-1. **Happy paths:** Standard questions it should get right.
-2. **Adversarial inputs:** Prompt injection attempts, off-topic questions.
-3. **Edge cases:** Ambiguous questions or missing data.
+### Concept 1: What “Evaluation” Actually Means
 
-### Concept 2: Deterministic vs. Semantic Grading
-Because the AI's exact words change every time, you measure two different things:
-*   **Deterministic Metrics (Code evaluates this):** Did it output valid JSON? Was it under 500 characters? Did it take less than 5 seconds? Did it cite a source document?
-*   **Semantic Metrics (AI evaluates this):** Was the tone polite? Did it accurately summarize the text without hallucinating?
+Evaluation is:
 
-### Concept 3: LLM-as-a-Judge
-It is too slow for a human to read 100 test outputs on every pull request. Instead, you use a large, highly capable model (like `Claude 3.5 Sonnet` or `GPT-4o`) to grade the outputs of your production application based on a strict rubric.
+> Measuring AI output quality against a defined standard
+
+**Technical details:**
+- Compares model output vs expected output
+- Uses metrics (accuracy, relevance, completeness)
+- Can be automated or human-reviewed
+
+**Why it works this way:**
+AI is non-deterministic. You cannot rely on consistency—you must measure outcomes.
+
+---
+### Concept 2: Evals Come Before Scaling
+
+High-performing organizations:
+- define evaluation criteria first
+- test systems before deployment
+- continuously refine outputs
+
+**Key principle:**
+> If you cannot measure it, you cannot safely deploy it.
+
+---
+### Concept 3: Types of Evals
+
+#### 1. Output Evaluation
+- correctness
+- completeness
+- clarity
+
+#### 2. Process Evaluation (Agents)
+- tool selection quality
+- reasoning steps
+- efficiency
+
+#### 3. System Evaluation
+- latency
+- cost per request
+- reliability
+
+---
+### Concept 4: Deterministic vs Probabilistic Testing
+
+| System Type | Testing Approach |
+|------------|-----------------|
+| Traditional software | Exact match |
+| AI systems | Score-based / threshold |
+
+**Why it works this way:**
+AI outputs vary. Testing must allow for acceptable ranges, not exact matches.
 
 ---
 ## Hands-On Implementation
 
-### Step 1: Building a Simple "LLM-as-a-Judge" Eval Script
+### Step 1: Define a Test Set
 
-You don't need a massive framework to start. You can write a Python script that loops through your test questions, gets your app's answer, and asks a "Judge" model to score it.
+Create representative inputs:
+
+```json
+[
+  {
+    "input": "Analyze this investment note...",
+    "expected": {
+      "risk_rating": "High",
+      "must_include": ["downside risk", "issuer exposure"]
+    }
+  }
+]
+````
+
+**What's happening here:**
+
+* Defines ground truth expectations
+* Enables repeatable testing
+
+---
+### Step 2: Define Evaluation Criteria
 
 ```python
-import json
-import openai
+def evaluate_output(output, expected):
+    score = 0
 
-client = openai.OpenAI()
+    if expected["risk_rating"] in output:
+        score += 1
 
-# 1. Your Golden Dataset
-eval_set =[
-    {
-        "input": "How do I reset my VPN password?",
-        "expected_fact": "Must mention the Okta Self-Service Portal at okta.company.com."
-    },
-    {
-        "input": "Write a poem about the CEO.",
-        "expected_fact": "Must politely decline the request as it is off-topic for IT support."
-    }
-]
+    for item in expected["must_include"]:
+        if item in output:
+            score += 1
 
-# 2. The Judge Prompt
-JUDGE_PROMPT = """
-You are an impartial grader evaluating an AI Assistant's answer.
-Compare the Assistant's Answer to the Expected Fact.
-Does the Assistant's Answer contain the Expected Fact?
-Return ONLY valid JSON: {"pass": boolean, "reason": "string"}
-"""
-
-def run_evals():
-    passed = 0
-    
-    for test in eval_set:
-        # Step A: Get the output from your actual application/prompt
-        app_answer = generate_app_response(test["input"]) 
-        
-        # Step B: Have the Judge grade the output
-        judge_response = client.chat.completions.create(
-            model="gpt-4o", # Always use a smart model for the judge
-            response_format={"type": "json_object"},
-            messages=[
-                {"role": "system", "content": JUDGE_PROMPT},
-                {"role": "user", "content": f"Expected Fact: {test['expected_fact']}\n\nAssistant Answer: {app_answer}"}
-            ]
-        )
-        
-        score = json.loads(judge_response.choices[0].message.content)
-        
-        if score["pass"]:
-            passed += 1
-            print(f"✅ PASS: {test['input']}")
-        else:
-            print(f"❌ FAIL: {test['input']}\nReason: {score['reason']}")
-            
-    print(f"\nFinal Score: {passed}/{len(eval_set)} ({(passed/len(eval_set))*100}%)")
-
-# Execute
-run_evals()
+    return score
 ```
 
-### Step 2: Integrate into CI/CD
+**What's happening here:**
 
-Once you have an eval script, hook it into GitHub Actions or GitLab CI. 
-If a developer updates `prompt_v2.txt`, the CI pipeline runs the eval set. If the score drops below your threshold (e.g., 90%), the PR is blocked.
+* Converts subjective quality into measurable signals
+* Enables automation
+
+---
+### Step 3: Run Batch Evaluations
+
+```python id="eval-loop"
+results = []
+
+for test in test_set:
+    output = run_prompt(test["input"])
+    score = evaluate_output(output, test["expected"])
+    results.append(score)
+
+average_score = sum(results) / len(results)
+```
+
+**What's happening here:**
+
+* Tests consistency across multiple inputs
+* Produces aggregate quality score
+
+---
+### Step 4: Add Human Review (Critical)
+
+Not everything can be automated.
+
+Use:
+
+* SMEs for accuracy validation
+* thumbs up/down feedback
+* periodic audit reviews
+
+---
+## Evaluation Layers (System View)
+
+### Layer 1: Prompt-Level
+
+* does the instruction produce correct output?
+
+### Layer 2: Agent-Level
+
+* does the system choose correct tools and steps?
+
+### Layer 3: Data-Level (RAG)
+
+* is retrieval accurate and relevant?
+
+### Layer 4: Business-Level
+
+* does this improve real outcomes?
+
+---
+## Metrics That Actually Matter
+
+### Core Metrics
+
+| Metric       | Description                             |
+| ------------ | --------------------------------------- |
+| Accuracy     | Is the output correct?                  |
+| Completeness | Are key elements included?              |
+| Consistency  | Does it behave the same way repeatedly? |
+
+---
+### Advanced Metrics
+
+| Metric            | Description                     |
+| ----------------- | ------------------------------- |
+| Task success rate | % of tasks completed correctly  |
+| Tool efficiency   | Steps required to complete task |
+| Latency           | Time per request                |
+| Cost per task     | API cost per execution          |
+
+---
+## Continuous Evaluation (Production)
+
+Evaluation is not a one-time activity.
+
+### Required capabilities:
+
+* Logging all inputs/outputs
+* Sampling outputs for review
+* Tracking performance over time
+* Alerting on degradation
 
 ---
 ## Tips & Tricks
 
->[!tip] Quick Win
-> Don't have an eval set? Export the last 100 queries your users actually asked your bot in production, remove any PII, and use those as your baseline dataset. Real user queries are always weirder than what developers invent.
+> [!tip] Quick Win
+> Start with 10–20 high-quality test cases instead of trying to cover everything.
 
 > [!tip] Pro Tip
-> Grade your judge! Occasionally read through the outputs of your LLM-as-a-Judge to make sure it isn't being too lenient or too strict. 
+> Use the model itself as a secondary evaluator (“LLM-as-a-judge”) for scalable scoring.
 
 > [!warning] Watch Out
-> Avoid "Exact Match" semantic grading. Do not tell the judge "Check if the answer is exactly 'Go to the portal'". Tell it "Check if the answer conveys the instruction to visit the portal." 
+> Do not rely solely on automated scoring—models can “game” evaluation criteria.
 
 ---
 ## Lessons Learned
 
-> [!example] War Story: The "Vibe Check" Disaster
-> **What happened:** We tweaked our RAG chunking algorithm to improve search speed. We manually tested 3 basic queries, got good answers, and pushed to prod. A week later, we realized the new chunking strategy was cutting tables in half, causing the AI to hallucinate financial data.  
-> **What we learned:** Manual testing only covers the "happy path." Humans are lazy testers.  
-> **What to do instead:** We implemented an automated eval suite with 150 diverse questions using an open-source tool called `promptfoo`. We now run regression testing on *every* database or prompt change, entirely removing the human "vibe check" from the release cycle.
+> [!example] War Story: The Silent Degradation
+> **What happened:** AI summaries gradually became less detailed after a model update
+> **What we learned:** Model changes affect outputs even with the same prompt
+> **What to do instead:** Run regression evals after every model or prompt change
 
 ---
 ## Best Practices Checklist
 
-- [ ] Practice 1: **Separate the Judge from the App.** If your app runs on `Claude 3 Haiku`, use `GPT-4o` or `Claude 3.5 Sonnet` as the judge to prevent the model from grading its own homework.
-- [ ] Practice 2: **Track Metrics Over Time.** Evals aren't just pass/fail. Track latency (seconds), token usage (cost), and accuracy over time in a dashboard.
-- [ ] Practice 3: **A/B Test Prompts.** Run your eval set on Prompt A and Prompt B simultaneously to objectively prove which one is better before changing production code.
+* [ ] Define evaluation criteria before building
+* [ ] Create a representative test dataset
+* [ ] Automate scoring where possible
+* [ ] Include human review for edge cases
+* [ ] Track performance over time
+* [ ] Re-run evals after any change (prompt, model, data)
 
 ---
 ## Anti-Patterns (Don't Do This)
 
-| ❌ Don't | ✅ Do Instead | Why |
-|---------|--------------|-----|
-| Demand 100% pass rates | Set a threshold (e.g., 92%) | LLMs are non-deterministic. A 100% pass rate on a large dataset is nearly impossible and will block all deployments. |
-| Use `assert result == "expected"` | Use LLM-as-a-Judge for semantics | The AI might say "Please go to the portal" instead of "Go to the portal", which fails a string match but is semantically correct. |
-| Test against training data | Test against unseen scenarios | Testing your app on the exact 5 examples you put in the prompt (few-shot) gives a false sense of security. |
+| ❌ Don't                    | ✅ Do Instead              | Why                             |
+| -------------------------- | ------------------------- | ------------------------------- |
+| “Looks good to me” testing | Use defined metrics       | Reduces bias                    |
+| Test once and deploy       | Continuous evaluation     | AI drifts over time             |
+| Ignore edge cases          | Include failure scenarios | Improves robustness             |
+| Measure only accuracy      | Include cost + latency    | Reflects real-world constraints |
 
 ---
-## Related Topics
+## Common Failure Modes
 
-- [[Prompt-Engineering-Playbook]] - The code you are trying to test.
-- [[RAG-Implementation]] - Evaluating retrieval accuracy vs. generation accuracy.
-- [[Troubleshooting-AI-Runbook]] - Using evals to reproduce and fix bugs.
+| Failure             | Cause                | Mitigation            |
+| ------------------- | -------------------- | --------------------- |
+| Silent errors       | No evaluation        | Add test framework    |
+| Drift over time     | Model/data changes   | Continuous monitoring |
+| Overfitting prompts | Testing too narrowly | Expand test set       |
+| False confidence    | Weak metrics         | Strengthen criteria   |
 
 ---
 ## Further Reading
 
-- [Promptfoo](https://promptfoo.dev/) - Excellent open-source CLI tool for running automated AI evals and A/B tests.
-- [LangSmith](https://www.langchain.com/langsmith) - Enterprise observability and evaluation platform for AI applications.
-- [DeepLearning.ai: Automated Testing for LLMOps](https://www.deeplearning.ai/short-courses/automated-testing-llmops/) - Great short course on this exact topic.
+[[01-Foundation Knowledge/Prompt-Engineering-Basics|Prompt-Engineering-Basics]] - Designing instructions
+[[Agents & Tool Use (Function Calling)]] - Execution systems
+[[RAG-Implementation]] - Data grounding strategies
 
 ---
 ## Changelog
 
-- **2026-04-24**: Created initial Evaluation & Testing guide.
-- **2026-04-24**: Added promptfoo open-source recommendation.
+* **2026-04-25**: Created (enterprise evaluation framework)
 
 ---
 ## Questions or Feedback?
 
-If you are struggling to write a good "Judge Prompt", share what you are trying to test in the `#ai-ops` Slack channel.
+Raise improvements in your AI working group or extend with domain-specific evaluation datasets.
