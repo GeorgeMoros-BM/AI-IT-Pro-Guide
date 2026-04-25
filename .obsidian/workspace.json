@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00-Quick-Start/README.md",
+                "file": "_daily-updates/2026-04-24-update.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "2026-04-24-update"
             }
           }
         ]
@@ -178,11 +178,13 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
-      "templater-obsidian:Templater": false
+      "templater-obsidian:Templater": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "c78d1aac57339630",
   "lastOpenFiles": [
+    "00-Quick-Start/README.md",
     "00-Quick-Start/Starter-Projects-and-Quick-Wins.md",
     "00-Quick-Start/Executive-Summary.md",
     "05-Resources/06-LLM-Specific/Anthropic-Claude/Claude Tutorials.md",
@@ -209,7 +211,6 @@
     "03-Enterprise-Concerns/Security-and-Privacy.md",
     "03-Enterprise-Concerns/Managing-Shadow-AI.md",
     "03-Enterprise-Concerns/Governance-and-Risk.md",
-    "03-Enterprise-Concerns/Cost-Management-and-ROI.md",
-    "02-Practical-Implementation/Tip-Prompt-Caching.md"
+    "03-Enterprise-Concerns/Cost-Management-and-ROI.md"
   ]
 }
