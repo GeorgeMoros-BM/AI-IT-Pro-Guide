@@ -182,11 +182,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "877aadd9f5cd2eed",
+  "active": "50a32ee23e0fe2b0",
   "lastOpenFiles": [
+    "01-Foundation Knowledge/Model-Evaluation-and-TCO.md",
+    "01-Foundation Knowledge/Prompt-Engineering-Basics.md",
+    "01-Foundation Knowledge/Prompt-Engineering-Legacy.md",
     "00-Quick-Start/Starter-Projects-and-Quick-Wins.md",
     "01-Foundation Knowledge/Prompt-Engineering-Basics (1).md",
-    "01-Foundation Knowledge/Prompt-Engineering-Basics.md",
     "01-Foundation Knowledge/Prompt Engineering Basics.md",
     "Prompt Engineering Basics.md",
     "05-Resources/Enterprise Use Cases in the Wild/Agentic-AI-Use-Cases.md",
@@ -208,8 +210,6 @@
     "05-Resources/Enterprise Use Cases in the Wild/Technology.md",
     "05-Resources/Enterprise Use Cases in the Wild/Retail.md",
     "05-Resources/Enterprise Use Cases in the Wild/Public Sector & Nonprofits.md",
-    "05-Resources/Enterprise Use Cases in the Wild/Hospitality & Travel.md",
-    "05-Resources/Enterprise Use Cases in the Wild/Healthcare & Life Sciences.md",
     "05-Resources/Enterprise Use Cases in the Wild",
     "05-Resources/06-LLM-Specific/Anthropic-Claude",
     "05-Resources/06-LLM-Specific"
