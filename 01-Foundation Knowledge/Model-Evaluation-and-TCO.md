@@ -1,5 +1,12 @@
-title: The Landscape - Model Evaluation & TCO
-tags: [chapter, models, strategy, finops, benchmarks]
+</> YAML
+---
+title: "The Landscape - Model Evaluation & TCO"
+tags:
+  - chapter
+  - models
+  - strategy
+  - finops
+  - benchmarks
 difficulty: intermediate
 last_updated: 2026-04-24
 time_to_read: 15 minutes

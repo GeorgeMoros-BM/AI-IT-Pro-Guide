@@ -4,8 +4,8 @@ difficulty: intermediate
 last_updated: 2026-04-24
 time_to_read: 15 minutes
 related:
-  - "[[Mental Model Reset]]"
-  - "[[RAG Implementation]]"
+  - "[[[[Mental-Model-Reset]]]]"
+  - "[[[[RAG Implementation]]]]"
 ---
 
 # AI for Data Analysts - SQL & PowerBI
