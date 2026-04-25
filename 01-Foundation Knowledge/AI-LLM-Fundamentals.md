@@ -1,5 +1,10 @@
+---
 title: AI/LLM Fundamentals (No PhD Required)
-tags:[chapter, fundamentals, architecture, beginner]
+tags:
+  - chapter
+  - fundamentals
+  - architecture
+  - beginner
 difficulty: beginner
 last_updated: 2026-04-24
 time_to_read: 15 minutes

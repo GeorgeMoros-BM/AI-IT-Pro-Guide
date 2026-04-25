@@ -18,7 +18,7 @@ related:
 > AI is no longer an experimental chatbot; it is a core infrastructure component. Your job is not to build artificial brains. Your job is to securely integrate APIs, connect them to company data, manage the token billing, and prevent data leaks.
 
 ---
-## What Changed in AI (And Why It Matters to IT)
+## What Changed in AI (And Why It Matters to You as an IT Pro)
 
 We have moved past the hype cycle of 2023-2024. The fundamental reality of Enterprise IT today is that **Generative AI is a new computational layer**. 
 
@@ -37,7 +37,7 @@ If you are leading an IT team or architecting a system, start here:
 Don't wait for a data breach. Spin up an internal "Secure Chat" UI connected to an Enterprise API (like Azure OpenAI or AWS Bedrock) where data is explicitly protected from model training. Tell your company: *"Use this, and your data is safe."*
 *Read how: [[Managing-Shadow-AI]]*
 ### 2. Stop the Burning (Audit Token Spend)
-If you already have AI applications in production, you are likely overpaying by 50-80%. Switch simple tasks from frontier models (GPT-4o) to faster, cheaper models (GPT-4o-mini). Enable Prompt Caching for repeated instructions.
+If you already have AI applications in production, you are likely overpaying by 50-80%. Switch simple tasks from frontier models (GPT-5o) to faster, cheaper models (GPT-4o-mini). Enable Prompt Caching for repeated instructions.
 *Read how: [[Token-Cost-Quick-Reference]]*
 ### 3. Build Your First RAG Pipeline
 Pick one high-friction, low-risk internal process (e.g., HR benefits Q&A, IT runbook lookup). Extract the PDFs, convert them to vector embeddings, and connect an LLM to them. Prove the ROI internally before facing customers.

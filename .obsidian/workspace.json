@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-Foundation Knowledge/Prompt-Engineering-Basics.md",
+                "file": "01-Foundation Knowledge/AI-LLM-Fundamentals.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Prompt-Engineering-Basics"
+              "title": "AI-LLM-Fundamentals"
             }
           }
         ]
@@ -184,32 +184,32 @@
   },
   "active": "50a32ee23e0fe2b0",
   "lastOpenFiles": [
-    "02-Practical-Implementation/Prompt-Engineering-Basics.md",
+    "00-Quick-Start/Starter-Projects-and-Quick-Wins.md",
+    "00-Quick-Start/README.md",
+    "00-Quick-Start/Quick Start & Orientation.md",
+    "00-Quick-Start/Mental-Model-Reset.md",
+    "01-Foundation Knowledge/AI-LLM-Fundamentals.md",
+    "03-Enterprise-Concerns/Change-Management-and-Adoption.md",
+    "05-Resources/Vendor & Tool Directory.md",
+    "05-Resources/Vector-Database-Comparison.md",
+    "00-Quick-Start/Executive-Summary.md",
+    "00-Quick-Start/AI-for-Data-Analysts.md",
     "01-Foundation Knowledge/Prompt-Engineering-Basics.md",
+    "02-Practical-Implementation/Prompt-Engineering-Basics.md",
     "04-Advanced-Topics/Evaluation-and-Testing.md",
     "04-Advanced-Topics/Agents & Tool Use (Function Calling).md",
     "04-Advanced-Topics/Agents-and-Tool-Use (legacy).md",
     "01-Foundation Knowledge/Model-Evaluation-and-TCO.md",
     "01-Foundation Knowledge/Prompt-Engineering-Legacy.md",
-    "00-Quick-Start/Starter-Projects-and-Quick-Wins.md",
     "01-Foundation Knowledge/Prompt-Engineering-Basics (1).md",
     "01-Foundation Knowledge/Prompt Engineering Basics.md",
     "Prompt Engineering Basics.md",
     "05-Resources/Enterprise Use Cases in the Wild/Agentic-AI-Use-Cases.md",
-    "00-Quick-Start/README.md",
-    "00-Quick-Start/Quick Start & Orientation.md",
-    "00-Quick-Start/Mental-Model-Reset.md",
-    "00-Quick-Start/Executive-Summary.md",
-    "00-Quick-Start/AI-for-Data-Analysts.md",
     "_daily-updates/updates.md",
     "_daily-updates/2026-04-24-update.md",
     "03-Enterprise-Concerns/Cost-Management-and-ROI.md",
-    "01-Foundation Knowledge/AI-LLM-Fundamentals.md",
-    "05-Resources/Vector-Database-Comparison.md",
     "05-Resources/Enterprise Use Cases in the Wild/Automotive & Logistics.md",
     "05-Resources/Enterprise Use Cases in the Wild/Media, Marketing & Gaming.md",
-    "05-Resources/Enterprise Use Cases in the Wild/Manufacturing Industrial & Electronics.md",
-    "05-Resources/Enterprise Use Cases in the Wild/Business & Professional Services.md",
     "05-Resources/Enterprise Use Cases in the Wild",
     "05-Resources/06-LLM-Specific/Anthropic-Claude",
     "05-Resources/06-LLM-Specific"
