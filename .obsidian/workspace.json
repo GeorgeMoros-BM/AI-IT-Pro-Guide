@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild/Technology-UC.md",
+                "file": "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild/Hospitality-Travel-UC.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Technology-UC"
+              "title": "Hospitality-Travel-UC"
             }
           }
         ],
@@ -199,10 +199,15 @@
   },
   "active": "50a32ee23e0fe2b0",
   "lastOpenFiles": [
-    "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild/Retail-UC.md",
-    "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild/Technology-UC.md",
-    "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild",
     "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild/GenAI use cases.md",
+    "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild/Hospitality-Travel-UC.md",
+    "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild/Healthcare-Life-Sciences-UC.md",
+    "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild/Financial-Services-UC.md",
+    "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild/Automotive-Logistics-UC.md",
+    "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild/Telecom-UC.md",
+    "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild/Technology-UC.md",
+    "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild/Retail-UC.md",
+    "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild",
     "00-Quick-Start/Mental-Model-Reset.md",
     "00-Quick-Start/Executive-Summary.md",
     "00-Quick-Start/AI-for-Data-Analysts.md",
@@ -222,11 +227,6 @@
     "05-Resources/06-LLM-Specific/Anthropic-Claude",
     "05-Resources/06-LLM-Specific",
     "03-Enterprise-Concerns/Change-Management-and-Adoption.md",
-    "00-Quick-Start/Quick Start & Orientation.md",
-    "05-Resources/Vector-Database-Comparison.md",
-    "02-Practical-Implementation/Prompt-Engineering-Basics.md",
-    "02-Practical-Implementation/PowerBI-and-Fabric-AI.md",
-    "05-Resources/Enterprise-AI-Glossary.md",
-    "02-Practical-Implementation/Lesson-PDF-Extraction.md"
+    "00-Quick-Start/Quick Start & Orientation.md"
   ]
 }
