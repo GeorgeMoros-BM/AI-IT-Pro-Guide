@@ -10,7 +10,7 @@
 
 The list is organized by 11 major industry groups, and within those, six agent types: **Customer**, **Employee**, **Creative**, **Code**, **Data**, and **Security**.
 
-## Automotive & Logistics
+# ==**Automotive & Logistics**==
 
 ### **Customer Agents**
 
@@ -104,7 +104,7 @@ The list is organized by 11 major industry groups, and within those, six agent t
 - ***BMW** decreased the number of critical issues by 95% and achieved complete visibility into thousands of cloud workloads within a few days of implementing Wiz.
     
 - **Mitsubishi Motors** uses Google Security Operations with AI-powered SIEM and SOAR capabilities to protect its global operations from increasingly sophisticated cyber attacks. The cloud-based security platform simplified security management across the Mitsubishi Motors Group and reduced operational burdens through automated threat detection and response.
-## Business & Professional Services
+# ==**Business & Professional Services**==
 
 ### **Customer Agents**
 
@@ -379,7 +379,7 @@ The list is organized by 11 major industry groups, and within those, six agent t
     
 - ***Sutherland** contains potential intrusions in under 24 hours and transitioned from reactive defense to proactive threat hunting.
 
-# **Financial Services**
+# ==**Financial Services**==
 ### **Customer Agents**
 
 - **Albo**, a Mexican neobank, uses Gemini models to power its "Albot" AI chatbot that provides 24/7 financial advice, customer onboarding, and support to millions of first-time banking users. The platform advances financial inclusion while streamlining regulatory compliance and improving operational efficiency.
@@ -666,7 +666,7 @@ The list is organized by 11 major industry groups, and within those, six agent t
 - **Resistant AI** is building AI-powered solutions to combat fraud in financial services documentation and workflows with the help of Google Cloud. These solutions can expedite background checks, reduce fraud losses, and speed up underwriting and claims processing processes.
     
 - **Upsure**, an India-based insurtech platform, built its AI-powered solution on Google Kubernetes Engine, Vertex AI, and Gemini to help insurers create unified data lakes for anti-money laundering compliance and lead scoring. The platform supports more than 1 million daily users across over 2,000 locations with 99.9% uptime and response times in milliseconds.
-# **Healthcare & Life Sciences**
+# ==**Healthcare & Life Sciences**==
 ### **Customer Agents**
 
 - **Bennie Health** uses Vertex AI to power its innovative employee health benefits platform, providing actionable insights and streamlining data management in order to enhance efficiency and decision-making for employees and HR teams.
