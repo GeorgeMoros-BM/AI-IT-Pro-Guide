@@ -184,6 +184,7 @@
   },
   "active": "50a32ee23e0fe2b0",
   "lastOpenFiles": [
+    "04-Advanced-Topics/Agents-and-Tool-Use (legacy).md",
     "01-Foundation Knowledge/Model-Evaluation-and-TCO.md",
     "01-Foundation Knowledge/Prompt-Engineering-Basics.md",
     "01-Foundation Knowledge/Prompt-Engineering-Legacy.md",
@@ -209,7 +210,6 @@
     "05-Resources/Enterprise Use Cases in the Wild/Telecommunications.md",
     "05-Resources/Enterprise Use Cases in the Wild/Technology.md",
     "05-Resources/Enterprise Use Cases in the Wild/Retail.md",
-    "05-Resources/Enterprise Use Cases in the Wild/Public Sector & Nonprofits.md",
     "05-Resources/Enterprise Use Cases in the Wild",
     "05-Resources/06-LLM-Specific/Anthropic-Claude",
     "05-Resources/06-LLM-Specific"
