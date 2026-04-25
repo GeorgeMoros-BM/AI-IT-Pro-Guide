@@ -1,5 +1,9 @@
-title: "Executive Summary: Enterprise AI in 2026"
-tags: [chapter, executive-summary, leadership, quick-start]
+---
+title: Enterprise AI in 2026
+tags:
+  - summary
+  - leadership
+  - quick-start
 difficulty: beginner
 last_updated: 2026-04-24
 time_to_read: 5 minutes

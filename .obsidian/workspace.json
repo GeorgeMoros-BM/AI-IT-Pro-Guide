@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00-Quick-Start/AI-for-Data-Analysts.md",
+                "file": "00-Quick-Start/Mental-Model-Reset.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AI-for-Data-Analysts"
+              "title": "Mental-Model-Reset"
             }
           }
         ]
@@ -184,10 +184,11 @@
   },
   "active": "c78d1aac57339630",
   "lastOpenFiles": [
+    "00-Quick-Start/Executive-Summary.md",
+    "00-Quick-Start/AI-for-Data-Analysts.md",
     "01-Foundation Knowledge/AI-LLM-Fundamentals.md",
     "03-Enterprise-Concerns/Cost-Management-and-ROI.md",
     "01-Foundation Knowledge/Model-Evaluation-and-TCO.md",
-    "00-Quick-Start/AI-for-Data-Analysts.md",
     "Mental Model Reset.md",
     "_daily-updates/updates.md",
     "_daily-updates/2026-04-24-update.md",
@@ -197,7 +198,6 @@
     "README.md",
     "00-Quick-Start/README.md",
     "00-Quick-Start/Starter-Projects-and-Quick-Wins.md",
-    "00-Quick-Start/Executive-Summary.md",
     "05-Resources/06-LLM-Specific/Anthropic-Claude/Claude Tutorials.md",
     "05-Resources/06-LLM-Specific/Anthropic-Claude",
     "05-Resources/06-LLM-Specific",
