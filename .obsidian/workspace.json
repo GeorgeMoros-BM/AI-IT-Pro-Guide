@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Templates/chapter-template.md",
+                "file": "03-Enterprise-Concerns/Governance-and-Risk.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "chapter-template"
+              "title": "Governance-and-Risk"
             }
           }
         ]
@@ -184,11 +184,18 @@
   },
   "active": "9b394101fc969ad8",
   "lastOpenFiles": [
-    "Templates/chapter-template.md",
+    "03-Enterprise-Concerns/Cost-Management-and-ROI.md",
+    "03-Enterprise-Concerns/Change-Management-and-Adoption.md",
+    "02-Practical-Implementation/Token-Cost-Quick-Reference.md",
+    "02-Practical-Implementation/Tip-Prompt-Caching.md",
+    "02-Practical-Implementation/RAG-Implementation.md",
+    "02-Practical-Implementation/PowerBI-and-Fabric-AI.md",
+    "02-Practical-Implementation/Lesson-PDF-Extraction.md",
     "02-Practical-Implementation/API-Integration-Guide.md",
     "01-Foundation Knowledge/Prompt-Engineering-Basics.md",
     "01-Foundation Knowledge/Model-Evaluation-and-TCO.md",
     "01-Foundation Knowledge/Local-vs-Cloud-Architecture.md",
+    "Templates/chapter-template.md",
     "01-Foundation Knowledge/LLM-Provider-Comparison.md",
     "01-Foundation Knowledge/Key-Architectures.md",
     "01-Foundation Knowledge/AI-LLM-Fundamentals.md",
@@ -196,7 +203,6 @@
     "00-Quick-Start/README.md",
     "00-Quick-Start/Quick Start & Orientation.md",
     "00-Quick-Start/Mental-Model-Reset.md",
-    "03-Enterprise-Concerns/Change-Management-and-Adoption.md",
     "05-Resources/Vendor & Tool Directory.md",
     "05-Resources/Vector-Database-Comparison.md",
     "00-Quick-Start/Executive-Summary.md",
@@ -204,12 +210,6 @@
     "02-Practical-Implementation/Prompt-Engineering-Basics.md",
     "04-Advanced-Topics/Evaluation-and-Testing.md",
     "04-Advanced-Topics/Agents & Tool Use (Function Calling).md",
-    "04-Advanced-Topics/Agents-and-Tool-Use (legacy).md",
-    "01-Foundation Knowledge/Prompt-Engineering-Legacy.md",
-    "01-Foundation Knowledge/Prompt-Engineering-Basics (1).md",
-    "01-Foundation Knowledge/Prompt Engineering Basics.md",
-    "Prompt Engineering Basics.md",
-    "05-Resources/Enterprise Use Cases in the Wild/Agentic-AI-Use-Cases.md",
     "05-Resources/Enterprise Use Cases in the Wild",
     "05-Resources/06-LLM-Specific/Anthropic-Claude",
     "05-Resources/06-LLM-Specific"

@@ -1,5 +1,11 @@
+---
 title: Governance & Risk Management
-tags:[chapter, governance, risk, compliance, management]
+tags: 
+  - chapter
+  - governance
+  - risk
+  - compliance
+  - management
 difficulty: intermediate
 last_updated: 2026-04-24
 time_to_read: 15 minutes

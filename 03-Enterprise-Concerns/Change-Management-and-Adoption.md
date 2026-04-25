@@ -1,5 +1,11 @@
+---
 title: Change Management & AI Adoption
-tags: [chapter, change-management, business, adoption, kpis]
+tags: 
+  - chapter
+  - change-management
+  - business
+  - adoption
+  - kpis
 difficulty: beginner
 last_updated: 2026-04-25
 time_to_read: 15 minutes

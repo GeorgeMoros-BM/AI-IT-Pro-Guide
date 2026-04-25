@@ -1,5 +1,12 @@
+---
 title: Microsoft Power BI & Fabric AI Deep Dive
-tags:[chapter, powerbi, fabric, data, copilot, intermediate]
+tags: 
+  - chapter
+  - PowerBI
+  - fabric
+  - data
+  - copilot
+  - intermediate
 difficulty: intermediate
 last_updated: 2026-04-25
 time_to_read: 20 minutes

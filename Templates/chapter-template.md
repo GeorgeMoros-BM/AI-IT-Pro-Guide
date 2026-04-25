@@ -5,8 +5,8 @@ tags:
   - {{tag2}}
   - {{tag3}}
 difficulty: beginner/intermediate/advanced
-last_updated: {{date:YYYY-MM-DD}}
-time_to_read: XX minutes
+last updated: {{date:YYYY-MM-DD}}
+time to read: XX minutes
 related:
   - "[[Link to Related Chapter]]"
   - "[[Another Related Topic]]"

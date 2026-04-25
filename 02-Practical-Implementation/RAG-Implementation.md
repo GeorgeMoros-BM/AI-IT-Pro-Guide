@@ -248,7 +248,7 @@ print(response.content[0].text)
 ## Lessons Learned
 
 > [!example] War Story: The $2000 Context Window
-> **What happened:** Team dumped entire 200-page manual into context for every query. Cost $2000 in the first week.  
+> **What happened:** Team dumped entire 200-page manual into context for every query. Cost $2,000 in the first week.  
 > **What we learned:** Context is expensive. At $3/1M input tokens, a 200-page doc (≈150K tokens) costs $0.45 EVERY QUERY.  
 > **What to do instead:** Use RAG to fetch only relevant pages. Our costs dropped to $50/week with better answers.
 

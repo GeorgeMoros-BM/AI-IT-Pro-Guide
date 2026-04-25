@@ -13,7 +13,7 @@ impact: high
 ---
 ## The Situation
 
-We were building an internal chatbot to answer questions about engineering documentation. We had about 50 PDF files (specs, architecture docs, runbooks) totaling ~2000 pages.
+We were building an internal chatbot to answer questions about annual reports. We had about 50 PDF files (specs, architecture docs, runbooks) totaling ~2500 pages.
 
 The quick approach: extract text from PDFs using PyPDF2, chunk it, stuff it in a vector database.
 
