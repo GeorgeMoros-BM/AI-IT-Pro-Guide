@@ -184,6 +184,7 @@
   },
   "active": "c78d1aac57339630",
   "lastOpenFiles": [
+    "README.md",
     "00-Quick-Start/README.md",
     "00-Quick-Start/Starter-Projects-and-Quick-Wins.md",
     "00-Quick-Start/Executive-Summary.md",
@@ -210,7 +211,6 @@
     "04-Advanced-Topics/Advanced-RAG-Techniques.md",
     "03-Enterprise-Concerns/Security-and-Privacy.md",
     "03-Enterprise-Concerns/Managing-Shadow-AI.md",
-    "03-Enterprise-Concerns/Governance-and-Risk.md",
-    "03-Enterprise-Concerns/Cost-Management-and-ROI.md"
+    "03-Enterprise-Concerns/Governance-and-Risk.md"
   ]
 }
