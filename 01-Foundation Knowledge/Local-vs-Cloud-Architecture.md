@@ -1,5 +1,10 @@
+---
 title: "Architecture: Local Open Source vs. Cloud APIs"
-tags: [quick-ref, infrastructure, architecture, decision-tree]
+tags: 
+  - quick-ref
+  - infrastructure
+  - architecture
+  - decision-tree
 last_updated: 2026-04-24
 
 ---

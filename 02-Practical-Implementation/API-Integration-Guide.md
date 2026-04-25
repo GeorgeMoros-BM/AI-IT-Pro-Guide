@@ -1,5 +1,12 @@
+---
 title: API Integration & Development
-tags: [chapter, api, development, async, streaming, intermediate]
+tags: 
+  - chapter
+  - api
+  - development
+  - async
+  - streaming
+  - intermediate
 difficulty: intermediate
 last_updated: 2026-04-24
 time_to_read: 20 minutes
@@ -15,8 +22,7 @@ related:
 > Do not treat LLM APIs like standard REST endpoints. They take 10x longer to respond, drop connections, and strictly rate-limit you. You must use asynchronous code, implement streaming for UX, and use exponential backoff for retries.
 
 ---
-
-## 📋 What You'll Learn
+## What You'll Learn
 
 - [ ] Why you should use official SDKs over raw HTTP calls
 - [ ] How to implement robust retry logic for `429 Rate Limit` errors
@@ -25,7 +31,6 @@ related:
 - [ ] Handling enterprise load balancer timeouts
 
 ---
-
 ## Why This Matters
 
 A standard database query or internal microservice returns data in 50-200 milliseconds. A complex LLM prompt can take **10 to 45 seconds** to process. 
@@ -36,7 +41,6 @@ If you use standard synchronous HTTP requests, your web server worker threads wi
 > A developer builds an AI document summarizer using standard synchronous Python requests. It works perfectly on their laptop. On launch day, 50 users try it at once. The server immediately exhausts its worker pool waiting on OpenAI, crashes, and brings down the entire internal application.
 
 ---
-
 ## Core Concepts
 
 ### Concept 1: Tokens Per Minute (TPM) vs Requests Per Minute (RPM)
@@ -52,7 +56,6 @@ Instead of waiting 15 seconds for the entire response to generate and returning 
 Always use the official provider SDKs (`openai`, `anthropic`, `@aws-sdk/client-bedrock-runtime`). They have built-in type definitions, automatic connection pooling, and native streaming iterators that save you hundreds of lines of boilerplate.
 
 ---
-
 ## Hands-On Implementation
 
 ### Step 1: The Production-Ready API Client (Python)
@@ -159,7 +162,6 @@ async def analyze_chunks(chunks: list[str]):
 > For mission-critical APIs, wrap your call in a `try/except` block. If `gpt-4o` throws a 500 error because OpenAI is down, have your catch block immediately fallback to `gpt-4o-mini` or route to Azure/Anthropic. High availability requires multi-provider routing.
 
 ---
-
 ## Lessons Learned
 
 > [!example] War Story: The Silent Load Balancer Killer
@@ -168,7 +170,6 @@ async def analyze_chunks(chunks: list[str]):
 > **What to do instead:** We implemented Streaming (which keeps the connection active by sending bytes continuously) and increased the ALB idle timeout to 120 seconds for AI endpoints.
 
 ---
-
 ## Best Practices Checklist
 
 - [ ] **Always use Async/Await** for LLM API calls.
@@ -178,7 +179,6 @@ async def analyze_chunks(chunks: list[str]):
 - [ ] **Monitor Headers:** Log the `x-ratelimit-remaining-tokens` header from responses to proactively monitor when you are approaching the limit.
 
 ---
-
 ## Anti-Patterns (Don't Do This)
 
 | ❌ Don't | ✅ Do Instead | Why |
@@ -189,7 +189,6 @@ async def analyze_chunks(chunks: list[str]):
 | Hardcode model names (`gpt-4`) | Use environment variables (`LLM_MODEL`) | Allows you to swap models in production without a code deploy |
 
 ---
-
 ## Related Topics
 
 - [[Prompt-Engineering-Playbook]] - Ensuring the API returns structured data.
@@ -197,7 +196,6 @@ async def analyze_chunks(chunks: list[str]):
 - [[Token-Cost-Quick-Reference]] - Calculating the cost of your async batches.
 
 ---
-
 ## Further Reading
 
 - [Tenacity Python Library](https://tenacity.readthedocs.io/en/latest/) - Best for: Advanced retry logic.
@@ -205,7 +203,6 @@ async def analyze_chunks(chunks: list[str]):
 - [OpenAI: Production Best Practices](https://platform.openai.com/docs/guides/production-best-practices) - Best for: Architecture setup.
 
 ---
-
 ## Changelog
 
 - **2026-04-24**: Created initial version with async/streaming patterns.

@@ -1,6 +1,9 @@
 ---
 title: {{title}}
-tags: [chapter, {{tag1}}, {{tag2}}]
+tags: 
+  - {{tag1}}
+  - {{tag2}}
+  - {{tag3}}
 difficulty: beginner/intermediate/advanced
 last_updated: {{date:YYYY-MM-DD}}
 time_to_read: XX minutes
@@ -122,4 +125,4 @@ result = example.function()
 ---
 ## Questions or Feedback?
 
-[Link to discussion/issues if public, or internal Slack/email if private]
+[Link to discussion/issues if public, or internal Teams/email if private]

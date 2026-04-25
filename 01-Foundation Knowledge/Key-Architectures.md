@@ -1,5 +1,11 @@
+---
 title: Key Architectures You'll Actually Use
-tags:[chapter, architecture, foundation, strategy, beginner]
+tags:
+  - chapter
+  - architecture
+  - foundation
+  - strategy
+  - beginner
 difficulty: beginner
 last_updated: 2026-04-24
 time_to_read: 15 minutes
