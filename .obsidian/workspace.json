@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-Foundation Knowledge/Model-Evaluation-and-TCO.md",
+                "file": "00-Quick-Start/AI-for-Data-Analysts.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Model-Evaluation-and-TCO"
+              "title": "AI-for-Data-Analysts"
             }
           }
         ]
@@ -184,11 +184,13 @@
   },
   "active": "c78d1aac57339630",
   "lastOpenFiles": [
+    "01-Foundation Knowledge/AI-LLM-Fundamentals.md",
+    "03-Enterprise-Concerns/Cost-Management-and-ROI.md",
+    "01-Foundation Knowledge/Model-Evaluation-and-TCO.md",
     "00-Quick-Start/AI-for-Data-Analysts.md",
     "Mental Model Reset.md",
     "_daily-updates/updates.md",
     "_daily-updates/2026-04-24-update.md",
-    "01-Foundation Knowledge/Model-Evaluation-and-TCO.md",
     "02-Practical-Implementation/Token-Cost-Quick-Reference.md",
     "03-Enterprise-Concerns/Managing-Shadow-AI.md",
     "Templates/chapter-template.md",
@@ -209,8 +211,6 @@
     "02-Practical-Implementation/Lesson-PDF-Extraction.md",
     "02-Practical-Implementation/API-Integration-Guide.md",
     "05-Resources/Troubleshooting-AI-Runbook.md",
-    "05-Resources/Vendor & Tool Directory.md",
-    "04-Advanced-Topics/Evaluation-and-Testing.md",
-    "04-Advanced-Topics/Agents-and-Tool-Use.md"
+    "05-Resources/Vendor & Tool Directory.md"
   ]
 }

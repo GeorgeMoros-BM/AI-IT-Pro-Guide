@@ -1,6 +1,5 @@
-</> YAML
 ---
-title: "The Landscape - Model Evaluation & TCO"
+title: Model Evaluation & TCO
 tags:
   - chapter
   - models
@@ -15,8 +14,7 @@ related:
   - "[[Local-vs-Cloud-Architecture]]"
   - "[[Cost-Management-and-ROI]]"
 ---
-
-# The Landscape - Model Evaluation & TCO
+# Model Evaluation & TCO
 
 > **TL;DR for the Busy IT Pro:**  
 > Ignore vendor marketing benchmarks—they are often contaminated. Rely on blind crowdsourced tests like LMSYS. When calculating costs, remember that Open Source models are only "free" until you pay the massive AWS/Azure bill for the GPUs required to run them.
