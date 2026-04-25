@@ -1,0 +1,30 @@
+# Jekyll Configuration for Obsidian Vault
+title: "The IT Guru's Guide to Enterprise AI"
+description: "A living knowledge base for enterprise IT professionals"
+theme: minima # Or replace with an Obsidian-friendly theme like 'jekyll-theme-chirpy'
+
+# This tells Jekyll to process Markdown files properly
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Exclude Obsidian's internal folders and templates from the published site
+exclude:
+  - .obsidian/
+  - _templates/
+  - node_modules/
+  - Gemfile
+  - Gemfile.lock
+
+---
+
+### ⚠️ One Quick "Gotcha" for Phase 3 (Obsidian to Jekyll)
+
+Standard Jekyll doesn't natively understand Obsidian's `[[wikilink]]` syntax—it expects standard markdown links like `[Link Text](file.md)`. 
+
+When you get to Phase 3, you have two easy ways to solve this:
+1. **The Plugin Route:** Add the `jekyll-obsidian` or `jekyll-spaceship` plugin to your `_config.yml`. It will automatically translate `[[wikilinks]]` into HTML links during the build phase.
+2. **The Theme Route:** Use a Jekyll theme specifically designed for Obsidian/Digital Gardens (like[Maxime Vaillancourt's Digital Garden Jekyll Template](https://github.com/maximevaillancourt/digital-garden-jekyll-template)). 
+
+***

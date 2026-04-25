@@ -1,0 +1,215 @@
+{
+  "main": {
+    "id": "046be84a44d3eb7a",
+    "type": "split",
+    "children": [
+      {
+        "id": "ed4e29ae5b0640cc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c78d1aac57339630",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00-Quick-Start/README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "2b3c79550bfe0e57",
+    "type": "split",
+    "children": [
+      {
+        "id": "1ed334362d257a5f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "877aadd9f5cd2eed",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "1ba9b39b63aed6e6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "edc3774c66d7dec3",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "9325d9cd258d8637",
+    "type": "split",
+    "children": [
+      {
+        "id": "12bf0924784c4821",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2b469bbb8ba54347",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "7544a30d7a179c20",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "fe79faae69ead9bd",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "eba0b0c49c27da34",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "07556db06418812f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "templater-obsidian:Templater": false
+    }
+  },
+  "active": "c78d1aac57339630",
+  "lastOpenFiles": [
+    "00-Quick-Start/Starter-Projects-and-Quick-Wins.md",
+    "00-Quick-Start/Executive-Summary.md",
+    "05-Resources/06-LLM-Specific/Anthropic-Claude/Claude Tutorials.md",
+    "05-Resources/06-LLM-Specific/Anthropic-Claude",
+    "05-Resources/06-LLM-Specific",
+    "03-Enterprise-Concerns/Change-Management-and-Adoption.md",
+    "05-Resources/GenAI use cases.md",
+    "_daily-updates/2026-04-24-update.md",
+    "_daily-updates/updates.md",
+    "00-Quick-Start/Quick Start & Orientation.md",
+    "05-Resources/Vector-Database-Comparison.md",
+    "02-Practical-Implementation/Prompt-Engineering-Basics.md",
+    "02-Practical-Implementation/PowerBI-and-Fabric-AI.md",
+    "05-Resources/Enterprise-AI-Glossary.md",
+    "02-Practical-Implementation/Lesson-PDF-Extraction.md",
+    "02-Practical-Implementation/API-Integration-Guide.md",
+    "02-Practical-Implementation/Token-Cost-Quick-Reference.md",
+    "Templates/chapter-template.md",
+    "05-Resources/Troubleshooting-AI-Runbook.md",
+    "05-Resources/Vendor & Tool Directory.md",
+    "04-Advanced-Topics/Evaluation-and-Testing.md",
+    "04-Advanced-Topics/Agents-and-Tool-Use.md",
+    "04-Advanced-Topics/Advanced-RAG-Techniques.md",
+    "03-Enterprise-Concerns/Security-and-Privacy.md",
+    "03-Enterprise-Concerns/Managing-Shadow-AI.md",
+    "03-Enterprise-Concerns/Governance-and-Risk.md",
+    "03-Enterprise-Concerns/Cost-Management-and-ROI.md",
+    "02-Practical-Implementation/Tip-Prompt-Caching.md"
+  ]
+}
