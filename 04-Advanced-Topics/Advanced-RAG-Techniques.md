@@ -1,5 +1,11 @@
+---
 title: Advanced RAG Techniques
-tags: [chapter, rag, advanced, search, architecture]
+tags: 
+  - chapter
+  - rag
+  - advanced
+  - search
+  - architecture
 difficulty: advanced
 last_updated: 2026-04-24
 time_to_read: 20 minutes

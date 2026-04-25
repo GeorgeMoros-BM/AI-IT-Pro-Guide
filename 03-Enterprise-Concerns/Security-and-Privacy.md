@@ -1,5 +1,11 @@
+---
 title: Security & Privacy in Enterprise AI
-tags:[chapter, security, privacy, compliance, risk]
+tags: 
+  - chapter
+  - security
+  - privacy
+  - compliance
+  - risk
 difficulty: intermediate
 last_updated: 2026-04-24
 time_to_read: 20 minutes

@@ -1,5 +1,10 @@
+---
 title: Managing Shadow AI & Secure Chatbots
-tags:[chapter, governance, security, risk-management]
+tags: 
+  - chapter
+  - governance
+  - security
+  - risk-management
 difficulty: beginner
 last_updated: 2026-04-24
 time_to_read: 10 minutes
