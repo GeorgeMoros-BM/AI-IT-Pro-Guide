@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild/GenAI use cases.md",
+                "file": "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild/Agentic-AI-Use-Cases.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GenAI use cases"
+              "title": "Agentic-AI-Use-Cases"
             }
           },
           {
@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild/Hospitality-Travel-UC.md",
+                "file": "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild/Agentic-AI-Use-Cases.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Hospitality-Travel-UC"
+              "title": "Agentic-AI-Use-Cases"
             }
           }
         ],
@@ -199,14 +199,16 @@
   },
   "active": "50a32ee23e0fe2b0",
   "lastOpenFiles": [
-    "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild/GenAI use cases.md",
-    "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild/Hospitality-Travel-UC.md",
-    "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild/Healthcare-Life-Sciences-UC.md",
-    "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild/Financial-Services-UC.md",
-    "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild/Automotive-Logistics-UC.md",
-    "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild/Telecom-UC.md",
-    "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild/Technology-UC.md",
-    "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild/Retail-UC.md",
+    "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild/Telecommunications.md",
+    "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild/Technology.md",
+    "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild/Agentic-AI-Use-Cases.md",
+    "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild/Retail.md",
+    "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild/Public Sector & Nonprofits.md",
+    "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild/Manufacturing-Industrial & Electronics.md",
+    "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild/Hospitality & Travel.md",
+    "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild/Healthcare & Life Sciences.md",
+    "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild/Financial Services.md",
+    "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild/Automotive & Logistics.md",
     "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild",
     "00-Quick-Start/Mental-Model-Reset.md",
     "00-Quick-Start/Executive-Summary.md",
@@ -225,8 +227,6 @@
     "00-Quick-Start/Starter-Projects-and-Quick-Wins.md",
     "05-Resources/06-LLM-Specific/Anthropic-Claude/Claude Tutorials.md",
     "05-Resources/06-LLM-Specific/Anthropic-Claude",
-    "05-Resources/06-LLM-Specific",
-    "03-Enterprise-Concerns/Change-Management-and-Adoption.md",
-    "00-Quick-Start/Quick Start & Orientation.md"
+    "05-Resources/06-LLM-Specific"
   ]
 }
