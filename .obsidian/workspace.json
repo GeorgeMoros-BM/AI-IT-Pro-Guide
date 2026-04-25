@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 307.5
   },
   "right": {
     "id": "9325d9cd258d8637",
@@ -182,7 +182,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "50a32ee23e0fe2b0",
+  "active": "877aadd9f5cd2eed",
   "lastOpenFiles": [
     "00-Quick-Start/Starter-Projects-and-Quick-Wins.md",
     "01-Foundation Knowledge/Prompt-Engineering-Basics (1).md",
