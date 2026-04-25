@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild/Agentic-AI-Use-Cases.md",
+                "file": "05-Resources/Enterprise Use Cases in the Wild/Agentic-AI-Use-Cases.md",
                 "mode": "source",
                 "source": false
               },
@@ -25,14 +25,10 @@
             "id": "50a32ee23e0fe2b0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild/Agentic-AI-Use-Cases.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Agentic-AI-Use-Cases"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ],
@@ -199,19 +195,19 @@
   },
   "active": "50a32ee23e0fe2b0",
   "lastOpenFiles": [
-    "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild/Media, Marketing & Gaming.md",
-    "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild/Agentic-AI-Use-Cases.md",
-    "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild/Manufacturing Industrial & Electronics.md",
-    "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild/Business & Professional Services.md",
-    "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild/Automotive & Logistics.md",
-    "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild/Telecommunications.md",
-    "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild/Technology.md",
-    "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild/Retail.md",
-    "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild/Public Sector & Nonprofits.md",
-    "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild/Hospitality & Travel.md",
-    "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild/Healthcare & Life Sciences.md",
-    "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild/Financial Services.md",
-    "05-Resources/06-LLM-Specific/Enterprise Use Cases in the Wild",
+    "05-Resources/Enterprise Use Cases in the Wild/Agentic-AI-Use-Cases.md",
+    "05-Resources/Enterprise Use Cases in the Wild/Automotive & Logistics.md",
+    "05-Resources/Enterprise Use Cases in the Wild/Media, Marketing & Gaming.md",
+    "05-Resources/Enterprise Use Cases in the Wild/Manufacturing Industrial & Electronics.md",
+    "05-Resources/Enterprise Use Cases in the Wild/Business & Professional Services.md",
+    "05-Resources/Enterprise Use Cases in the Wild/Telecommunications.md",
+    "05-Resources/Enterprise Use Cases in the Wild/Technology.md",
+    "05-Resources/Enterprise Use Cases in the Wild/Retail.md",
+    "05-Resources/Enterprise Use Cases in the Wild/Public Sector & Nonprofits.md",
+    "05-Resources/Enterprise Use Cases in the Wild/Hospitality & Travel.md",
+    "05-Resources/Enterprise Use Cases in the Wild/Healthcare & Life Sciences.md",
+    "05-Resources/Enterprise Use Cases in the Wild/Financial Services.md",
+    "05-Resources/Enterprise Use Cases in the Wild",
     "00-Quick-Start/Mental-Model-Reset.md",
     "00-Quick-Start/Executive-Summary.md",
     "00-Quick-Start/AI-for-Data-Analysts.md",

@@ -1,6 +1,6 @@
 ### **Customer Agents**
 
-- ***Auteco**, a Colombian vehicle manufacturer, leverages AI capabilities, including Gemini models, to develop a conversational agent that assists thousands of users. This generated notable operational efficiency by reducing tasks from days to seconds and optimizing their marketing campaigns.
+- **Auteco**, a Colombian vehicle manufacturer, leverages AI capabilities, including Gemini models, to develop a conversational agent that assists thousands of users. This generated notable operational efficiency by reducing tasks from days to seconds and optimizing their marketing campaigns.
     
 - **Continental** is using Google's data and AI technologies to develop automotive solutions that are safe, efficient, and user-focused. One of the initial outcomes of this partnership is the integration of Google Cloud's conversational AI technologies into Continental's Smart Cockpit HPC, an in-vehicle speech-command solution.
     
@@ -12,7 +12,7 @@
     
 - **Mercedes Benz** is also infusing e-commerce capabilities into its online storefront with a gen AI-powered smart sales assistant. 
     
-- ***Mobiauto** uses Google Cloud AI to optimize the journey of buying and selling vehicles. With Gemini and BigQuery, the company developed a "Shopping Consultant" that indicates the ideal car, automatically generates advertisements, and summarizes lead information for retailers, achieving an increase in its revenue and customer portfolio.
+- **Mobiauto** uses Google Cloud AI to optimize the journey of buying and selling vehicles. With Gemini and BigQuery, the company developed a "Shopping Consultant" that indicates the ideal car, automatically generates advertisements, and summarizes lead information for retailers, achieving an increase in its revenue and customer portfolio.
     
 - **PODS** worked with the advertising agency Tombras to create the “World’s Smartest Billboard” using Gemini — a campaign on its trucks that could adapt to each neighborhood in New York City, changing in real-time based on data. It hit all 299 neighborhoods in just 29 hours, creating more than 6,000 unique headlines.
     
@@ -23,12 +23,13 @@
 
 - **704 Apps** creates applications serving the last-mile transportation segment, connecting thousands of drivers and passengers every day. During trips, the audio content of conversations between car occupants is sent to Gemini, which measures the emotional “temperature." Specific words such as “robbery”, “assault”, “kidnapping”, among others, can be classified as hostile by the tool, generating alerts to anticipate risky situations before they happen.
     
-- ***Accenture**’s Supply Chain Inventory Intelligent Advisor agent is an agentic AI-powered decision support system designed to optimize inventory planning and tracking efficiently. Using real-time Data and AI, it delivers actionable insights to balance service levels and minimize excess inventory.
+- **Accenture**’s Supply Chain Inventory Intelligent Advisor agent is an agentic AI-powered decision support system designed to optimize inventory planning and tracking efficiently. Using real-time Data and AI, it delivers actionable insights to balance service levels and minimize excess inventory.
+    
 - **Geotab**, one of the largest telematics companies in the world, connects 4.7 million vehicles to make them safer, more sustainable, and more efficient. Teams now use Google Workspace with Gemini for research, document summarization, status reporting, legal document review, and data filtering—supporting functions from HR to engineering. 
     
 - ***Grupo** **Ruiz**, a leading Spanish company in sustainable mobility, uses Gemini Enterprise to improve team productivity and process efficiency, achieving an optimized workflow and greater data visibility.
     
-- ***Manhattan Associate**’s Active Agents are AI digital teammates for warehouse management, transportation management, order management, and platform operations. These agents help monitor work, resolve exceptions, guide users, automate tasks, and recommend actions to reduce manual effort; improving speed and accuracy, increasing utilization, and delivering better operational resilience.
+- **Manhattan Associate**’s Active Agents are AI digital teammates for warehouse management, transportation management, order management, and platform operations. These agents help monitor work, resolve exceptions, guide users, automate tasks, and recommend actions to reduce manual effort; improving speed and accuracy, increasing utilization, and delivering better operational resilience.
     
 - **Oxa**, a developer of software for autonomous vehicles, uses Gemini for Google Workspace to build campaign templates for metrics reporting, write social posts in order to make marketing processes more efficient, create job descriptions, and proofread content across all teams, saving time and resources.
     
@@ -44,10 +45,10 @@
     
 - **Uber** also uses Google Workspace with Gemini to save time on repetitive tasks, free up developers for higher-value work, reduce their agency spending, and to enhance employee retention.
     
-- ***Valeo**, a provider of automotive technology, is deploying Gemini for Workspace to its entire, 100,000-person global workforce. This deployment follows the successful integration of Gemini Code Assist, with now more than 35% of Valeo's code generated by AI, accelerating and enhancing software development cycles for its engineering teams.
+- **Valeo**, a provider of automotive technology, is deploying Gemini for Workspace to its entire, 100,000-person global workforce. This deployment follows the successful integration of Gemini Code Assist, with now more than 35% of Valeo's code generated by AI, accelerating and enhancing software development cycles for its engineering teams.
 ### **Code Agents**
 
-- ***AutoZone** is transforming its operational backbone and customer service experience with Gemini Enterprise, automating complex merchandising data enrichment and accelerating software development through AI-driven coding and testing.
+- **AutoZone** is transforming its operational backbone and customer service experience with Gemini Enterprise, automating complex merchandising data enrichment and accelerating software development through AI-driven coding and testing.
     
 - **Renault Group**’s **Ampere**, an EV and software subsidiary created in 2023, is using an enterprise version of Gemini Code Assist, built for teams of developers and able to understand a company’s code base, standards, and conventions.
 ### **Data Agents**

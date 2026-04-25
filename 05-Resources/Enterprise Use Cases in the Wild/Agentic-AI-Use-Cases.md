@@ -1,4 +1,4 @@
-Enterprise use cases showcasing impactful applications of agentic AI from the world's top organizations.
+Enterprise use cases showcasing impactful applications of agentic AI from the world's top organizations - this list began in 2024 and having grown so long, it would be hard to read in one go without the benefit of an LLM. We thought it would be fitting to enlist the help of AI to get some interesting perspectives. Our team then reviewed the output and selected our five favorites, refining them with our own input. Here are those, which actually nicely reflect many of the thousands of conversations we’ve had about gen AI over the past two years:
 
 1. **The shift from assistants to agentic teams:** The most significant trend is the transition from AI as a passive assistant to AI as an active part of the team, where specialized agents can orchestrate entire workflows. For example, supply chain agents are talking to compliance agents, which then trigger financial forecasting agents — all autonomously. The business opportunity lies in building the management and governance frameworks for these agentic task forces.
     
@@ -10,8 +10,7 @@ Enterprise use cases showcasing impactful applications of agentic AI from the wo
     
 5. **Cybersecurity Moves to Agentic Auto-Remediation:** The threat landscape has evolved, and so has the defense. Security teams are no longer just using AI to detect anomalies. Platforms are deploying AI agents that can automatically write detection rules, isolate compromised workloads, and deploy "honeytokens" to trick malicious actors. AI is actively hunting and neutralizing tier-1 threats without human intervention.
 
-The are organized by 11 major industry groups, 
-
+They are organized by major industry groups, 
 [[Automotive & Logistics]]
 [[Business & Professional Services]]
 [[Financial Services]]
