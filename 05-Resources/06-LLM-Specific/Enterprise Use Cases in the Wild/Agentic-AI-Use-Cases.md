@@ -1,3 +1,5 @@
+Enterprise use cases showcasing impactful applications of agentic AI from the world's top organizations.
+
 1. **The shift from assistants to agentic teams:** The most significant trend is the transition from AI as a passive assistant to AI as an active part of the team, where specialized agents can orchestrate entire workflows. For example, supply chain agents are talking to compliance agents, which then trigger financial forecasting agents — all autonomously. The business opportunity lies in building the management and governance frameworks for these agentic task forces.
     
 2. **Natural language is the translator for legacy IT:** A massive, challenging, but highly lucrative trend is using AI to unlock legacy systems. Organizations are using Gemini to build natural language interfaces on top of 40-year-old SAP instances, mainframes, and COBOL codebases. This allows non-technical staff to query complex, siloed data simply by asking a question, bypassing IT bottlenecks and modernizing old infrastructure without migrating it.
@@ -8,13 +10,26 @@
     
 5. **Cybersecurity Moves to Agentic Auto-Remediation:** The threat landscape has evolved, and so has the defense. Security teams are no longer just using AI to detect anomalies. Platforms are deploying AI agents that can automatically write detection rules, isolate compromised workloads, and deploy "honeytokens" to trick malicious actors. AI is actively hunting and neutralizing tier-1 threats without human intervention.
 
-The list is organized by 11 major industry groups, and within those, six agent types: **Customer**, **Employee**, **Creative**, **Code**, **Data**, and **Security**.
+The are organized by 11 major industry groups, 
 
 [[Automotive & Logistics]]
+[[Business & Professional Services]]
 [[Financial Services]]
 [[Healthcare & Life Sciences]]
 [[Hospitality & Travel]]
-[[Manufacturing-Industrial & Electronics]]
+[[Manufacturing Industrial & Electronics]]
+[[Media, Marketing & Gaming]]
 [[Public Sector & Nonprofits]]
 [[Retail]]
 [[Technology]]
+[[Telecommunications]]
+
+And within those, six agent types: 
+**Customer**
+**Employee**
+**Creative**
+**Code**
+**Data**
+**Security**
+
+**last updated April 22, 2026.**
