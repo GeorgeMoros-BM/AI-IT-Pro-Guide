@@ -8,31 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c78d1aac57339630",
+            "id": "50a32ee23e0fe2b0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "05-Resources/Enterprise Use Cases in the Wild/Agentic-AI-Use-Cases.md",
+                "file": "01-Foundation Knowledge/Prompt-Engineering-Basics.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Agentic-AI-Use-Cases"
-            }
-          },
-          {
-            "id": "50a32ee23e0fe2b0",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "title": "Prompt-Engineering-Basics"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -195,7 +184,22 @@
   },
   "active": "50a32ee23e0fe2b0",
   "lastOpenFiles": [
+    "00-Quick-Start/Starter-Projects-and-Quick-Wins.md",
+    "01-Foundation Knowledge/Prompt-Engineering-Basics (1).md",
+    "01-Foundation Knowledge/Prompt-Engineering-Basics.md",
+    "01-Foundation Knowledge/Prompt Engineering Basics.md",
+    "Prompt Engineering Basics.md",
     "05-Resources/Enterprise Use Cases in the Wild/Agentic-AI-Use-Cases.md",
+    "00-Quick-Start/README.md",
+    "00-Quick-Start/Quick Start & Orientation.md",
+    "00-Quick-Start/Mental-Model-Reset.md",
+    "00-Quick-Start/Executive-Summary.md",
+    "00-Quick-Start/AI-for-Data-Analysts.md",
+    "_daily-updates/updates.md",
+    "_daily-updates/2026-04-24-update.md",
+    "03-Enterprise-Concerns/Cost-Management-and-ROI.md",
+    "01-Foundation Knowledge/AI-LLM-Fundamentals.md",
+    "05-Resources/Vector-Database-Comparison.md",
     "05-Resources/Enterprise Use Cases in the Wild/Automotive & Logistics.md",
     "05-Resources/Enterprise Use Cases in the Wild/Media, Marketing & Gaming.md",
     "05-Resources/Enterprise Use Cases in the Wild/Manufacturing Industrial & Electronics.md",
@@ -206,22 +210,7 @@
     "05-Resources/Enterprise Use Cases in the Wild/Public Sector & Nonprofits.md",
     "05-Resources/Enterprise Use Cases in the Wild/Hospitality & Travel.md",
     "05-Resources/Enterprise Use Cases in the Wild/Healthcare & Life Sciences.md",
-    "05-Resources/Enterprise Use Cases in the Wild/Financial Services.md",
     "05-Resources/Enterprise Use Cases in the Wild",
-    "00-Quick-Start/Mental-Model-Reset.md",
-    "00-Quick-Start/Executive-Summary.md",
-    "00-Quick-Start/AI-for-Data-Analysts.md",
-    "01-Foundation Knowledge/AI-LLM-Fundamentals.md",
-    "03-Enterprise-Concerns/Cost-Management-and-ROI.md",
-    "01-Foundation Knowledge/Model-Evaluation-and-TCO.md",
-    "Mental Model Reset.md",
-    "_daily-updates/updates.md",
-    "_daily-updates/2026-04-24-update.md",
-    "02-Practical-Implementation/Token-Cost-Quick-Reference.md",
-    "03-Enterprise-Concerns/Managing-Shadow-AI.md",
-    "Templates/chapter-template.md",
-    "README.md",
-    "00-Quick-Start/README.md",
     "05-Resources/06-LLM-Specific/Anthropic-Claude",
     "05-Resources/06-LLM-Specific"
   ]

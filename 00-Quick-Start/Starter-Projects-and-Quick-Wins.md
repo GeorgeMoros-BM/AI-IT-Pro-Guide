@@ -1,11 +1,17 @@
+---
 title: Starter Projects & Quick Wins
-tags:[chapter, quick-start, projects, architecture, roi]
+tags:
+  - chapter
+  - quick-start
+  - projects
+  - architecture
+  - roi
 difficulty: beginner
 last_updated: 2026-04-25
 time_to_read: 15 minutes
 related:
   - "[[RAG-Implementation]]"
-  - "[[Prompt-Engineering-Playbook]]"
+  - "[[01-Foundation Knowledge/Prompt-Engineering-Basics|Prompt-Engineering-Basics]]"
   - "[[Cost-Management-and-ROI]]"
 ---
 
