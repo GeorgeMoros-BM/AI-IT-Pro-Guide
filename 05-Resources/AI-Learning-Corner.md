@@ -177,6 +177,15 @@
 *   **arXiv:** [cs.AI](https://arxiv.org/list/cs.AI/recent) | [stat.ML](https://arxiv.org/list/stat.ML/recent) |[cs.CV](https://arxiv.org/list/cs.CV/recent)
 
 ---
+## 🎨 Specialized Tools & Niche Guides
+
+- **[Understanding Transformers](https://www.google.com/url?sa=E&q=https%3A%2F%2Fwww.notion.so%2FUnderstanding-Transformers-225baadc34a380f0b8c0e619ad68d308):** A great deep dive into the architecture powering LLMs.
+- **[Midjourney Prompting by Tatiana Tsiguleva](https://www.google.com/url?sa=E&q=http%3A%2F%2Ftsiguleva.com%2F):** Master AI image generation.
+- **[Marketing AI Institute](https://www.google.com/url?sa=E&q=https%3A%2F%2Fwww.marketingaiinstitute.com%2F):** Courses and podcasts specifically for Marketers.
+- **[ChatGPT Plugins & Tools List](https://www.google.com/url?sa=E&q=https%3A%2F%2Fwww.gptgames.dev%2Futil%2Fplugins.html):** Unofficial directory of tools.
+- **[Web Scraping with ChatGPT](https://www.google.com/url?sa=E&q=https%3A%2F%2Fmorioh.com%2Fp%2F956614647dcf%3Ff%3D5e44c59998b8037d03aa8178):** Tutorial on generating Python scraper scripts.
+
+
 ## How to Use This
 
 ### For Executives

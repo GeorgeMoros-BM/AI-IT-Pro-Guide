@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "05-Resources/AI-Learning-Corner.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "AI-Learning-Corner"
             }
           }
         ]
@@ -184,8 +184,8 @@
   },
   "active": "9b394101fc969ad8",
   "lastOpenFiles": [
-    "05-Resources/AI-Learning-Corner.md",
     "index.md",
+    "05-Resources/AI-Learning-Corner.md",
     "_config.yml.md",
     "03-Enterprise-Concerns/Change-Management-and-Adoption.md",
     "05-Resources/Podcasts, Newsletters & Video.md",
