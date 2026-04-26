@@ -1,9 +1,13 @@
+---
 title: AI Troubleshooting Runbook - When Models Fail
-tags: [quick-ref, troubleshooting, prompt-engineering, operations]
+tags: 
+  - quick-ref
+  - troubleshooting
+  - prompt-engineering
+  - operations
 last_updated: 2026-04-24
 
 ---
-
 # AI Troubleshooting Runbook
 
 > **Use this when:** The AI is giving you garbage outputs, failing in production, or acting weird, and you need to fix it fast.

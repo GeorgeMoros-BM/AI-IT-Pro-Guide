@@ -1,5 +1,10 @@
+---
 title: The Enterprise AI Glossary
-tags: [reference, glossary, terminology, beginner]
+tags: 
+  - reference
+  - glossary
+  - terminology
+  - beginner
 difficulty: beginner
 last_updated: 2026-04-25
 time_to_read: 10 minutes
@@ -7,14 +12,12 @@ related:
   - "[[AI-LLM-Fundamentals]]"
   - "[[Mental-Model-Reset]]"
 ---
-
 # The Enterprise AI Glossary
 
 > **TL;DR for the Busy IT Pro:**  
 > AI is drowning in new jargon. Use this cheat sheet to translate vendor marketing and academic data science terms into standard IT concepts.
 
 ---
-
 ## 🔤 A-E
 
 **Agent**
@@ -31,7 +34,6 @@ A way to represent the *meaning* of a word or document as an array of numbers (c
 * *IT Analogy:* A highly advanced hashing algorithm, but instead of mapping for exact matches, it maps for semantic similarity.
 
 ---
-
 ## 🔤 F-L
 
 **Fine-Tuning**
@@ -54,7 +56,6 @@ A type of neural network trained on massive amounts of text to understand and ge
 * *IT Analogy:* Zipping a massive file (Quantization) and applying a small registry patch (LoRA).
 
 ---
-
 ## 🔤 M-R
 
 **Prompt Injection**
@@ -68,7 +69,6 @@ The architecture of connecting an LLM to your private data. The system searches 
 * *Read more:* [[RAG-Implementation]]
 
 ---
-
 ## 🔤 S-Z
 
 **Semantic Search**
@@ -99,13 +99,11 @@ A specialized database designed to store, index, and search Embeddings. It power
 * *Read more:* [[Prompt-Engineering-Playbook]]
 
 ---
-
-## 🔄 Changelog
+## Changelog
 
 - **2026-04-25**: Created initial enterprise glossary.
 
 ---
-
-## 💬 Questions or Feedback?
+## Questions or Feedback?
 
 Did an AI vendor use a confusing acronym on a sales call? Drop it in `#ai-ops` and we will translate it and add it to this list.

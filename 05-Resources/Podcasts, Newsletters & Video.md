@@ -4,11 +4,13 @@ some of these are on YouTube too, i don't really bother separating them. ⭐ rep
 **Researchers & Specialists**
     - [The Gradient](https://thegradientpub.substack.com/s/podcast) (Daniel Bashir) - great practitioner interviews
     - [Practical AI](https://changelog.com/practicalai) (Dan Whitenack) - good weekly conversations, a bit enterprisey
-    - [This Week in Machine Learning/AI](https://twimlai.com/podcast/twimlai/) (Sam Charrington) - one of the longest running practitioner interview shows
+    - [This Week in Machine Learning/AI](https://twimlai.com/podcast/twimlai/) (Sam Charrington) 
+    - one of the longest running practitioner interview shows
     - [Machine Learning Street Talk](https://www.youtube.com/c/MachineLearningStreetTalk) (Tim Scarfe) - great backlog of safety/philosophy researcher interviews
     - [Deep Papers](https://www.deeppapers.dev/) (Arize AI staff) - deep dives on today’s seminal AI papers and research.
     - [The Retort](https://retortai.com/) and [Interconnects Audio](https://podcast.interconnects.ai/) (Nathan Lambert) 
     - Topical coverage from [a RLHF researcher and an AI ethicist](https://retortai.com/people) (new)
+    
 **News/YouTubers**
     - ⭐ [Last Week in AI](https://lastweekin.ai/) quite long news recap but very consistent and well organized
     - ⭐[Yannic Kilcher](https://www.youtube.com/@YannicKilcher) - paper reviews and news recaps. less frequent these days.
@@ -16,12 +18,17 @@ some of these are on YouTube too, i don't really bother separating them. ⭐ rep
     - ⭐ [AI Breakdown](https://sites.libsyn.com/468519) - NLW bringing his recap skills over from the crypto world. daily news coverage, [quality video](https://www.youtube.com/channel/UCKelCK4ZaO6HeEI1KQjqzWA). (We have done [cross pods](https://www.latent.space/p/breakdown))
     - ⭐ [ThursdAI by @altryne](https://sub.thursdai.news/podcast?nthPub=531) - Twitter Spaces at least once a week on all the top AI news, esp good interviews with OSS innovators. Frequent collaborator with Latent Space eg on [Dev Day](https://www.latent.space/p/devday) and [Axolotl](https://www.latent.space/p/axolotl)
     - ⭐ [AI Explained](https://www.youtube.com/@ai-explained-) - short, nontechnical news recaps (NOT available as podcast... all the above are)
-    - [Samuel Albanie](https://youtube.com/@SamuelAlbanie1?si=i-SDzcaKgpImvFVT) professor with a youtube explaining papers. new but good
+    - [Samuel Albanie](https://youtube.com/@SamuelAlbanie1?si=i-SDzcaKgpImvFVT) professor with a YouTube explaining papers. new but good
     - [Eye on AI](https://open.spotify.com/show/5aFnCGDhpL5bGr2uHy4bB5) - Weekly analysis at the intersection of artificial intelligence and industry. (less technical but great guest backlog)
     - [AI Jason](https://youtu.be/pJwR5pv0_gs?si=BdXjIX1mEik-Lbpz) - new frequent ai project breakdowns channel
     - [Matthew Berman](https://www.youtube.com/@matthew_berman) - short explainer videos of AI Engineering related projects and news
-    - smaller creators worth noting: [Umar Jamil (standard concept teaching channel, very technical)](https://www.youtube.com/@umarjamilai?app=desktop) and [Daniel Bourke (livestream paper replication)](https://www.youtube.com/@danielbourkearxiv2821?app=desktop), [Efficient NLP (good short paper/technique explainers)](https://www.youtube.com/@EfficientNLP), [Trelis Research](https://www.youtube.com/watch?v=ae2lbmtTY5A)
+    - smaller creators worth noting: 
+	    - [Umar Jamil (standard concept teaching channel, very technical)](https://www.youtube.com/@umarjamilai?app=desktop)  
+	    - [Daniel Bourke (livestream paper replication)](https://www.youtube.com/@danielbourkearxiv2821?app=desktop)
+	    - [Efficient NLP (good short paper/technique explainers)](https://www.youtube.com/@EfficientNLP)
+	    - [Trelis Research](https://www.youtube.com/watch?v=ae2lbmtTY5A)
     - [/r/LocalLlama list has 23 recommendations](https://www.reddit.com/r/LocalLLaMA/comments/1atycgd/which_localllama_focused_yt_channels_do_you_follow/)
+    
 **Companies**
     - [The DeepMind Podcast](https://deepmind.google/discover/the-podcast/) - from GDM
     - [The Cognitive Revolution](https://www.cognitiverevolution.ai/) - Nathan Labenz - great new pod
@@ -31,6 +38,7 @@ some of these are on YouTube too, i don't really bother separating them. ⭐ rep
     - [Weaviate Podcast](https://podcasters.spotify.com/pod/show/weaviate/episodes/Erika-Cardenas--Roman-Grebennikov--and-Vsevolod-Goloviznin-on-Recommendation-and-Metarank---Pod-43-e2280u3) - good technical discussions
     - [NLP Highlights](https://www.listennotes.com/podcasts/nlp-highlights-allen-institute-for-f9Yt4vD_ger/) by the Allen Institute (infrequent but good pre 2020 backlog. Check episode 36)
     - [High Agency](https://podcasts.apple.com/us/podcast/high-agency-the-podcast-for-ai-builders/id1747605459) - Raza Habib (HumanLoop)
+    -
 **VCs**
     - ⭐ [No Priors](https://linktr.ee/nopriors) - Sarah Guo and Elad Gil
     - [MAD podcast](https://podcasts.apple.com/us/podcast/the-mad-podcast-with-matt-turck/id1686238724) - Matt Turck - new
