@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "06-LLM-Specific/Existential Cognition.md",
+                "file": "06-LLM-Specific/Philosophical-Questions-with-AI/GPT 5.5.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Existential Cognition"
+              "title": "GPT 5.5"
             }
           }
         ]
@@ -182,11 +182,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "877aadd9f5cd2eed",
+  "active": "9b394101fc969ad8",
   "lastOpenFiles": [
+    "06-LLM-Specific/Existential Cognition.md",
+    "06-LLM-Specific/Philosophical-Questions-with-AI/GPT 5.5.md",
     "06-LLM-Specific/Philosophical-Questions-with-AI",
     "06-LLM-Specific/OpenAI-ChatGPT/GPT 5.5.md",
-    "06-LLM-Specific/Existential Cognition.md",
     "05-Resources/Free-Courses-Certifications.md",
     "06-LLM-Specific/OpenAI-ChatGPT",
     "Templates/quick-reference.md",
