@@ -35,13 +35,11 @@
 *   [Building Systems with the ChatGPT API](https://www.deeplearning.ai/short-courses/building-systems-with-chatgpt/)
 *   [Generative AI with Large Language Models](https://www.deeplearning.ai/courses/generative-ai-with-llms/)
 *   [Mathematics for Machine Learning and Data Science Specialization](https://www.coursera.org/specializations/mathematics-for-machine-learning-and-data-science)
-
 ### University & Academic
 *   [Yann LeCun’s Deep Learning Course (NYU)](https://cds.nyu.edu/deep-learning/)
 *   [Geoffrey Hinton’s Deep Learning Lectures](https://www.youtube.com/playlist?list=PLLssT5z_DsK_gyrQ_biidwvPYCRNGI3iv)
 *   [Stanford Machine Learning Specialization](https://www.coursera.org/specializations/machine-learning-introduction)
 *   [Harvard CS50: Introduction to AI with Python](https://pll.harvard.edu/course/cs50s-introduction-artificial-intelligence-python)
-
 ### Corporate Skilling
 *   [Google Generative AI Learning Path](https://www.cloudskillsboost.google/paths/118)
 *   [Microsoft: AI for Beginners](https://microsoft.github.io/AI-For-Beginners/)
@@ -69,7 +67,7 @@
 *   **[TLDR AI](https://tldr.tech/ai)**
 *   **[The Rundown AI](https://www.therundown.ai/)**
 *   **[Bot Eat Brain](https://www.boteatbrain.com/)**
-### 🆕 Emerging / Edge Signals
+### Emerging / Edge Signals
 *   **[Supervised.news](https://www.supervised.news/)**
 *   **[NextWord](https://nextword.substack.com/)**
 *   **[AI Tidbits](https://www.aitidbits.ai/about)**
@@ -87,7 +85,7 @@
 *   **[TWiML (This Week in ML/AI)](https://twimlai.com/podcast/twimlai/)**
 *   **[High Agency](https://podcasts.apple.com/us/podcast/high-agency-the-podcast-for-ai-builders/id1747605459)**
 *   **[Gradient Dissent](https://www.youtube.com/playlist?list=PLD80i8An1OEEb1jP0sjEyiLG8ULRXFob_)**
-### 🆕 Research / Frontier Pods
+### Research / Frontier Pods
 *   **[The Gradient](https://thegradientpub.substack.com/s/podcast)** *(Researcher interviews)*
 *   **[Deep Papers](https://www.deeppapers.dev/)** *(Paper breakdowns)*
 *   **[Machine Learning Street Talk](https://www.youtube.com/c/MachineLearningStreetTalk)** *(Safety/philosophy)*
@@ -106,7 +104,7 @@
 *   **[Umar Jamil](https://www.youtube.com/@umarjamilai)**
 *   **[Samuel Albanie](https://youtube.com/@SamuelAlbanie1)**
 *   **[Efficient NLP](https://www.youtube.com/@EfficientNLP)**
-### 🆕 Advanced / Research Translators
+### Advanced / Research Translators
 *   **[Sasha Rush](https://www.youtube.com/@srush_nlp)**
 *   **[Yannic Kilcher](https://www.youtube.com/@YannicKilcher)**
 *   **[Trelis Research](https://www.youtube.com/watch?v=ae2lbmtTY5A)**
@@ -137,7 +135,7 @@
 *   **[@Smol_AI](https://x.com/Smol_AI)** *(Community signal aggregation)*
 *   **[@chiefaioffice](https://x.com/chiefaioffice)** *(Startup funding)*
 *   **[@AiBreakfast](https://x.com/AiBreakfast)** *(Weekly roundup)*
-### 🧠 Commentary / Technical
+### Commentary / Technical
 *   **[@CameronWolfe](https://x.com/CameronWolfe)** *(Deep ML concepts)*
 *   **[@omarsar0](https://x.com/omarsar0)** *(NLP + agents)*
 *   **[@SemiAnalysis_](https://x.com/SemiAnalysis_)** *(Infra economics)*
@@ -179,19 +177,17 @@
 *   **arXiv:** [cs.AI](https://arxiv.org/list/cs.AI/recent) | [stat.ML](https://arxiv.org/list/stat.ML/recent) |[cs.CV](https://arxiv.org/list/cs.CV/recent)
 
 ---
-## 🧩 How to Use This
+## How to Use This
 
-### 👔 For Executives
+### For Executives
 *   **Read:** The Batch, Import AI
 *   **Listen:** No Priors
 *   **Track:** AlphaSignal
-
-### 💻 For Engineers
+### For Engineers
 *   **Watch:** Karpathy, AI Jason
 *   **Read:** Ahead of AI, Interconnects
 *   **Build:** Weekly *(Mandatory)*
-
-### 🏗️ For Enterprise Architects / IT Leaders
+### For Enterprise Architects / IT Leaders
 *   **Track:** SemiAnalysis, AI Exchange
 *   **Use:** LMSYS, Artificial Analysis
 *   **Focus:** Cost, Capability, Integration
@@ -211,7 +207,7 @@
    - Model + tooling shifts weekly
 
 ---
-## 🧠 Meta Insight
+## Meta Insight
 
 AI advantage does not come from knowing more.
 
