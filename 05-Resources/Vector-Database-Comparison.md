@@ -1,16 +1,21 @@
+---
 title: "Vector Database Comparison"
-tags: [comparison, vendor, vector-db, rag, infrastructure]
+tags: 
+  - comparison
+  - vendor
+  - vector-db
+  - rag
+  - infrastructure
 last_updated: 2026-04-25
 review_frequency: quarterly
 related:
   - "[[RAG-Implementation]]"
   - "[[Advanced-RAG-Techniques]]"
 ---
-
 # Vector Database Comparison
 
-> **Last reviewed:** April 25, 2026  
-> **Next review:** July 25, 2026
+> **Last reviewed:** December 30, 2025  
+> **Next review:** June 30, 2026
 
 > **TL;DR for the Busy IT Pro:**  
 > If you already run PostgreSQL, just use the `pgvector` extension and save yourself the headache of managing new infrastructure. If you want a fully managed serverless API, use Pinecone. For local Python prototyping, use Chroma.
