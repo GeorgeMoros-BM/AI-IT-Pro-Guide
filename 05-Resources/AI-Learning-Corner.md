@@ -20,7 +20,7 @@
 | [No Priors](https://www.google.com/url?sa=E&q=https%3A%2F%2Flinktr.ee%2Fnopriors)                           | Podcast    | Best lens on AI business models and capital flows        | Strategy        |
 | [Ahead of AI (Raschka)](https://www.google.com/url?sa=E&q=https%3A%2F%2Fmagazine.sebastianraschka.com%2F)   | Newsletter | High-quality technical deep dives without fluff          | Engineering     |
 | [SemiAnalysis](https://www.google.com/url?sa=E&q=https%3A%2F%2Fwww.semianalysis.com%2F)                     | Newsletter | Ground truth on GPUs, cost curves, and infra constraints | Infrastructure  |
-| [AI Explained](https://www.google.com/url?sa=E&q=https%3A%2F%2Fwww.youtube.com%2F%40ai-explained-)          | YouTube    | Fast, neutral updates on models and capabilities         | Signal          |
+| [AI Explained](https://www.youtube.com/@aiexplained-official))                                              | YouTube    | Fast, neutral updates on models and capabilities         | Signal          |
 | [Yannic Kilcher](https://www.google.com/url?sa=E&q=https%3A%2F%2Fwww.youtube.com%2F%40YannicKilcher)        | YouTube    | Deep breakdowns of new papers and architectures          | Research        |
 | [AlphaSignal](https://www.google.com/url?sa=E&q=https%3A%2F%2Falphasignal.ai%2F)                            | Aggregator | Tracks new models, repos, and releases in real time      | Signal          |
 | [AI Jason](https://www.google.com/url?sa=E&q=https%3A%2F%2Fwww.youtube.com%2F%40AIJasonZ)                   | YouTube    | Practical “build” orientation (agents, workflows, tools) | Builder         |

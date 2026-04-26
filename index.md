@@ -3,7 +3,7 @@ title: Home
 layout: home
 nav_order: 1
 ---
-# 🚀 The IT Guru's Guide to Enterprise AI
+# 🚀 The IT Professional's Guide to Enterprise AI
 > **A living knowledge base for enterprise IT professionals navigating the AI revolution.**
 
 Welcome to the internal AI Playbook. This repository contains practical, role-based guides, architectural patterns, and real-world lessons learned for deploying AI securely and cost-effectively.
@@ -16,34 +16,30 @@ If you are looking for our curated learning resources and the "Essential 10" lis
 
 ---
 ## 🎯 Role-Based Fast Tracks
-Choose your role to get a curated path through this knowledge base:
-
-### 👨‍💻 For Software SMEs (Developers & Architects)
-*Learn how to build deterministic apps using probabilistic models.*
-1. [[Mental-Model-Reset]] - Stop treating LLMs like databases.
-2. [[Prompt-Engineering-Basics]] & [[Prompt-Engineering-Playbook]] - Force JSON outputs.
-3. [[API-Integration-Guide]] - Handle rate limits and streaming UX.
-4. [[Agents-and-Tool-Use]] - Give AI the ability to execute backend code.
-
-### 📊 For PowerBI & Data Analysts
-*Learn the safe way to use Text-to-SQL and data extraction.*
-1. [[AI-for-Data-Analysts]] - Stop letting AI hallucinate math.
-2. [[PowerBI-and-Fabric-AI]] - Configure semantic models for Copilot.
-3. [[Lesson-PDF-Extraction]] - How to extract messy data perfectly.
-
+*Choose your role to get a curated path through this knowledge base:*
 ### 🔧 For Infrastructure & InfoSec
 *Deploy, scale, and secure AI systems.*
 1. [[Security-and-Privacy]] - Defend against Prompt Injection and protect PII.
 2. [[Local-vs-Cloud-Architecture]] - When to use APIs vs. bare-metal GPUs.
 3. [[Model-Evaluation-and-TCO]] - Ignore vendor hype; calculate true costs.
 4. [[Vector-Database-Comparison]] - Where to store your embeddings.
-
 ### 💼 For Business Integration Leaders
 *Drive adoption, manage risk, and demonstrate ROI.*
 1. [[Managing-Shadow-AI]] - Why blocking public AI doesn't work.
 2. [[Starter-Projects-and-Quick-Wins]] - The 4 high-ROI internal projects to build first.
 3. [[Governance-and-Risk]] - Audit trails and vendor assessments.
 4. [[Change-Management-and-Adoption]] - Getting teams to actually use the tools.
+### 👨‍💻 For Software SMEs (Developers & Architects)
+*Learn how to build deterministic apps using probabilistic models.*
+1. [[Mental-Model-Reset]] - Stop treating LLMs like databases.
+2. [[Prompt-Engineering-Basics]] & [[Prompt-Engineering-Playbook]] - Force JSON outputs.
+3. [[API-Integration-Guide]] - Handle rate limits and streaming UX.
+4. [[Agents-and-Tool-Use]] - Give AI the ability to execute backend code.
+### 📊 For PowerBI & Data Analysts
+*Learn the safe way to use Text-to-SQL and data extraction.*
+1. [[AI-for-Data-Analysts]] - Stop letting AI hallucinate math.
+2. [[PowerBI-and-Fabric-AI]] - Configure semantic models for Copilot.
+3. [[Lesson-PDF-Extraction]] - How to extract messy data perfectly.
 
 ---
 ## 📚 Master Table of Contents

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "05-Resources/AI-Learning-Corner.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "AI-Learning-Corner"
             }
           }
         ]
@@ -185,6 +185,8 @@
   "active": "9b394101fc969ad8",
   "lastOpenFiles": [
     "index.md",
+    "_config.yml.md",
+    "03-Enterprise-Concerns/Change-Management-and-Adoption.md",
     "05-Resources/AI-Learning-Corner.md",
     "05-Resources/Podcasts, Newsletters & Video.md",
     "04-Advanced-Topics/local-llm-workstation-setup-2026.md",
@@ -211,8 +213,6 @@
     "05-Resources/Enterprise-AI-Glossary.md",
     "05-Resources/Agentic-AI Use Cases.md",
     "04-Advanced-Topics/Evaluation-and-Testing.md",
-    "04-Advanced-Topics/Agents-and-Tool-Use (legacy).md",
-    "04-Advanced-Topics/Agents & Tool Use (Function Calling).md",
     "05-Resources/Enterprise Use Cases in the Wild",
     "05-Resources/06-LLM-Specific/Anthropic-Claude",
     "05-Resources/06-LLM-Specific"
