@@ -14,8 +14,7 @@ related:
   - "[[Agents-and-Tool-Use]]"
   - "[[RAG-Implementation]]"
 ---
-
-# Evaluation & Testing (Evals)
+# Evaluation & Testing
 
 > **TL;DR for the Busy IT Pro:**  
 > If you are not measuring AI outputs, you are not deploying a system—you are gambling. Evals turn AI from a demo into a reliable production capability.

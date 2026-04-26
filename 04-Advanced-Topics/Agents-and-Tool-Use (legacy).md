@@ -1,5 +1,11 @@
+---
 title: Agents & Tool Use (Function Calling)
-tags:[chapter, agents, tool-use, development, advanced]
+tags: 
+  - chapter
+  - agents
+  - tool-use
+  - development
+  - advanced
 difficulty: advanced
 last_updated: 2026-04-24
 time_to_read: 25 minutes

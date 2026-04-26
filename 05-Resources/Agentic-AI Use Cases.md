@@ -1,4 +1,8 @@
-Enterprise use cases showcasing impactful applications of agentic AI from the world's top organizations - this list began in 2024 and having grown so long, it would be hard to read in one go without the benefit of an LLM. We thought it would be fitting to enlist the help of AI to get some interesting perspectives. Our team then reviewed the output and selected our five favorites, refining them with our own input. Here are those, which actually nicely reflect many of the thousands of conversations we’ve had about gen AI over the past two years:
+**How Leading Organizations Are Deploying Agentic AI**
+
+This collection showcases impactful applications of agentic AI from the world's top organizations. What began as a modest list in 2024 has grown so extensive that reading it in one sitting would be challenging—even for humans.
+
+So we did something fitting: we enlisted AI itself to analyze the cases and surface interesting patterns. Our team reviewed the AI's output and selected five standout perspectives, refining them with our own insights. The result? Five themes that nicely capture the thousands of conversations we've had about generative AI over the past two years.
 
 1. **The shift from assistants to agentic teams:** The most significant trend is the transition from AI as a passive assistant to AI as an active part of the team, where specialized agents can orchestrate entire workflows. For example, supply chain agents are talking to compliance agents, which then trigger financial forecasting agents — all autonomously. The business opportunity lies in building the management and governance frameworks for these agentic task forces.
     
