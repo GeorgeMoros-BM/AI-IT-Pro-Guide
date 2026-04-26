@@ -12,7 +12,7 @@ Welcome to the internal AI Playbook. This repository contains practical, role-ba
 ## 🧭 Start Here
 If you only have 5 minutes, read the **[[Executive-Summary]]** to understand our enterprise strategy, the risks of shadow AI, and the immediate ROI opportunities.
 
-If you are looking for our curated learning resources and the "Essential 10" list of podcasts/newsletters, visit the **[[AI-Learning-Corner]]**.
+If you are looking for our curated learning resources and the "Essential 10" list of podcasts/newsletters, visit the **[[Learning-Corner]]**.
 
 ---
 ## 🎯 Role-Based Fast Tracks
