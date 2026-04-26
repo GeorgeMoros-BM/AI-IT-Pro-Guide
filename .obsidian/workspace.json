@@ -184,8 +184,9 @@
   },
   "active": "9b394101fc969ad8",
   "lastOpenFiles": [
-    "Templates/chapter-template.md",
+    "_daily-updates/2026-04-24-update.md",
     "_daily-updates/2026-04-26.md",
+    "Templates/chapter-template.md",
     "Templates/Weekly-Update.md",
     "05-Resources/06-LLM-Specific/Anthropic-Claude/Claude Tutorials.md",
     "Templates/vendor-comparison.md",
@@ -209,7 +210,6 @@
     "02-Practical-Implementation/Tip-Prompt-Caching.md",
     "02-Practical-Implementation/RAG-Implementation.md",
     "02-Practical-Implementation/PowerBI-and-Fabric-AI.md",
-    "02-Practical-Implementation/Lesson-PDF-Extraction.md",
     "05-Resources/Enterprise Use Cases in the Wild",
     "05-Resources/06-LLM-Specific/Anthropic-Claude",
     "05-Resources/06-LLM-Specific"
