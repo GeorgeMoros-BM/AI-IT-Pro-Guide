@@ -12,18 +12,18 @@
 ## 🏆 The Essential 10
 *If you only have 2 hours a week to dedicate to AI learning, ignore everything else and pick from this list.*
 
-| Resource                                                                                                    | Type       | Why It Makes the Cut                                     | Layer           |
-| ----------------------------------------------------------------------------------------------------------- | ---------- | -------------------------------------------------------- | --------------- |
-| [The Batch (Andrew Ng)](https://www.google.com/url?sa=E&q=https%3A%2F%2Fwww.deeplearning.ai%2Fthe-batch%2F) | Newsletter | Clean, executive-ready synthesis of key developments     | Strategy        |
-| [Import AI (Jack Clark)](https://www.google.com/url?sa=E&q=https%3A%2F%2Fimportai.substack.com%2F)          | Newsletter | Policy + frontier signals from inside the ecosystem      | Strategy / Risk |
-| [Latent Space](https://www.google.com/url?sa=E&q=https%3A%2F%2Flatent.space%2F)                             | Podcast    | Direct access to builders shaping the ecosystem          | Builder         |
-| [No Priors](https://www.google.com/url?sa=E&q=https%3A%2F%2Flinktr.ee%2Fnopriors)                           | Podcast    | Best lens on AI business models and capital flows        | Strategy        |
-| [Ahead of AI (Raschka)](https://www.google.com/url?sa=E&q=https%3A%2F%2Fmagazine.sebastianraschka.com%2F)   | Newsletter | High-quality technical deep dives without fluff          | Engineering     |
-| [SemiAnalysis](https://www.google.com/url?sa=E&q=https%3A%2F%2Fwww.semianalysis.com%2F)                     | Newsletter | Ground truth on GPUs, cost curves, and infra constraints | Infrastructure  |
-| [AI Explained](https://www.youtube.com/@aiexplained-official))                                              | YouTube    | Fast, neutral updates on models and capabilities         | Signal          |
-| [Yannic Kilcher](https://www.google.com/url?sa=E&q=https%3A%2F%2Fwww.youtube.com%2F%40YannicKilcher)        | YouTube    | Deep breakdowns of new papers and architectures          | Research        |
-| [AlphaSignal](https://www.google.com/url?sa=E&q=https%3A%2F%2Falphasignal.ai%2F)                            | Aggregator | Tracks new models, repos, and releases in real time      | Signal          |
-| [AI Jason](https://www.google.com/url?sa=E&q=https%3A%2F%2Fwww.youtube.com%2F%40AIJasonZ)                   | YouTube    | Practical “build” orientation (agents, workflows, tools) | Builder         |
+| Resource                                                         | Type       | Why It Makes the Cut                                     | Layer           |
+| ---------------------------------------------------------------- | ---------- | -------------------------------------------------------- | --------------- |
+| [The Batch (Andrew Ng)](https://www.deeplearning.ai/the-batch/)) | Newsletter | Clean, executive-ready synthesis of key developments     | Strategy        |
+| [Import AI (Jack Clark)](https://importai.substack.com/)         | Newsletter | Policy + frontier signals from inside the ecosystem      | Strategy / Risk |
+| [Latent Space](https://www.latent.space/)                        | Podcast    | Direct access to builders shaping the ecosystem          | Builder         |
+| [No Priors](https://linktr.ee/nopriors)                          | Podcast    | Best lens on AI business models and capital flows        | Strategy        |
+| [Ahead of AI (Raschka)](https://magazine.sebastianraschka.com/)  | Newsletter | High-quality technical deep dives without fluff          | Engineering     |
+| [SemiAnalysis](https://semianalysis.com/)                        | Newsletter | Ground truth on GPUs, cost curves, and infra constraints | Infrastructure  |
+| [AI Explained](https://www.youtube.com/@aiexplained-official))   | YouTube    | Fast, neutral updates on models and capabilities         | Signal          |
+| [Yannic Kilcher](https://www.youtube.com/@YannicKilcher)         | YouTube    | Deep breakdowns of new papers and architectures          | Research        |
+| [AlphaSignal](https://alphasignal.ai/)                           | Aggregator | Tracks new models, repos, and releases in real time      | Signal          |
+| [AI Jason](https://www.youtube.com/@AIJasonZ)                    | YouTube    | Practical “build” orientation (agents, workflows, tools) | Builder         |
 
 ---
 ## 🎓 Free Foundational Courses & Certifications

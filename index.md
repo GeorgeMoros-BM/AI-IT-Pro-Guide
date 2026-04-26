@@ -115,4 +115,4 @@ Check the `_weekly-updates` folder for the latest signals, model drops, and arch
 👉 **Latest Update:** [[2026-04-26]]
 
 ---
-*Built with 🧠 by George Moros at Strategex.*
+*Built with ❤️ by George Moros at Strategex.*
