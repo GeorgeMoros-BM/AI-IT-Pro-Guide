@@ -80,8 +80,7 @@ When models span multiple GPUs (tensor parallelism), inter-GPU communication bec
 Tensor parallelism splits model layers across GPUs. Every forward/backward pass requires synchronizing activations and gradients. Insufficient bandwidth creates GPU idle time as they wait for data transfers, wasting expensive compute cycles.
 
 ---
-
-## 🛠️ Hands-On Implementation
+## Hands-On Implementation
 
 ### Hardware Specifications (April 2026 Reference Build)
 
@@ -233,7 +232,6 @@ Each GPU gets dedicated PCIe 5.0 x16 lanes—no sharing, no switching, no bandwi
 **Cost:** ~$625 CAD / $460 USD
 
 ---
-
 ### Software Stack Setup (April 2026)
 
 #### Operating System: Ubuntu 24.04 LTS
@@ -352,7 +350,6 @@ pip install peft
 ```
 
 ---
-
 ### Step 2: Validating Your Setup
 
 #### GPU Bandwidth Test
@@ -444,7 +441,6 @@ Rank 3: Result=6, Expected=6
 ```
 
 ---
-
 ### Step 3: Running Your First LLM
 
 #### Simple Inference with vLLM
@@ -520,8 +516,7 @@ curl http://localhost:8000/v1/chat/completions \
 ```
 
 ---
-
-## 💡 Tips & Tricks
+## Tips & Tricks
 
 > [!tip] Quick Win: Power Mode Profiles
 > Create systemd services for different performance profiles:
@@ -583,8 +578,7 @@ curl http://localhost:8000/v1/chat/completions \
 > ```
 
 ---
-
-## 📖 Lessons Learned
+## Lessons Learned
 
 > [!example] War Story: The 24-Hour Model Corruption
 > **What happened:** We ran a 3-day fine-tuning job on a 34B model. After 24 hours, validation loss went to NaN. Investigation revealed a single-bit flip in the embedding layer due to non-ECC RAM on the first build.
@@ -614,8 +608,7 @@ curl http://localhost:8000/v1/chat/completions \
 > - Subscribe to release notes: vLLM, PyTorch, Transformers
 
 ---
-
-## ✅ Best Practices Checklist
+## Best Practices Checklist
 
 - [ ] **Thermal management validated:** GPUs stay below 80°C under sustained load (use `nvidia-smi dmon -s pucvmet`)
 - [ ] **PCIe lanes verified:** Each GPU runs at PCIe 5.0 x16 electrical (not x8 or x4)
@@ -628,8 +621,7 @@ curl http://localhost:8000/v1/chat/completions \
 - [ ] **Model versioning:** Checkpoints tagged with Git commit, dataset version, hyperparameters
 
 ---
-
-## 🚫 Anti-Patterns (Don't Do This)
+## Anti-Patterns (Don't Do This)
 
 | ❌ Don't | ✅ Do Instead | Why |
 |---------|--------------|-----|
@@ -642,8 +634,7 @@ curl http://localhost:8000/v1/chat/completions \
 | Use all 96GB VRAM for model weights | Reserve 10-15% for KV cache and activations | OOM errors mid-inference are unrecoverable, require restart |
 
 ---
-
-## 🔗 Related Topics
+## Related Topics
 
 - [[Quantization Strategies for LLMs]] - Trading precision for speed/capacity
 - [[Model Parallelism Deep Dive]] - Tensor, pipeline, and data parallelism explained
@@ -652,8 +643,7 @@ curl http://localhost:8000/v1/chat/completions \
 - [[GPUDirect Storage Setup]] - Direct NVMe-to-GPU data paths (advanced)
 
 ---
-
-## 📚 Further Reading
+## Further Reading
 
 ### Hardware & Architecture
 - [NVIDIA RTX 6000 Pro Blackwell Technical Brief](https://www.nvidia.com/en-us/products/workstations/professional-desktop-gpus/rtx-pro-6000/) - Official specs, benchmarks, and architecture deep dive
@@ -676,8 +666,7 @@ curl http://localhost:8000/v1/chat/completions \
 - [vLLM Performance Benchmarks](https://blog.vllm.ai/) - Throughput and latency numbers for capacity planning
 
 ---
-
-## 🎯 Role-Specific Use Cases
+## Role-Specific Use Cases
 
 ### For Software SMEs: Development & Integration
 
@@ -793,8 +782,7 @@ Savings: $47,800 (37% lower)
 - Predictable costs (no usage spikes)
 
 ---
-
-## 🔄 Changelog
+## Changelog
 
 - **2026-04-26**: Created with April 2026 hardware/software updates
   - Updated GPU specs: RTX 6000 Blackwell (96GB GDDR7, 600W/300W variants)
@@ -805,8 +793,7 @@ Savings: $47,800 (37% lower)
   - Added: GPUDirect Storage status, thermal management, anti-patterns
 
 ---
-
-## 💬 Questions or Feedback?
+## Questions or Feedback?
 
 **For internal teams:** Slack #ai-infrastructure or email ai-ops@company.com
 
@@ -821,8 +808,7 @@ Savings: $47,800 (37% lower)
 - Motherboard: GIGABYTE RMA process
 
 ---
-
-## 🔐 Security & Compliance Considerations
+## Security & Compliance Considerations
 
 ### Data Sovereignty
 ✅ **Meets requirements for:**
@@ -874,8 +860,7 @@ server {
 ```
 
 ---
-
-## ⚡ Performance Optimization Guide
+## Performance Optimization Guide
 
 ### Quantization Trade-offs
 
