@@ -32,9 +32,9 @@ If you are looking for our curated learning resources and the "Essential 10" lis
 ### 👨‍💻 For Software SMEs (Developers & Architects)
 *Learn how to build deterministic apps using probabilistic models.*
 1. [[Mental-Model-Reset]] - Stop treating LLMs like databases.
-2. [[Prompt-Engineering-Basics]] & [[Prompt-Engineering-Playbook]] - Force JSON outputs.
+2. [[Prompt-Engineering-Basics]] - Force JSON outputs.
 3. [[API-Integration-Guide]] - Handle rate limits and streaming UX.
-4. [[Agents-and-Tool-Use]] - Give AI the ability to execute backend code.
+4. [[Agents & Tool Use (Function Calling)]] - Give AI the ability to execute backend code.
 ### 📊 For PowerBI & Data Analysts
 *Learn the safe way to use Text-to-SQL and data extraction.*
 1. [[AI-for-Data-Analysts]] - Stop letting AI hallucinate math.

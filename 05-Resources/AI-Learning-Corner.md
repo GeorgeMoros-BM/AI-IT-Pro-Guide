@@ -170,6 +170,10 @@
 ---
 ## 🔬 Research Hubs & Communities
 
+### **Top AI Labs & Research Blogs**
+
+- [OpenAI](https://www.google.com/url?sa=E&q=https%3A%2F%2Fopenai.com%2F) | [DeepMind](https://www.google.com/url?sa=E&q=https%3A%2F%2Fdeepmind.com%2F) | [Google Research](https://www.google.com/url?sa=E&q=https%3A%2F%2Fresearch.googleblog.com%2F) | [AWS AI](https://www.google.com/url?sa=E&q=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fai%2F)
+- [Meta AI (FAIR)](https://www.google.com/url?sa=E&q=https%3A%2F%2Fai.facebook.com%2F) | [Microsoft Research](https://www.google.com/url?sa=E&q=https%3A%2F%2Fwww.microsoft.com%2Fen-us%2Fresearch%2F) |[Partnership on AI](https://www.google.com/url?sa=E&q=https%3A%2F%2Fwww.partnershiponai.org%2F)
 ### Developer Communities
 *   **Reddit:** [ML](https://www.reddit.com/r/MachineLearning),[LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/)
 *   **GitHub:**[ML](https://github.com/search?q=topic%3Amachine-learning&type=Repositories) /[Deep Learning](https://github.com/search?q=topic%3Adeep-learning&type=Repositories) / [NLP Repos](https://github.com/search?q=topic%3Anlp&type=Repositories)
