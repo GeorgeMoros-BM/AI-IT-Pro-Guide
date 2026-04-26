@@ -1,117 +1,223 @@
 # 🧠 AI Learning Corner & Resources
 
-> 💡 **Welcome to the Learning Corner.** The AI landscape moves too fast to read everything. This is a curated, high-signal list of the best courses, newsletters, podcasts, video channels, and research hubs to keep you and the team up to speed.
+> 💡 **Welcome to the Learning Corner.** The AI landscape moves too fast to read everything. This is a curated, high-signal list of the best courses, newsletters, podcasts, video channels, and research hubs to keep you and your team up to speed. 
+> 
+> This is not just a resource list. It is a **multi-layer AI awareness system**:
+> - **Foundation** → Learn
+> - **Application** → Build
+> - **Signal** → Stay current
+> - **Frontier** → See what’s coming next
+
+---
+## 🏆 The Essential 10
+*If you only have 2 hours a week to dedicate to AI learning, ignore everything else and pick from this list.*
+
+| Resource                                                                                                    | Type       | Why It Makes the Cut                                     | Layer           |
+| ----------------------------------------------------------------------------------------------------------- | ---------- | -------------------------------------------------------- | --------------- |
+| [The Batch (Andrew Ng)](https://www.google.com/url?sa=E&q=https%3A%2F%2Fwww.deeplearning.ai%2Fthe-batch%2F) | Newsletter | Clean, executive-ready synthesis of key developments     | Strategy        |
+| [Import AI (Jack Clark)](https://www.google.com/url?sa=E&q=https%3A%2F%2Fimportai.substack.com%2F)          | Newsletter | Policy + frontier signals from inside the ecosystem      | Strategy / Risk |
+| [Latent Space](https://www.google.com/url?sa=E&q=https%3A%2F%2Flatent.space%2F)                             | Podcast    | Direct access to builders shaping the ecosystem          | Builder         |
+| [No Priors](https://www.google.com/url?sa=E&q=https%3A%2F%2Flinktr.ee%2Fnopriors)                           | Podcast    | Best lens on AI business models and capital flows        | Strategy        |
+| [Ahead of AI (Raschka)](https://www.google.com/url?sa=E&q=https%3A%2F%2Fmagazine.sebastianraschka.com%2F)   | Newsletter | High-quality technical deep dives without fluff          | Engineering     |
+| [SemiAnalysis](https://www.google.com/url?sa=E&q=https%3A%2F%2Fwww.semianalysis.com%2F)                     | Newsletter | Ground truth on GPUs, cost curves, and infra constraints | Infrastructure  |
+| [AI Explained](https://www.google.com/url?sa=E&q=https%3A%2F%2Fwww.youtube.com%2F%40ai-explained-)          | YouTube    | Fast, neutral updates on models and capabilities         | Signal          |
+| [Yannic Kilcher](https://www.google.com/url?sa=E&q=https%3A%2F%2Fwww.youtube.com%2F%40YannicKilcher)        | YouTube    | Deep breakdowns of new papers and architectures          | Research        |
+| [AlphaSignal](https://www.google.com/url?sa=E&q=https%3A%2F%2Falphasignal.ai%2F)                            | Aggregator | Tracks new models, repos, and releases in real time      | Signal          |
+| [AI Jason](https://www.google.com/url?sa=E&q=https%3A%2F%2Fwww.youtube.com%2F%40AIJasonZ)                   | YouTube    | Practical “build” orientation (agents, workflows, tools) | Builder         |
 
 ---
 ## 🎓 Free Foundational Courses & Certifications
-*Whether you are a beginner or a senior developer, these are the gold-standard courses for learning AI.*
-### **DeepLearning.AI (Andrew Ng)**
-*   [Generative AI for Everyone](https://www.deeplearning.ai/courses/generative-ai-for-everyone/) - *Best for business leaders.*
+*Gold-standard structured learning.*
+### DeepLearning.AI (Andrew Ng)
+*   [Generative AI for Everyone](https://www.deeplearning.ai/courses/generative-ai-for-everyone/) *(Business baseline)*
 *   [ChatGPT Prompt Engineering for Developers](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)
-*   [LangChain: Chat With Your Data](https://www.deeplearning.ai/short-courses/langchain-chat-with-your-data/) & [LLM App Development](https://learn.deeplearning.ai/langchain)
+*   [LangChain: Chat With Your Data](https://www.deeplearning.ai/short-courses/langchain-chat-with-your-data/) / [LLM App Dev](https://learn.deeplearning.ai/langchain)
 *   [Building Systems with the ChatGPT API](https://www.deeplearning.ai/short-courses/building-systems-with-chatgpt/)
 *   [Generative AI with Large Language Models](https://www.deeplearning.ai/courses/generative-ai-with-llms/)
 *   [Mathematics for Machine Learning and Data Science Specialization](https://www.coursera.org/specializations/mathematics-for-machine-learning-and-data-science)
 
-### **University & Academic Courses**
-*   [Yann LeCun’s Deep Learning Course (NYU)](https://cds.nyu.edu/deep-learning/) - *15-week free course.*
-*   [Geoff Hinton's Deep Learning Course](https://www.youtube.com/playlist?list=PLLssT5z_DsK_gyrQ_biidwvPYCRNGI3iv) - *Taught by the "Godfather of AI".*
-*   [Stanford: Machine Learning Specialization](https://www.coursera.org/specializations/machine-learning-introduction) & [AI For Everyone](https://www.coursera.org/learn/ai-for-everyone)
+### University & Academic
+*   [Yann LeCun’s Deep Learning Course (NYU)](https://cds.nyu.edu/deep-learning/)
+*   [Geoffrey Hinton’s Deep Learning Lectures](https://www.youtube.com/playlist?list=PLLssT5z_DsK_gyrQ_biidwvPYCRNGI3iv)
+*   [Stanford Machine Learning Specialization](https://www.coursera.org/specializations/machine-learning-introduction)
 *   [Harvard CS50: Introduction to AI with Python](https://pll.harvard.edu/course/cs50s-introduction-artificial-intelligence-python)
 
-### **Corporate Skilling**
-*   [Google Generative AI Learning Path](https://www.cloudskillsboost.google/paths/118) *(9 Free Courses)*
-*   [Microsoft: AI for Beginners](https://microsoft.github.io/AI-For-Beginners/) *(24 module curriculum)*
-*   [Nvidia: Building A Brain in 10 Minutes](https://courses.nvidia.com/courses/course-v1:DLI+T-FX-01+V1/) &[Getting Started with Video AI apps](https://courses.nvidia.com/courses/course-v1:DLI+S-RX-02+V2/)
+### Corporate Skilling
+*   [Google Generative AI Learning Path](https://www.cloudskillsboost.google/paths/118)
+*   [Microsoft: AI for Beginners](https://microsoft.github.io/AI-For-Beginners/)
+*   [NVIDIA DLI Courses](https://courses.nvidia.com/courses/course-v1:DLI+T-FX-01+V1/)
 
 ---
 ## 📰 Essential Newsletters
-*The highest-signal reads for your inbox. Pick 1 or 2 based on your role.*
-### **Leaders & Big Picture**
-*   ⭐ **[The Batch](https://www.deeplearning.ai/the-batch/) by Andrew Ng:** Picks 3 things each week and summarizes them approachably. (Best overall starting point).
-*   **[Import AI](https://importai.substack.com/) by Jack Clark:** Great coverage of top news, with a focus on policy and safety.
-*   **[AI Snake Oil](https://www.aisnakeoil.com/) by Arvind Narayanan:** Dedicated to dispelling hype and clarifying the limits of AI.
-
-### **Engineering & Deep Dives**
-*   ⭐ **[Ahead of AI](https://magazine.sebastianraschka.com/) by Sebastian Raschka:** Deeply technical ML recaps and architecture deep dives.
-*   ⭐ **[SemiAnalysis](https://www.semianalysis.com/) by Dylan Patel:** The absolute best resource for AI hardware, GPUs, and semiconductor costs.
-*   **[Interconnects](https://www.interconnects.ai/) by Nathan Lambert:** High-quality commentary from an RLHF researcher.
-*   **[Davis Summarizes Papers](https://dblalock.substack.com/):** An incredible, developer-friendly roundup of the week's best ML arXiv submissions.
-*   **[Data Machina](https://datamachina.substack.com/) by Carlos:** Deep dives into machine learning.
-*   **[PulseMCP](https://www.pulsemcp.com/newsletter):** The official registry and newsletter for the Model Context Protocol (MCP).
-*   **[Eugene Yan](https://eugeneyan.com/writing/) &[Lilian Weng](https://lilianweng.github.io/):** Infrequent posts, but absolute gold-standard technical deep dives when they do publish.
-
-### **Aggregators (Fast daily/weekly reads)**
-*   **[Ben's Bites](https://bensbites.beehiiv.com/):** Daily roundup of all the little stuff announced + building tips.
-*   **[TheSequence](https://thesequence.substack.com/about):** Educational, technical breakdowns of new AI concepts.
-*   **[The AI Exchange](https://theaiexchange.beehiiv.com/) by Rachel Woods:** Great operational and business use cases.
-*   **[AlphaSignal](https://alphasignal.ai/) & [TLDR AI](https://tldr.tech/ai):** Great for tracking new models and trending developer repos.
-*   **[The Rundown AI](https://www.therundown.ai/) & [Bot Eat Brain](https://www.boteatbrain.com/):** Fast, consumer-friendly daily news updates.
+*High-signal written intelligence.*
+### Leaders & Big Picture
+*   **[The Batch](https://www.deeplearning.ai/the-batch/)** by Andrew Ng
+*   **[Import AI](https://importai.substack.com/)** by Jack Clark
+*   **[AI Snake Oil](https://www.aisnakeoil.com/)** by Arvind Narayanan
+### Engineering & Deep Dives
+*   **[Ahead of AI](https://magazine.sebastianraschka.com/)** by Sebastian Raschka
+*   **[SemiAnalysis](https://www.semianalysis.com/)** (Infra + GPUs)
+*   **[Interconnects](https://www.interconnects.ai/)** (RLHF & Alignment)
+*   **[Davis Summarizes Papers](https://dblalock.substack.com/)** 
+*   **[Data Machina](https://datamachina.substack.com/)** 
+*   **[PulseMCP](https://www.pulsemcp.com/newsletter)** (Model Context Protocol)
+*   **[Eugene Yan](https://eugeneyan.com/writing/)** & **[Lilian Weng](https://lilianweng.github.io/)**
+### Aggregators
+*   **[Ben’s Bites](https://bensbites.beehiiv.com/)**
+*   **[TheSequence](https://thesequence.substack.com/about)**
+*   **[AlphaSignal](https://alphasignal.ai/)**
+*   **[TLDR AI](https://tldr.tech/ai)**
+*   **[The Rundown AI](https://www.therundown.ai/)**
+*   **[Bot Eat Brain](https://www.boteatbrain.com/)**
+### 🆕 Emerging / Edge Signals
+*   **[Supervised.news](https://www.supervised.news/)**
+*   **[NextWord](https://nextword.substack.com/)**
+*   **[AI Tidbits](https://www.aitidbits.ai/about)**
+*   **[Generally Intelligent](https://generallyintelligent.substack.com/)**
+*   **[CodingWithIntelligence](https://codingwithintelligence.com/)**
+*   **[NeatPrompts](https://www.neatprompts.com/subscribe)**
 
 ---
-## 🎧 Podcasts (For the Commute)
-*Look these up on Spotify, Apple Podcasts, or YouTube.*
-### **Deep Dives, Builders & Interviews**
-*   ⭐ **[Latent Space](https://latent.space/):** Amazing interviews with the actual AI engineers building today's top tools.
-*   ⭐ **[The Cognitive Revolution](https://www.cognitiverevolution.ai/):** Nathan Labenz hosts highly cerebral, deep-dive interviews with founders and researchers.
-*   **[No Priors](https://linktr.ee/nopriors) (Sarah Guo & Elad Gil):** The best pod for understanding the business, VC, and startup side of AI.
-*   **[TWiML (This Week in Machine Learning)](https://twimlai.com/podcast/twimlai/):** One of the longest-running practitioner interview shows.
-*   **[High Agency](https://podcasts.apple.com/us/podcast/high-agency-the-podcast-for-ai-builders/id1747605459) (Raza Habib):** The podcast for AI builders (by HumanLoop).
-*   **[Gradient Dissent](https://www.youtube.com/playlist?list=PLD80i8An1OEEb1jP0sjEyiLG8ULRXFob_):** Weights & Biases' podcast featuring great technical discussions.
+## 🎧 Podcasts 
 
-### **News & Recaps**
-*   ⭐ **[Last Week in AI](https://lastweekin.ai/):** A highly consistent and well-organized weekly news recap.
-*   **[The AI Breakdown](https://sites.libsyn.com/468519):** Daily, bitesize news coverage.
-*   **[ThursdAI](https://sub.thursdai.news/):** Great weekly wrap-ups, especially good for open-source AI news.
-*   **[Practical AI](https://changelog.com/practicalai):** Good weekly conversations, very enterprise-focused.
+### Deep Dives & Builders
+*   **[Latent Space](https://latent.space/)**
+*   **[The Cognitive Revolution](https://www.cognitiverevolution.ai/)**
+*   **[No Priors](https://linktr.ee/nopriors)**
+*   **[TWiML (This Week in ML/AI)](https://twimlai.com/podcast/twimlai/)**
+*   **[High Agency](https://podcasts.apple.com/us/podcast/high-agency-the-podcast-for-ai-builders/id1747605459)**
+*   **[Gradient Dissent](https://www.youtube.com/playlist?list=PLD80i8An1OEEb1jP0sjEyiLG8ULRXFob_)**
+### 🆕 Research / Frontier Pods
+*   **[The Gradient](https://thegradientpub.substack.com/s/podcast)** *(Researcher interviews)*
+*   **[Deep Papers](https://www.deeppapers.dev/)** *(Paper breakdowns)*
+*   **[Machine Learning Street Talk](https://www.youtube.com/c/MachineLearningStreetTalk)** *(Safety/philosophy)*
+*   **[Interconnects Audio](https://podcast.interconnects.ai/)**
+### News & Recaps
+*   **[Last Week in AI](https://lastweekin.ai/)**
+*   **[The AI Breakdown](https://sites.libsyn.com/468519)**
+*   **[ThursdAI](https://sub.thursdai.news/)** *(⚠️ High-signal OSS + Spaces)*
+*   **[Practical AI](https://changelog.com/practicalai)**
 
 ---
 ## 📺 YouTube Channels
-*For visual learners, paper breakdowns, and coding tutorials.*
-### **Fundamentals & Paper Breakdowns**
-*   ⭐ **[Andrej Karpathy](https://www.youtube.com/watch?v=zjkBMFhNj_g):** His "Zero to Hero" playlist is the best technical foundation for neural networks on the internet.
-*   **[Umar Jamil](https://www.youtube.com/@umarjamilai):** A highly technical, standard concept-teaching channel.
-*   **[Samuel Albanie](https://youtube.com/@SamuelAlbanie1):** Professor offering excellent, digestible paper explanations.
-*   **[Efficient NLP](https://www.youtube.com/@EfficientNLP):** Good short paper and technique explainers.
 
-### **Project Building & News**
-*   ⭐ **[AI Explained](https://www.youtube.com/@ai-explained-):** Concise, non-technical, and highly unbiased news recaps.
-*   **[Matthew Berman](https://www.youtube.com/@matthew_berman):** Explainer videos of AI Engineering projects, local models, and news.
-*   **[AI Jason](https://youtu.be/pJwR5pv0_gs):** Frequent, high-quality breakdowns of how to actually build AI projects and agents.
-*   **[Yannic Kilcher](https://www.youtube.com/@YannicKilcher):** Deep dives into new models and ML engineering news.
-
----
-## ✖️ X (Twitter) Accounts to Follow
-*If you use X, these are the highest-signal accounts for your feed:*
-### **Roundups & News**
-*   **[@AlphaSignalAI](https://x.com/AlphaSignalAI):** Tracks new model releases and GitHub repos.
-*   **[@tldrai](https://x.com/tldrai):** AI news, business, and engineering resources.
-*   **[@bensbitesdaily](https://x.com/bensbitesdaily):** Keeps track of all the little product drops and AI tool roundups.
-*   **[@Smol_AI](https://x.com/Smol_AI):** Tracks the chatter in AI discords, subreddits, and X.
-
-### **Technical & Commentary**
-*   **[@omarsar0](https://x.com/omarsar0):** NLP Newsletter; great overviews of the top AI papers of the week and agent roundups.
-*   **[@CameronWolfe](https://x.com/CameronWolfe):** Deep (Learning) Focus. Very technical deep dives into ML/AI concepts. A must-read for engineers.
-*   **[@SemiAnalysis_](https://x.com/SemiAnalysis_) /[@dylan522p](https://x.com/dylan522p):** Hardware layer, semiconductors, and API cost tracking.
-*   **[@AISupremacyNews](https://x.com/AISupremacyNews):** Super thoughtful commentary on the geopolitical and business shifts in AI.
-*   **[@swyx](https://x.com/swyx) & [@FanaHOVA](https://x.com/FanaHOVA):** The hosts of Latent Space; constant feed of what builders are doing.
-*   **[@jesslionness](https://x.com/jesslionness):** AI Pioneers at work. Great operational commentary.
+### Fundamentals & Papers
+*   **[Andrej Karpathy (Zero to Hero)](https://www.youtube.com/watch?v=zjkBMFhNj_g)**
+*   **[Umar Jamil](https://www.youtube.com/@umarjamilai)**
+*   **[Samuel Albanie](https://youtube.com/@SamuelAlbanie1)**
+*   **[Efficient NLP](https://www.youtube.com/@EfficientNLP)**
+### 🆕 Advanced / Research Translators
+*   **[Sasha Rush](https://www.youtube.com/@srush_nlp)**
+*   **[Yannic Kilcher](https://www.youtube.com/@YannicKilcher)**
+*   **[Trelis Research](https://www.youtube.com/watch?v=ae2lbmtTY5A)**
+*   **[Daniel Bourke](https://www.youtube.com/@danielbourkearxiv2821)** *(Paper replication)*
+### Project Building & Applied AI
+*   **[AI Explained](https://www.youtube.com/@ai-explained-)**
+*   **[Matthew Berman](https://www.youtube.com/@matthew_berman)**
+*   **[AI Jason](https://youtu.be/pJwR5pv0_gs)**
 
 ---
-## 🛠️ The Enterprise Toolkit & Dashboards
-*Bookmark these to evaluate models and architecture decisions.*
+## 🛠️ Builder / Operator Loop
+*Where real learning happens: watching systems get built.*
 
-*   **[LMSYS Chatbot Arena](https://chat.lmsys.org/):** The gold standard for model evaluation. A crowdsourced, blind A/B testing leaderboard. (Ignore vendor benchmarks; check this instead).
-*   **[Artificial Analysis](https://artificialanalysis.ai/):** Live, visual charts mapping Cost vs. Speed vs. Capability across all major AI providers.
-*   **[Promptfoo](https://promptfoo.dev/):** The CLI tool for running automated AI evaluations, CI/CD testing, and A/B prompt testing.
-*   **[Emergent Mind](https://www.emergentmind.com/) &[Arxiv-Sanity](https://arxiv-sanity-lite.com/):** Trending arXiv ML/AI papers with GPT-4 generated summaries.
+*   **[AI Jason](https://youtu.be/pJwR5pv0_gs)** → Practical builds (agents, RAG, workflows).
+*   **[Matthew Berman](https://www.youtube.com/@matthew_berman)** → Tool & stack breakdowns.
+*   **OSS Demos** from [ThursdAI](https://sub.thursdai.news/) / X Spaces.
+*   **[GitHub Trending](https://github.com/trending)** → Track daily LLM, agent, and RAG pipeline repos.
+
+> ⚠️ **Rule:** If you are not building, you are falling behind.
+
+---
+## 🔥 Real-Time Signal Layer
+*Daily awareness edge. This is where “what just happened” lives.*
+### X (Twitter) – Signal Accounts
+*   **[@AlphaSignalAI](https://x.com/AlphaSignalAI)** *(Models + repos)*
+*   **[@tldrai](https://x.com/tldrai)** *(News + tools)*
+*   **[@bensbitesdaily](https://x.com/bensbitesdaily)** *(Product drops)*
+*   **[@Smol_AI](https://x.com/Smol_AI)** *(Community signal aggregation)*
+*   **[@chiefaioffice](https://x.com/chiefaioffice)** *(Startup funding)*
+*   **[@AiBreakfast](https://x.com/AiBreakfast)** *(Weekly roundup)*
+### 🧠 Commentary / Technical
+*   **[@CameronWolfe](https://x.com/CameronWolfe)** *(Deep ML concepts)*
+*   **[@omarsar0](https://x.com/omarsar0)** *(NLP + agents)*
+*   **[@SemiAnalysis_](https://x.com/SemiAnalysis_)** *(Infra economics)*
+*   **[@swyx](https://x.com/swyx) / [@FanaHOVA](https://x.com/FanaHOVA)** *(Builders / Latent Space)*
+*   **[@AISupremacyNews](https://x.com/AISupremacyNews)** *(Macro shifts)*
+### Community Signal Sources
+*   **[r/MachineLearning](https://www.reddit.com/r/MachineLearning)**
+*   **[r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/)**
+*   **[Curated Reddit Lists](https://www.reddit.com/r/LocalLLaMA/comments/1atycgd/which_localllama_focused_yt_channels_do_you_follow/)** *(LocalLLaMA ecosystem)*
+
+---
+## 🧭 Research → Application Translators
+*Bridges raw research → usable insight.*
+
+*   **[Deep Papers](https://www.deeppapers.dev/)**
+*   **[Sasha Rush](https://www.youtube.com/@srush_nlp)**
+*   **[Machine Learning Street Talk](https://www.youtube.com/c/MachineLearningStreetTalk)**
+*   **[Davis Blalock](https://dblalock.substack.com/)** *(arXiv summaries)*
+*   **[Emergent Mind](https://www.emergentmind.com/)**
+*   **[Arxiv Sanity](https://arxiv-sanity-lite.com/)**
+
+> 💡 **Note:** These are critical. Most teams fail because they try to read raw papers instead of relying on expert interpretations.
+
+---
+## 🛠️ Enterprise Toolkit & Dashboards
+
+*   **[LMSYS Chatbot Arena](https://chat.lmsys.org/)** *(Objective model evaluation)*
+*   **[Artificial Analysis](https://artificialanalysis.ai/)** *(Cost vs. performance tracking)*
+*   **[Promptfoo](https://promptfoo.dev/)** *(Eval & CI/CD testing)*
+*   **[Emergent Mind](https://www.emergentmind.com/) / [Arxiv Sanity](https://arxiv-sanity-lite.com/)**
 
 ---
 ## 🔬 Research Hubs & Communities
-*Where to find the raw papers, open-source code, and community discussions.*
-### **Developer Communities**
-*   **Subreddits:** [/r/MachineLearning](https://www.reddit.com/r/MachineLearning) | [/r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/) | [/r/learnmachinelearning](https://www.reddit.com/r/learnmachinelearning)
-*   **GitHub Repos:** [Machine Learning](https://github.com/search?q=topic%3Amachine-learning&type=Repositories) | [Deep Learning](https://github.com/search?q=topic%3Adeep-learning&type=Repositories) |[NLP](https://github.com/search?q=topic%3Anlp&type=Repositories)
 
-### **Cornell’s arXiv.org (Latest Research Papers)**
-*   [Artificial Intelligence (cs.AI)](https://arxiv.org/list/cs.AI/recent) | [Machine Learning (stat.ML)](https://arxiv.org/list/stat.ML/recent) | [Computer Vision (cs.CV)](https://arxiv.org/list/cs.CV/recent)
+### Developer Communities
+*   **Reddit:** [ML](https://www.reddit.com/r/MachineLearning),[LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/)
+*   **GitHub:**[ML](https://github.com/search?q=topic%3Amachine-learning&type=Repositories) /[Deep Learning](https://github.com/search?q=topic%3Adeep-learning&type=Repositories) / [NLP Repos](https://github.com/search?q=topic%3Anlp&type=Repositories)
+### Raw Research
+*   **arXiv:** [cs.AI](https://arxiv.org/list/cs.AI/recent) | [stat.ML](https://arxiv.org/list/stat.ML/recent) |[cs.CV](https://arxiv.org/list/cs.CV/recent)
+
+---
+## 🧩 How to Use This
+
+### 👔 For Executives
+*   **Read:** The Batch, Import AI
+*   **Listen:** No Priors
+*   **Track:** AlphaSignal
+
+### 💻 For Engineers
+*   **Watch:** Karpathy, AI Jason
+*   **Read:** Ahead of AI, Interconnects
+*   **Build:** Weekly *(Mandatory)*
+
+### 🏗️ For Enterprise Architects / IT Leaders
+*   **Track:** SemiAnalysis, AI Exchange
+*   **Use:** LMSYS, Artificial Analysis
+*   **Focus:** Cost, Capability, Integration
+
+---
+## ⚠️ Operating Rules
+
+1. **Pick:**
+   - 1 Newsletter
+   - 1 Podcast
+   - 1 YouTube channel
+2. **Spend:**
+   - 30–60 min/day max
+3. **Build:**
+   - Something weekly *(Mandatory)*
+4. **Track:**
+   - Model + tooling shifts weekly
+
+---
+## 🧠 Meta Insight
+
+AI advantage does not come from knowing more.
+
+It comes from:
+*   **Seeing shifts earlier**
+*   **Testing faster**
+*   **Adapting quicker**
+
+*This system is designed to help you do exactly that.*
