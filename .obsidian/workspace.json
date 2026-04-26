@@ -184,6 +184,7 @@
   },
   "active": "9b394101fc969ad8",
   "lastOpenFiles": [
+    "Templates/Weekly-Update.md",
     "05-Resources/06-LLM-Specific/Anthropic-Claude/Claude Tutorials.md",
     "Templates/vendor-comparison.md",
     "Templates/lesson-learned.md",
@@ -209,7 +210,6 @@
     "02-Practical-Implementation/Lesson-PDF-Extraction.md",
     "02-Practical-Implementation/API-Integration-Guide.md",
     "01-Foundation Knowledge/Prompt-Engineering-Basics.md",
-    "01-Foundation Knowledge/Model-Evaluation-and-TCO.md",
     "05-Resources/Enterprise Use Cases in the Wild",
     "05-Resources/06-LLM-Specific/Anthropic-Claude",
     "05-Resources/06-LLM-Specific"
