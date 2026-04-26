@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Templates/chapter-template.md",
+                "file": "_daily-updates/2026-04-26.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "chapter-template"
+              "title": "2026-04-26"
             }
           }
         ]
@@ -184,6 +184,8 @@
   },
   "active": "9b394101fc969ad8",
   "lastOpenFiles": [
+    "Templates/chapter-template.md",
+    "_daily-updates/2026-04-26.md",
     "Templates/Weekly-Update.md",
     "05-Resources/06-LLM-Specific/Anthropic-Claude/Claude Tutorials.md",
     "Templates/vendor-comparison.md",
@@ -208,8 +210,6 @@
     "02-Practical-Implementation/RAG-Implementation.md",
     "02-Practical-Implementation/PowerBI-and-Fabric-AI.md",
     "02-Practical-Implementation/Lesson-PDF-Extraction.md",
-    "02-Practical-Implementation/API-Integration-Guide.md",
-    "01-Foundation Knowledge/Prompt-Engineering-Basics.md",
     "05-Resources/Enterprise Use Cases in the Wild",
     "05-Resources/06-LLM-Specific/Anthropic-Claude",
     "05-Resources/06-LLM-Specific"
