@@ -1,8 +1,3 @@
----
-title: Home
-layout: home
-nav_order: 1
----
 # 🚀 The IT Professional's Guide to Enterprise AI
 > **A living knowledge base for enterprise IT professionals navigating the AI revolution.**
 
