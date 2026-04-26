@@ -2,15 +2,15 @@
 
 > 💡 **Welcome to the Learning Corner.** The AI landscape moves too fast to read everything. This is a curated, high-signal list of the best courses, newsletters, podcasts, video channels, and research hubs to keep you and your team up to speed. 
 > 
-> This is not just a resource list. It is a **multi-layer AI awareness system**:
-> - **Foundation** → Learn
-> - **Application** → Build
-> - **Signal** → Stay current
-> - **Frontier** → See what’s coming next
+> This is not just a resource list. It is a **multi-layer AI awareness system** designed to:
+> - Keep you current (**Signal**)  
+> - Help you understand (**Foundation**)  
+> - Enable you to build (**Application**)  
+> - Expose you to what’s next (**Frontier**)
 
 ---
 ## 🏆 The Essential 10
-*If you only have 2 hours a week to dedicate to AI learning, ignore everything else and pick from this list.*
+*If you only have a few hours a week to dedicate to AI learning, ignore everything else and pick from this list.*
 
 | Resource                                                         | Type       | Why It Makes the Cut                                     | Layer           |
 | ---------------------------------------------------------------- | ---------- | -------------------------------------------------------- | --------------- |
@@ -189,7 +189,7 @@
 - **[ChatGPT Plugins & Tools List](https://www.google.com/url?sa=E&q=https%3A%2F%2Fwww.gptgames.dev%2Futil%2Fplugins.html):** Unofficial directory of tools.
 - **[Web Scraping with ChatGPT](https://www.google.com/url?sa=E&q=https%3A%2F%2Fmorioh.com%2Fp%2F956614647dcf%3Ff%3D5e44c59998b8037d03aa8178):** Tutorial on generating Python scraper scripts.
 
-
+---
 ## How to Use This
 
 ### For Executives

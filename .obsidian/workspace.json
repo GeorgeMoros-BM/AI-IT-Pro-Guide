@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "05-Resources/Learn.md",
+                "file": "05-Resources/Learning-Corner.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Learn"
+              "title": "Learning-Corner"
             }
           }
         ]
@@ -184,8 +184,8 @@
   },
   "active": "9b394101fc969ad8",
   "lastOpenFiles": [
-    "05-Resources/Learning-Corner.md",
     "05-Resources/Learn.md",
+    "05-Resources/Learning-Corner.md",
     "index.md",
     "_weekly-updates/2026-04-26.md",
     "Prompt-Engineering-Playbook.md",
