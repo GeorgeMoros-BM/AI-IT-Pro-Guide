@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "06-LLM-Specific/OpenAI-ChatGPT/Top 10 uses for Codex at work.md",
+                "file": "06-LLM-Specific/OpenAI-ChatGPT/Ten uses for Codex at work.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Top 10 uses for Codex at work"
+              "title": "Ten uses for Codex at work"
             }
           }
         ]
@@ -185,7 +185,7 @@
   "active": "9b394101fc969ad8",
   "lastOpenFiles": [
     "00-Quick-Start/Mental-Model-Reset.md",
-    "06-LLM-Specific/OpenAI-ChatGPT/Top 10 uses for Codex at work.md",
+    "06-LLM-Specific/OpenAI-ChatGPT/Ten uses for Codex at work.md",
     "00-Quick-Start/Executive-Summary.md",
     "00-Quick-Start/AI-for-Data-Analysts.md",
     "00-Quick-Start/Starter-Projects-and-Quick-Wins.md",
