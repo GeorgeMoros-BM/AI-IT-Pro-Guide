@@ -8,11 +8,10 @@ related:
   - "[[LLM Fundamentals]]"
   - "[[Prompt Engineering Basics]]"
 ---
-
 # Mental Model Reset - How to Think About AI
 
 > **TL;DR for the Busy IT Pro:**  
-> LLMs are probabilistic pattern matchers, not databases. They guess next words based on training, they don't "know" or "retrieve" facts. This changes everything about how you use them.
+> LLMs are **probabilistic pattern matchers**, not databases, not search engines. They **guess** next words based on training, they don't "know" or "retrieve" facts. This changes everything about how you use them.
 
 ---
 ## What You'll Learn
@@ -33,7 +32,7 @@ You've spent your career building deterministic systems: if you input X, you get
 Same input can give different outputs. They "hallucinate" facts. They're confident when wrong. They can't do math reliably without tools.
 
 **Real-world scenario:**  
-> Your CEO says: "We'll save money replacing our support team with ChatGPT."  
+> Your CEO says: "*We'll save money replacing our support team with ChatGPT*."  
 > Without the right mental model, you might agree. With it, you know: LLMs are assistants, not replacements. They augment humans, they don't replace judgment.
 
 Understanding what LLMs actually ARE will save you from expensive mistakes and set realistic expectations.

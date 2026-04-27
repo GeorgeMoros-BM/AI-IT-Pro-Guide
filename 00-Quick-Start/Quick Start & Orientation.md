@@ -1,4 +1,4 @@
-# The IT Guru's Guide to Enterprise AI
+# The IT Pro's Guide to Enterprise AI
 
 > **A living knowledge base for enterprise IT professionals navigating the AI revolution**
 

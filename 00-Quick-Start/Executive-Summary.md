@@ -20,10 +20,9 @@ related:
 ---
 ## What Changed in AI (And Why It Matters to You as an IT Pro)
 
-We have moved past the hype cycle of 2023-2024. The fundamental reality of Enterprise IT today is that **Generative AI is a new computational layer**. 
+We have moved past the hype cycle of 2023-2024. The fundamental reality of Enterprise IT today is that ==**Generative AI is a new computational layer**==. 
 
 Here is what you need to know about the current landscape:
-
 1. **AI is a Probabilistic Engine:** Unlike traditional deterministic code (`if X then Y`), Large Language Models (LLMs) calculate probabilities. They are incredibly powerful, but they require new testing frameworks, error handling, and human-in-the-loop safeguards. 
 2. **Context is the New Bottleneck:** Models can now read hundreds of pages in seconds (up to 10M tokens), but *shoving everything into the prompt is wildly expensive*. Cost optimization now means mastering "Token Economics."
 3. **Data is the Moat, Not the Model:** The base models from OpenAI, Anthropic, and Google are largely commoditized. The value lies entirely in **RAG (Retrieval-Augmented Generation)**—securely connecting these models to your proprietary corporate data.
