@@ -2,10 +2,8 @@ These use cases show how to use Codex to do real work: create deliverables, pull
 ## 1. Create a daily chief of staff
 
 #### Why people use this
-
 You start the day by bouncing between your calendar, messages, email, and notes, trying to figure out what matters most. Codex can pull that context together, keep watch for changes, and turn it into one clear brief so you spend less time triaging and more time acting on priorities.
 #### Prompt to try
-
 `Set up a weekday work brief that starts in the morning and keeps checking throughout the day. At the start of the day, review today's calendar, unread direct messages and mentions from the last 24 hours, unread email from the last 24 hours, my running list of open follow-ups, and any recent context that affects today's priorities. Create a short brief with priorities, meeting prep, messages that need replies, decisions I owe, and useful FYIs. Then check back every hour until the end of the workday for new replies, meeting changes, or follow-ups that need attention. Only update me when something changes or needs action. Draft replies only when the next step is clear, and flag anything you cannot access or cannot confirm.`
 #### How to customize it
 
@@ -20,10 +18,8 @@ _Set up a weekday heartbeat called “Morning Work Brief” that starts at 8:30 
 ## 2. Weekly summary
 
 #### Why people use this
-
 You end the week trying to remember what you finished, what changed, and what your manager actually needs to know. Codex can pull together the week across your calendar, docs, messages, and trackers so writing the update feels less like a memory exercise and more like a quick review.
 #### Prompt to try
-
 `I'm writing my weekly update. Use my calendar, documents I edited, messages I sent in work channels, my main tracker or planning doc, and anything else that looks relevant to this week. Write a manager-ready summary that covers work completed, decisions made, important changes, blockers, follow-ups, and next week's priorities. Include source links where possible, and separate confirmed facts from anything that is an inference.`
 #### How to customize it
 
@@ -52,79 +48,53 @@ _I need a draft deck for the April 23 customer onboarding review. Use “Custome
 #### Why people use this
 Important decisions are usually spread across old recaps, planning docs, budget inputs, and whatever you can learn from current research. Codex can gather those pieces in one workflow, separate internal evidence from external research, and turn the result into a memo that is easier to act on.
 #### Prompt to try
-I'm deciding whether our team should sponsor or invest in a major industry event next year. Use prior event recaps, the event ROI model, the target account or audience list, budget guardrails, and related planning notes. Search the web for current event dates, audience details, sponsorship options, pricing information if available, and competitor presence. Write a one-page decision memo with a recommendation, supporting evidence, tradeoffs, cost, risks, missing information, and source links. Make it clear what came from internal files and what came from web research.
+`I'm deciding whether our team should sponsor or invest in a major industry event next year. Use prior event recaps, the event ROI model, the target account or audience list, budget guardrails, and related planning notes. Search the web for current event dates, audience details, sponsorship options, pricing information if available, and competitor presence. Write a one-page decision memo with a recommendation, supporting evidence, tradeoffs, cost, risks, missing information, and source links. Make it clear what came from internal files and what came from web research.`
 #### How to customize it
-
 Replace the decision and supporting files. Tell Codex what outside research to gather. Specify how to separate internal evidence, web research, and open questions.
 
 **Suggested plugins**: Google Drive, Notion, Browser, SharePoint, Box  
 **Suggested skills**: Browser, Google Docs
 
 **Example:**
-
 _I’m deciding whether Acme should sponsor SaaStr Annual 2026. Use “2025 SaaStr Recap,” “Event ROI Model - Q4,” “FY26 Target Account List,” “Events Budget Guardrails,” and related event planning notes. Search the web for current SaaStr dates, audience, sponsorship options, and competitor presence. Write a one-page decision memo with a recommendation, evidence, tradeoffs, cost, risks, missing information, and source links. Make clear what came from our files and what came from web research._
 
 ## 5. File cleanup and reformatting
 
 #### Why people use this
-
 Messy exports from different sources are tedious to clean and easy to mishandle. Codex can apply cleanup rules consistently, combine files into a usable workbook, and preserve a review path for anything that should not be guessed.
-
 #### Basic prompt
-
-Try it
-
-I attached several source files that need to be cleaned and combined into one workbook. Standardize the attendee data so fields like name, company, title, country, segment, source, and attendance status are consistent. Remove duplicates using email as the primary key. Create an upload-ready CSV using the field order from the mapping notes, and put missing or conflicting rows in a "Needs Review" tab. Do not guess missing emails or other critical identifiers. Add a short change log explaining what you cleaned or merged.
-
+`I attached several source files that need to be cleaned and combined into one workbook. Standardize the attendee data so fields like name, company, title, country, segment, source, and attendance status are consistent. Remove duplicates using email as the primary key. Create an upload-ready CSV using the field order from the mapping notes, and put missing or conflicting rows in a "Needs Review" tab. Do not guess missing emails or other critical identifiers. Add a short change log explaining what you cleaned or merged.`
 #### How to customize this
-
 **Suggested plugins**: Google Drive, SharePoint, Box, Egnyte  
 **Suggested skills**: Excel, Google Sheets, Google Sheets Formula Builder
 
 **Example:**
-
 _I attached “Q2 Webinar Attendee Export.csv,” “Manual Registration Edits.xlsx,” “Partner Invite List.xlsx,” “Field Mapping Notes.docx,” and any related attached file. Clean the attendee data into one workbook. Standardize name, company, title, country, segment, source, and attendance status. Remove duplicates by email. Create an upload-ready CSV using the column order in “Field Mapping Notes.docx.” Put missing or conflicting rows in a “Needs Review” tab. Do not guess missing emails. Add a short change log._
 
 ## 6. Spreadsheet consolidation
 
 #### Why people use this
-
 A set of spreadsheet exports may look close enough to join, but the cleanup, mismatch review, and reporting work adds up fast. Codex can consolidate the files, surface what did not join cleanly, and turn the result into a workbook you can actually use and refresh.
-
 #### Basic prompt
-
-Try it
-
-I attached multiple spreadsheet exports that need to be consolidated into one updateable workbook. Join the data on account ID, clean duplicate accounts, calculate pipeline by region and segment, compare current pipeline to target, and create a dashboard with charts and plain-English insights. Include assumptions, refresh instructions, and a review section for any mismatched account IDs or records that could not be joined cleanly.
-
+`I attached multiple spreadsheet exports that need to be consolidated into one updateable workbook. Join the data on account ID, clean duplicate accounts, calculate pipeline by region and segment, compare current pipeline to target, and create a dashboard with charts and plain-English insights. Include assumptions, refresh instructions, and a review section for any mismatched account IDs or records that could not be joined cleanly.`
 #### How to customize this
-
 **Suggested plugins**: Google Drive, SharePoint, Coupler.io, Omni Analytics, MotherDuck  
 **Suggested skills**: Excel, Google Sheets, Google Sheets Formula Builder, Google Sheets Chart Builder
 
 **Example:**
-
 _I attached “Q1 Pipeline by Region.csv,” “Q2 Pipeline by Region.csv,” “Account Segments.xlsx,” “FY26 Sales Targets.xlsx,” and any related attached file. Consolidate them into an updatable workbook. Join on account ID, clean duplicate accounts, calculate pipeline by region and segment, compare Q2 pipeline to target, and create a dashboard with charts and plain-English insights. Add assumptions, refresh instructions, and mismatched account IDs to review._
 
 ## 7. Book of business prioritization
 
 #### Why people use this
-
 The signals that tell you which accounts matter right now are often spread across CRM exports, calls, email threads, dashboards, and plans. Codex can pull those signals together, rank the accounts that need attention, and show you where to focus first.
-
 #### Basic prompt
-
-Try it
-
 I'm planning my week for my top renewal accounts. Use the latest CRM account export, recent call transcripts, open customer email threads, the usage dashboard, account plans, and anything else that explains renewal risk or upside. Create a priority brief ranking the ten accounts I should focus on first. For each account, include why it matters now, the main risk or upside, the recommended next action, source links, and any stale or missing context. Draft customer follow-up notes only where the next step is clear, and mark anything that needs account executive or manager review.
-
 #### How to customize this
-
 **Suggested plugins**: Common Room, Demandbase, HubSpot, Pipedrive, Streak, Attio, Gong, Gmail, Slack  
 **Suggested skills**: Gmail Inbox Triage, Slack Reply Drafting, Google Docs
 
 **Example:**
-
 _I’m an account manager planning my week for my top renewal accounts. Use Salesforce export “April Renewal Account Export,” Gong transcripts from the last 30 days, open buyer email threads, “Renewal Usage Dashboard,” “Q2 Renewal Plans,” and anything else that explains renewal risk or upside. Create a book-of-business priority brief ranking the 10 accounts I should focus on. For each account, include why now, risk or upside, next action, source links, and stale or missing context. Draft customer follow-up notes only where the next step is clear. Mark anything needing AE review._
 
 ## 8. Month-end financial review
