@@ -1,4 +1,4 @@
-You’ve seen what Codex can do. Now it’s time to put it to work. These use cases show how to use Codex to do real work: create deliverables, pull together context from multiple tools, take action on real inputs, and move tasks forward faster. Start with the generic prompt if you want something you can use right away, then use the customization suggestions and example to make it your own.
+These use cases show how to use Codex to do real work: create deliverables, pull together context from multiple tools, take action on real inputs, and move tasks forward faster. Start with the generic prompt if you want something you can use right away, then use the customization suggestions and example to make it your own.
 ## 1. Create a daily chief of staff
 
 #### Why people use this
@@ -22,57 +22,37 @@ _Set up a weekday heartbeat called “Morning Work Brief” that starts at 8:30 
 #### Why people use this
 
 You end the week trying to remember what you finished, what changed, and what your manager actually needs to know. Codex can pull together the week across your calendar, docs, messages, and trackers so writing the update feels less like a memory exercise and more like a quick review.
-
 #### Prompt to try
 
-Try it out
-
-I'm writing my weekly update. Use my calendar, documents I edited, messages I sent in work channels, my main tracker or planning doc, and anything else that looks relevant to this week. Write a manager-ready summary that covers work completed, decisions made, important changes, blockers, follow-ups, and next week's priorities. Include source links where possible, and separate confirmed facts from anything that is an inference.
-
+`I'm writing my weekly update. Use my calendar, documents I edited, messages I sent in work channels, my main tracker or planning doc, and anything else that looks relevant to this week. Write a manager-ready summary that covers work completed, decisions made, important changes, blockers, follow-ups, and next week's priorities. Include source links where possible, and separate confirmed facts from anything that is an inference.`
 #### How to customize it
 
 **Suggested plugins**: Slack, Gmail, Google Calendar, Google Drive, Notion  
 **Suggested skills**: Slack Daily Digest, Slack Channel Summarization
 
 **Example:**
-
 _I’m writing my Friday update for the week of April 20. Use my calendar, Google Docs I edited, Slack messages I sent in #launch-planning and #sales-enablement, “Q2 Workstream Tracker,” and anything else that looks relevant to my week. Write a manager-ready summary with work finished, decisions, important changes, blockers, follow-ups, and next week's priorities. Include source links. Separate confirmed facts from inferences._
-
 ## 3. Draft slide decks
 
 #### Why people use this
-
 You may already have the content for the deck, but turning scattered notes, metrics, and source docs into something presentation-ready takes too long. Codex can work across those materials, draft editable slides, and help catch layout issues so you get to a usable deck much faster.
-
 #### Prompt to try
-
-Try it
-
-I need a draft slide deck for an upcoming customer onboarding review. Use the main project brief, any summaries of customer pain points, the latest onboarding metrics, any available slide template, and related context. Create a seven-slide PowerPoint with an executive summary, the core customer problem, the main issues, an example workflow, adoption or usage signals, an improvement plan, and open decisions. Keep the text editable, add speaker notes, and render the slides so you can fix overflow, crowded layouts, and unreadable charts. Do not invent metrics, and flag any missing data.
-
+`I need a draft slide deck for an upcoming customer onboarding review. Use the main project brief, any summaries of customer pain points, the latest onboarding metrics, any available slide template, and related context. Create a seven-slide PowerPoint with an executive summary, the core customer problem, the main issues, an example workflow, adoption or usage signals, an improvement plan, and open decisions. Keep the text editable, add speaker notes, and render the slides so you can fix overflow, crowded layouts, and unreadable charts. Do not invent metrics, and flag any missing data.`
 #### How to customize it
-
 Swap in the real brief, metrics, and template. Set the audience, slide count, and sections. Tell Codex what not to invent and what layout issues to fix.
 
 **Suggested plugins**: Google Drive, Notion, Figma, Canva  
 **Suggested skills**: PowerPoint, Google Slides, Google Docs
 
 **Example:**
-
 _I need a draft deck for the April 23 customer onboarding review. Use “Customer Onboarding Brief,” “Top Customer Onboarding Issues,” “April Onboarding Metrics,” the attached “Simple Company Template.pptx,” and related onboarding context. Create a 7-slide PowerPoint with an exec summary, customer problem, top issues, example workflow, adoption signals, improvement plan, and open decisions. Keep text editable. Add speaker notes. Render the slides and fix overflow, crowded layouts, or unreadable charts. Do not invent metrics. Flag missing data._
 
 ## 4. Research to decision memo
 
 #### Why people use this
-
 Important decisions are usually spread across old recaps, planning docs, budget inputs, and whatever you can learn from current research. Codex can gather those pieces in one workflow, separate internal evidence from external research, and turn the result into a memo that is easier to act on.
-
 #### Prompt to try
-
-Try it
-
 I'm deciding whether our team should sponsor or invest in a major industry event next year. Use prior event recaps, the event ROI model, the target account or audience list, budget guardrails, and related planning notes. Search the web for current event dates, audience details, sponsorship options, pricing information if available, and competitor presence. Write a one-page decision memo with a recommendation, supporting evidence, tradeoffs, cost, risks, missing information, and source links. Make it clear what came from internal files and what came from web research.
-
 #### How to customize it
 
 Replace the decision and supporting files. Tell Codex what outside research to gather. Specify how to separate internal evidence, web research, and open questions.
