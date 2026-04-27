@@ -14,7 +14,6 @@ related:
   - "[[Managing-Shadow-AI]]"
   - "[[Evaluation-and-Testing]]"
 ---
-
 # Governance & Risk Management
 
 > **TL;DR for the Busy IT Pro:**  
