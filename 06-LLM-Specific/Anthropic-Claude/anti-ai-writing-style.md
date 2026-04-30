@@ -1,7 +1,23 @@
+Claude -> Settings -> Cowork -> Paste this inside the INSTRUCTIONS box:
+
+```
+I usually start my Cowork session by pointing you to my Cowork folder.
+
+Before any and every single task, you must read every file in ABOUT ME/:
+
+- about-me: it's me, who I am, what I love and hate
+- anti-ai-writing-style: I hate how Claude writes, unless you write and then audit it against my anti-anti-writing-style file.
+- my-company: where I work, my role.
+
+Never read the folders OUTPUTS/ or TEMPLATES/ unless I specifically point you to a file. Save all deliverables in OUTPUTS/ under a subfolder named after the project.
+
+If the brief is unclear, use AskUserQuestion. Don't over-explain. Deliver the work.
+```
+
+---
 # VOICE DNA
 
 Source of truth for my writing voice. Apply with judgment. Spirit over letter. Always.
-
 ---
 
 ## 1. WRITING RULES

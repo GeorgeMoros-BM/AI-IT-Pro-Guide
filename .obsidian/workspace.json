@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "06-LLM-Specific/Anthropic-Claude/anti-ai-writing-style.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "anti-ai-writing-style"
             }
           }
         ]
@@ -182,10 +182,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f85d6857a60f5bf4",
+  "active": "877aadd9f5cd2eed",
   "lastOpenFiles": [
-    "Untitled.base",
     "index.md",
+    "Untitled.base",
     "06-LLM-Specific/OpenAI-ChatGPT/Ten uses for Codex at work.md",
     "00-Quick-Start/Mental-Model-Reset.md",
     "00-Quick-Start/Executive-Summary.md",
