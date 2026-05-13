@@ -11,10 +11,14 @@
             "id": "926bebd0ede0c6f5",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "99-Archived/Agents & Tool Use (Function Calling).md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Agents & Tool Use (Function Calling)"
             }
           }
         ]
@@ -152,12 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "99-Archived/Agents & Tool Use (Function Calling).md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Agents & Tool Use (Function Calling)"
             }
           },
           {
@@ -190,8 +195,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "926bebd0ede0c6f5",
+  "active": "877aadd9f5cd2eed",
   "lastOpenFiles": [
+    "99-Archived",
+    "10-Executive",
+    "09-Reference-Architectures",
+    "08-Playbooks",
+    "07-Frameworks",
     "01-Foundation Knowledge/Prompt-Engineering-Basics.md",
     "01-Foundation Knowledge/Prompt-Operating-Contracts.md",
     "01-Foundation Knowledge/Modern-Prompt-Methodology-Layer.md",
@@ -211,23 +221,18 @@
     "05-Resources/Enterprise Use Cases in the Wild/Business & Professional Services.md",
     "05-Resources/Enterprise Use Cases in the Wild/Automotive & Logistics.md",
     "05-Resources/Agentic-AI Use Cases.md",
-    "05-Resources/Archived/Agents & Tool Use (Function Calling).md",
+    "99-Archived/Agents & Tool Use (Function Calling).md",
     "04-Advanced-Topics/Agents-and-Tool-Use.md",
     "04-Advanced-Topics/Agentic-Workflows.md",
     "04-Advanced-Topics/local-llm-workstation-setup-2026.md",
     "Templates/promptops-metadata-template.md",
     "03-Enterprise-Concerns/Prompt-Risk-Tiering (1).md",
     "03-Enterprise-Concerns/Prompt-Risk-Tiering.md",
-    "03-Enterprise-Concerns/PromptOps-Governance.md",
     "05-Resources/Archived",
     "05-Resources/New folder",
     "06-LLM-Specific/Deep-Questions-for-AI",
     "06-LLM-Specific/OpenAI-ChatGPT",
     "06-LLM-Specific/Anthropic-Claude",
-    "06-LLM-Specific",
-    "Untitled.canvas",
-    "05-Resources/Enterprise Use Cases in the Wild",
-    "05-Resources/06-LLM-Specific/Anthropic-Claude",
-    "05-Resources/06-LLM-Specific"
+    "Untitled.canvas"
   ]
 }
