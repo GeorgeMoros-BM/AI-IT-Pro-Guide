@@ -11,7 +11,6 @@ tags:
   - promptops
   - operating-contract
 ---
-
 # Prompt Operating Contract Template
 
 Use this template for reusable prompts that will be shared, repeated, embedded in workflows, or used for business decision support.
