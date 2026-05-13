@@ -14,5 +14,3 @@ time_to_read: 16 minutes
 publish: false
 client_safe: true
 ---
-
-# Enterprise RAG Architecture

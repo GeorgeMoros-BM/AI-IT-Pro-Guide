@@ -13,5 +13,3 @@ time_to_read: 6 minutes
 publish: false
 client_safe: true
 ---
-
-# AI Investment Rationale One-Pager

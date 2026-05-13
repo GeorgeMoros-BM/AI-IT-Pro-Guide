@@ -18,4 +18,3 @@ related:
   - "[[PromptOps-Governance]]"
 ---
 
-# Enterprise AI Governance Framework

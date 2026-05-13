@@ -13,9 +13,6 @@ time_to_read: 15 minutes
 publish: false
 client_safe: true
 ---
-
-# AI Pilot Launch Playbook
-
 # Purpose
 
 This playbook defines a repeatable process for launching enterprise AI pilots with measurable business outcomes and controlled operational risk.

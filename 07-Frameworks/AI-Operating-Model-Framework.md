@@ -17,4 +17,3 @@ related:
   - "[[Enterprise-AI-Governance-Framework]]"
 ---
 
-# AI Operating Model Framework

@@ -15,4 +15,3 @@ publish: false
 client_safe: true
 ---
 
-# Hybrid AI Architecture

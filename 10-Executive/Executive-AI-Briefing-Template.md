@@ -13,10 +13,6 @@ publish: false
 client_safe: true
 ---
 
-# Executive AI Briefing Template
-
-# Executive Summary
-
 ## Situation
 Describe the current operational or strategic context.
 
@@ -27,7 +23,6 @@ Describe why leadership should care.
 Summarize the proposed action.
 
 ---
-
 # Current State
 
 Document:
@@ -37,15 +32,13 @@ Document:
 - governance maturity
 
 ---
-
 # Key Opportunities
 
 | Opportunity | Business Impact | Complexity |
-|---|---|---|
-| | | |
+| ----------- | --------------- | ---------- |
+|             |                 |            |
 
 ---
-
 # Risks and Constraints
 
 - security
@@ -55,7 +48,6 @@ Document:
 - vendor lock-in
 
 ---
-
 # Recommended Next Steps
 
 1. Immediate actions

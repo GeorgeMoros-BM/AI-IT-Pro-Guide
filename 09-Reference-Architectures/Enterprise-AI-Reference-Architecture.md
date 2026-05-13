@@ -13,9 +13,6 @@ time_to_read: 18 minutes
 publish: false
 client_safe: true
 ---
-
-# Enterprise AI Reference Architecture
-
 # Objective
 
 Provide a modular reference architecture for enterprise AI deployment that balances governance, operational scalability, security, and vendor optionality.

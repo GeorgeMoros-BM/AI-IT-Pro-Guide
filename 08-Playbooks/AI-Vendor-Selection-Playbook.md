@@ -14,5 +14,3 @@ time_to_read: 14 minutes
 publish: false
 client_safe: true
 ---
-
-# AI Vendor Selection Playbook

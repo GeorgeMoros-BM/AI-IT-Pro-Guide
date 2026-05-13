@@ -18,9 +18,6 @@ related:
   - "[[Enterprise-AI-Governance-Framework]]"
   - "[[AI-Operating-Model-Framework]]"
 ---
-
-# AI Adoption Maturity Model
-
 ## Purpose
 
 This framework provides a structured mechanism for evaluating enterprise AI maturity across governance, operations, technology, workforce enablement, and business execution.
