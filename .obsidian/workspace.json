@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "0a32444c6719eb26",
+        "id": "a95787164bb02ce0",
         "type": "tabs",
         "children": [
           {
-            "id": "f85d6857a60f5bf4",
+            "id": "ae01eea64fca4442",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_weekly-updates/2026-04-26.md",
+                "file": "01-Foundation Knowledge/Prompt-Engineering-Basics.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-04-26"
+              "title": "Prompt-Engineering-Basics"
             }
           }
         ]
@@ -94,16 +94,17 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "00-Quick-Start/Starter-Projects-and-Quick-Wins.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for Starter-Projects-and-Quick-Wins"
             }
           },
           {
@@ -112,11 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "00-Quick-Start/Starter-Projects-and-Quick-Wins.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from Starter-Projects-and-Quick-Wins"
             }
           },
           {
@@ -154,20 +156,31 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "01-Foundation Knowledge/Prompt-Engineering-Basics.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Prompt-Engineering-Basics"
+            }
+          },
+          {
+            "id": "64b78bc0e1c8c7d2",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 473.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -182,37 +195,39 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f85d6857a60f5bf4",
+  "active": "ae01eea64fca4442",
   "lastOpenFiles": [
-    "Templates/Weekly-Update.md",
-    "_weekly-updates/2026-05-09.md",
-    "_weekly-updates/2026-04-26.md",
-    "05-Resources/Learn.md",
-    "06-LLM-Specific/Anthropic-Claude/anti-ai-writing-style.md",
-    "index.md",
-    "Untitled.base",
-    "06-LLM-Specific/OpenAI-ChatGPT/Ten uses for Codex at work.md",
-    "00-Quick-Start/Mental-Model-Reset.md",
+    "01-Foundation Knowledge/Prompt-Operating-Contracts.md",
+    "01-Foundation Knowledge/Modern-Prompt-Methodology-Layer.md",
+    "01-Foundation Knowledge/Model-Evaluation-and-TCO.md",
+    "01-Foundation Knowledge/AI-LLM-Fundamentals.md",
     "00-Quick-Start/Executive-Summary.md",
     "00-Quick-Start/AI-for-Data-Analysts.md",
-    "00-Quick-Start/Starter-Projects-and-Quick-Wins.md",
-    "00-Quick-Start/Quick Start & Orientation.md",
+    "02-Practical-Implementation/Token-Cost-Quick-Reference.md",
     "README.md",
-    "00-Quick-Start/README.md",
-    "03-Enterprise-Concerns/Governance-and-Risk.md",
-    "06-LLM-Specific/OpenAI-ChatGPT/GPT 5.5.md",
-    "06-LLM-Specific/Deep-Questions-for-AI/X AI.md",
-    "06-LLM-Specific/Deep-Questions-for-AI/Google.md",
-    "06-LLM-Specific/Deep-Questions-for-AI/DeepSeek.md",
-    "06-LLM-Specific/Deep-Questions-for-AI/OpenAI.md",
+    "Untitled.base",
+    "Templates/eval-test-case-template.md",
+    "Templates/agent-operating-contract-template.md",
+    "_weekly-updates/2026-05-11.md",
+    "00-Quick-Start/Starter-Projects-and-Quick-Wins.md",
+    "05-Resources/Enterprise Use Cases in the Wild/Technology.md",
+    "05-Resources/Enterprise Use Cases in the Wild/Hospitality & Travel.md",
+    "05-Resources/Enterprise Use Cases in the Wild/Business & Professional Services.md",
+    "05-Resources/Enterprise Use Cases in the Wild/Automotive & Logistics.md",
+    "05-Resources/Agentic-AI Use Cases.md",
+    "05-Resources/Archived/Agents & Tool Use (Function Calling).md",
+    "04-Advanced-Topics/Agents-and-Tool-Use.md",
+    "04-Advanced-Topics/Agentic-Workflows.md",
+    "04-Advanced-Topics/local-llm-workstation-setup-2026.md",
+    "Templates/promptops-metadata-template.md",
+    "03-Enterprise-Concerns/Prompt-Risk-Tiering (1).md",
+    "03-Enterprise-Concerns/Prompt-Risk-Tiering.md",
+    "03-Enterprise-Concerns/PromptOps-Governance.md",
+    "02-Practical-Implementation/Research-RAG-and-Evidence (1).md",
+    "05-Resources/Archived",
+    "05-Resources/New folder",
     "06-LLM-Specific/Deep-Questions-for-AI",
-    "05-Resources/Free-Courses-Certifications.md",
     "06-LLM-Specific/OpenAI-ChatGPT",
-    "Templates/quick-reference.md",
-    "Templates/vendor-comparison.md",
-    "05-Resources/Learning-Corner.md",
-    "Prompt-Engineering-Playbook.md",
-    "Agents-and-Tool-Use.md",
     "06-LLM-Specific/Anthropic-Claude",
     "06-LLM-Specific",
     "Untitled.canvas",

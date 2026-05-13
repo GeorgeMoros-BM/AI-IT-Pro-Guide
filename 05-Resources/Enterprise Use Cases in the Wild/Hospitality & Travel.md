@@ -22,17 +22,17 @@
     
 - **Intravel** makes travel storytelling shoppable. Powered by Google's Gemini AI and Edge Video, it analyzes videos in real time to match tours, hotels, and experiences. This creates instant, interactive overlays for direct booking, automating all commerce logic from discovery to commissioning.
     
-- ***LATAM** **Airlines**, Latin America's largest airline group, migrated its data platform to BigQuery and then used Vertex AI to build Cosmos — a proprietary middleware platform that standardizes and governs AI deployment across its operations. LATAM Airlines has unlocked innovations including an AI concierge agent for trip planning; Google Veo-powered marketing videos produced up to 95% faster at 99% lower cost; and multimodal BigQuery AI capabilities that have turned million-dollar analysis tasks into lean, low-cost processes.
+- **LATAM** **Airlines**, Latin America's largest airline group, migrated its data platform to BigQuery and then used Vertex AI to build Cosmos — a proprietary middleware platform that standardizes and governs AI deployment across its operations. LATAM Airlines has unlocked innovations including an AI concierge agent for trip planning; Google Veo-powered marketing videos produced up to 95% faster at 99% lower cost; and multimodal BigQuery AI capabilities that have turned million-dollar analysis tasks into lean, low-cost processes.
     
 - **Mustard** uses proprietary computer vision and AI technology to unlock exceptional, personalized coaching experiences for every golfer and baseball pitcher who wants to level up, all with the ease of a straightforward mobile app.
     
 - **Mystifly** is a Singapore-based travel tech company that has developed Mystic, a chatbot built on Google Cloud's conversational and generative AI platforms; it offers users self-serve options that reduce the need for direct agent support, improving efficiency and customer satisfaction.
     
-- The **Papa John’s** pizza chain is using BigQuery, Vertex AI, and Gemini models to build predictive tools that can better anticipate customers orders in the app, as well as an enhanced loyalty program and more personalized marketing offers. There are also plans to build an AI-powered chatbot to help handle orders.
+- **Papa John’s** pizza is using BigQuery, Vertex AI, and Gemini models to build predictive tools that can better anticipate customers orders in the app, as well as an enhanced loyalty program and more personalized marketing offers. There are also plans to build an AI-powered chatbot to help handle orders.
     
 - **Priceline**’s Trip Intelligence suite features one of the travel industry’s most comprehensive array of AI tools, including more than 30 new features to dramatically streamline the travel planning and booking process.
     
-- ***RIU** **Hotels** **& Resorts** leverages Google Cloud AI and machine learning models to predict user purchase probability for the e-commerce team.
+- **RIU** **Hotels** **& Resorts** leverages Google Cloud AI and machine learning models to predict user purchase probability for the e-commerce team.
     
 - **Sabre** Travel AI has developed an AI agent that personalizes offers, optimizes revenue management, and streamlines operations for travel companies; this has led to improved customer experiences and increased revenue while fostering growth for Sabre's partners.
     
@@ -42,12 +42,13 @@
     
 - **Technogym** leverages Vertex AI and Model Garden to power Technogym Coach, an AI-driven virtual trainer that creates hyper-personalized fitness programs. This increased user engagement and motivation, improved fitness outcomes, and delivered a more personalized and effective training experience.
     
-- ***Technogym** is also integrating Google's latest generative AI technologies into the Technogym AI Ecosystem. These include an even more intelligent and predictive Technogym AI Coach and a new AI assistant for operators and trainers.
+- **Technogym** is also integrating Google's latest generative AI technologies into the Technogym AI Ecosystem. These include an even more intelligent and predictive Technogym AI Coach and a new AI assistant for operators and trainers.
+   
 - **trivago**’s new “Smart AI Search” is an advanced free-text search functionality, powered by Vertex AI Search, that allows users to search for hotels using natural language, making it easier and more personalized to find the ideal accommodations.
     
-- ***Vail** **Resorts** launched My Epic Assistant during the 2024-2025 snow season, and expanded it this year to add even more AI-powered chat features powered by Google’s powerful Gemini models. The result is an agentic guide to the slopes that can help skiers and snowboarders decide on the right season pass, share the latest snow report, check on lesson preparations, or suggest a good stop for cocoa.
+- **Vail** **Resorts** launched My Epic Assistant during the 2024-2025 snow season, and expanded it this year to add even more AI-powered chat features powered by Google’s powerful Gemini models. The result is an agentic guide to the slopes that can help skiers and snowboarders decide on the right season pass, share the latest snow report, check on lesson preparations, or suggest a good stop for cocoa.
     
-- ***Virgin** **Voyages**’ Rovey agent is bringing a revolutionary personal concierge to the high seas, powered by Gemini Enterprise and Google Distributed Cloud. This innovative agent empowers the crew with natural language intelligence, ensuring every interaction with sailors is warm, informed, and perfectly tailored to their needs.
+- **Virgin** **Voyages**’ Rovey agent is bringing a revolutionary personal concierge to the high seas, powered by Gemini Enterprise and Google Distributed Cloud. This innovative agent empowers the crew with natural language intelligence, ensuring every interaction with sailors is warm, informed, and perfectly tailored to their needs.
     
 - **Vivaticket**, an international event management and ticketing platform, plans to use Vertex AI Search to accelerate customer access to information about interesting events. Generative AI will also help Vivaticket generate recommendations and create SEO-friendly event and venue descriptions faster.
 ### **Employee Agents**
@@ -66,9 +67,9 @@
     
 - **Tauá* *Resorts** group created an intelligent agent that generates real-time insights and dialogue suggestions. This technology allows the sales team to answer complex questions instantly, leveraging data from previous events to craft the perfect proposal for every client.
     
-- **Thrive* *Restaurant* *Group** is enabling any employee to explore data conversationally.
+- **Thrive Restaurant Group** is enabling any employee to explore data conversationally.
     
-- **Virgin* *Voyages** have already deployed more than 1,000 specialized agents to reduce campaign creation times by 40% by turning behavioral signals into personalized action.
+- **Virgin Voyages** have already deployed more than 1,000 specialized agents to reduce campaign creation times by 40% by turning behavioral signals into personalized action.
 ### **Creative Agents**
 
 - **Curb Free** with Cory Lee, a popular "wheelchair travel site," shares accessible travel guides, and brainstorms new content ideas with Gemini in Docs to keep giving readers fresh and valuable info.

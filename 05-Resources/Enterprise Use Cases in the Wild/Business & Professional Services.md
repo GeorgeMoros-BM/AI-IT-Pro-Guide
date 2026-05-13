@@ -33,23 +33,23 @@
     
 - **Altumatim**, a legal tech startup, uses a platform powered by Gemini on Vertex AI to analyze millions of documents for eDiscovery. This accelerates the process from months to hours, improves accuracy to over 90%, and enables attorneys to focus on building compelling legal arguments.
     
-- ***Amdocs** created the Telco Customer Experience Agent to autonomously resolve complex customer service issues across digital and contact center channels. Combining Amdocs Cognitive Core with Gemini Enterprise for Customer Experience, it reasons, orchestrates, and executes end‑to‑end telco processes, improving resolution speed, cost efficiency, and customer satisfaction.
+- **Amdocs** created the Telco Customer Experience Agent to autonomously resolve complex customer service issues across digital and contact center channels. Combining Amdocs Cognitive Core with Gemini Enterprise for Customer Experience, it reasons, orchestrates, and executes end‑to‑end telco processes, improving resolution speed, cost efficiency, and customer satisfaction.
     
 - **Anara**, a generative AI research assistant, helps users find and understand scientific documents with verifiable AI summaries and insights. It uses Google Cloud's scalable infrastructure, AI Studio, and Cloud Functions to power its models and data processing for a global user base.
     
-- ***AODocs**’s AI Agent provides instant, trustworthy answers grounded exclusively in the latest validated versions of controlled documents. It supports diverse use cases including standard operating procedures (SOPs), engineering specs, legal policies, and risk management procedures.
+- **AODocs**’s AI Agent provides instant, trustworthy answers grounded exclusively in the latest validated versions of controlled documents. It supports diverse use cases including standard operating procedures (SOPs), engineering specs, legal policies, and risk management procedures.
     
-- ***Apex** **Leaders**, a US-based business services company, is using Gemini Enterprise to power an internal search engine, providing easy access to internal data sources and automated information summarization and content drafting for consultant teams.
+- **Apex** **Leaders**, a US-based business services company, is using Gemini Enterprise to power an internal search engine, providing easy access to internal data sources and automated information summarization and content drafting for consultant teams.
     
-- ***ARCHINERGY**, a US based architecture firm, utilized Gemini Enterprise to create an AI agent that answers questions about architectural design and internal documentation, generating faster insights in just a fraction of the time compared to traditional search methods.
+- **ARCHINERGY**, a US based architecture firm, utilized Gemini Enterprise to create an AI agent that answers questions about architectural design and internal documentation, generating faster insights in just a fraction of the time compared to traditional search methods.
     
-- ***Avalara**’s Avi Agent is an AI-powered gateway for tax and compliance automation. Built on Avalara’s Agentic platform, it smartly coordinates between external systems and compliance agents to instantly and securely calculate taxes, file returns, and manage invoicing.
+- **Avalara**’s Avi Agent is an AI-powered gateway for tax and compliance automation. Built on Avalara’s Agentic platform, it smartly coordinates between external systems and compliance agents to instantly and securely calculate taxes, file returns, and manage invoicing.
     
 - **BCG** uses Google Cloud to provide a sales optimization tool that improves the effectiveness and impact of insurance advisors.
     
-- ***BCG** is also expanding its partnership with Google Cloud to accelerate Gemini Enterprise transformation, helping organizations deliver at-scale agentic adoption.
+- **BCG** is also expanding its partnership with Google Cloud to accelerate Gemini Enterprise transformation, helping organizations deliver at-scale agentic adoption.
     
-- ***Benifex**, the global leader in employee benefits technology, helps HR teams design competitive, compliant benefits programs for employees around the world. Using Gemini Enterprise Agent Platform, Gemini models, and AlloyDB, Benifex built Project Brain — a multi-agent system that draws on more than 20 years of global benefits data to instantly deliver expert, data-driven answers to questions like "What benefits should we offer our new team in Spain?", cutting research time dramatically and enabling HR teams to build competitive benefits packages in a fraction of the time.
+- **Benifex**, the global leader in employee benefits technology, helps HR teams design competitive, compliant benefits programs for employees around the world. Using Gemini Enterprise Agent Platform, Gemini models, and AlloyDB, Benifex built Project Brain — a multi-agent system that draws on more than 20 years of global benefits data to instantly deliver expert, data-driven answers to questions like "What benefits should we offer our new team in Spain?", cutting research time dramatically and enabling HR teams to build competitive benefits packages in a fraction of the time.
     
 - **Beyond** is a technology consultancy that guides their clients through transformational journeys to unlock the potential of AI and cloud-based technology. Google Workspace with Gemini helps them reduce the time from project brief to project kickoff from months to weeks, and the time for first drafts of RFI responses from days to minutes.
     
@@ -57,23 +57,23 @@
     
 - **Cognizant** used Vertex AI and Gemini built an AI agent to help legal teams draft contracts, assign risk scores and make recommendations for ways to optimize operational impact.
     
-- ***Constructora** **Las** **Galias**, a Colombia-based construction firm, is using Gemini Enterprise to power a centralized internal knowledge platform, providing streamlined sales and legal workflows and immediate employee access to critical business information.
+- **Constructora** **Las** **Galias**, a Colombia-based construction firm, is using Gemini Enterprise to power a centralized internal knowledge platform, providing streamlined sales and legal workflows and immediate employee access to critical business information.
     
-- *The **Cotality** Payoff Analysis Agent helps mortgage lenders improve customer retention and reduce loan runoff. By analyzing loan originations and payoffs, it delivers actionable intelligence to understand recapture performance, borrower behavior, and competitive insights.
+- The **Cotality** Payoff Analysis Agent helps mortgage lenders improve customer retention and reduce loan runoff. By analyzing loan originations and payoffs, it delivers actionable intelligence to understand recapture performance, borrower behavior, and competitive insights.
     
 - **Croud**, a global media agency specializing in performance and brand marketing, uses Gemini in Google Workspace to conduct deep research, analyze data, and complete research, planning, strategy, and note-taking tasks at the click of a button. Work that once required multiple handoffs can now be done independently, freeing employees for creative and strategic priorities.
     
-- ***Deloitte**’s Tariff Management Agentic Suite automates customs regulatory workflows via sub-agents that ingest documentation, extract attributes, and reconcile tariffs against filings. It flags discrepancies to ensure full audit coverage, eliminate manual effort, and recover unnoticed costs.
+- **Deloitte**’s Tariff Management Agentic Suite automates customs regulatory workflows via sub-agents that ingest documentation, extract attributes, and reconcile tariffs against filings. It flags discrepancies to ensure full audit coverage, eliminate manual effort, and recover unnoticed costs.
     
-- ***Devoteam**’s Demand Sensing Agent helps leaders improve forecast accuracy and optimize inventory. It analyzes sales and real-time market signals to provide immediate demand insights, enabling proactive adjustments. Request for Proposal Agent helps sales teams draft proposals, leveraging centralized knowledge to rapidly generate tailored and compliant proposal drafts.
+- **Devoteam**’s Demand Sensing Agent helps leaders improve forecast accuracy and optimize inventory. It analyzes sales and real-time market signals to provide immediate demand insights, enabling proactive adjustments. Request for Proposal Agent helps sales teams draft proposals, leveraging centralized knowledge to rapidly generate tailored and compliant proposal drafts.
     
-- ***DocuSign** is using Gemini to power new features that summarize complex agreements, identify key clauses, and help users understand the implications of their contracts.
+- **DocuSign** is using Gemini to power new features that summarize complex agreements, identify key clauses, and help users understand the implications of their contracts.
     
 - **Dun & Bradstreet**, a business research and intelligence service, built an email-generation tool with Gemini that helps sellers create tailored, personalized communications to prospects and customers for its research services. The company also developed intelligent search capabilities to help users with complex queries like, "Find me all the companies in this area with a high ESG rating."
     
-- *The **Dun** **&** **Bradstreet** Business Verification Agent enables trusted business verification in the Gemini Enterprise app. Powered by Dun & Bradstreet’s trusted data, it resolves businesses to a D-U-N-S Number and validates identity attributes, enabling front-line teams to move faster and focus on exceptions.
+- The **Dun** **&** **Bradstreet** Business Verification Agent enables trusted business verification in the Gemini Enterprise app. Powered by Dun & Bradstreet’s trusted data, it resolves businesses to a D-U-N-S Number and validates identity attributes, enabling front-line teams to move faster and focus on exceptions.
     
-- ***EcoVadis** is deploying Gemini Enterprise to increase its productivity and operational efficiency, enhance its client value and develop new growth opportunities.
+- **EcoVadis** is deploying Gemini Enterprise to increase its productivity and operational efficiency, enhance its client value and develop new growth opportunities.
     
 - **Finnit**, part of the Google for Startups Cloud AI Accelerator, provides AI automation solutions for corporate finance teams, helping to cut accounting procedures time by 90%, boost accuracy, and unlock unique insights.
     
@@ -87,19 +87,19 @@
     
 - **Gelato**, a Norwegian software company enabling local production for global ecommerce through 140+ printers in 32 countries, uses Gemini models to automate engineering ticket triage and customer error categorization. The AI-powered system increased ticket assignment accuracy from 60% to 90% and reduced the time to deploy ML models from two weeks to one or two days using Vertex AI.
     
-- ***Genpact**’s Finance One – Revenue Lens and PnL Agents are a suite of agents built on Google ADK and the A2A protocol, enabling finance users to gain actionable insights from revenue and profit & loss data through natural language conversations in Gemini Enterprise.
+- **Genpact**’s Finance One – Revenue Lens and PnL Agents are a suite of agents built on Google ADK and the A2A protocol, enabling finance users to gain actionable insights from revenue and profit & loss data through natural language conversations in Gemini Enterprise.
     
 - **Harvey**, a legal AI company, uses Gemini 2.5 Pro on Vertex AI to automate complex document reviews, a major pain point in the legal industry. The platform provides domain-specific AI that can reason over hundreds of pages of materials, enabling legal professionals to maximize efficiency and focus on strategic work.
     
-- ***Huge**, an American business services agency, utilized Gemini Enterprise to create AI agents that automate market research and contract analysis, generating new business intake in just minutes compared to several days.
+- **Huge**, an American business services agency, utilized Gemini Enterprise to create AI agents that automate market research and contract analysis, generating new business intake in just minutes compared to several days.
     
-- ***Incrementa**, a Chilean marketing company, is using Gemini Enterprise to automate client reporting and data analysis, helping it scale personalized service and boost campaign reach by 40%.
+- **Incrementa**, a Chilean marketing company, is using Gemini Enterprise to automate client reporting and data analysis, helping it scale personalized service and boost campaign reach by 40%.
     
 - **Inspira**, a legal tech company, tackles the time-intensive challenge of legal document analysis by providing lawyers with an AI-powered solution built on Google Cloud. Leveraging Gemini, Vertex AI, and BigQuery, Inspira's platform automates legal document search, analysis, and drafting to reduce workflow times by 80%, allowing lawyers to find answers and relevant decisions in minutes or hours instead of weeks.
     
 - **Instalily** uses Google Cloud with Gemini 2.5 and Vertex AI to power InstaWorkers that transform sales, service, and operations. At a leading field service provider, InstaWorkers cut the technician’s diagnosis time from 15 minutes to under 10 seconds, lowered serving costs by 98 percent, and drove a 99 percent improvement in end-to-end workflow speed.
     
-- *The **Iron** **Mountain** InSight DXP AI Agent bridges Gemini Enterprise and your managed content for unified search and AI-powered Q&A. Its intended purpose is to accelerate results and reduce hours of manual document review to seconds of conversational inquiry.
+- The **Iron** **Mountain** InSight DXP AI Agent bridges Gemini Enterprise and your managed content for unified search and AI-powered Q&A. Its intended purpose is to accelerate results and reduce hours of manual document review to seconds of conversational inquiry.
     
 - **Joe the Architect**, a 25-person architecture firm, catches up on long email chains with Gemini in Gmail to keep track of client needs across dozens of conversations.
     
@@ -111,7 +111,7 @@
     
 - **L+R**, a design and technology agency, leverages Gemini for Google Workspace Workspace to elevate performance and precision, streamlining workflows and empowering its team to achieve more impactful results.
     
-- *The **LumApps** AI Agent helps organizations retrieve company knowledge and announcements, trigger workflows, and complete tasks across enterprise systems.
+- The **LumApps** AI Agent helps organizations retrieve company knowledge and announcements, trigger workflows, and complete tasks across enterprise systems.
     
 - **Markups.ai**, an AI contract negotiation agent, turns a days-long human legal review into a minute(s) automated process. By simply emailing a contract, clients receive customized revisions and analysis almost instantly. Gemini 2.5 Pro enabled us to go from handling only first revisions of NDAs, to any revision of any contract (MSAs, DPAs, etc.).
     
@@ -123,7 +123,7 @@
     
 - **ObraJobs**, a job platform, connects candidates with relevant opportunities, streamline the hiring process, and deliver personalized recommendations for both job seekers and employers. Obra uses Vertex AI to power candidate matching and personalized job recommendations, supported by Cloud Storage, Cloud Run, Cloud Scheduler, Cloud Tasks, and Firestore.
     
-- *The **OpenText** Content Aviator is a generative AI assistant that enhances content search and productivity. Built on Gemini Enterprise Agent Platform, it allows users to perform natural language searches and efficiently summarize enterprise documents.
+- The **OpenText** Content Aviator is a generative AI assistant that enhances content search and productivity. Built on Gemini Enterprise Agent Platform, it allows users to perform natural language searches and efficiently summarize enterprise documents.
     
 - **Own Your Brand** founder Lauren Magenta uses Google Workspace to run her business and Gemini for Google Workspace is transforming how she manages enrollment. Gemini helps her quickly draft personalized emails to potential clients in her own voice.
     
@@ -143,9 +143,9 @@
     
 - **Sulamérica** adopted Google Workspace a decade ago to make collaboration among employees more agile, intuitive, and fluid. The insurance company recently started using Gemini in Workspace, making it available to 1,250 employees to increase operational efficiency, security, and productivity.
     
-- *The **Synthpop** Patient Journey Orchestration Agent turns unstructured referrals into validated, payer-ready orders in real time by executing intake and patient-facing workflows. These flows help payers save time as part of Synthpop’s coordinated, production-grade administrative backbone.
+- The **Synthpop** Patient Journey Orchestration Agent turns unstructured referrals into validated, payer-ready orders in real time by executing intake and patient-facing workflows. These flows help payers save time as part of Synthpop’s coordinated, production-grade administrative backbone.
     
-- ***Tata** **Consulting** **Services** (TCS) is launching new agentic AI offerings and a dedicated Gemini Enterprise practice, featuring more than 3,000 industry-focused AI agents and an expanded global network of Gemini Experience Centres to accelerate AI-native, autonomous enterprise operations.
+- **Tata** **Consulting** **Services** (TCS) is launching new agentic AI offerings and a dedicated Gemini Enterprise practice, featuring more than 3,000 industry-focused AI agents and an expanded global network of Gemini Experience Centres to accelerate AI-native, autonomous enterprise operations.
     
 - **Transcom**, a global outsourcing company, uses NotebookLM to simplify customer research and bid processes. The AI tools are deeply embedded into workflows, helping the company improve customer interactions while maintaining top-tier security standards.
     
@@ -153,9 +153,9 @@
     
 - **Upwork**, the world's human and AI-powered work marketplace, connects businesses with independent professionals. By leveraging Vertex AI Text to Speech API, Upwork delivers faster, more accurate talent matching and hiring efficiency for clients and freelancers.
     
-- ***Wimberly** **Allison** **Tong** **&** **Goo**, an international architecture and design firm, leverages Gemini Enterprise to streamline digital planning, landscape, architecture and interior design workflows and visual queries, enabling the International Hospitality Design firm to accelerate the transitions from idea generation to design concepts and high-fidelity visualizations.
+- **Wimberly** **Allison** **Tong** **&** **Goo**, an international architecture and design firm, leverages Gemini Enterprise to streamline digital planning, landscape, architecture and interior design workflows and visual queries, enabling the International Hospitality Design firm to accelerate the transitions from idea generation to design concepts and high-fidelity visualizations.
     
-- ***Workday**'s Sana Self-Service Agent instantly finds and summarizes information from Workday and other knowledge sources, providing personalized answers and assistance with tasks. With over 300 skills across areas like pay, time, and absence, the agent handles everyday HR and finance tasks globally, reducing support tickets and allowing teams to focus on high-value work.
+- **Workday**'s Sana Self-Service Agent instantly finds and summarizes information from Workday and other knowledge sources, providing personalized answers and assistance with tasks. With over 300 skills across areas like pay, time, and absence, the agent handles everyday HR and finance tasks globally, reducing support tickets and allowing teams to focus on high-value work.
     
 - **Wotter**, an employee engagement platform, uses a Gemini-powered smart assistant and Google Cloud's robust AI capability to provide real-time insights into employee sentiment. It accurately predicts flight risks and offers actionable "Wott-if" scenarios, enabling leaders to build a data-driven people strategy.
     
@@ -176,13 +176,13 @@
     
 - **Hotmob**, a Hong Kong-based data-centric media company, uses Vertex AI with Gemini models to power Caterpillar AI, a marketing tool that generates personalized text and images for specific audience personas and distribution channels. The platform enhanced marketing teams' productivity by 33%, reduced admin workloads by 50%, and enabled customers to increase posting frequency from three to 12 posts per week.
     
-- ***LILT** Assist empowers global content managers to transition from manual tasks to autonomous orchestration, managing end-to-end multilingual production and brand governance. Assist scales global content volumes with AI while ensuring enterprise-grade consistency and compliance.
+- **LILT** Assist empowers global content managers to transition from manual tasks to autonomous orchestration, managing end-to-end multilingual production and brand governance. Assist scales global content volumes with AI while ensuring enterprise-grade consistency and compliance.
     
 - **MAS**, a global experiential marketing agency, uses Gemini as a creative accelerator and idea generator, having collaborative conversations with the AI to refine ideas, bring concepts to life, and share ideas in impactful ways. The director of creative brings human input and generative AI output into harmony through an iterative process.
     
 - **MERGE**, a marketing and technology agency for health and wellness brands, uses Gemini integrated across Google Workspace to generate AI-powered templates for strategy documents, project briefs, and creative briefs that include customer data and ideas. The agency achieved an 89% sustained usage rate during a three-month pilot and improved turnaround times for client work by 33%.
     
-- **Monday.com**, a work management platform trusted by more than 245,000 customers worldwide, leverages Veo to produce training videos, social content, and internal communications in a fraction of the time — empowering all employees, not just designers, to move faster and focus on impact.
+- **Monday.com**, leverages Veo to produce training videos, social content, and internal communications in a fraction of the time — empowering all employees, not just designers, to move faster and focus on impact.
     
 - **Quom**, a financial inclusion specialist in Mexico, has developed AI-powered conversational agents that optimize and personalize user and customer support.
     
@@ -197,14 +197,14 @@
 
 - **Capgemini** has been using Code Assist to improve software engineering productivity, quality, security, and developer experience, with early results showing workload gains for coding and more stable code quality.
     
-- ***Infosys** is leveraging Gemini Enterprise within its Infosys Topaz platform and is equipping more than 100,000 Infosys developers across Infosys’ global delivery teams with Gemini Enterprise.
+- **Infosys** is leveraging Gemini Enterprise within its Infosys Topaz platform and is equipping more than 100,000 Infosys developers across Infosys’ global delivery teams with Gemini Enterprise.
     
 - **Tata Consultancy Services** (**TCS**) helps build persona-based AI agents on Google Cloud, contextualized with enterprise knowledge to accelerate software development.
 ### **Data Agents**
 
-- ***AlmapBBDO** developed SYNTHS, a pioneering platform that uses Google AI to transform synthetic data into campaign insights. The solution, built from the Gemini models, simulates opinions from various consumer profiles in real time, allowing for agile refinement of creative ideas and strategies. In comparative tests, the tool achieved the same recommendations as research conducted with real consumers.
+- **AlmapBBDO** developed SYNTHS, a pioneering platform that uses Google AI to transform synthetic data into campaign insights. The solution, built from the Gemini models, simulates opinions from various consumer profiles in real time, allowing for agile refinement of creative ideas and strategies. In comparative tests, the tool achieved the same recommendations as research conducted with real consumers.
     
-- ***Backstory**’s Revenue Answers Agent tells revenue leaders what's happening on any account, identifies deal risks, and suggests actions. It achieves this by synthesizing CRM data, engagement activity, stakeholder relationships, and public company news into actionable insights.
+- **Backstory**’s Revenue Answers Agent tells revenue leaders what's happening on any account, identifies deal risks, and suggests actions. It achieves this by synthesizing CRM data, engagement activity, stakeholder relationships, and public company news into actionable insights.
     
 - **The Colombian Security Council** developed a generative AI-based chatbot to improve data analysis and its chemical emergency management processes, allowing for quick responses to urgent situations.
     
@@ -246,11 +246,11 @@
     
 - **Servicios** **Orienta**, a Mexican personal wellness and organizational efficiency company, has adopted AI-based solutions to analyze large volumes of data, interpret results, and provide recommendations that enhance the customer experience.
     
-- *The **Skyflow** Runtime Data Security Agent helps teams securely deploy agents on Gemini Enterprise Agent Platform. It provides expert guidance and on-demand data protection with fine-grained access controls, enabling enterprises to meet compliance without risking privacy.
+- The **Skyflow** Runtime Data Security Agent helps teams securely deploy agents on Gemini Enterprise Agent Platform. It provides expert guidance and on-demand data protection with fine-grained access controls, enabling enterprises to meet compliance without risking privacy.
     
 - **Sojern**, a leading digital marketing platform for the travel industry, built its AI-driven audience targeting system on Vertex AI and Gemini, processing billions of real-time traveler intent signals to generate more than 500 million daily predictions. The company reduced audience generation time from two weeks to less than two days while helping clients achieve a 20-50% improvement in cost-per-acquisition.
     
-- ***Watershed**, a leading enterprise climate platform, is leveraging Google Cloud to transform sustainability data into actionable climate intelligence, accelerating global decarbonization and enabling organizations to move from measurement to action at an unprecedented scale.
+- **Watershed**, a leading enterprise climate platform, is leveraging Google Cloud to transform sustainability data into actionable climate intelligence, accelerating global decarbonization and enabling organizations to move from measurement to action at an unprecedented scale.
     
 - **Wisesight**, a Thailand-based social media analytics and marketing consultancy established in 2007, uses Gemini on Google Cloud to analyze large volumes of social voice data and deliver intelligent insights to clients. The platform reduced research, insights, and content creation time from two days to just 30 minutes, making data analysis accessible even to individuals with no prior data analysis experience.
     
@@ -265,8 +265,8 @@
 - **Zoi** uses Gemini to provide AI-powered search for enhanced data insights and AI assistance in document creation. The technology democratization empowers employees to unlock new value and break down data silos that hinder digital transformation.
 ### **Security Agents**
 
-- ***Deloitte** increased analyst efficiency by more than 60% using Gemini in Security Operations. They accelerated threat hunts across billions of logs from hours to seconds, and generating detection rules now takes moments rather than weeks.
+- **Deloitte** increased analyst efficiency by more than 60% using Gemini in Security Operations. They accelerated threat hunts across billions of logs from hours to seconds, and generating detection rules now takes moments rather than weeks.
     
-- ***Genpact**, a global professional services firm, improved speed to remediate zero-day vulnerabilities to 7 days with Wiz.
+- **Genpact**, a global professional services firm, improved speed to remediate zero-day vulnerabilities to 7 days with Wiz.
     
-- ***Sutherland** contains potential intrusions in under 24 hours and transitioned from reactive defense to proactive threat hunting.
+- **Sutherland** contains potential intrusions in under 24 hours and transitioned from reactive defense to proactive threat hunting.

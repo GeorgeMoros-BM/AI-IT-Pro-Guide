@@ -9,11 +9,10 @@ related:
   - "[[LLM Deployment Strategies]]"
   - "[[Data Sovereignty and AI Compliance]]"
 ---
-
 # Building a Local LLM Workstation for Enterprise AI
 
 > **TL;DR for the Busy IT Pro:**  
-> A properly configured $71K local workstation delivers private, high-performance LLM inference and fine-tuning without cloud costs or data sovereignty concerns—matching or exceeding cloud GPU performance for on-premise enterprise AI.
+> A properly configured $75K local workstation delivers private, high-performance LLM inference and fine-tuning without cloud costs or data sovereignty concerns—matching or exceeding cloud GPU performance for on-premise enterprise AI.
 
 ---
 ## What You'll Learn

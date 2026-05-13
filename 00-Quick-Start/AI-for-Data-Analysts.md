@@ -12,7 +12,6 @@ related:
   - "[[Mental-Model-Reset]]"
   - "[[RAG-Implementation]]"
 ---
-
 # AI for Data Analysts - SQL & PowerBI
 
 > **TL;DR for the Busy IT Pro:**  

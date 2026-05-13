@@ -4,7 +4,6 @@ tags: [comparison, vendor, models, foundational]
 last_updated: 2026-04-24
 review_frequency: monthly
 ---
-
 # LLM Provider Comparison - Enterprise Edition
 
 > **Last reviewed:** April 24, 2026  
@@ -14,17 +13,16 @@ review_frequency: monthly
 
 ## Use Case Matrix
 
-| Your Need | Recommended Option | Why |
-|-----------|-------------------|-----|
-| Best for coding/technical tasks | Anthropic Claude | Highest quality code generation, follows instructions precisely |
-| Largest context window | Google Gemini 1.5 | 10M tokens (can fit entire codebases) |
-| Best reasoning (complex logic) | OpenAI o1 | Extended thinking time, proves work |
-| Cost-sensitive, high volume | OpenAI GPT-4o-mini | $0.15/1M input tokens |
-| On-prem deployment required | Meta Llama 3 | Open source, self-hostable |
-| Multimodal (vision + text) | Claude 3.5 Sonnet or GPT-4o | Both excel at image understanding |
+| Your Need                       | Recommended Option          | Why                                                             |
+| ------------------------------- | --------------------------- | --------------------------------------------------------------- |
+| Best for coding/technical tasks | Anthropic Claude            | Highest quality code generation, follows instructions precisely |
+| Largest context window          | Google Gemini 3.1           | 10M tokens (can fit entire codebases)                           |
+| Best reasoning (complex logic)  | OpenAI o1                   | Extended thinking time, proves work                             |
+| Cost-sensitive, high volume     | OpenAI GPT-4o-mini          | $0.15/1M input tokens                                           |
+| On-prem deployment required     | Meta Llama 3                | Open source, self-hostable                                      |
+| Multimodal (vision + text)      | Claude 3.5 Sonnet or GPT-4o | Both excel at image understanding                               |
 
 ---
-
 ## Detailed Comparison
 
 ### Anthropic Claude 3.5 Sonnet

@@ -14,7 +14,6 @@ related:
   - "[[01-Foundation Knowledge/Prompt-Engineering-Basics|Prompt-Engineering-Basics]]"
   - "[[Cost-Management-and-ROI]]"
 ---
-
 # Starter Projects & Quick Wins
 
 > **TL;DR for the Busy IT Pro:**  
