@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "a95787164bb02ce0",
+        "id": "858b2c58db579c85",
         "type": "tabs",
         "children": [
           {
-            "id": "ae01eea64fca4442",
+            "id": "926bebd0ede0c6f5",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -190,7 +190,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ae01eea64fca4442",
+  "active": "926bebd0ede0c6f5",
   "lastOpenFiles": [
     "01-Foundation Knowledge/Prompt-Engineering-Basics.md",
     "01-Foundation Knowledge/Prompt-Operating-Contracts.md",
