@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "08-Playbooks/AI-Pilot-Launch-Playbook.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "AI-Pilot-Launch-Playbook"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md",
+                "file": "08-Playbooks/AI-Pilot-Launch-Playbook.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of index"
+              "title": "Outline of AI-Pilot-Launch-Playbook"
             }
           },
           {
@@ -197,8 +197,21 @@
   },
   "active": "926bebd0ede0c6f5",
   "lastOpenFiles": [
-    "00-Quick-Start/Executive-Summary.md",
+    "08-Playbooks/AI-Governance-Implementation-Playbook.md",
+    "07-Frameworks/Enterprise-AI-Governance-Framework.md",
+    "07-Frameworks/AI-Use-Case-Prioritization-Framework.md",
+    "07-Frameworks/AI-Operating-Model-Framework.md",
+    "07-Frameworks/AI-Adoption-Maturity-Model.md",
     "index.md",
+    "09-Reference-Architectures/Enterprise-RAG-Architecture.md",
+    "09-Reference-Architectures/Hybrid-AI-Architecture.md",
+    "09-Reference-Architectures/Enterprise-AI-Reference-Architecture.md",
+    "08-Playbooks/AI-Vendor-Selection-Playbook.md",
+    "08-Playbooks/AI-Pilot-Launch-Playbook.md",
+    "10-Executive/Board-Level-AI-Risk-Summary.md",
+    "10-Executive/AI-Investment-Rationale-One-Pager.md",
+    "10-Executive/Executive-AI-Briefing-Template.md",
+    "00-Quick-Start/Executive-Summary.md",
     "00-Quick-Start/Consulting-IP-Dashboard.md",
     "Templates/prompt-operating-contract-template.md",
     "00-Quick-Start/Quick Start & Orientation.md",
@@ -215,20 +228,7 @@
     "01-Foundation Knowledge/Modern-Prompt-Methodology-Layer.md",
     "01-Foundation Knowledge/Model-Evaluation-and-TCO.md",
     "01-Foundation Knowledge/AI-LLM-Fundamentals.md",
-    "02-Practical-Implementation/Token-Cost-Quick-Reference.md",
-    "README.md",
     "Untitled.base",
-    "Templates/eval-test-case-template.md",
-    "Templates/agent-operating-contract-template.md",
-    "_weekly-updates/2026-05-11.md",
-    "00-Quick-Start/Starter-Projects-and-Quick-Wins.md",
-    "05-Resources/Enterprise Use Cases in the Wild/Technology.md",
-    "05-Resources/Enterprise Use Cases in the Wild/Hospitality & Travel.md",
-    "05-Resources/Enterprise Use Cases in the Wild/Business & Professional Services.md",
-    "05-Resources/Enterprise Use Cases in the Wild/Automotive & Logistics.md",
-    "05-Resources/Agentic-AI Use Cases.md",
-    "04-Advanced-Topics/Agents-and-Tool-Use.md",
-    "04-Advanced-Topics/Agentic-Workflows.md",
     "05-Resources/Archived",
     "05-Resources/New folder",
     "06-LLM-Specific/Deep-Questions-for-AI",
