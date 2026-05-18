@@ -1,7 +1,4 @@
---- START OF FILE .gitignore ---
-=========================
-OS Generated Files
-=========================
+# OS Generated Files
 .DS_Store
 .DS_Store?
 ._*
@@ -10,43 +7,32 @@ OS Generated Files
 ehthumbs.db
 Thumbs.db
 Desktop.ini
-=========================
-Obsidian Specific
-=========================
-We want to commit the .obsidian folder so the team shares the same
-themes, templates, and plugin settings.
-However, we MUST ignore local workspace states so we don't constantly
-overwrite each other's open tabs and graph views in Git.
+
+# Obsidian Specific
 .obsidian/workspace
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json
 .obsidian/graph.json
-=========================
-Jekyll & GitHub Pages
-=========================
-Ignore local build folders if someone tests the site locally using Ruby/Jekyll
+
+# Jekyll & GitHub Pages
 _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
 vendor/
-=========================
-Security & AI Credentials
-=========================
-CRITICAL: Prevent developers from accidentally committing their API keys
-while testing the Python/Node snippets from the tutorials.
+
+# Security & AI Credentials
 .env
 .env.*
 *.pem
 secret
 *credentials.json
-=========================
-Developer Environments
-=========================
-Just in case the team adds local test scripts to the repo
-90-Local/
 
-pycache/
+# Developer Environments / Local Admin
+90-Local/
+90-Local-Admin/
+99-Archived/
+__pycache__/
 *.py[cod]
 *$py.class
 .venv/
