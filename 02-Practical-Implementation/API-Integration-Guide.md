@@ -15,9 +15,6 @@ related:
   - "[[Troubleshooting-AI-Runbook]]"
   - "[[Security-and-Privacy]]"
 ---
-
-# API Integration & Development
-
 > **TL;DR for the Busy IT Pro:**  
 > Do not treat LLM APIs like standard REST endpoints. They take 10x longer to respond, drop connections, and strictly rate-limit you. You must use asynchronous code, implement streaming for UX, and use exponential backoff for retries.
 

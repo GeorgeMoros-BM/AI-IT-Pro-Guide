@@ -13,6 +13,8 @@ kramdown:
 exclude:
   - .obsidian/
   - _templates/
+  - 90-Local-Admin/
+  - 99-Archived/
   - node_modules/
   - Gemfile
   - Gemfile.lock

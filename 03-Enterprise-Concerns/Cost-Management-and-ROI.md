@@ -14,7 +14,6 @@ related:
   - "[[Vendor & Tool Directory]]"
   - "[[Managing-Shadow-AI]]"
 ---
-
 # Cost Management & ROI
 
 > **TL;DR for the Busy IT Pro:**  

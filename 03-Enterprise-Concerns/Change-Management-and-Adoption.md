@@ -14,7 +14,6 @@ related:
   - "[[Governance-and-Risk]]"
   - "[[Starter-Projects-and-Quick-Wins]]"
 ---
-
 # Change Management & AI Adoption
 
 > **TL;DR for the Busy IT Pro:**  

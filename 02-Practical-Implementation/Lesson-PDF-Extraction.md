@@ -4,7 +4,6 @@ tags: [lesson-learned, rag, cost-optimization, high]
 date: 2026-04-15
 impact: high
 ---
-
 # Lesson Learned: Don't Put Raw PDFs in Context
 
 **Context:** Enterprise software company, internal Q&A chatbot project  

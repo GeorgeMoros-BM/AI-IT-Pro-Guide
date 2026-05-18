@@ -18,7 +18,6 @@ related:
 > AI is incredible at writing SQL and analyzing CSVs, but letting an LLM directly query your production database is a disaster waiting to happen. Give it schemas, not raw data.
 
 ---
-
 ## 📋 What You'll Learn
 
 - [ ] The right way to do "Text-to-SQL"
@@ -27,7 +26,6 @@ related:
 - [ ] Securing data pipelines from AI hallucinations
 
 ---
-
 ## 🎯 Why This Matters
 
 Your business users want to type: *"Show me the drop in Q3 revenue by region compared to last year"* and get a chart. 
@@ -35,7 +33,6 @@ Your business users want to type: *"Show me the drop in Q3 revenue by region com
 Data analysts are positioned to build this, but treating an LLM like a standard BI tool leads to hallucinated data. An LLM cannot reliably calculate `SUM(revenue)` over a million rows of text. It must write the *code* to do the math, not do the math itself.
 
 ---
-
 ## 🧠 Core Concepts
 
 ### Concept 1: Text-to-SQL (The safe way)
@@ -62,7 +59,6 @@ When you upload an Excel file to ChatGPT or Claude, they don't "read" the whole 
 You can replicate this in your own apps using tools like LangChain or by using the provider APIs. AI is terrible at math, but it's *excellent* at writing Python code that does math perfectly.
 
 ---
-
 ## 🛠️ Navigating the Microsoft Ecosystem
 
 If you use PowerBI, the landscape is confusing. Here is the cheat sheet:
@@ -72,7 +68,6 @@ If you use PowerBI, the landscape is confusing. Here is the cheat sheet:
 3. **Custom Azure OpenAI + PowerBI:** Best for building custom dashboards where you want an AI chat window that queries your specific semantic models via API.
 
 ---
-
 ## 💡 Tips & Tricks
 
 > [!tip] Quick Win - DAX Generation
@@ -82,7 +77,6 @@ If you use PowerBI, the landscape is confusing. Here is the cheat sheet:
 > Never give an LLM execution rights on a database without guardrails. Ensure the database user the LLM uses has **read-only permissions**, strict timeouts, and cannot access PII tables.
 
 ---
-
 ## ✅ Best Practices Checklist for Data AI
 
 - [ ] **Provide Few-Shot Examples:** Give the LLM 3-5 examples of user questions and the correct SQL output in your system prompt. This increases accuracy by 60%.

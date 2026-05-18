@@ -1,113 +1,210 @@
-# 🚀 The IT Professional's Guide to Enterprise AI
-> **A living knowledge base for enterprise IT professionals navigating the AI revolution.**
+---
 
-Welcome to the internal AI Playbook. This repository contains practical, role-based guides, architectural patterns, and real-world lessons learned for deploying AI securely and cost-effectively.
+## title: "The IT Professional's Guide to Enterprise AI"  
+artifact_type: homepage  
+status: canonical  
+publish: true  
+client_safe: true  
+last_updated: 2026-05-18
+
 
 ---
-## 🧭 Start Here
-If you only have 5 minutes, read the **[[Executive-Summary]]** to understand our enterprise strategy, the risks of shadow AI, and the immediate ROI opportunities.
+# The IT Professional's Guide to Enterprise AI
 
-If you are looking for our curated learning resources and the "Essential 10" list of podcasts/newsletters, visit the **[[Learning-Corner]]**.
-
----
-## 🎯 Role-Based Fast Tracks
-*Choose your role to get a curated path through this knowledge base:*
-### 🔧 For Infrastructure & InfoSec
-*Deploy, scale, and secure AI systems.*
-1. [[Security-and-Privacy]] - Defend against Prompt Injection and protect PII.
-2. [[Local-vs-Cloud-Architecture]] - When to use APIs vs. bare-metal GPUs.
-3. [[Model-Evaluation-and-TCO]] - Ignore vendor hype; calculate true costs.
-4. [[Vector-Database-Comparison]] - Where to store your embeddings.
-### 💼 For Business Integration Leaders
-*Drive adoption, manage risk, and demonstrate ROI.*
-1. [[Managing-Shadow-AI]] - Why blocking public AI doesn't work.
-2. [[Starter-Projects-and-Quick-Wins]] - The 4 high-ROI internal projects to build first.
-3. [[Governance-and-Risk]] - Audit trails and vendor assessments.
-4. [[Change-Management-and-Adoption]] - Getting teams to actually use the tools.
-### 👨‍💻 For Software SMEs (Developers & Architects)
-*Learn how to build deterministic apps using probabilistic models.*
-1. [[Mental-Model-Reset]] - Stop treating LLMs like databases.
-2. [[Prompt-Engineering-Basics]] - Force JSON outputs.
-3. [[API-Integration-Guide]] - Handle rate limits and streaming UX.
-4. [[Agents & Tool Use (Function Calling)]] - Give AI the ability to execute backend code.
-### 📊 For PowerBI & Data Analysts
-*Learn the safe way to use Text-to-SQL and data extraction.*
-1. [[AI-for-Data-Analysts]] - Stop letting AI hallucinate math.
-2. [[PowerBI-and-Fabric-AI]] - Configure semantic models for Copilot.
-3. [[Lesson-PDF-Extraction]] - How to extract messy data perfectly.
+> A living operational knowledge system for enterprise AI governance, architecture, implementation, and transformation.
 
 ---
-## 📚 Master Table of Contents
+# What This Is
 
-<details>
-<summary><b>📂 00 Quick Start</b></summary>
-<ul>
-  <li>[[Executive-Summary]]</li>
-  <li>[[Mental-Model-Reset]]</li>
-  <li>[[Quick Start & Orientation]]</li>
-  <li>[[Starter-Projects-and-Quick-Wins]]</li>
-</ul>
-</details>
+This repository is designed as:
+- an enterprise AI operating system
+- a practical IT implementation guide
+- a reusable consulting knowledge base
+- a governance and architecture reference
+- a publishable enterprise AI platform
 
-<details>
-<summary><b>📂 01 Foundation Knowledge</b></summary>
-<ul>
-  <li>[[AI-LLM-Fundamentals]]</li>
-  <li>[[Key-Architectures]] (RAG vs Agents vs Fine-Tuning)</li>
-  <li>[[LLM-Provider-Comparison]]</li>
-  <li>[[Local-vs-Cloud-Architecture]]</li>
-  <li>[[Model-Evaluation-and-TCO]]</li>
-</ul>
-</details>
+The goal is not simply to document AI tools.
 
-<details>
-<summary><b>📂 02 Practical Implementation</b></summary>
-<ul>
-  <li>[[API-Integration-Guide]]</li>
-  <li>[[PowerBI-and-Fabric-AI]]</li>
-  <li>[[RAG-Implementation]]</li>
-  <li>[[Token-Cost-Quick-Reference]]</li>
-  <li>💡 [[Tip-Prompt-Caching]]</li>
-  <li>📖 [[Lesson-PDF-Extraction]]</li>
-</ul>
-</details>
-
-<details>
-<summary><b>📂 03 Enterprise Concerns</b></summary>
-<ul>
-  <li>[[Security-and-Privacy]]</li>
-  <li>[[Governance-and-Risk]]</li>
-  <li>[[Cost-Management-and-ROI]]</li>
-  <li>[[Change-Management-and-Adoption]]</li>
-  <li>[[Managing-Shadow-AI]]</li>
-</ul>
-</details>
-
-<details>
-<summary><b>📂 04 Advanced Topics</b></summary>
-<ul>
-  <li>[[Advanced-RAG-Techniques]]</li>
-  <li>[[Agents-and-Tool-Use]]</li>
-  <li>[[Evaluation-and-Testing]] (AI CI/CD)</li>
-  <li>[[local-llm-workstation-setup-2026]]</li>
-</ul>
-</details>
-
-<details>
-<summary><b>📂 05 Resources & Glossary</b></summary>
-<ul>
-  <li>[[AI-Learning-Corner]] (Podcasts, Newsletters & Video)</li>
-  <li>[[Enterprise-AI-Glossary]]</li>
-  <li>[[Troubleshooting-AI-Runbook]]</li>
-  <li>[[Vector-Database-Comparison]]</li>
-  <li>[[Vendor & Tool Directory]]</li>
-</ul>
-</details>
+The goal is to help organizations:
+- operationalize AI responsibly
+- integrate AI into enterprise workflows
+- govern AI systems effectively
+- build retrieval-aware architectures
+- scale AI adoption sustainably
 
 ---
-## 📡 Latest Intelligence
-Check the `_weekly-updates` folder for the latest signals, model drops, and architecture shifts. 
-👉 **Latest Update:** [[2026-04-26]]
+# Start Here
+
+## New Readers
+
+Recommended sequence:
+
+1. [[Executive Summary]]
+2. [[Mental Model Reset]]
+3. [[Quick Start & Orientation]]
+4. [[How To Use This Vault]]
 
 ---
-*Built with ❤️ by George Moros at Strategex.*
+# Role-Based Learning Paths
+
+## Executives & Technology Leaders
+
+Focus:
+- governance
+- operating models
+- portfolio management
+- enterprise transformation
+
+Recommended:
+- [[AI Governance]]
+- [[Enterprise AI Operating Model]]
+- [[AI Portfolio Management]]
+- [[AI Risk Classification Framework]]
+
+## Enterprise Architects
+
+Focus:
+- orchestration
+- retrieval systems
+- AI platform architecture
+- scalability
+
+Recommended:
+- [[Enterprise RAG]]
+- [[Context Engineering]]
+- [[AI System Architecture Patterns]]
+- [[AI Platform Evaluation Framework]]
+
+## IT Operations & Infrastructure
+
+Focus:
+- deployment
+- security
+- observability
+- AI infrastructure governance
+
+Recommended:
+- [[Local vs Cloud AI Decision Framework]]
+- [[Enterprise AI FinOps Framework]]
+- [[AI System Architecture Patterns]]
+
+## AI Consultants & Strategists
+
+Focus:
+- adoption
+- governance
+- transformation
+- reusable delivery models
+
+Recommended:
+- [[AI Adoption Playbook]]
+- [[Build vs Buy Framework]]
+- [[Enterprise AI Governance Framework]]
+- [[AI Portfolio Management]]
+
+---
+# Core Knowledge Areas
+
+## Foundation Knowledge
+
+Core AI concepts, architectures, and mental models.
+
+## Practical Implementation
+
+Implementation patterns, workflows, and operational guidance.
+
+## Enterprise Concerns
+
+Governance, security, operating models, and risk management.
+
+## Advanced Topics
+
+Retrieval systems, orchestration, evaluation, and agentic workflows.
+
+## Frameworks & Playbooks
+
+Reusable strategic and operational assets.
+
+---
+# Core Philosophy
+
+This vault prioritizes:
+- operational realism
+- governance-aware design
+- systems thinking
+- reusable intellectual property
+- executive usefulness
+- retrieval-aware architecture
+
+It intentionally avoids:
+- AI hype cycles
+- novelty-driven architecture
+- complexity theater
+- tool-centric thinking
+
+---
+# Strategic Themes
+
+The vault increasingly focuses on:
+
+- AI governance
+- operating models
+- retrieval architecture
+- orchestration systems
+- evaluation frameworks
+- lifecycle management
+- enterprise AI portfolio management
+- context engineering
+
+---
+# Recommended Next Steps
+
+## If You Want Technical Depth
+
+Start with:
+
+- [[Enterprise RAG]]
+- [[Context Engineering]]
+- [[Agentic Workflows]]
+
+## If You Want Governance & Strategy
+
+Start with:
+
+- [[AI Governance]]
+- [[Enterprise AI Governance Framework]]
+- [[AI Operating Model Framework]]
+
+## If You Want Practical Implementation
+
+Start with:
+
+- [[AI Adoption Playbook]]
+- [[Starter Projects and Quick Wins]]
+- [[RAG Implementation]]
+
+---
+# Repository Structure
+
+|Folder|Purpose|
+|---|---|
+|00-System|Governance and operational control plane|
+|00-Quick-Start|Reader onboarding and orientation|
+|01-06|Evergreen knowledge and implementation|
+|07-10|Frameworks, playbooks, and executive assets|
+|11-15|Research, synthesis, operations, and publishing|
+
+---
+# Long-Term Vision
+
+This repository is evolving toward:
+
+- a durable enterprise AI knowledge system
+- a reusable consulting operating model
+- a semantic retrieval platform
+- a publishable AI governance ecosystem
+- an AI-assisted institutional memory layer
+
+---
+*Built with ❤️ for enterprise practitioners navigating operational AI transformation.
+by **George Moros** at Strategex.*

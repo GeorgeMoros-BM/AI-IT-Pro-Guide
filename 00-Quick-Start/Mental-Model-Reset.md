@@ -237,6 +237,82 @@ Think of LLMs as:
 - **Assistants, not replacements** - They augment humans, they don't replace critical thinking
 
 ---
+# The Next Mental Model Shift
+
+Understanding LLM behavior is only the first stage of enterprise AI maturity.
+
+The next shift is realizing that AI is increasingly becoming operational infrastructure rather than standalone software.
+
+Early enterprise adoption treated AI primarily as:
+- chat interfaces
+- productivity tools
+- isolated copilots
+- prompt experimentation
+
+That framing is already becoming insufficient.
+
+AI is evolving into:
+- workflow infrastructure
+- orchestration infrastructure
+- retrieval infrastructure
+- decision-support infrastructure
+- enterprise operating infrastructure
+
+This changes:
+- governance
+- architecture
+- budgeting
+- ownership
+- operational accountability
+## Prompting Is Not the End State
+
+Early adoption focused heavily on prompts.
+
+Mature enterprise AI increasingly depends on:
+- context engineering
+- retrieval systems
+- orchestration
+- evaluation frameworks
+- operational governance
+- lifecycle management
+
+Prompt quality still matters, but context quality often matters more.
+## Most AI Problems Are Operational
+
+The largest enterprise failure modes today are usually:
+- governance gaps
+- fragmented tooling
+- poor workflow integration
+- weak retrieval systems
+- unclear ownership
+- missing evaluation discipline
+not:
+- insufficient prompting sophistication
+## AI Changes Organizational Design
+
+AI affects:
+- operating models
+- platform strategy
+- workflow ownership
+- workforce enablement
+- knowledge architecture
+- governance structures
+
+This is organizational transformation, not just software deployment.
+## Strategic Insight
+
+Long-term competitive advantage is unlikely to come solely from:
+- model access
+- prompt tricks
+- novelty tooling
+
+It is more likely to come from:
+- operational integration
+- governance maturity
+- knowledge architecture
+- retrieval quality
+- institutional adaptability
+---
 ## Setting Stakeholder Expectations
 
 When your CEO/VP asks "Can we use AI to...":

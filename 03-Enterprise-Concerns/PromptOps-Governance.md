@@ -16,9 +16,6 @@ related:
   - "[[Prompt-Operating-Contracts]]"
   - "[[Security-and-Privacy]]"
 ---
-
-# PromptOps Governance
-
 > **TL;DR for the Busy IT Pro:**  
 > Treat prompts, tools, retrieval settings, evals, and model choices as governed production assets, not private notes inside someone's chat history.
 

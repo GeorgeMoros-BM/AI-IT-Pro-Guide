@@ -12,7 +12,6 @@ related:
   - "[[Security & Privacy]]"
   - "[[Risk Management Framework]]"
 ---
-
 # Managing Shadow AI & Secure Chatbots
 
 > **TL;DR for the Busy IT Pro:**  

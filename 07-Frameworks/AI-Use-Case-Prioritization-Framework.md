@@ -19,7 +19,6 @@ client_safe: true
 Provide a repeatable mechanism for evaluating and sequencing enterprise AI initiatives based on strategic value, operational feasibility, and organizational readiness.
 
 ---
-
 # Evaluation Dimensions
 
 | Dimension | Key Question |
@@ -32,7 +31,6 @@ Provide a repeatable mechanism for evaluating and sequencing enterprise AI initi
 | Scalability | Can the pattern be reused elsewhere? |
 
 ---
-
 # Scoring Model
 
 | Score | Interpretation |
@@ -43,7 +41,6 @@ Provide a repeatable mechanism for evaluating and sequencing enterprise AI initi
 | 9-10 | High strategic value |
 
 ---
-
 # Prioritization Matrix
 
 ## High Value / Low Complexity
@@ -59,7 +56,6 @@ Opportunistic automations.
 Defer or reject.
 
 ---
-
 # Recommended Deliverables
 
 - AI opportunity backlog

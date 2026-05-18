@@ -16,7 +16,6 @@ related:
   - "[[Security-and-Privacy]]"
   - "[[PromptOps-Governance]]"
 ---
-
 # Research, RAG & Evidence
 
 > **TL;DR for the Busy IT Pro:**  

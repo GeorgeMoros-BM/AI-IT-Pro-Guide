@@ -4,7 +4,6 @@ tags: [tip, cost-optimization, token-economics, beginner]
 date_added: 2026-04-22
 estimated_savings: $400-800/month for medium usage
 ---
-
 # Reduce Token Costs by 40% with Prompt Caching
 
 **Category:** [[Token Economics]]  

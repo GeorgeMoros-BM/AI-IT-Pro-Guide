@@ -3,7 +3,6 @@ title: Token Cost Optimization - Quick Reference
 tags: [quick-ref, cost-optimization, tokens]
 last_updated: 2026-04-24
 ---
-
 # Token Cost Optimization Quick Reference Card
 
 > **Use this when:** Your AI bill is growing and you need quick wins

@@ -18,14 +18,11 @@ related:
   - "[[Enterprise-AI-Governance-Framework]]"
   - "[[AI-Operating-Model-Framework]]"
 ---
-## Purpose
-
 This framework provides a structured mechanism for evaluating enterprise AI maturity across governance, operations, technology, workforce enablement, and business execution.
 
 The goal is not merely to measure adoption. The goal is to determine whether AI capabilities are becoming operationally reliable, strategically aligned, and economically scalable.
 
 ---
-
 # Maturity Levels
 
 | Level | Name | Characteristics |
@@ -37,7 +34,6 @@ The goal is not merely to measure adoption. The goal is to determine whether AI 
 | 5 | Strategic | AI treated as enterprise capability and competitive differentiator |
 
 ---
-
 # Assessment Domains
 
 ## Strategy & Leadership
@@ -76,7 +72,6 @@ Evaluate:
 - operational ownership
 
 ---
-
 # Typical Failure Modes
 
 - Shadow AI proliferation
@@ -87,7 +82,6 @@ Evaluate:
 - Lack of operational monitoring
 
 ---
-
 # Recommended Outputs
 
 - Maturity heatmap

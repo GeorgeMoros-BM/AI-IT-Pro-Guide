@@ -15,7 +15,6 @@ related:
   - "[[Prompt-Engineering-Playbook]]"
   - "[[Security-and-Privacy]]"
 ---
-
 # Microsoft Power BI & Fabric AI Deep Dive
 
 > **TL;DR for the Busy IT Pro:**  
