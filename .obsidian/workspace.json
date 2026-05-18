@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "12-Synthesis/_README_12-Synthesis.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "_README_12-Synthesis"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
+                "file": "12-Synthesis/_README_12-Synthesis.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of README"
+              "title": "Outline of _README_12-Synthesis"
             }
           },
           {
@@ -195,10 +195,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b9a0ae8db1035638",
+  "active": "877aadd9f5cd2eed",
   "lastOpenFiles": [
-    "index.md",
+    "14-Publishing/_README_14-Publishing.md",
+    "15-Case-Studies/_README_15-Case-Studies.md",
+    "12-Synthesis/_README_12-Synthesis.md",
     "README.md",
+    "index.md",
     "13-Operational-Systems/Context-Engineering.md",
     "00-Quick-Start/Executive-Summary.md",
     "00-System/Vault-Home.md",
@@ -224,9 +227,6 @@
     "00-System/MOCs",
     "00-System/Decision-Log.md",
     "00-System/Lifecycle-States.md",
-    "00-System/Publishing-Pipeline.md",
-    "00-System/AI-Agent-Interaction-Standards.md",
-    "11-Research/Weekly-Intelligence/2026-05-16.md",
     "11-Research/Weekly-Intelligence",
     "_config.yml",
     "90-Local-Admin",
