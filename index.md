@@ -39,8 +39,8 @@ The goal is to help organizations:
 
 Recommended sequence:
 
-1. [[Executive Summary]]
-2. [[Mental Model Reset]]
+1. [[Executive-Summary]]
+2. [[Mental-Model-Reset]]
 3. [[Quick Start & Orientation]]
 4. [[How To Use This Vault]]
 
@@ -56,10 +56,10 @@ Focus:
 - enterprise transformation
 
 Recommended:
-- [[AI Governance]]
-- [[Enterprise AI Operating Model]]
-- [[AI Portfolio Management]]
-- [[AI Risk Classification Framework]]
+- [[AI-Governance]]
+- [[Enterprise-AI-Operating-Model]]
+- [[AI-Portfolio-Management]]
+- [[AI-Risk-Classification-Framework]]
 
 ## Enterprise Architects
 
@@ -70,10 +70,10 @@ Focus:
 - scalability
 
 Recommended:
-- [[Enterprise RAG]]
-- [[Context Engineering]]
-- [[AI System Architecture Patterns]]
-- [[AI Platform Evaluation Framework]]
+- [[Enterprise-RAG]]
+- [[13-Operational-Systems/Context-Engineering|Context-Engineering]]
+- [[AI-System-Architecture-Patterns]]
+- [[AI-Platform-Evaluation-Framework]]
 
 ## IT Operations & Infrastructure
 
@@ -84,9 +84,9 @@ Focus:
 - AI infrastructure governance
 
 Recommended:
-- [[Local vs Cloud AI Decision Framework]]
-- [[Enterprise AI FinOps Framework]]
-- [[AI System Architecture Patterns]]
+- [[Local-vs-Cloud-AI-Decision-Framework]]
+- [[Enterprise-AI-FinOps-Framework]]
+- [[AI-System-Architecture-Patterns]]
 
 ## AI Consultants & Strategists
 
@@ -97,10 +97,10 @@ Focus:
 - reusable delivery models
 
 Recommended:
-- [[AI Adoption Playbook]]
-- [[Build vs Buy Framework]]
-- [[Enterprise AI Governance Framework]]
-- [[AI Portfolio Management]]
+- [[AI-Adoption-Playbook]]
+- [[Build-vs-Buy-Framework]]
+- [[Enterprise-AI-Governance-Framework]]
+- [[AI-Portfolio-Management]]
 
 ---
 # Core Knowledge Areas
@@ -163,25 +163,25 @@ The vault increasingly focuses on:
 
 Start with:
 
-- [[Enterprise RAG]]
-- [[Context Engineering]]
-- [[Agentic Workflows]]
+- [[Enterprise-RAG]]
+- [[13-Operational-Systems/Context-Engineering|Context-Engineering]]
+- [[13-Operational-Systems/Agentic-Workflows|Agentic-Workflows]]
 
 ## If You Want Governance & Strategy
 
 Start with:
 
-- [[AI Governance]]
-- [[Enterprise AI Governance Framework]]
-- [[AI Operating Model Framework]]
+- [[AI-Governance]]
+- [[Enterprise-AI-Governance-Framework]]
+- [[AI-Operating-Model-Framework]]
 
 ## If You Want Practical Implementation
 
 Start with:
 
-- [[AI Adoption Playbook]]
-- [[Starter Projects and Quick Wins]]
-- [[RAG Implementation]]
+- [[AI-Adoption-Playbook]]
+- [[Starter-Projects-and-Quick-Wins]]
+- [[RAG-Implementation]]
 
 ---
 # Repository Structure
@@ -206,5 +206,4 @@ This repository is evolving toward:
 - an AI-assisted institutional memory layer
 
 ---
-*Built with ❤️ for enterprise practitioners navigating operational AI transformation.
-by **George Moros** at Strategex.*
+*Built by **George Moros** at Strategex.* for enterprise practitioners navigating operational AI transformation.

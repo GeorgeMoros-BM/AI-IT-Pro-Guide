@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00-System/Vault-Home.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Vault-Home"
+              "title": "README"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00-System/Vault-Home.md",
+                "file": "README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Vault-Home"
+              "title": "Outline of README"
             }
           },
           {
@@ -195,15 +195,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "877aadd9f5cd2eed",
+  "active": "b9a0ae8db1035638",
   "lastOpenFiles": [
+    "index.md",
+    "README.md",
+    "13-Operational-Systems/Context-Engineering.md",
+    "00-Quick-Start/Executive-Summary.md",
+    "00-System/Vault-Home.md",
     "90-Local-Admin/ITPro.txt",
     "11-Research/Weekly-Intelligence/Weekly-Intelligence-MOC.md",
     "90-Local-Admin/Vault Health.md",
     "90-Local-Admin/Consulting-IP-Dashboard.md",
     "90-Local-Admin/File List.base",
     "00-System/MOCs/Vault-Operations-MOC.md",
-    "00-System/Vault-Home.md",
     "09-Reference-Architectures/Reference-Architectures-MOC.md",
     "00-System/MOCs/Prompt-Engineering-MOC.md",
     "05-Resources/Resources-MOC.md",
@@ -223,16 +227,12 @@
     "00-System/Publishing-Pipeline.md",
     "00-System/AI-Agent-Interaction-Standards.md",
     "11-Research/Weekly-Intelligence/2026-05-16.md",
-    "00-System/Navigation-Map.md",
-    "00-System/Metadata-Standards.md",
-    "00-System/Maps-of-Content-Strategy.md",
     "11-Research/Weekly-Intelligence",
     "_config.yml",
     "90-Local-Admin",
     "New folder",
     "Untitled.base",
     "00-System",
-    "15-Case-Studies",
     "Untitled.canvas"
   ]
 }
