@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "12-Synthesis/_README_12-Synthesis.md",
+                "file": "00-System/AI-IT-Pro-Guide-Operating-Context.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_README_12-Synthesis"
+              "title": "AI-IT-Pro-Guide-Operating-Context"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "12-Synthesis/_README_12-Synthesis.md",
+                "file": "00-System/AI-IT-Pro-Guide-Operating-Context.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of _README_12-Synthesis"
+              "title": "Outline of AI-IT-Pro-Guide-Operating-Context"
             }
           },
           {
@@ -195,11 +195,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "877aadd9f5cd2eed",
+  "active": "b9a0ae8db1035638",
   "lastOpenFiles": [
+    "12-Synthesis/_README_12-Synthesis.md",
+    "00-System/AI-IT-Pro-Guide-Operating-Context.md",
     "14-Publishing/_README_14-Publishing.md",
     "15-Case-Studies/_README_15-Case-Studies.md",
-    "12-Synthesis/_README_12-Synthesis.md",
     "README.md",
     "index.md",
     "13-Operational-Systems/Context-Engineering.md",
@@ -226,7 +227,6 @@
     "ITPro.txt",
     "00-System/MOCs",
     "00-System/Decision-Log.md",
-    "00-System/Lifecycle-States.md",
     "11-Research/Weekly-Intelligence",
     "_config.yml",
     "90-Local-Admin",
