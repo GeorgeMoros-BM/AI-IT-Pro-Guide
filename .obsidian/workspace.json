@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "11-Research/Weekly-Intelligence/2026-05-22.md",
+                "file": "11-Research/Weekly-Intelligence/Weekly-Intelligence-MOC.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-05-22"
+              "title": "Weekly-Intelligence-MOC"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "11-Research/Weekly-Intelligence/2026-05-22.md",
+                "file": "11-Research/Weekly-Intelligence/Weekly-Intelligence-MOC.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2026-05-22"
+              "title": "Outline of Weekly-Intelligence-MOC"
             }
           },
           {
@@ -197,8 +197,13 @@
   },
   "active": "b9a0ae8db1035638",
   "lastOpenFiles": [
-    "11-Research/Weekly-Intelligence/2026-05-16.md",
+    "Longitudinal-Themes.md",
+    "11-Research/Weekly-Intelligence/Weekly-Intelligence-MOC.md",
     "11-Research/Weekly-Intelligence/2026-05-22.md",
+    "11-Research/Weekly-Intelligence/2026-05-16.md",
+    "11-Research/Weekly-Intelligence/2026-05-11.md",
+    "11-Research/Weekly-Intelligence/2026-04-26.md",
+    "11-Research/Weekly-Intelligence/2026-05-09.md",
     "00-System/AI-IT-Pro-Guide-Operating-Context.md",
     "12-Synthesis/_README_12-Synthesis.md",
     "14-Publishing/_README_14-Publishing.md",
@@ -209,7 +214,6 @@
     "00-Quick-Start/Executive-Summary.md",
     "00-System/Vault-Home.md",
     "90-Local-Admin/ITPro.txt",
-    "11-Research/Weekly-Intelligence/Weekly-Intelligence-MOC.md",
     "90-Local-Admin/Vault Health.md",
     "90-Local-Admin/Consulting-IP-Dashboard.md",
     "90-Local-Admin/File List.base",
@@ -221,10 +225,6 @@
     "07-Frameworks/Frameworks-MOC.md",
     "04-Advanced-Topics/Advanced-Topics-MOC.md",
     "03-Enterprise-Concerns/Enterprise-Concerns-MOC.md",
-    "02-Practical-Implementation/Practical-Implementation-MOC.md",
-    "00-Quick-Start/Quick-Start-MOC.md",
-    "00-System/MOCs/Enterprise-RAG-MOC.md",
-    "00-System/MOCs/AI-Governance-MOC.md",
     "ITPro.txt",
     "00-System/MOCs",
     "11-Research/Weekly-Intelligence",
