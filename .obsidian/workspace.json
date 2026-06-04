@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "06-LLM-Specific/Anthropic-Claude/Skills/frontend-design.md",
+                "file": "06-LLM-Specific/_Deep-Questions-for-AI/DeepSeek.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "frontend-design"
+              "title": "DeepSeek"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "06-LLM-Specific/Anthropic-Claude/Skills/frontend-design.md",
+                "file": "06-LLM-Specific/_Deep-Questions-for-AI/DeepSeek.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of frontend-design"
+              "title": "Outline of DeepSeek"
             }
           },
           {
@@ -180,7 +180,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 473.5
+    "width": 250.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -197,12 +197,22 @@
   },
   "active": "b9a0ae8db1035638",
   "lastOpenFiles": [
-    "11-Research/Weekly-Intelligence/Weekly-Intelligence-MOC.md",
-    "06-LLM-Specific/Anthropic-Claude/Skills/frontend-design.md",
-    "06-LLM-Specific/Anthropic-Claude/Skills",
-    "Longitudinal-Themes.md",
+    "06-LLM-Specific/Anthropic-Claude/Opus 4.8.md",
+    "06-LLM-Specific/Head-to-Head Comparison.md",
+    "06-LLM-Specific/xAI-Grok/Grok 4.3.md",
+    "06-LLM-Specific/Google_Gemini/Gemini 3.1 Pro.md",
+    "06-LLM-Specific/xAI-Grok",
+    "06-LLM-Specific/OpenAI-ChatGPT/GPT 5.5.md",
+    "06-LLM-Specific/Google_Gemini",
+    "11-Research/Weekly-Intelligence/2026-05-29.md",
     "11-Research/Weekly-Intelligence/2026-05-22.md",
     "11-Research/Weekly-Intelligence/2026-05-16.md",
+    "06-LLM-Specific/Anthropic-Claude/Skills/frontend-design.md",
+    "11-Research/Weekly-Intelligence/AI Weekly 0529.md",
+    "11-Research/Weekly-Intelligence/AI Weekly 0523.md",
+    "11-Research/Weekly-Intelligence/Weekly-Intelligence-MOC.md",
+    "06-LLM-Specific/Anthropic-Claude/Skills",
+    "Longitudinal-Themes.md",
     "11-Research/Weekly-Intelligence/2026-05-11.md",
     "11-Research/Weekly-Intelligence/2026-04-26.md",
     "11-Research/Weekly-Intelligence/2026-05-09.md",
@@ -217,22 +227,12 @@
     "00-System/Vault-Home.md",
     "90-Local-Admin/ITPro.txt",
     "90-Local-Admin/Vault Health.md",
-    "90-Local-Admin/Consulting-IP-Dashboard.md",
     "90-Local-Admin/File List.base",
-    "00-System/MOCs/Vault-Operations-MOC.md",
-    "09-Reference-Architectures/Reference-Architectures-MOC.md",
-    "00-System/MOCs/Prompt-Engineering-MOC.md",
-    "05-Resources/Resources-MOC.md",
-    "08-Playbooks/Playbooks-MOC.md",
-    "07-Frameworks/Frameworks-MOC.md",
-    "04-Advanced-Topics/Advanced-Topics-MOC.md",
     "ITPro.txt",
     "00-System/MOCs",
     "11-Research/Weekly-Intelligence",
     "_config.yml",
     "90-Local-Admin",
-    "New folder",
-    "Untitled.base",
     "Untitled.canvas"
   ]
 }
