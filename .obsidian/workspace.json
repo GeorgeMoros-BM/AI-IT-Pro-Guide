@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "06-LLM-Specific/Anthropic-Claude/Opus 4.8.md",
+                "file": "04-Advanced-Topics/Context-Engineering.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Opus 4.8"
+              "title": "Context-Engineering"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "06-LLM-Specific/Anthropic-Claude/Opus 4.8.md",
+                "file": "04-Advanced-Topics/Context-Engineering.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Opus 4.8"
+              "title": "Outline of Context-Engineering"
             }
           },
           {
@@ -197,9 +197,12 @@
   },
   "active": "b9a0ae8db1035638",
   "lastOpenFiles": [
+    "README.md",
+    "index.md",
+    "Longitudinal-Themes.md",
+    "06-LLM-Specific/Anthropic-Claude/Opus 4.8.md",
     "11-Research/Weekly-Intelligence/2026-05-29.md",
     "06-LLM-Specific/_Deep-Questions-for-AI/DeepSeek.md",
-    "06-LLM-Specific/Anthropic-Claude/Opus 4.8.md",
     "06-LLM-Specific/Head-to-Head Comparison.md",
     "06-LLM-Specific/xAI-Grok/Grok 4.3.md",
     "06-LLM-Specific/Google_Gemini/Gemini 3.1 Pro.md",
@@ -213,7 +216,6 @@
     "11-Research/Weekly-Intelligence/AI Weekly 0523.md",
     "11-Research/Weekly-Intelligence/Weekly-Intelligence-MOC.md",
     "06-LLM-Specific/Anthropic-Claude/Skills",
-    "Longitudinal-Themes.md",
     "11-Research/Weekly-Intelligence/2026-05-11.md",
     "11-Research/Weekly-Intelligence/2026-04-26.md",
     "11-Research/Weekly-Intelligence/2026-05-09.md",
@@ -221,8 +223,6 @@
     "12-Synthesis/_README_12-Synthesis.md",
     "14-Publishing/_README_14-Publishing.md",
     "15-Case-Studies/_README_15-Case-Studies.md",
-    "README.md",
-    "index.md",
     "13-Operational-Systems/Context-Engineering.md",
     "00-Quick-Start/Executive-Summary.md",
     "00-System/Vault-Home.md",

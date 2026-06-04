@@ -117,3 +117,5 @@ The future advantage in enterprise AI likely comes more from:
 - operational memory design
 
 than raw model access.
+
+Really good current info can be found at https://github.com/Meirtz/Awesome-Context-Engineering
