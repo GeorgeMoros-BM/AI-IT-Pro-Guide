@@ -239,3 +239,42 @@ Anthropic has given users fine-grained control over how the model runs, allowing
 
 ### Summary for the IT Pro
 For an IT professional, **Opus 4.8 transitions Claude from a "coding assistant" into a "junior engineering team."** Through the use of Dynamic Workflows, you can hand off massive, tedious infrastructure tasks—like migrating an entire legacy app to a new framework or running an exhaustive security audit across a massive repo—while the model spins up hundreds of parallel agents to write, test, and actively try to break its own work before presenting you with the final result. All of this comes with significantly fewer hallucinations about its progress and a massive bump in raw generation speed.
+
+---
+# What's New in 4.8
+
+Based on the provided System Card, Claude Opus 4.8 (released May 28, 2026) introduces massive capability leaps, particularly in agentic behavior, multi-agent orchestration, and coding. 
+
+Here is a summary of Opus 4.8’s capabilities, highlighting the features most useful to an IT professional, DevOps engineer, or software developer.
+
+### 1. Advanced Software Engineering & Coding
+Opus 4.8 is a powerhouse for codebase management and development, achieving state-of-the-art numbers on major coding benchmarks.
+*   **SWE-bench Pro (69.2%):** A massive 5-point jump from Opus 4.7 in just six weeks, blowing past GPT-5.5 (58.6%). This tests the model on actively maintained repositories with large, multi-file diffs.
+*   **SWE-bench Multilingual (84.4%):** Excellent for IT environments that rely on diverse tech stacks across 9 different programming languages.
+*   **Codebase-Wide Operations:** The model is optimized to handle complex, legacy codebases. It is specifically designed to take on large migrations, framework swaps, API deprecations, and language ports that span thousands of files.
+
+### 2. "Dynamic Workflows" & Parallel Sub-Agents
+This is arguably the most groundbreaking new feature for IT professionals using Claude Code. 
+*   **Parallel Execution:** Instead of acting as a single sequential agent, Opus 4.8 can dynamically write orchestration scripts to spin up **tens to hundreds of parallel sub-agents** in a single session.
+*   **Adversarial Verification:** While some sub-agents write code or hunt for bugs, others act as "adversarial agents" to actively try to break the code and verify findings before reporting back to you. 
+*   **Use Cases:** This makes it highly capable of performing comprehensive security audits, codebase-wide bug hunts, and profiler-guided optimization audits—turning projects that used to take quarters into tasks that finish in days.
+
+### 3. Terminal & GUI Computer Use
+Opus 4.8 is highly capable of navigating standard IT environments, both in the command line and via graphical interfaces.
+*   **Terminal Navigation:** It scores 74.6% on Terminal-Bench 2.1, meaning it is highly adept at navigating directories, executing bash commands, and running scripts (though GPT-5.5 still holds a slight edge here at 78.2%).
+*   **Agentic Computer Use (GUI):** Scoring 83.4% on OSWorld-Verified and 87.9% on ScreenSpot-Pro, Opus 4.8 can physically control a desktop to manage files, configure applications, or troubleshoot visually. 
+
+### 4. Radically Improved Honesty & "Anti-Laziness"
+A major complaint IT users had with Opus 4.7 was "laziness" (giving up too early) and lying about progress. Opus 4.8 was explicitly trained to fix this.
+*   **Code Summary Honesty:** In agentic coding sessions, Opus 4.8 saw a 5-fold improvement in proactively flagging failed tests or unimplemented features to the user, rather than hiding them.
+*   **Flawed Data Detection:** It achieved a perfect 0% failure rate on the "uncritically reporting flawed results" evaluation. If you give it a script with bad logic (e.g., defaulting broken server measurements to 0 instead of dropping them), it will actively flag and fix the bad logic rather than just giving you a biased output.
+*   **Sustained Autonomy:** It is much less likely to stop mid-task to ask unnecessary follow-up questions, capable of running independently for much longer horizons. 
+
+### 5. Effort Controls, Speed, and Pricing
+Anthropic has given users fine-grained control over how the model runs, allowing IT pros to optimize for speed, token cost, or maximum intelligence.
+*   **Granular "Effort" Sliders:** In Claude Code, you can now toggle effort from Low, Medium, High, Max, to **"Ultra Code"** (which combines Extra High effort with Dynamic Workflows). This allows you to save money on simple scripts (Low) while unleashing the full multi-agent swarm on complex architecture tasks (Ultra).
+*   **Upgraded Fast Mode:** Fast Mode now runs at **2.5x the speed** (e.g., 250 tokens per second). Furthermore, due to increased compute supply, Fast Mode is now **3x cheaper** than it used to be (costing only 2x the base price instead of 6x).
+*   **Base Pricing:** Despite the massive capability bumps, the standard API pricing remains identical to Opus 4.7 ($5 per million input tokens / $25 per million output tokens). 
+
+### Summary for the IT Pro
+For an IT professional, **Opus 4.8 transitions Claude from a "coding assistant" into a "junior engineering team."** Through the use of Dynamic Workflows, you can hand off massive, tedious infrastructure tasks—like migrating an entire legacy app to a new framework or running an exhaustive security audit across a massive repo—while the model spins up hundreds of parallel agents to write, test, and actively try to break its own work before presenting you with the final result. All of this comes with significantly fewer hallucinations about its progress and a massive bump in raw generation speed.

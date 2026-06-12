@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04-Advanced-Topics/local-llm-workstation-setup-2026.md",
+                "file": "06-LLM-Specific/Anthropic-Claude/Opus 4.8.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "local-llm-workstation-setup-2026"
+              "title": "Opus 4.8"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04-Advanced-Topics/local-llm-workstation-setup-2026.md",
+                "file": "06-LLM-Specific/Anthropic-Claude/Opus 4.8.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of local-llm-workstation-setup-2026"
+              "title": "Outline of Opus 4.8"
             }
           },
           {
@@ -197,6 +197,7 @@
   },
   "active": "b9a0ae8db1035638",
   "lastOpenFiles": [
+    "04-Advanced-Topics/local-llm-workstation-setup-2026.md",
     "04-Advanced-Topics/Evaluation-and-Testing.md",
     "04-Advanced-Topics/Context-Engineering.md",
     "04-Advanced-Topics/AI-System-Architecture-Patterns.md",
@@ -222,7 +223,6 @@
     "02-Practical-Implementation/Practical-Implementation-MOC.md",
     "02-Practical-Implementation/PowerBI-and-Fabric-AI.md",
     "02-Practical-Implementation/Lesson-PDF-Extraction.md",
-    "02-Practical-Implementation/API-Integration-Guide.md",
     "06-LLM-Specific/xAI-Grok",
     "06-LLM-Specific/Google_Gemini",
     "06-LLM-Specific/Anthropic-Claude/Skills",
