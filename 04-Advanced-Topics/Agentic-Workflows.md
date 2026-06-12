@@ -36,13 +36,11 @@ related:
 Most enterprise AI failures are not caused by weak models. They are caused by weak workflow design.
 
 Teams often jump from:
-
 ```text
 single prompt -> fully autonomous agent
 ```
 
 The safer path is:
-
 ```text
 single prompt -> prompt chain -> routed workflow -> tool workflow -> bounded agent
 ```
@@ -186,7 +184,6 @@ def route_request(user_message):
 ```
 
 **What's happening here:**
-
 - The model can classify intent
 - Code controls the available routes
 - Unknown requests fall back to human triage
@@ -204,7 +201,6 @@ Step 6: Return response or request approval
 ```
 
 **What's happening here:**
-
 - Each step has a narrow job
 - Failures can be detected earlier
 - The workflow is easier to test than one large prompt
@@ -213,7 +209,6 @@ Step 6: Return response or request approval
 ### Step 4: Use Parallelization for Independent Lenses
 
 Example: reviewing a vendor AI tool.
-
 ```text
 Parallel reviewer 1: Security risk
 Parallel reviewer 2: Privacy and data retention
@@ -236,7 +231,6 @@ Draft -> Evaluate against rubric -> Revise -> Final check -> Publish
 ```
 
 Example use cases:
-
 - executive briefing
 - policy summary
 - vendor assessment
@@ -255,7 +249,6 @@ Example use cases:
 Use this when the system cannot know the subtasks upfront.
 
 Examples:
-
 - searching across many documents
 - diagnosing a complex incident
 - generating a multi-file code change
@@ -266,7 +259,6 @@ User goal -> Orchestrator plans subtasks -> Workers execute subtasks -> Orchestr
 ```
 
 **What's happening here:**
-
 - The orchestrator decomposes the task dynamically
 - Workers handle bounded subproblems
 - The final synthesis remains controlled by a quality check

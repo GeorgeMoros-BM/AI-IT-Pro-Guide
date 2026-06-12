@@ -40,7 +40,6 @@ Standard LLMs generate text. Tool-using systems can read data, query APIs, updat
 That creates real operational value, but it also creates real risk.
 
 Tool use introduces:
-
 - access to enterprise data and systems
 - cost, latency, and dependency risk
 - permission and audit requirements
@@ -76,7 +75,6 @@ A practical agent has four minimum components:
 - **Orchestration:** the loop that manages tool calls, state, retries, approvals, and completion
 
 For production, add:
-
 - logging
 - evals
 - monitoring
@@ -93,7 +91,6 @@ The model is only one part of the system. Most production risk lives in the surr
 LLMs do not execute code directly. They request that your application execute a tool.
 
 Flow:
-
 ```text
 User request
 -> Model decides a tool is needed
@@ -114,13 +111,11 @@ This separation lets you validate, authorize, log, and constrain every real-worl
 ### Concept 4: The Agent Loop Must Be Bounded
 
 Agents often operate in a loop:
-
 ```text
 Plan -> Tool call -> Observation -> Update -> Repeat -> Final answer
 ```
 
 The loop requires hard limits:
-
 - maximum iterations
 - maximum tool calls
 - timeouts
@@ -136,7 +131,6 @@ Without boundaries, an agent may retry failing tools, chase irrelevant context, 
 ### Concept 5: Human Approval Is a Design Pattern, Not a Patch
 
 Require approval before actions that are:
-
 - irreversible
 - externally visible
 - financially material
@@ -187,7 +181,6 @@ jira_tool_schema = {
 ```
 
 **What's happening here:**
-
 - The tool is specific and read-only
 - The description tells the model when to use it
 - Required fields reduce ambiguity

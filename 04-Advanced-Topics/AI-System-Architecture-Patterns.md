@@ -21,13 +21,11 @@ domain:
 Define common enterprise AI architecture patterns and their operational tradeoffs.
 
 ---
-
 # Core Principle
 
 Enterprise AI systems are increasingly orchestration systems rather than isolated model calls.
 
 ---
-
 # Architecture Patterns
 
 ## Single-Prompt Systems
@@ -43,7 +41,6 @@ Use cases:
 - drafting
 
 ---
-
 ## RAG Pipelines
 
 Characteristics:
@@ -58,7 +55,6 @@ Core components:
 - prompt assembly
 
 ---
-
 ## Agentic Systems
 
 Characteristics:
@@ -76,7 +72,6 @@ User Intent
 → Validation
 
 ---
-
 # Orchestrators
 
 Orchestrators manage:
@@ -87,7 +82,6 @@ Orchestrators manage:
 - evaluation
 
 ---
-
 # MCP and Tooling
 
 Modern AI systems increasingly rely on:
@@ -99,7 +93,6 @@ Modern AI systems increasingly rely on:
 Models alone are insufficient.
 
 ---
-
 # Event-Driven AI
 
 Pattern:
@@ -111,7 +104,6 @@ Examples:
 - workflow state changes
 
 ---
-
 # Human-in-the-Loop
 
 Required for:
@@ -122,7 +114,6 @@ Required for:
 - autonomous systems
 
 ---
-
 # Evaluation Loops
 
 Production systems require:
@@ -132,7 +123,6 @@ Production systems require:
 - observability
 
 ---
-
 # Common Failure Modes
 
 - orchestration overengineering
@@ -142,7 +132,6 @@ Production systems require:
 - tool sprawl
 
 ---
-
 # Strategic Insight
 
 Enterprise AI architecture is converging toward:

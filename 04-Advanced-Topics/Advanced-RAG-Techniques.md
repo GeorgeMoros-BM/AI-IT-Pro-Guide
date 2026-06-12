@@ -14,7 +14,6 @@ related:
   - "[[Agents-and-Tool-Use]]"
   - "[[Evaluation-and-Testing]]"
 ---
-
 # Advanced RAG Techniques
 
 > **TL;DR for the Busy IT Pro:**  

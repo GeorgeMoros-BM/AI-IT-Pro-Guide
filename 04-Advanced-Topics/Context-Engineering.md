@@ -12,7 +12,6 @@ domain:
   - context-engineering
   - rag
 ---
-
 # Context Engineering
 
 ## Definition
@@ -28,13 +27,11 @@ This includes:
 - external tools
 
 ---
-
 # Core Principle
 
 Most enterprise AI performance problems are context problems, not model problems.
 
 ---
-
 # Context Windows
 
 Context windows define how much information a model can process at once.
@@ -47,7 +44,6 @@ Larger windows:
 More context is not automatically better.
 
 ---
-
 # Retrieval Layering
 
 Recommended architecture:
@@ -59,7 +55,6 @@ Recommended architecture:
 5. External systems and tools
 
 ---
-
 # Memory Hierarchy
 
 ## Working Memory
@@ -75,7 +70,6 @@ Persistent operational knowledge.
 Governed enterprise knowledge systems.
 
 ---
-
 # Compression Strategies
 
 Use:
@@ -87,7 +81,6 @@ Use:
 to reduce unnecessary context load.
 
 ---
-
 # Semantic Chunking
 
 Effective chunking should preserve:
@@ -98,7 +91,6 @@ Effective chunking should preserve:
 Poor chunking destroys retrieval quality.
 
 ---
-
 # Common Failure Modes
 
 - oversized context windows
@@ -108,7 +100,6 @@ Poor chunking destroys retrieval quality.
 - excessive retrieval noise
 
 ---
-
 # Strategic Insight
 
 The future advantage in enterprise AI likely comes more from:

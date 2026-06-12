@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03-Enterprise-Concerns/Security-and-Privacy.md",
+                "file": "04-Advanced-Topics/Context-Engineering.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Security-and-Privacy"
+              "title": "Context-Engineering"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-Enterprise-Concerns/Security-and-Privacy.md",
+                "file": "04-Advanced-Topics/Context-Engineering.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Security-and-Privacy"
+              "title": "Outline of Context-Engineering"
             }
           },
           {
@@ -197,6 +197,12 @@
   },
   "active": "b9a0ae8db1035638",
   "lastOpenFiles": [
+    "04-Advanced-Topics/AI-System-Architecture-Patterns.md",
+    "04-Advanced-Topics/Agents-and-Tool-Use.md",
+    "04-Advanced-Topics/Agentic-Workflows.md",
+    "04-Advanced-Topics/Advanced-Topics-MOC.md",
+    "04-Advanced-Topics/Advanced-RAG-Techniques.md",
+    "03-Enterprise-Concerns/Security-and-Privacy.md",
     "03-Enterprise-Concerns/PromptOps-Governance.md",
     "03-Enterprise-Concerns/Prompt-Risk-Tiering.md",
     "03-Enterprise-Concerns/Managing-Shadow-AI.md",
@@ -217,12 +223,6 @@
     "02-Practical-Implementation/API-Integration-Guide.md",
     "02-Practical-Implementation/AI-for-Data-Analysts.md",
     "02-Practical-Implementation/AI-Adoption-Playbook.md",
-    "01-Foundation Knowledge/Prompt-Operating-Contracts.md",
-    "01-Foundation Knowledge/Prompt-Engineering-Basics.md",
-    "01-Foundation Knowledge/Modern-Prompt-Methodology-Layer.md",
-    "01-Foundation Knowledge/Model-Evaluation-and-TCO.md",
-    "01-Foundation Knowledge/Local-vs-Cloud-Architecture.md",
-    "01-Foundation Knowledge/LLM-Provider-Comparison.md",
     "06-LLM-Specific/xAI-Grok",
     "06-LLM-Specific/Google_Gemini",
     "06-LLM-Specific/Anthropic-Claude/Skills",

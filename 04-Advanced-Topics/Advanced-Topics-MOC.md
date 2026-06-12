@@ -5,7 +5,6 @@
 Navigation layer for advanced AI orchestration, evaluation, retrieval, and architecture topics.
 
 ---
-
 # Agentic Systems
 
 - [[Agentic-Workflows]]
@@ -13,7 +12,6 @@ Navigation layer for advanced AI orchestration, evaluation, retrieval, and archi
 - [[Tool-Use-Patterns]]
 
 ---
-
 # Context & Retrieval
 
 - [[Context-Engineering]]
@@ -21,7 +19,6 @@ Navigation layer for advanced AI orchestration, evaluation, retrieval, and archi
 - [[Semantic-Chunking]]
 
 ---
-
 # Evaluation
 
 - [[Evaluation-Frameworks]]
@@ -29,7 +26,6 @@ Navigation layer for advanced AI orchestration, evaluation, retrieval, and archi
 - [[Hallucination-Testing]]
 
 ---
-
 # Infrastructure
 
 - [[Local-LLMs]]
@@ -37,7 +33,6 @@ Navigation layer for advanced AI orchestration, evaluation, retrieval, and archi
 - [[Inference-Optimization]]
 
 ---
-
 # Related MOCs
 
 - [[Enterprise-RAG-MOC]]
