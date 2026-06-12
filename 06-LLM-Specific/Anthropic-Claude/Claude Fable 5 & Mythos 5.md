@@ -119,6 +119,7 @@ For Machine Learning engineering teams: Fable 5 cannot be used to architect or o
 - You need a senior-level software engineer (80% SWE-bench pro).
 - You are operating in an IDE (CursorBench leader).
 - You want to spin up a 5-to-10 agent swarm to slash latency on massive architecture tasks.
+  
 ## Use Mythos 5 When:
 
 - You are a vetted cybersecurity partner in Project Glasswing doing deep vulnerability discovery, exploit development, or advanced red-teaming.
