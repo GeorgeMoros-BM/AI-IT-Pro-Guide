@@ -12,12 +12,12 @@ Structured learning sequences based on role and objective.
 # Executive Path
 
 Recommended sequence:
-1. Executive Summary
-2. Mental Model Reset
-3. AI Governance
-4. Enterprise AI Operating Model
-5. AI Portfolio Management
-6. AI Risk Classification Framework
+1. [[Executive-Summary]]
+2. [[Mental-Model-Reset]]
+3. [[AI-Governance]]
+4. [[Enterprise-AI-Operating-Model]]
+5. [[AI-Portfolio-Management]]
+6. [[AI-Risk-Classification-Framework]]
 
 Focus:
 - governance
@@ -29,12 +29,12 @@ Focus:
 # Enterprise Architect Path
 
 Recommended sequence:
-1. Enterprise RAG
-2. Context Engineering
-3. AI System Architecture Patterns
-4. Enterprise AI Reference Architecture
-5. AI Platform Evaluation Framework
-6. Agentic Workflows
+1. [[Enterprise-RAG]]
+2. [[13-Operational-Systems/Context-Engineering|Context-Engineering]]
+3. [[AI-System-Architecture-Patterns]]
+4. [[Enterprise-AI-Reference-Architecture]]
+5. [[AI-Platform-Evaluation-Framework]]
+6. [[13-Operational-Systems/Agentic-Workflows|Agentic-Workflows]]
 
 Focus:
 - architecture
@@ -46,12 +46,12 @@ Focus:
 # AI Governance Path
 
 Recommended sequence:
-1. AI Governance
-2. PromptOps
-3. Evaluation Frameworks
-4. Human in the Loop
-5. Enterprise AI Governance Framework
-6. AI Risk Classification Framework
+1. [[AI-Governance]]
+2. [[PromptOps]]
+3. [[Evaluation-Frameworks]]
+4. [[Human-in-the-Loop]]
+5. [[Enterprise-AI-Governance-Framework]]
+6. [[AI-Risk-Classification-Framework]]
 
 Focus:
 - governance

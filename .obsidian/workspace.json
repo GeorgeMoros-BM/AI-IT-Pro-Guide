@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "11-Research/Weekly-Intelligence/2026-06-05.md",
+                "file": "00-System/Canonical-Documents.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-06-05"
+              "title": "Canonical-Documents"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "11-Research/Weekly-Intelligence/2026-06-05.md",
+                "file": "00-System/Canonical-Documents.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2026-06-05"
+              "title": "Outline of Canonical-Documents"
             }
           },
           {
@@ -197,9 +197,19 @@
   },
   "active": "b9a0ae8db1035638",
   "lastOpenFiles": [
+    "00-System/AI-Workbench-Protocol.md",
+    "00-System/AI-IT-Pro-Guide-Operating-Context.md",
+    "00-System/AI-Agent-Interaction-Standards.md",
+    "00-Quick-Start/Recommended Reading Order.md",
+    "00-Quick-Start/Quick-Start-MOC.md",
+    "00-Quick-Start/Quick Start & Orientation.md",
+    "00-Quick-Start/Mental-Model-Reset.md",
+    "00-Quick-Start/How To Use This Vault.md",
+    "00-Quick-Start/Learning Paths.md",
+    "00-Quick-Start/Executive-Summary.md",
+    "11-Research/Weekly-Intelligence/2026-06-05.md",
     "11-Research/Weekly-Intelligence/2026-05-22.md",
     "11-Research/Weekly-Intelligence/2026-05-29.md",
-    "11-Research/Weekly-Intelligence/2026-06-05.md",
     "04-Advanced-Topics/Context-Engineering.md",
     "README.md",
     "index.md",
@@ -215,17 +225,7 @@
     "11-Research/Weekly-Intelligence/2026-05-16.md",
     "06-LLM-Specific/Anthropic-Claude/Skills/frontend-design.md",
     "11-Research/Weekly-Intelligence/AI Weekly 0529.md",
-    "11-Research/Weekly-Intelligence/AI Weekly 0523.md",
-    "11-Research/Weekly-Intelligence/Weekly-Intelligence-MOC.md",
     "06-LLM-Specific/Anthropic-Claude/Skills",
-    "11-Research/Weekly-Intelligence/2026-05-11.md",
-    "11-Research/Weekly-Intelligence/2026-04-26.md",
-    "11-Research/Weekly-Intelligence/2026-05-09.md",
-    "00-System/AI-IT-Pro-Guide-Operating-Context.md",
-    "12-Synthesis/_README_12-Synthesis.md",
-    "14-Publishing/_README_14-Publishing.md",
-    "15-Case-Studies/_README_15-Case-Studies.md",
-    "13-Operational-Systems/Context-Engineering.md",
     "90-Local-Admin/ITPro.txt",
     "90-Local-Admin/File List.base",
     "ITPro.txt",
