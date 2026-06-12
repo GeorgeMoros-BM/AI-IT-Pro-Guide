@@ -18,7 +18,7 @@ related:
 > AI is incredible at writing SQL and analyzing CSVs, but letting an LLM directly query your production database is a disaster waiting to happen. Give it schemas, not raw data.
 
 ---
-## 📋 What You'll Learn
+## What You'll Learn
 
 - [ ] The right way to do "Text-to-SQL"
 - [ ] How Code Interpreters/Advanced Data Analysis actually works
@@ -26,14 +26,14 @@ related:
 - [ ] Securing data pipelines from AI hallucinations
 
 ---
-## 🎯 Why This Matters
+## Why This Matters
 
 Your business users want to type: *"Show me the drop in Q3 revenue by region compared to last year"* and get a chart. 
 
 Data analysts are positioned to build this, but treating an LLM like a standard BI tool leads to hallucinated data. An LLM cannot reliably calculate `SUM(revenue)` over a million rows of text. It must write the *code* to do the math, not do the math itself.
 
 ---
-## 🧠 Core Concepts
+## Core Concepts
 
 ### Concept 1: Text-to-SQL (The safe way)
 
@@ -59,7 +59,7 @@ When you upload an Excel file to ChatGPT or Claude, they don't "read" the whole 
 You can replicate this in your own apps using tools like LangChain or by using the provider APIs. AI is terrible at math, but it's *excellent* at writing Python code that does math perfectly.
 
 ---
-## 🛠️ Navigating the Microsoft Ecosystem
+## Navigating the Microsoft Ecosystem
 
 If you use PowerBI, the landscape is confusing. Here is the cheat sheet:
 

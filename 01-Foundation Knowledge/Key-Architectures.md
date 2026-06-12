@@ -14,7 +14,6 @@ related:
   - "[[Agents-and-Tool-Use]]"
   - "[[Prompt-Engineering-Playbook]]"
 ---
-
 # Key Architectures You'll Actually Use
 
 > **TL;DR for the Busy IT Pro:**  

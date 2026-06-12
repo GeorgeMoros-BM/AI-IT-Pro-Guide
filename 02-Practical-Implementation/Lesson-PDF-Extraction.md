@@ -29,7 +29,6 @@ Footer     Text     Here
 ```
 
 Became:
-
 ```
 Header1 Data Footer Value1 More Text Header2 Stuff Here
 ```

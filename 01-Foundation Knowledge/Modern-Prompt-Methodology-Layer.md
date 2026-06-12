@@ -92,15 +92,15 @@ Large prompts often create complexity without reliability. Modern methodology em
 ---
 ### Concept 3: The Seven-Layer Methodology Stack
 
-| Level | Name | Purpose | Primary Artifacts |
-|---:|---|---|---|
-| 1 | Prompt Contract | Define the job and success conditions | Prompt spec, output contract |
-| 2 | Context Layer | Provide relevant background and inputs | Intake form, file policy, memory policy |
-| 3 | Evidence Layer | Ground claims and manage freshness | Source policy, RAG policy, citation policy |
-| 4 | Workflow Layer | Select execution pattern | Single call, chain, route, parallel, agent |
-| 5 | Output Layer | Shape the deliverable | Markdown, table, JSON, schema, artifact |
-| 6 | Evaluation Layer | Measure quality and robustness | Rubric, test cases, regression set |
-| 7 | Governance Layer | Maintain the system | Owner, version, risk tier, review cadence |
+| Level | Name             | Purpose                                | Primary Artifacts                          |
+| :---: | ---------------- | -------------------------------------- | ------------------------------------------ |
+|   1   | Prompt Contract  | Define the job and success conditions  | Prompt spec, output contract               |
+|   2   | Context Layer    | Provide relevant background and inputs | Intake form, file policy, memory policy    |
+|   3   | Evidence Layer   | Ground claims and manage freshness     | Source policy, RAG policy, citation policy |
+|   4   | Workflow Layer   | Select execution pattern               | Single call, chain, route, parallel, agent |
+|   5   | Output Layer     | Shape the deliverable                  | Markdown, table, JSON, schema, artifact    |
+|   6   | Evaluation Layer | Measure quality and robustness         | Rubric, test cases, regression set         |
+|   7   | Governance Layer | Maintain the system                    | Owner, version, risk tier, review cadence  |
 
 **Technical details:**
 - Not every prompt needs every layer
@@ -116,7 +116,6 @@ The methodology separates prompt writing from prompt operations. This makes the 
 A modern prompt should be as simple as possible, but no simpler.
 
 Use more structure when:
-
 - the task is high-risk
 - the output will guide business decisions
 - the system uses private or current data
@@ -125,7 +124,6 @@ Use more structure when:
 - the same prompt will be reused by many users
 
 Use less structure when:
-
 - the task is low-risk
 - the user is exploring ideas
 - the output is disposable
@@ -177,7 +175,6 @@ This converts an ad hoc prompt into a reusable operating contract.
 ### Step 3: Add Tool and Retrieval Policy
 
 Use retrieval when:
-
 - facts may have changed
 - internal knowledge is required
 - citations are required
@@ -186,7 +183,6 @@ Use retrieval when:
 - the domain is regulated, technical, legal, financial, health, market, travel, or policy-related
 
 Use tools when:
-
 - the task requires calculation
 - the task requires file reading
 - the task requires API data
@@ -200,7 +196,6 @@ The prompt stops pretending the model knows everything. It defines when the syst
 ### Step 4: Add Evaluation Rules
 
 Each serious prompt should have:
-
 - 3 normal test cases
 - 2 edge cases
 - 1 adversarial or misleading case
@@ -216,18 +211,18 @@ Evaluation turns prompt design into engineering. It creates a way to compare ver
 
 Existing frameworks remain useful, but their job changes. They become lightweight design lenses inside a broader operating contract.
 
-| Framework | Keep | Modern Upgrade |
-|---|---|---|
-| SPARK | Excellent for strategic and agentic design | Add evidence, tool policy, eval criteria, and guardrails |
-| SCOPE | Strong general-purpose prompt architecture | Add freshness policy and output validation |
-| COAST | Good for comprehensive task decomposition | Compress where possible; avoid unnecessary procedural density |
-| CREATE | Good for custom GPT scaffolds | Add risk tier, versioning, and output contract |
-| RACE | Strong role/action/context prompt | Add measurable success criteria and sources |
-| RISE | Good for guided flows | Add decision gates and stop conditions |
-| ROSES | Useful for analysis and planning | Add uncertainty and trade-off handling |
-| CARE | Good for example-driven content | Add evaluation and revision pass |
-| APE | Useful for prompt generation | Pair with scoring rubric and test cases |
-| TAG | Good for micro-prompts | Use for low-risk one-shot tasks only |
+| Framework | Keep                                       | Modern Upgrade                                                |
+| :-------: | ------------------------------------------ | ------------------------------------------------------------- |
+|   SPARK   | Excellent for strategic and agentic design | Add evidence, tool policy, eval criteria, and guardrails      |
+|   SCOPE   | Strong general-purpose prompt architecture | Add freshness policy and output validation                    |
+|   COAST   | Good for comprehensive task decomposition  | Compress where possible; avoid unnecessary procedural density |
+|  CREATE   | Good for custom GPT scaffolds              | Add risk tier, versioning, and output contract                |
+|   RACE    | Strong role/action/context prompt          | Add measurable success criteria and sources                   |
+|   RISE    | Good for guided flows                      | Add decision gates and stop conditions                        |
+|   ROSES   | Useful for analysis and planning           | Add uncertainty and trade-off handling                        |
+|   CARE    | Good for example-driven content            | Add evaluation and revision pass                              |
+|    APE    | Useful for prompt generation               | Pair with scoring rubric and test cases                       |
+|    TAG    | Good for micro-prompts                     | Use for low-risk one-shot tasks only                          |
 
 ---
 ## Agentic Workflow Selection
@@ -250,14 +245,14 @@ See: [[Agentic-Workflows]] and [[Agents-and-Tool-Use]].
 ---
 ## Risk Tiering
 
-| Tier | Description | Examples | Required Controls |
-|---|---|---|---|
-| Tier 0 | Low-risk utility | Rewrite, summarize, format | Output check |
-| Tier 1 | Professional productivity | Plans, briefs, templates | Assumptions, review note |
-| Tier 2 | Business decision support | Strategy, market, ops | Evidence, alternatives, risks |
-| Tier 3 | Sensitive/high-stakes | Finance, health, legal, HR, security | Citations, disclaimers, escalation |
-| Tier 4 | External action/automation | Send email, update record, book, buy, delete | Explicit approval, logs, rollback |
-| Tier 5 | Autonomous execution | Multi-step action without supervision | Strict guardrails, monitoring, evals |
+|  Tier  | Description                | Examples                                     | Required Controls                    |
+| :----: | -------------------------- | -------------------------------------------- | ------------------------------------ |
+| Tier 0 | Low-risk utility           | Rewrite, summarize, format                   | Output check                         |
+| Tier 1 | Professional productivity  | Plans, briefs, templates                     | Assumptions, review note             |
+| Tier 2 | Business decision support  | Strategy, market, ops                        | Evidence, alternatives, risks        |
+| Tier 3 | Sensitive/high-stakes      | Finance, health, legal, HR, security         | Citations, disclaimers, escalation   |
+| Tier 4 | External action/automation | Send email, update record, book, buy, delete | Explicit approval, logs, rollback    |
+| Tier 5 | Autonomous execution       | Multi-step action without supervision        | Strict guardrails, monitoring, evals |
 
 See: [[Prompt-Risk-Tiering]].
 
