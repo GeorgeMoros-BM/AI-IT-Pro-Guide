@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04-Advanced-Topics/Context-Engineering.md",
+                "file": "04-Advanced-Topics/Evaluation-and-Testing.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Context-Engineering"
+              "title": "Evaluation-and-Testing"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04-Advanced-Topics/Context-Engineering.md",
+                "file": "04-Advanced-Topics/Evaluation-and-Testing.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Context-Engineering"
+              "title": "Outline of Evaluation-and-Testing"
             }
           },
           {
@@ -197,6 +197,7 @@
   },
   "active": "b9a0ae8db1035638",
   "lastOpenFiles": [
+    "04-Advanced-Topics/Context-Engineering.md",
     "04-Advanced-Topics/AI-System-Architecture-Patterns.md",
     "04-Advanced-Topics/Agents-and-Tool-Use.md",
     "04-Advanced-Topics/Agentic-Workflows.md",
@@ -222,7 +223,6 @@
     "02-Practical-Implementation/Lesson-PDF-Extraction.md",
     "02-Practical-Implementation/API-Integration-Guide.md",
     "02-Practical-Implementation/AI-for-Data-Analysts.md",
-    "02-Practical-Implementation/AI-Adoption-Playbook.md",
     "06-LLM-Specific/xAI-Grok",
     "06-LLM-Specific/Google_Gemini",
     "06-LLM-Specific/Anthropic-Claude/Skills",

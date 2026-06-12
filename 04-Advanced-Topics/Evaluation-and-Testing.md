@@ -18,7 +18,6 @@ related:
   - "[[RAG-Implementation]]"
   - "[[Governance-and-Risk]]"
 ---
-
 # Evaluation & Testing
 
 > **TL;DR for the Busy IT Pro:**  
@@ -62,7 +61,6 @@ Evaluation means:
 Traditional testing asks, "Did the function return the exact expected value?"
 
 AI testing asks:
-
 - Is the output correct enough for the use case?
 - Did it include required information?
 - Did it avoid prohibited content or unsupported claims?
@@ -71,7 +69,6 @@ AI testing asks:
 - Did it fail safely when information was missing?
 
 **Technical details:**
-
 - AI outputs vary across runs, models, prompts, and retrieved context.
 - Tests usually require scoring thresholds, not exact-match assertions.
 - Evaluation should combine automated checks, LLM-assisted scoring, and human review.
@@ -83,7 +80,6 @@ AI systems are non-deterministic and context-sensitive. You need a measurement s
 ### Concept 2: Evals Come Before Scaling
 
 The safest sequence is:
-
 ```text
 Use case -> success criteria -> test set -> prompt/RAG/agent design -> eval -> pilot -> monitor -> scale
 ```
@@ -91,7 +87,6 @@ Use case -> success criteria -> test set -> prompt/RAG/agent design -> eval -> p
 Do not build first and invent evaluation later. That usually produces demos that look good but cannot be trusted in production.
 
 **Technical details:**
-
 - Define the minimum acceptable score before deployment.
 - Include edge cases and failure cases, not just happy paths.
 - Re-run evals after every material change: prompt, model, retrieval corpus, tool, workflow, policy, or output format.
