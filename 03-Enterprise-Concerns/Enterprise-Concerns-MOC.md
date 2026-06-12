@@ -5,7 +5,6 @@
 Central governance and operational navigation layer for enterprise AI deployment concerns.
 
 ---
-
 # Governance
 
 - [[Enterprise-AI-Governance-Framework]]
@@ -13,7 +12,6 @@ Central governance and operational navigation layer for enterprise AI deployment
 - [[AI-Risk-Classification-Framework]]
 
 ---
-
 # Operating Models
 
 - [[Enterprise-AI-Operating-Model]]
@@ -21,7 +19,6 @@ Central governance and operational navigation layer for enterprise AI deployment
 - [[AI-Operating-Model-Framework]]
 
 ---
-
 # Security & Risk
 
 - [[Shadow-AI]]
@@ -30,7 +27,6 @@ Central governance and operational navigation layer for enterprise AI deployment
 - [[Prompt-Risk-Tiering]]
 
 ---
-
 # Economics & Platforms
 
 - [[Enterprise-AI-FinOps-Framework]]
@@ -38,7 +34,6 @@ Central governance and operational navigation layer for enterprise AI deployment
 - [[Build-vs-Buy-Framework]]
 
 ---
-
 # Related MOCs
 
 - [[AI-Governance-MOC]]

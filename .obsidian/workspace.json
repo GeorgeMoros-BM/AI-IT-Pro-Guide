@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02-Practical-Implementation/Lesson-PDF-Extraction.md",
+                "file": "03-Enterprise-Concerns/Security-and-Privacy.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lesson-PDF-Extraction"
+              "title": "Security-and-Privacy"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02-Practical-Implementation/Lesson-PDF-Extraction.md",
+                "file": "03-Enterprise-Concerns/Security-and-Privacy.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Lesson-PDF-Extraction"
+              "title": "Outline of Security-and-Privacy"
             }
           },
           {
@@ -197,6 +197,23 @@
   },
   "active": "b9a0ae8db1035638",
   "lastOpenFiles": [
+    "03-Enterprise-Concerns/PromptOps-Governance.md",
+    "03-Enterprise-Concerns/Prompt-Risk-Tiering.md",
+    "03-Enterprise-Concerns/Managing-Shadow-AI.md",
+    "03-Enterprise-Concerns/Governance-and-Risk.md",
+    "03-Enterprise-Concerns/Enterprise-Concerns-MOC.md",
+    "03-Enterprise-Concerns/Enterprise-AI-Operating-Model.md",
+    "03-Enterprise-Concerns/Cost-Management-and-ROI.md",
+    "03-Enterprise-Concerns/Change-Management-and-Adoption.md",
+    "03-Enterprise-Concerns/AI-Portfolio-Management.md",
+    "02-Practical-Implementation/Token-Cost-Quick-Reference.md",
+    "02-Practical-Implementation/Tip-Prompt-Caching.md",
+    "02-Practical-Implementation/Starter-Projects-and-Quick-Wins.md",
+    "02-Practical-Implementation/Research-RAG-and-Evidence.md",
+    "02-Practical-Implementation/RAG-Implementation.md",
+    "02-Practical-Implementation/Practical-Implementation-MOC.md",
+    "02-Practical-Implementation/PowerBI-and-Fabric-AI.md",
+    "02-Practical-Implementation/Lesson-PDF-Extraction.md",
     "02-Practical-Implementation/API-Integration-Guide.md",
     "02-Practical-Implementation/AI-for-Data-Analysts.md",
     "02-Practical-Implementation/AI-Adoption-Playbook.md",
@@ -206,23 +223,6 @@
     "01-Foundation Knowledge/Model-Evaluation-and-TCO.md",
     "01-Foundation Knowledge/Local-vs-Cloud-Architecture.md",
     "01-Foundation Knowledge/LLM-Provider-Comparison.md",
-    "01-Foundation Knowledge/Key-Architectures.md",
-    "01-Foundation Knowledge/AI-LLM-Fundamentals.md",
-    "00-System/Canonical-Documents.md",
-    "00-System/AI-Workbench-Protocol.md",
-    "00-System/AI-IT-Pro-Guide-Operating-Context.md",
-    "00-System/AI-Agent-Interaction-Standards.md",
-    "00-Quick-Start/Recommended Reading Order.md",
-    "00-Quick-Start/Quick-Start-MOC.md",
-    "00-Quick-Start/Quick Start & Orientation.md",
-    "00-Quick-Start/Mental-Model-Reset.md",
-    "00-Quick-Start/How To Use This Vault.md",
-    "00-Quick-Start/Learning Paths.md",
-    "00-Quick-Start/Executive-Summary.md",
-    "11-Research/Weekly-Intelligence/2026-06-05.md",
-    "11-Research/Weekly-Intelligence/2026-05-22.md",
-    "11-Research/Weekly-Intelligence/2026-05-29.md",
-    "04-Advanced-Topics/Context-Engineering.md",
     "06-LLM-Specific/xAI-Grok",
     "06-LLM-Specific/Google_Gemini",
     "06-LLM-Specific/Anthropic-Claude/Skills",

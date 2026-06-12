@@ -13,7 +13,6 @@ domain:
   - portfolio-management
   - enterprise-ai
 ---
-
 Define how organizations should manage AI initiatives as a governed strategic portfolio.
 
 ---
