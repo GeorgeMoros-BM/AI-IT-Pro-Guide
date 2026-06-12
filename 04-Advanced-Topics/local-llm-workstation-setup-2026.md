@@ -134,7 +134,6 @@ Specifications per GPU:
 The 96 cores excel at parallel dataset tokenization, preprocessing pipelines (PDF parsing, image resizing, audio transcoding), and running multiple isolated model instances for A/B testing.
 
 #### Memory: 512GB DDR5 ECC
-
 ```
 - 8× 64GB DDR5 RDIMM modules (one per memory channel)
 - ECC protection for long-running training jobs
@@ -148,7 +147,6 @@ The 96 cores excel at parallel dataset tokenization, preprocessing pipelines (PD
 Non-ECC memory can experience bit flips during multi-day training runs, causing silent data corruption in model weights. ECC detects and corrects these errors automatically—critical for production AI infrastructure.
 
 #### Storage: 8TB NVMe PCIe 5.0 (4× 2TB drives)
-
 ```
 - 4× 2TB PCIe 5.0 x4 NVMe SSDs
 - Up to 14,900 MB/s sequential read per drive
@@ -170,7 +168,6 @@ Non-ECC memory can experience bit flips during multi-day training runs, causing 
 3. Network storage (NAS/S3): Long-term checkpoint archival
 
 #### Power Supply: Thermaltake Toughpower GF3 1650W 80 PLUS Gold
-
 ```
 - 1650W continuous power
 - 80 PLUS Gold efficiency (87-90%)
@@ -196,7 +193,6 @@ Total:                 1,650W (exactly at PSU limit)
 > - This exceeds typical office electrical infrastructure
 
 #### Motherboard: GIGABYTE MH53-G40 (AMD WRX90)
-
 ```
 - 4× PCIe 5.0 x16 slots (all full x16 electrical, no bifurcation)
 - 8× DDR5 RDIMM slots (512GB-2TB capacity)
@@ -210,7 +206,6 @@ Total:                 1,650W (exactly at PSU limit)
 Each GPU gets dedicated PCIe 5.0 x16 lanes—no sharing, no switching, no bandwidth compromises. This is critical for tensor parallelism performance.
 
 #### Cooling: Silverstone XE360-TR5 AIO
-
 ```
 - 360mm radiator
 - sTR5 socket compatible

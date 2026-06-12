@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04-Advanced-Topics/Evaluation-and-Testing.md",
+                "file": "04-Advanced-Topics/local-llm-workstation-setup-2026.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Evaluation-and-Testing"
+              "title": "local-llm-workstation-setup-2026"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04-Advanced-Topics/Evaluation-and-Testing.md",
+                "file": "04-Advanced-Topics/local-llm-workstation-setup-2026.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Evaluation-and-Testing"
+              "title": "Outline of local-llm-workstation-setup-2026"
             }
           },
           {
@@ -197,6 +197,7 @@
   },
   "active": "b9a0ae8db1035638",
   "lastOpenFiles": [
+    "04-Advanced-Topics/Evaluation-and-Testing.md",
     "04-Advanced-Topics/Context-Engineering.md",
     "04-Advanced-Topics/AI-System-Architecture-Patterns.md",
     "04-Advanced-Topics/Agents-and-Tool-Use.md",
@@ -222,7 +223,6 @@
     "02-Practical-Implementation/PowerBI-and-Fabric-AI.md",
     "02-Practical-Implementation/Lesson-PDF-Extraction.md",
     "02-Practical-Implementation/API-Integration-Guide.md",
-    "02-Practical-Implementation/AI-for-Data-Analysts.md",
     "06-LLM-Specific/xAI-Grok",
     "06-LLM-Specific/Google_Gemini",
     "06-LLM-Specific/Anthropic-Claude/Skills",

@@ -135,7 +135,6 @@ Enterprise AI fails at the boundaries: missing fields, conflicting documents, va
 LLMs can help score outputs for relevance, completeness, tone, and format compliance. They are not a replacement for human gold standards.
 
 Use LLM-as-judge for:
-
 - first-pass scoring
 - consistency checks
 - rubric-based review
@@ -143,7 +142,6 @@ Use LLM-as-judge for:
 - comparing prompt variants
 
 Do not rely on it alone for:
-
 - regulated decisions
 - legal or financial correctness
 - medical safety
@@ -151,7 +149,6 @@ Do not rely on it alone for:
 - final production approval
 
 **Technical details:**
-
 - Calibrate judge outputs against human-reviewed examples.
 - Use clear rubrics and examples.
 - Use multiple judges or spot checks for high-risk outputs.
@@ -177,7 +174,6 @@ Human review required: Yes, before investment action
 ```
 
 **What's happening here:**
-
 - Connects the eval to a real decision
 - Identifies the risk tier
 - Defines the release threshold
@@ -215,7 +211,6 @@ Use a structured dataset so results can be repeated.
 ```
 
 **What's happening here:**
-
 - Converts subjective review into testable expectations
 - Separates required inclusions from prohibited claims
 - Makes missing-data behavior explicit
@@ -274,7 +269,6 @@ def evaluate_output(test_case, output_text):
 ```
 
 **What's happening here:**
-
 - Starts with deterministic checks for obvious requirements
 - Catches format and missing-field failures cheaply
 - Leaves judgment-heavy scoring to humans or LLM-as-judge
@@ -293,7 +287,6 @@ For RAG, test both retrieval and answer quality.
 | Not-found behavior | Does it admit when sources do not contain the answer? |
 
 Sample RAG test case:
-
 ```json
 {
   "id": "rag-hr-001",
@@ -305,7 +298,6 @@ Sample RAG test case:
 ```
 
 **What's happening here:**
-
 - Tests retrieval before testing answer fluency
 - Detects grounded-but-wrong or fluent-but-unsupported outputs
 - Forces the system to handle absence of evidence properly
