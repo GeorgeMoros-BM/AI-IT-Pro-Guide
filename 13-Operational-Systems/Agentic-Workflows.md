@@ -12,6 +12,9 @@ related:
   - "[[Agentic-Workflows]]"
   - "[[AI-Operating-Model-Framework]]"
 ---
+> [!note] Scope
+> This file defines the operating-system view. 
+> For technical implementation patterns, see [[04-Advanced-Topics/Agentic-Workflows]].
 ## Definition
 
 Agentic workflows are multi-step AI systems capable of:

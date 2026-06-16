@@ -16,6 +16,9 @@ related:
   - "[[RAG-Implementation]]"
   - "[[Security-and-Privacy]]"
 ---
+> [!note] Scope
+> This file explains the technical pattern. 
+> For the operating model and lifecycle governance view, see [[13-Operational-Systems/Agentic-Workflows]].
 # Agentic Workflows
 
 > **TL;DR for the Busy IT Pro:**  

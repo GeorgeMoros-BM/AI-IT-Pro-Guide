@@ -522,7 +522,6 @@ Controls may include:
 ## Operating principle
 
 Alignment is not a one-time model property. It is an operating discipline.
-
 # Enterprise AI Mental Model Reset
 
 ## The Wrong Mental Model
@@ -627,3 +626,18 @@ A reliable enterprise AI system usually requires more than a model.
 → Evaluation
 → Monitoring
 → Lifecycle Governance
+# From Literacy to Controls
+
+The concepts in this chapter create direct enterprise control requirements.
+
+For example:
+- hallucination creates source-grounding requirements
+- bias creates use-case-specific testing requirements
+- token prediction creates verification requirements
+- autonomy creates approval and logging requirements
+- alignment creates governance and monitoring requirements
+
+See:
+- [[AI-Misconceptions-to-Enterprise-Controls]]
+- [[AI-Risk-Classification-Framework]]
+- [[Enterprise-AI-Governance-Framework]]
