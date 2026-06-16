@@ -2,7 +2,7 @@
 title: AI Misconceptions to Enterprise Controls
 artifact_type: framework
 status: draft
-last_updated: 2026-06-15
+last_updated: 2026-06-12
 publish: true
 client_safe: true
 tags:
@@ -221,25 +221,18 @@ AI control intensity should increase based on four factors:
 
 Risk = Impact × Autonomy × Data Sensitivity × External Exposure
 
-````
-
 ## Impact
 
 What happens if the output is wrong?
-
 ## Autonomy
 
 Can the system act, or only advise?
-
 ## Data Sensitivity
 
 Does the system touch confidential, regulated, personal, financial, legal, or security data?
-
 ## External Exposure
 
 Can the output reach customers, regulators, vendors, media, courts, auditors, or production systems?
-
----
 
 # 6. Misconception-to-Policy Translation
 
@@ -256,129 +249,70 @@ Can the output reach customers, regulators, vendors, media, courts, auditors, or
 |AI tools are interchangeable|Model and vendor selection require architectural review|
 |AI success is adoption|Success must be measured by workflow outcomes, not usage volume|
 
----
-
 # 7. Minimum Viable Control Set
 
 For any enterprise AI deployment beyond personal productivity, apply these minimum controls:
-
 ## Required
 
 - Named business owner
-    
 - Named technical owner
-    
 - Approved use case
-    
 - Risk tier assignment
-    
 - Approved data sources
-    
 - Data classification review
-    
 - Human review rules
-    
 - Output limitations
-    
 - Logging and monitoring
-    
 - Evaluation criteria
-    
 - Incident escalation path
-    
 - Lifecycle owner
-    
-
 ## Strongly Recommended
 
 - Prompt/instruction version control
-    
 - Retrieval quality testing
-    
 - Red-team testing
-    
 - Bias testing
-    
 - Cost monitoring
-    
 - Model change review
-    
 - User training
-    
 - Periodic control review
-    
-
----
-
 # 8. Monday-Morning Implementation Checklist
 
 Use this checklist to assess an AI use case before it enters production.
-
 ## Use Case
 
 -  What business process does this support?
-    
 -  What user group will use it?
-    
 -  What outcome should improve?
-    
 -  What is explicitly out of scope?
-    
-
 ## Risk
 
 -  What happens if the output is wrong?
-    
 -  Can it affect customers, employees, systems, money, legal obligations, or reputation?
-    
 -  Does it use sensitive or regulated data?
-    
 -  Can it take action, or only generate recommendations?
-    
-
 ## Data
 
 -  What sources does it use?
-    
 -  Are those sources authoritative?
-    
 -  Are they current?
-    
 -  Are permissions enforced?
-    
 -  Are obsolete sources excluded?
-    
-
 ## Controls
 
 -  Does it cite sources?
-    
 -  Can it abstain when evidence is missing?
-    
 -  Is human approval required?
-    
 -  Are outputs logged?
-    
 -  Is there an escalation process?
-    
 -  Is there a rollback process for actions?
-    
-
 ## Evaluation
 
 -  What does good output look like?
-    
 -  What failure modes are tested?
-    
 -  Who reviews performance?
-    
 -  How often is the system revalidated?
-    
 -  What metrics prove value?
-    
-
----
-
 # 9. Executive Summary
 
 AI misconceptions become enterprise control failures.
@@ -388,27 +322,10 @@ The central issue is not whether AI is powerful. It is whether the organization 
 AI systems are probabilistic, context-dependent, and structurally capable of producing unsupported outputs. They can create significant leverage when connected to governed knowledge, clear workflows, evaluation discipline, and human accountability.
 
 The operating standard is simple:
-
-> Do not govern AI based on how intelligent it appears. Govern AI based on what it can affect.
-
----
-
-````
+_Do not govern AI based on how intelligent it appears. Govern AI based on what it can affect._
 
 ---
 
-## Where This Fits in the Vault
-
-Recommended placement:
-
-```text
-07-Frameworks/
-└── AI-Misconceptions-to-Enterprise-Controls.md
-````
-
-Suggested backlinks:
-
-```markdown
 Related:
 - [[How-AI-Actually-Works]]
 - [[AI-Governance]]
@@ -419,38 +336,5 @@ Related:
 - [[AI-Evaluation-Frameworks]]
 - [[AI-FinOps]]
 - [[Agentic-Workflows]]
-```
 
-## Why This Is Useful
 
-This artifact becomes a bridge between **AI literacy** and **operational governance**.
-
-The first section, `How AI Actually Works`, explains the mental model.  
-This companion section answers the enterprise question:
-
-> “So what controls should we put in place because of that?”
-
-That makes it directly reusable for:
-
-- executive education
-    
-- AI governance committees
-    
-- IT architecture reviews
-    
-- procurement reviews
-    
-- internal AI policy
-    
-- AI risk assessments
-    
-- consulting deliverables
-    
-- workshop facilitation
-    
-
-Q1. Should we now create the companion **AI Risk Classification Matrix**?
-
-Q2. Should this be rewritten as a **client-safe consulting handout**?
-
-Q3. Should we create a **one-page executive version** for CIO/CISO steering committees?
