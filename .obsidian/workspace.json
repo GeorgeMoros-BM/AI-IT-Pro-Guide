@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00-Quick-Start/00 Quick-Start-MOC.md",
+                "file": "00-Quick-Start/03 Mental-Model.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00 Quick-Start-MOC"
+              "title": "03 Mental-Model"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00-Quick-Start/00 Quick-Start-MOC.md",
+                "file": "00-Quick-Start/03 Mental-Model.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 00 Quick-Start-MOC"
+              "title": "Outline of 03 Mental-Model"
             }
           },
           {
@@ -195,24 +195,25 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "877aadd9f5cd2eed",
+  "active": "b9a0ae8db1035638",
   "lastOpenFiles": [
-    "00-Quick-Start/04 How To Use This Vault.md",
+    "00-Quick-Start/03 Mental-Model-Reset.md",
+    "00-Quick-Start/03 Mental-Model.md",
+    "00-Quick-Start/02 Executive-Summary.md",
+    "00-Quick-Start/01 Quick Start & Orientation.md",
     "00-Quick-Start/00 Quick-Start-MOC.md",
+    "00-Quick-Start/04 How To Use This Vault.md",
     "01-Foundation Knowledge/00 Foundation-Knowledge-MOC.md.md",
     "00-System/AI-Agent-Interaction-Standards.md",
     "index.md",
     "00-Quick-Start/06 Learning Paths.md",
     "00-Quick-Start/05 Recommended Reading Order.md",
-    "00-Quick-Start/03 Mental-Model-Reset.md",
-    "00-Quick-Start/02 Executive-Summary.md",
-    "00-Quick-Start/01 Quick Start & Orientation.md",
     "13-Operational-Systems/Agentic-Workflows.md",
     "04-Advanced-Topics/Agentic-Workflows.md",
     "00-System/AI-IT-Pro-Guide-Operating-Context.md",
     "00-System/AI-Workbench-Protocol.md",
     "01-Foundation Knowledge/01 AI-Fundamentals-for-IT-Leaders.md",
-    "Longitudinal-Themes.md",
+    "99-Archived/Longitudinal-Themes.md",
     "07-Frameworks/AI-Misconceptions-to-Enterprise-Controls.md",
     "06-LLM-Specific/LLM-Provider-Comparison.md",
     "09-Reference-Architectures/Local-vs-Cloud-Architecture.md",
@@ -222,7 +223,6 @@
     "01-Foundation Knowledge/04 Prompt-Engineering-Basics.md",
     "01-Foundation Knowledge/03 Key-Architectures.md",
     "01-Foundation Knowledge/02 AI-LLM-Fundamentals.md",
-    "01-Foundation Knowledge/AI-Fundamentals-for-IT-Leaders.md",
     "06-LLM-Specific/xAI-Grok",
     "06-LLM-Specific/Google_Gemini",
     "06-LLM-Specific/Anthropic-Claude/Skills",
