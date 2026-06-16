@@ -1,11 +1,9 @@
 # Repository README
 
 This repository contains the source vault for:
-
 # The IT Professional's Guide to Enterprise AI
 
 The repository is maintained as:
-
 - an Obsidian knowledge vault
 - a Git version-controlled documentation system
 - a GitHub Pages/Jekyll publishing source
@@ -15,7 +13,6 @@ The repository is maintained as:
 # Repository Purpose
 
 This repository exists to:
-
 - document enterprise AI implementation patterns
 - codify governance and operating models
 - capture reusable consulting frameworks
@@ -64,13 +61,36 @@ This repository exists to:
 
 Content is authored locally in Obsidian.
 
+Authoring should prioritize:
+- clarity
+- operational realism
+- reusable structure
+- source discipline
+- metadata completeness
+- canonical concept alignment
 ## Phase 2 — Version Control
 
-Changes are committed and pushed to GitHub.
+Changes are committed and pushed through Git.
 
+Commit messages should make the nature of the change clear, such as:
+- new framework
+- MOC update
+- canonicalization
+- link cleanup
+- metadata update
+- archive/deprecation
+- publishing update
 ## Phase 3 — Publishing
 
-GitHub Pages/Jekyll renders the vault into a published documentation site.
+GitHub Pages / Jekyll renders selected vault content into a published documentation site.
+
+Publishing should prioritize:
+- high signal density
+- executive readability
+- semantic navigation
+- retrieval compatibility
+- client-safe language
+- stable canonical links
 
 ---
 # Contribution Guidelines
@@ -78,31 +98,34 @@ GitHub Pages/Jekyll renders the vault into a published documentation site.
 ## File Naming
 
 Use:
-
 ```
 Title-Case-With-Hyphens.md
 ```
 
 Avoid:
-
-- spaces in filenames
 - vague shorthand
 - unstable naming patterns
+- duplicate concepts
+- unnecessary spaces in filenames for new technical/reference files
+
+Existing files with spaces may remain where renaming would create excessive link churn.
 
 ---
 # Linking Standard
 
 Use Obsidian wikilinks:
-
 ```
 [[Document Name]]
+```
+For cross-folder clarity when needed, use explicit paths:
+```
+[[13-Operational-Systems/Context-Engineering|Context-Engineering]]
 ```
 
 ---
 # Metadata Standard
 
 Minimum metadata:
-
 ```
 ---
 title:
@@ -113,32 +136,95 @@ publish:
 client_safe:
 ---
 ```
+Recommended additional metadata where useful:
+```
+audience:
+domain:
+tags:
+related:
+review_frequency:
+owner:
+```
 
-Reference:  
-[[Metadata-Standards]]
+Reference:
+- [[Metadata-Standards]]
 
 ---
 # Governance Principles
 
 This repository prioritizes:
-
 - operational realism
 - governance-aware AI implementation
 - reusable frameworks
 - retrieval-aware architecture
 - executive usefulness
+- lifecycle discipline
+- source discipline
+- canonical concept management
+
+---
+# Content Boundary Rules
+
+## Use `00-Quick-Start` for
+
+- onboarding
+- orientation
+- reading order
+- learning paths
+- mental model reset
+## Use `01-Foundation Knowledge` for
+
+- durable AI fundamentals
+- LLM mechanics
+- core architecture concepts
+- prompt basics
+- model evaluation basics
+## Use `07-Frameworks` for
+
+- reusable decision models
+- governance frameworks
+- control matrices
+- prioritization methods
+- operating model frameworks
+## Use `08-Playbooks` for
+
+- execution guidance
+- implementation sequences
+- rollout plans
+- governance implementation
+- vendor selection actions
+## Use `11-Research` for
+
+- intake
+- evidence capture
+- weekly intelligence
+- raw or semi-processed research
+## Use `12-Synthesis` for
+
+- cross-cutting themes
+- longitudinal analysis
+- executive distillation
+- synthesized insight
+## Use `13-Operational-Systems` for
+
+- canonical operating-system level concepts
+- enterprise AI capability models
+- persistent operating disciplines
 
 ---
 # Recommended Contribution Types
 
 Examples:
-
 - implementation lessons learned
 - architecture patterns
 - governance frameworks
 - evaluation methodologies
 - operational playbooks
 - enterprise AI case studies
+- MOC improvements
+- canonical concept consolidation
+- executive-ready summaries
+- research-to-synthesis distillations
 
 ---
 # Important Operational Rules
@@ -150,6 +236,7 @@ Examples:
 - credentials
 - sensitive client information
 - regulated data
+- private commercial information not intended for publication
 
 Reference:  
 `.gitignore`
@@ -170,16 +257,12 @@ The publishing layer should prioritize:
 - source discipline
 - retrieval compatibility
 - client-safe presentation
-
-
 # Strategic Direction
 
 This repository is evolving from:
-
 - a practical IT AI runbook
 
 toward:
-
 - an enterprise AI operating system
 - a reusable consulting IP platform
 - a publishable governance and architecture ecosystem

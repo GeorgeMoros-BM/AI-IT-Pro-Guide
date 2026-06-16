@@ -68,7 +68,6 @@ Recommended sequence:
 5. [[How To Use This Vault]]
 6. [[Recommended Reading Order]]
 7. [[Learning Paths]]
-
 ## Fastest Path
 
 If you only read three documents first:
