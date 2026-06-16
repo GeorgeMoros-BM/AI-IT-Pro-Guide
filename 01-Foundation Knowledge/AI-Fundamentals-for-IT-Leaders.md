@@ -2,7 +2,7 @@
 title: How AI Actually Works
 artifact_type: guide-section
 status: draft
-last_updated: 2026-06-15
+last_updated: 2026-06-13
 publish: true
 client_safe: true
 tags:
@@ -13,7 +13,6 @@ tags:
   - context-engineering
   - ai-operating-model
 ---
-
 # How AI Actually Works
 
 ## Purpose
@@ -67,7 +66,6 @@ AI can assist cognition, but it should not replace accountability.
 Every AI system is shaped by the data used to train it.
 
 Training data influences:
-
 - what the model appears to know
 - which languages it handles well
 - which domains it understands poorly
@@ -98,8 +96,6 @@ Before deploying AI into a workflow, ask:
 
 Training data gives the model general capability. Enterprise context gives it operational usefulness.
 
----
-
 # 3. Neural Networks Are Mathematical Systems, Not Digital Brains
 
 ## Core idea
@@ -115,7 +111,6 @@ The brain analogy is useful as a metaphor. It is misleading as an operating mode
 Avoid anthropomorphic design assumptions.
 
 Do not assume the system:
-
 - understands intent
 - knows when it is wrong
 - has common sense
@@ -127,8 +122,6 @@ Do not assume the system:
 ## Operating principle
 
 Design AI systems as probabilistic infrastructure, not synthetic colleagues.
-
----
 
 # 4. Large Language Models Predict Tokens
 
@@ -147,7 +140,6 @@ The model does not necessarily plan the full answer before generating it. It can
 Prompt design matters, but prompt design is not enough.
 
 Reliable AI systems require:
-
 - structured inputs
 - clear task boundaries
 - retrieval grounding
@@ -160,8 +152,6 @@ Reliable AI systems require:
 ## Operating principle
 
 Do not rely on clever prompts where process architecture is required.
-
----
 
 # 5. AI Does Not “Know” Things Like a Database
 
@@ -178,7 +168,6 @@ This distinction matters because the model may produce equally fluent responses 
 AI should not be the source of record.
 
 For enterprise use, AI should sit on top of governed sources of record, such as:
-
 - policy repositories
 - document management systems
 - data warehouses
@@ -194,8 +183,6 @@ For enterprise use, AI should sit on top of governed sources of record, such as:
 
 AI should generate answers from governed knowledge, not replace governed knowledge.
 
----
-
 # 6. Narrow AI Is What Exists Today
 
 ## Core idea
@@ -205,7 +192,6 @@ Most AI systems are narrow systems.
 They can perform specific tasks extremely well but do not possess general human-level understanding. Large language models appear broader because language is a universal interface, but they still have important limitations.
 
 They struggle with:
-
 - persistent memory
 - real-world grounding
 - causal understanding
@@ -230,8 +216,6 @@ The relevant question is:
 
 Evaluate AI by operational fitness, not by conversational impressiveness.
 
----
-
 # 7. Machine Learning Uses Different Training Paradigms
 
 ## Core idea
@@ -244,7 +228,6 @@ The major machine learning paradigms include:
 | Unsupervised learning | Finds structure in unlabeled data | Clustering, topic discovery |
 | Reinforcement learning | Learns through rewards and penalties | Game-playing systems, optimization agents |
 | Self-supervised learning | Predicts missing or next parts of data | Large language model pretraining |
-
 Modern AI systems often combine these methods.
 
 ## Enterprise implication
@@ -256,8 +239,6 @@ A classification model, recommendation system, chatbot, autonomous agent, and re
 ## Operating principle
 
 Govern the AI system based on how it learns, what it affects, and what can go wrong.
-
----
 
 # 8. Parameters Are Model Weights, Not Human Knowledge
 
@@ -274,7 +255,6 @@ A smaller model with better grounding, better retrieval, and better workflow des
 Do not select models based only on benchmark rankings or parameter count.
 
 Model selection should consider:
-
 - task fit
 - latency
 - cost
@@ -291,8 +271,6 @@ Model selection should consider:
 
 The best model is the smallest, safest, cheapest, and most governable model that meets the business requirement.
 
----
-
 # 9. Hallucination Is Structural
 
 ## Core idea
@@ -308,7 +286,6 @@ Retrieval-augmented generation, fine-tuning, tool use, source citation, and huma
 Any factual AI output needs a verification strategy.
 
 Controls may include:
-
 - retrieval from approved sources
 - citations
 - confidence indicators
@@ -324,8 +301,6 @@ Controls may include:
 
 Treat AI-generated factual claims as unverified until grounded in trusted sources.
 
----
-
 # 10. AI Reasoning Is Not Human Reasoning
 
 ## Core idea
@@ -335,7 +310,6 @@ AI systems can produce text that resembles reasoning.
 They can explain, compare, summarize, structure arguments, and generate step-by-step logic. But this is not the same as human reasoning, formal proof, or expert judgment.
 
 Models can:
-
 - make an early error and build on it
 - produce plausible but invalid logic
 - contradict themselves
@@ -348,7 +322,6 @@ Models can:
 AI is useful for thinking support, not final judgment in high-stakes contexts.
 
 Good uses include:
-
 - generating options
 - identifying trade-offs
 - drafting decision memos
@@ -358,7 +331,6 @@ Good uses include:
 - creating checklists
 
 Riskier uses include:
-
 - final legal interpretation
 - medical diagnosis
 - financial recommendation
@@ -370,14 +342,11 @@ Riskier uses include:
 
 Use AI to widen and structure human thinking. Do not outsource judgment without controls.
 
----
-
 # 11. Bias Comes From Data and Design Choices
 
 ## Core idea
 
 AI bias comes from several sources:
-
 - biased training data
 - underrepresented groups or languages
 - flawed labels
@@ -396,7 +365,6 @@ Bias management must be use-case specific.
 A general vendor claim that a model is “safe” or “fair” is insufficient for enterprise governance.
 
 Organizations need to test systems against their own:
-
 - customer populations
 - employee groups
 - language requirements
@@ -407,8 +375,6 @@ Organizations need to test systems against their own:
 ## Operating principle
 
 Bias is not solved at procurement. It must be monitored in deployment.
-
----
 
 # 12. Compute Power Shapes AI Economics
 
@@ -425,7 +391,6 @@ This makes AI not only a software issue, but an infrastructure, procurement, ven
 AI adoption creates new cost-management requirements.
 
 Organizations need AI FinOps discipline around:
-
 - token usage
 - inference cost
 - model selection
@@ -436,12 +401,9 @@ Organizations need AI FinOps discipline around:
 - latency requirements
 - data residency
 - internal versus external hosting
-
 ## Operating principle
 
 AI is not free intelligence. It is compute-intensive infrastructure with recurring operational cost.
-
----
 
 # 13. RLHF Shapes Assistant Behavior
 
@@ -454,7 +416,6 @@ It shapes how models respond, refuse, qualify, apologize, and prioritize certain
 This post-training process improves usability, but it also introduces behavior patterns that may not always serve enterprise needs.
 
 Models can become:
-
 - overly cautious
 - overly agreeable
 - sycophantic
@@ -469,7 +430,6 @@ Enterprise AI systems need role-specific behavior design.
 A legal assistant, cybersecurity assistant, architecture reviewer, help desk assistant, and executive briefing assistant should not behave the same way.
 
 Each requires different defaults for:
-
 - tone
 - evidence threshold
 - refusal behavior
@@ -483,8 +443,6 @@ Each requires different defaults for:
 
 Post-training makes models usable. Enterprise design makes them fit for purpose.
 
----
-
 # 14. “Open Source AI” Is Complicated
 
 ## Core idea
@@ -494,7 +452,6 @@ In traditional software, open source usually means the source code can be inspec
 In AI, openness is less straightforward.
 
 A model may release:
-
 - only API access
 - model weights
 - training code
@@ -511,7 +468,6 @@ A model may release:
 Open-source AI decisions require architectural and legal review.
 
 Key questions include:
-
 1. Can the model be used commercially?
 2. Can it be fine-tuned?
 3. Can it be hosted internally?
@@ -526,8 +482,6 @@ Key questions include:
 ## Operating principle
 
 Open AI models may reduce vendor dependency, but they increase internal responsibility.
-
----
 
 # 15. Alignment Is an Operating Problem, Not Just a Research Problem
 
@@ -554,7 +508,6 @@ This is related to Goodhart’s Law: when a measure becomes a target, it stops b
 Alignment requires both technical and governance controls.
 
 Controls may include:
-
 - clear task boundaries
 - approved data sources
 - human-in-the-loop review
@@ -571,14 +524,11 @@ Controls may include:
 
 Alignment is not a one-time model property. It is an operating discipline.
 
----
-
 # Enterprise AI Mental Model Reset
 
 ## The Wrong Mental Model
 
 AI is not:
-
 - a digital employee
 - a search engine
 - a database
@@ -591,7 +541,6 @@ AI is not:
 ## The Better Mental Model
 
 Enterprise AI is:
-
 - a probabilistic generation engine
 - a pattern-recognition system
 - a language and workflow interface
@@ -611,8 +560,6 @@ The better question is:
 
 > Which business capabilities can be safely, measurably, and governably improved by AI-enabled workflows?
 
----
-
 # Practical Governance Checklist
 
 Before deploying AI into a business process, confirm the following:
@@ -622,7 +569,6 @@ Before deploying AI into a business process, confirm the following:
 - What task is the AI system performing?
 - What business outcome does it support?
 - What should it not do?
-
 ## 2. Data
 
 - What sources does it use?
@@ -630,35 +576,30 @@ Before deploying AI into a business process, confirm the following:
 - Are permissions enforced?
 - Is sensitive data protected?
 - Is the information current?
-
 ## 3. Model
 
 - Which model is being used?
 - Why was it selected?
 - What are its known limitations?
 - Is a smaller or cheaper model sufficient?
-
 ## 4. Retrieval
 
 - Does the system retrieve from governed sources?
 - Are retrieved sources cited?
 - Can users inspect source material?
 - How are stale or conflicting documents handled?
-
 ## 5. Output
 
 - Is the output structured?
 - Does it include uncertainty where appropriate?
 - Does it distinguish fact from interpretation?
 - Are users warned where verification is required?
-
 ## 6. Human Review
 
 - Who is accountable for the final decision?
 - When is human approval required?
 - What actions can the system take autonomously?
 - What actions are prohibited?
-
 ## 7. Evaluation
 
 - How is quality measured?
@@ -673,14 +614,11 @@ Before deploying AI into a business process, confirm the following:
 - What happens when the model changes?
 - What is the decommissioning process?
 
----
-
 # Implementation Pattern
 
 A reliable enterprise AI system usually requires more than a model.
 
-```text
-Business Workflow
+**Business Workflow**
 → Use Case Definition
 → Risk Classification
 → Approved Data Sources
