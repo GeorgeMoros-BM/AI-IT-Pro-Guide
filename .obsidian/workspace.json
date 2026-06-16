@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "01-Foundation Knowledge/01 AI-Fundamentals-for-IT-Leaders.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "01 AI-Fundamentals-for-IT-Leaders"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md",
+                "file": "01-Foundation Knowledge/01 AI-Fundamentals-for-IT-Leaders.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of index"
+              "title": "Outline of 01 AI-Fundamentals-for-IT-Leaders"
             }
           },
           {
@@ -197,6 +197,8 @@
   },
   "active": "b9a0ae8db1035638",
   "lastOpenFiles": [
+    "01-Foundation Knowledge/Foundation-Knowledge-MOC.md.md",
+    "index.md",
     "Longitudinal-Themes.md",
     "01-Foundation Knowledge/01 AI-Fundamentals-for-IT-Leaders.md",
     "07-Frameworks/AI-Misconceptions-to-Enterprise-Controls.md",
@@ -221,8 +223,6 @@
     "06-LLM-Specific/Google_Gemini/Gemini 3.1 Pro.md",
     "04-Advanced-Topics/local-llm-workstation-setup-2026.md",
     "04-Advanced-Topics/Evaluation-and-Testing.md",
-    "04-Advanced-Topics/Context-Engineering.md",
-    "04-Advanced-Topics/AI-System-Architecture-Patterns.md",
     "06-LLM-Specific/xAI-Grok",
     "06-LLM-Specific/Google_Gemini",
     "06-LLM-Specific/Anthropic-Claude/Skills",

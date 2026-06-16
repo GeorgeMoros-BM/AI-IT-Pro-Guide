@@ -502,7 +502,6 @@ For example:
 | Recommend actions | Optimize for measurable outputs while ignoring risk |
 
 This is related to Goodhart’s Law: when a measure becomes a target, it stops being a good measure.
-
 ## Enterprise implication
 
 Alignment requires both technical and governance controls.
