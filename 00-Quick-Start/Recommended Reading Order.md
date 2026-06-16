@@ -9,63 +9,76 @@ client_safe: true
 Here's a progressive reading sequence that builds conceptual depth without overwhelming the reader.
 
 ---
-# Phase 1 - Strategic Reframing
+# Phase 1 - Orientation
 
 Read:
-1. [[Executive-Summary]]
-2. [[Mental-Model-Reset]]
-3. [[Quick Start & Orientation]]
+1. [[Quick Start & Orientation]]
+2. [[Executive-Summary]]
+3. [[Mental-Model-Reset]]
+4. [[How To Use This Vault]]
 
 Objective:
-Understand how enterprise AI differs from consumer AI narratives.
+Understand what the vault is, why it exists, and how to navigate it.
 
----
-# Phase 2 - Governance & Operating Models
+# Phase 2 - Foundations
+
+Read:
+1. [[01 AI-Fundamentals-for-IT-Leaders]]
+2. [[02 AI-LLM-Fundamentals]]
+3. [[03 Key-Architectures]]
+4. [[04 Prompt-Engineering-Basics]]
+5. [[05 Model-Evaluation-and-TCO]]
+
+Objective:
+Understand the core mental models, technical mechanics, architecture patterns, prompt basics, and evaluation economics.
+
+# Phase 3 - Governance and Operating Models
 
 Read:
 1. [[AI-Governance]]
 2. [[Enterprise-AI-Operating-Model]]
 3. [[AI-Portfolio-Management]]
 4. [[AI-Risk-Classification-Framework]]
+5. [[Enterprise-AI-Governance-Framework]]
 
 Objective:
-Understand organizational and governance implications.
+Understand organizational, governance, and lifecycle implications.
 
----
-# Phase 3 - Technical Architecture
+# Phase 4 - Architecture and Implementation
 
 Read:
 1. [[Enterprise-RAG]]
 2. [[13-Operational-Systems/Context-Engineering|Context-Engineering]]
 3. [[AI-System-Architecture-Patterns]]
 4. [[Enterprise-AI-Reference-Architecture]]
+5. [[RAG-Implementation]]
+6. [[API-Integration-Guide]]
 
 Objective:
-Understand enterprise AI system architecture.
+Understand how enterprise AI systems are designed and implemented.
 
----
-# Phase 4 - Operationalization
+# Phase 5 - Operationalization
 
 Read:
 1. [[AI-Adoption-Playbook]]
 2. [[PromptOps]]
 3. [[Evaluation-Frameworks]]
 4. [[Human-in-the-Loop]]
+5. [[Enterprise-AI-FinOps-Framework]]
 
 Objective:
-Understand operational deployment and lifecycle management.
+Understand deployment, adoption, evaluation, cost, and control.
 
----
-# Phase 5 - Advanced Systems Thinking
+# Phase 6 - Advanced Systems Thinking
 
 Read:
 1. [[13-Operational-Systems/Agentic-Workflows|Agentic-Workflows]]
 2. [[Retrieval-Architecture]]
-3. [[Enterprise-AI-FinOps-Framework]]
-4. [[AI-Platform-Evaluation-Framework]]
+3. [[AI-Platform-Evaluation-Framework]]
+4. [[Hybrid-AI-Architecture]]
 
 Objective:
-Understand long-term enterprise AI evolution patterns.
+Understand long-term enterprise AI capability evolution.
 
 ---
 # Learning Paths

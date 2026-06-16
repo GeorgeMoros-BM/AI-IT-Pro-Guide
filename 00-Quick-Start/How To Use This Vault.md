@@ -6,7 +6,18 @@ last_updated: 2026-05-18
 publish: false
 client_safe: true
 ---
-This document explains how to navigate and operationalize the vault effectively.
+# How to Choose the Right Entry Point
+
+| Need | Use |
+|---|---|
+| Understand the vault | [[Quick Start & Orientation]] |
+| Understand the thesis | [[Executive-Summary]] |
+| Reset assumptions | [[Mental-Model-Reset]] |
+| Follow a structured sequence | [[Recommended Reading Order]] |
+| Follow a role-specific path | [[Learning Paths]] |
+| Find canonical knowledge | MOCs and canonical documents |
+| Build something | Playbooks and practical implementation guides |
+| Create client-ready material | Executive assets and frameworks |
 
 ---
 # Recommended Usage Patterns
