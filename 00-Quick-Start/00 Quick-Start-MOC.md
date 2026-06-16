@@ -36,7 +36,7 @@ This section is not a full knowledge domain. It is the onboarding and routing la
 
 # Start Here
 
-## 1. [[01 Quick Start & Orientation]]
+## [[01 Quick Start & Orientation]]
 
 Use this first.
 
@@ -47,7 +47,7 @@ Best for:
 - collaborators
 - stakeholders
 - AI-assisted retrieval sessions
-## 2. [[02 Executive-Summary]]
+## [[02 Executive-Summary]]
 
 Use this when you need the short strategic thesis.
 
@@ -58,7 +58,7 @@ Best for:
 - sponsors
 - steering committees
 - quick context setting
-## 3. [[03 Mental-Model-Reset]]
+## [[00-Quick-Start/03 Mental-Model-Reset|03 Mental-Model-Reset]]
 
 Use this before reading technical or governance material.
 
@@ -109,7 +109,7 @@ Best for:
 | Reader Type | Start With | Then Read |
 |---|---|---|
 | Executive | [[02 Executive-Summary]] | [[AI-Governance]], [[Enterprise-AI-Operating-Model]], [[AI-Portfolio-Management]] |
-| IT Leader | [[03 Mental-Model-Reset]] | [[01 AI-Fundamentals-for-IT-Leaders]], [[Enterprise-AI-Operating-Model]] |
+| IT Leader | [[99-Archived/03 Mental-Model-Reset]] | [[01 AI-Fundamentals-for-IT-Leaders]], [[Enterprise-AI-Operating-Model]] |
 | Enterprise Architect | [[01 Quick Start & Orientation]] | [[Enterprise-RAG]], [[Context-Engineering]], [[Enterprise-AI-Reference-Architecture]] |
 | AI Governance Lead | [[02 Executive-Summary]] | [[AI-Governance]], [[AI-Risk-Classification-Framework]], [[PromptOps]] |
 | Consultant | [[04 How To Use This Vault]] | [[AI-Adoption-Playbook]], [[AI-Use-Case-Prioritization-Framework]], [[AI-Platform-Evaluation-Framework]] |
@@ -122,7 +122,7 @@ For most readers, use this order:
 
 1. [[01 Quick Start & Orientation]]
 2. [[02 Executive-Summary]]
-3. [[03 Mental-Model-Reset]]
+3. [[99-Archived/03 Mental-Model-Reset]]
 4. [[01 AI-Fundamentals-for-IT-Leaders]]
 5. [[02 AI-LLM-Fundamentals]]
 6. [[03 Key-Architectures]]

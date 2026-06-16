@@ -12,7 +12,7 @@ client_safe: true
 |---|---|
 | Understand the vault | [[01 Quick Start & Orientation]] |
 | Understand the thesis | [[02 Executive-Summary]] |
-| Reset assumptions | [[03 Mental-Model-Reset]] |
+| Reset assumptions | [[99-Archived/03 Mental-Model-Reset]] |
 | Follow a structured sequence | [[05 Recommended Reading Order]] |
 | Follow a role-specific path | [[06 Learning Paths]] |
 | Find canonical knowledge | MOCs and canonical documents |

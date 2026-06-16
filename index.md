@@ -40,7 +40,7 @@ The goal is to help organizations:
 Recommended sequence:
 
 1. [[02 Executive-Summary]]
-2. [[03 Mental-Model-Reset]]
+2. [[99-Archived/03 Mental-Model-Reset]]
 3. [[01 Quick Start & Orientation]]
 4. [[04 How To Use This Vault]]
 

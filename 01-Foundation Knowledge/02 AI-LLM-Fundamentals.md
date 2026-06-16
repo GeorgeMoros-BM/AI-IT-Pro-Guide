@@ -9,7 +9,7 @@ difficulty: beginner
 last_updated: 2026-04-24
 time_to_read: 15 minutes
 related:
-  - "[[03 Mental-Model-Reset]]"
+  - "[[99-Archived/03 Mental-Model-Reset]]"
   - "[[Token-Cost-Quick-Reference]]"
   - "[[RAG-Implementation]]"
 ---
@@ -152,7 +152,7 @@ for token_id in tokens:
 
 - [[Token-Cost-Quick-Reference]] - How these token counts translate to real money.
 - [[RAG-Implementation]] - How to put Embeddings and Vector Databases to use.
-- [[03 Mental-Model-Reset]] - Connecting this math back to probabilistic outputs.
+- [[99-Archived/03 Mental-Model-Reset]] - Connecting this math back to probabilistic outputs.
 
 ---
 ## Changelog

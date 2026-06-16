@@ -13,7 +13,7 @@ Structured learning sequences based on role and objective.
 
 Recommended sequence:
 1. [[02 Executive-Summary]]
-2. [[03 Mental-Model-Reset]]
+2. [[99-Archived/03 Mental-Model-Reset]]
 3. [[AI-Governance]]
 4. [[Enterprise-AI-Operating-Model]]
 5. [[AI-Portfolio-Management]]
@@ -98,7 +98,7 @@ Goal:
 Build AI-powered features into applications.
 
 Recommended sequence:
-1. [[03 Mental-Model-Reset]]
+1. [[99-Archived/03 Mental-Model-Reset]]
 2. [[04 Prompt-Engineering-Basics]]
 3. [[API-Integration-Guide]]
 4. [[RAG-Implementation]]
@@ -119,7 +119,7 @@ Goal:
 Use AI for analysis, reporting, and insight generation.
 
 Recommended sequence:
-1. [[03 Mental-Model-Reset]]
+1. [[99-Archived/03 Mental-Model-Reset]]
 2. [[AI-for-Data-Analysts]]
 3. [[PowerBI-and-Fabric-AI]]
 4. [[Token-Cost-Quick-Reference]]

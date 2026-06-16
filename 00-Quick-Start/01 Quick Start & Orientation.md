@@ -110,7 +110,7 @@ The vault prioritizes:
 If you are new to the vault, continue with:
 
 1. [[02 Executive-Summary]]
-2. [[03 Mental-Model-Reset]]
+2. [[99-Archived/03 Mental-Model-Reset]]
 3. [[05 Recommended Reading Order]]
 
 If you are using the vault for active work, go to:

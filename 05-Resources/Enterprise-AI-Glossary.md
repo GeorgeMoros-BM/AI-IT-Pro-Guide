@@ -10,7 +10,7 @@ last_updated: 2026-04-25
 time_to_read: 10 minutes
 related:
   - "[[AI-LLM-Fundamentals]]"
-  - "[[03 Mental-Model-Reset]]"
+  - "[[99-Archived/03 Mental-Model-Reset]]"
 ---
 # The Enterprise AI Glossary
 

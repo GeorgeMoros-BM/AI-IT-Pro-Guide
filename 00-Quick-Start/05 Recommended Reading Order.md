@@ -14,7 +14,7 @@ Here's a progressive reading sequence that builds conceptual depth without overw
 Read:
 1. [[01 Quick Start & Orientation]]
 2. [[02 Executive-Summary]]
-3. [[03 Mental-Model-Reset]]
+3. [[99-Archived/03 Mental-Model-Reset]]
 4. [[04 How To Use This Vault]]
 
 Objective:
