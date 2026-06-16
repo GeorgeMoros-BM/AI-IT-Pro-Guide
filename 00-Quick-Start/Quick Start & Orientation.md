@@ -107,5 +107,13 @@ The vault prioritizes:
 ---
 # Suggested Next Step
 
-Read:
-[[How To Use This Vault]]
+If you are new to the vault, continue with:
+
+1. [[Executive-Summary]]
+2. [[Mental-Model-Reset]]
+3. [[Recommended Reading Order]]
+
+If you are using the vault for active work, go to:
+
+- [[How To Use This Vault]]
+- [[Learning Paths]]

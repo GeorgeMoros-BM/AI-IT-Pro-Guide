@@ -47,8 +47,6 @@ Best for:
 - collaborators
 - stakeholders
 - AI-assisted retrieval sessions
-
---
 ## 2. [[Executive-Summary]]
 
 Use this when you need the short strategic thesis.
@@ -56,14 +54,10 @@ Use this when you need the short strategic thesis.
 Explains why enterprise AI is no longer just a chatbot or productivity tool, but an operational capability involving governance, retrieval, architecture, risk, and cost.
 
 Best for:
-
 - executives
 - sponsors
 - steering committees
 - quick context setting
-
----
-
 ## 3. [[Mental-Model-Reset]]
 
 Use this before reading technical or governance material.
@@ -71,14 +65,10 @@ Use this before reading technical or governance material.
 Explains the mindset shift from deterministic software to probabilistic AI systems, and from standalone tools to operational infrastructure.
 
 Best for:
-
 - IT leaders
 - practitioners new to LLMs
 - stakeholders with unrealistic expectations
 - governance teams
-
----
-
 ## 4. [[How To Use This Vault]]
 
 Use this when you need to navigate the vault as a working system.
@@ -86,33 +76,24 @@ Use this when you need to navigate the vault as a working system.
 Explains how to use canonical concepts, MOCs, lifecycle states, and the research-to-publication workflow.
 
 Best for:
-
 - contributors
 - consultants
 - repeat users
 - AI-assisted work sessions
-
----
-
 ## 5. [[Recommended Reading Order]]
 
 Use this when you want a progressive reading sequence.
 
 Best for:
-
 - structured learning
 - onboarding cohorts
 - self-study
 - new contributors
-
----
-
 ## 6. [[Learning Paths]]
 
 Use this when you want a role-specific path.
 
 Best for:
-
 - executives
 - architects
 - governance leaders
@@ -123,7 +104,6 @@ Best for:
 - business integration leaders
 
 ---
-
 # Reader Routing
 
 | Reader Type | Start With | Then Read |
@@ -135,8 +115,6 @@ Best for:
 | Consultant | [[How To Use This Vault]] | [[AI-Adoption-Playbook]], [[AI-Use-Case-Prioritization-Framework]], [[AI-Platform-Evaluation-Framework]] |
 | Practitioner | [[Recommended Reading Order]] | [[02 AI-LLM-Fundamentals]], [[RAG-Implementation]], [[Prompt-Engineering-Basics]] |
 | New Contributor | [[How To Use This Vault]] | [[Metadata-Standards]], [[Lifecycle-States]], [[Maps-of-Content-Strategy]] |
-
----
 
 # Core Reading Sequence
 
@@ -154,13 +132,11 @@ For most readers, use this order:
 10. [[AI-Adoption-Playbook]]
 
 ---
-
 # Navigation by Intent
 
 ## I want to understand AI fundamentals
 
 Go to:
-
 - [[01 AI-Fundamentals-for-IT-Leaders]]
 - [[02 AI-LLM-Fundamentals]]
 - [[03 Key-Architectures]]
@@ -170,7 +146,6 @@ Go to:
 ## I want to implement AI
 
 Go to:
-
 - [[Practical-Implementation-MOC]]
 - [[RAG-Implementation]]
 - [[API-Integration-Guide]]
@@ -180,7 +155,6 @@ Go to:
 ## I want to govern AI
 
 Go to:
-
 - [[Enterprise-Concerns-MOC]]
 - [[AI-Governance]]
 - [[Governance-and-Risk]]
@@ -191,7 +165,6 @@ Go to:
 ## I want architecture guidance
 
 Go to:
-
 - [[Enterprise-AI-Architecture-MOC]]
 - [[Enterprise-RAG-MOC]]
 - [[AI-System-Architecture-Patterns]]
@@ -202,7 +175,6 @@ Go to:
 ## I want reusable consulting IP
 
 Go to:
-
 - [[Frameworks-MOC]]
 - [[Playbooks-MOC]]
 - [[Executive-AI-Briefing-Template]]
@@ -212,7 +184,6 @@ Go to:
 ## I want research and synthesis
 
 Go to:
-
 - [[Weekly-Intelligence-MOC]]
 - [[Longitudinal-Themes]]
 - [[_README_12-Synthesis]]
@@ -228,7 +199,6 @@ Go to:
 - navigation guidance
 - mental model reset
 - executive thesis
-
 ## This section should not contain
 
 | Content Type | Better Location |
@@ -242,17 +212,3 @@ Go to:
 | Playbooks | `08-Playbooks` |
 | Research notes | `11-Research` |
 | Publishing assets | `14-Publishing` |
-
----
-
-# Operating Principle
-
-The Quick Start section should reduce orientation cost.
-
-A reader should leave this section knowing:
-
-1. what the vault is
-2. why it exists
-3. where to begin
-4. which path fits their role
-5. how to move from understanding to execution
