@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "06-LLM-Specific/Anthropic-Claude/Claude Fable 5 & Mythos 5.md",
+                "file": "01-Foundation Knowledge/AI-Fundamentals-for-IT-Leaders.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Claude Fable 5 & Mythos 5"
+              "title": "AI-Fundamentals-for-IT-Leaders"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "06-LLM-Specific/Anthropic-Claude/Claude Fable 5 & Mythos 5.md",
+                "file": "01-Foundation Knowledge/AI-Fundamentals-for-IT-Leaders.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Claude Fable 5 & Mythos 5"
+              "title": "Outline of AI-Fundamentals-for-IT-Leaders"
             }
           },
           {
@@ -197,9 +197,11 @@
   },
   "active": "b9a0ae8db1035638",
   "lastOpenFiles": [
+    "01-Foundation Knowledge/AI-LLM-Fundamentals.md",
+    "01-Foundation Knowledge/AI-Fundamentals-for-IT-Leaders.md",
+    "06-LLM-Specific/Anthropic-Claude/Claude Fable 5 & Mythos 5.md",
     "06-LLM-Specific/Anthropic-Claude/anti-ai-writing-style.md",
     "06-LLM-Specific/Anthropic-Claude/Skills/frontend-design.md",
-    "06-LLM-Specific/Anthropic-Claude/Claude Fable 5 & Mythos 5.md",
     "06-LLM-Specific/_Deep-Questions-for-AI/X AI.md",
     "06-LLM-Specific/_Deep-Questions-for-AI/Google.md",
     "06-LLM-Specific/_Deep-Questions-for-AI/DeepSeek.md",
@@ -221,8 +223,6 @@
     "03-Enterprise-Concerns/Governance-and-Risk.md",
     "03-Enterprise-Concerns/Enterprise-Concerns-MOC.md",
     "03-Enterprise-Concerns/Enterprise-AI-Operating-Model.md",
-    "03-Enterprise-Concerns/Cost-Management-and-ROI.md",
-    "03-Enterprise-Concerns/Change-Management-and-Adoption.md",
     "06-LLM-Specific/xAI-Grok",
     "06-LLM-Specific/Google_Gemini",
     "06-LLM-Specific/Anthropic-Claude/Skills",
