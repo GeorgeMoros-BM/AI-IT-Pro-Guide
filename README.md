@@ -24,26 +24,38 @@ This repository exists to:
 
 ---
 # Repository Architecture
-
 |Component|Purpose|
 |---|---|
 |Obsidian|Authoring and knowledge management|
 |Git|Version control|
-|GitHub|Collaboration and publishing|
-|Jekyll/GitHub Pages|Static publishing layer|
+|GitHub|Collaboration and source hosting|
+|GitHub Pages / Jekyll|Static publishing layer|
+|MOCs|Semantic navigation and retrieval control|
+|Metadata|Lifecycle, publishing, governance, and retrieval support|
 
 ---
 # Repository Structure
 
-|   |   |
-|---|---|
-|Folder|Purpose|
-|00-System|Governance and vault operational control|
-|00-Quick-Start|Onboarding and orientation|
-|01-06|Core AI knowledge and implementation|
-|07-10|Frameworks, playbooks, and executive assets|
-|11-15|Research, synthesis, publishing, and operations|
-|99-Archived|Deprecated or historical content|
+| Folder                        | Purpose                                                                     |
+| ----------------------------- | --------------------------------------------------------------------------- |
+| `00-System`                   | Vault governance and operational control plane                              |
+| `00-Quick-Start`              | Reader onboarding, orientation, and learning paths                          |
+| `01-Foundation Knowledge`     | Durable AI fundamentals and conceptual grounding                            |
+| `02-Practical-Implementation` | Practical implementation guides and starter patterns                        |
+| `03-Enterprise-Concerns`      | Governance, risk, security, cost, adoption, and operating model concerns    |
+| `04-Advanced-Topics`          | Advanced architecture, RAG, agents, context, and evaluation topics          |
+| `05-Resources`                | Glossaries, directories, troubleshooting, use cases, and learning resources |
+| `06-LLM-Specific`             | Provider-specific and model-specific intelligence                           |
+| `07-Frameworks`               | Reusable decision frameworks and consulting IP                              |
+| `08-Playbooks`                | Execution playbooks for pilots, governance, and vendor selection            |
+| `09-Reference-Architectures`  | Enterprise AI reference architectures                                       |
+| `10-Executive`                | Executive and board-level assets                                            |
+| `11-Research`                 | Research intake and weekly intelligence                                     |
+| `12-Synthesis`                | Cross-cutting synthesis and longitudinal themes                             |
+| `13-Operational-Systems`      | Canonical operating-system views of enterprise AI capabilities              |
+| `14-Publishing`               | Publishing workflow and content preparation                                 |
+| `15-Case-Studies`             | Case studies and applied examples                                           |
+| `90-Local-Admin`              | Local/private operational artifacts; not intended for publication           |
 
 ---
 # Authoring Workflow
@@ -146,19 +158,20 @@ Reference:
 # Publishing Notes
 
 The repository is structured for:
-
 - Jekyll
 - GitHub Pages
-- future Quartz/MkDocs compatibility
+- future Quartz / MkDocs compatibility
+- future retrieval-augmented knowledge access
 
 The publishing layer should prioritize:
-
 - high signal density
 - executive readability
 - semantic navigation
+- source discipline
 - retrieval compatibility
+- client-safe presentation
 
----
+
 # Strategic Direction
 
 This repository is evolving from:
@@ -170,3 +183,9 @@ toward:
 - an enterprise AI operating system
 - a reusable consulting IP platform
 - a publishable governance and architecture ecosystem
+- a semantic retrieval platform
+- an institutional AI intelligence system
+
+The core strategic assumption is:
+
+> Enterprise AI advantage will come less from model access alone and more from governed integration, retrieval quality, workflow design, evaluation discipline, and operating model maturity.

@@ -350,48 +350,31 @@ Start with:
 - [[02 AI-LLM-Fundamentals]]
 - [[03 Key-Architectures]]
 
-
 ## If You Want Governance & Strategy
 
 Start with:
-
 - [[AI-Governance]]
-
 - [[Enterprise-AI-Governance-Framework]]
-
 - [[AI-Operating-Model-Framework]]
-
 - [[AI-Risk-Classification-Framework]]
-
 
 ## If You Want Practical Implementation
 
 Start with:
-
 - [[AI-Adoption-Playbook]]
-
 - [[Starter-Projects-and-Quick-Wins]]
-
 - [[RAG-Implementation]]
-
 - [[API-Integration-Guide]]
-
 
 ## If You Want Architecture Depth
 
 Start with:
-
 - [[Enterprise-RAG]]
-
 - [[13-Operational-Systems/Context-Engineering|Context-Engineering]]
-
 - [[13-Operational-Systems/Agentic-Workflows|Agentic-Workflows]]
-
 - [[Enterprise-AI-Reference-Architecture]]
 
-
 ---
-
 # Repository Structure
 
 |Folder|Purpose|
@@ -417,27 +400,15 @@ Start with:
 |`99-Archived`|Deprecated or historical material|
 
 ---
-
 # Long-Term Vision
 
 This repository is evolving toward:
-
 - a durable enterprise AI knowledge system
-
 - a reusable consulting operating model
-
 - a semantic retrieval platform
-
 - a publishable AI governance ecosystem
-
 - an AI-assisted institutional memory layer
-
 - a practical operating system for enterprise AI transformation
 
-
 ---
-
-_Built by **George Moros** at Strategex for enterprise practitioners navigating operational AI transformation._
-
----
-*Built by **George Moros** at Strategex.* for enterprise practitioners navigating operational AI transformation.
+*Built by **George Moros** at Strategex* for enterprise practitioners navigating operational AI transformation.
