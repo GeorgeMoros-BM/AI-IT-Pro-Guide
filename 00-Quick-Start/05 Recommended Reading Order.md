@@ -12,10 +12,10 @@ Here's a progressive reading sequence that builds conceptual depth without overw
 # Phase 1 - Orientation
 
 Read:
-1. [[Quick Start & Orientation]]
-2. [[Executive-Summary]]
-3. [[Mental-Model-Reset]]
-4. [[How To Use This Vault]]
+1. [[01 Quick Start & Orientation]]
+2. [[02 Executive-Summary]]
+3. [[03 Mental-Model-Reset]]
+4. [[04 How To Use This Vault]]
 
 Objective:
 Understand what the vault is, why it exists, and how to navigate it.
@@ -83,7 +83,7 @@ Understand long-term enterprise AI capability evolution.
 ---
 # Learning Paths
 
-Role specific [[Learning Paths]]
+Role specific [[06 Learning Paths]]
 # Guidance
 
 Do not optimize for content consumption speed.

@@ -8,7 +8,7 @@ difficulty: beginner
 last_updated: 2026-04-24
 time_to_read: 5 minutes
 related:
-  - "[[Quick Start & Orientation]]"
+  - "[[01 Quick Start & Orientation]]"
   - "[[Managing-Shadow-AI]]"
   - "[[Token-Cost-Quick-Reference]]"
 ---

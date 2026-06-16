@@ -36,7 +36,7 @@ This section is not a full knowledge domain. It is the onboarding and routing la
 
 # Start Here
 
-## 1. [[Quick Start & Orientation]]
+## 1. [[01 Quick Start & Orientation]]
 
 Use this first.
 
@@ -47,7 +47,7 @@ Best for:
 - collaborators
 - stakeholders
 - AI-assisted retrieval sessions
-## 2. [[Executive-Summary]]
+## 2. [[02 Executive-Summary]]
 
 Use this when you need the short strategic thesis.
 
@@ -58,7 +58,7 @@ Best for:
 - sponsors
 - steering committees
 - quick context setting
-## 3. [[Mental-Model-Reset]]
+## 3. [[03 Mental-Model-Reset]]
 
 Use this before reading technical or governance material.
 
@@ -69,7 +69,7 @@ Best for:
 - practitioners new to LLMs
 - stakeholders with unrealistic expectations
 - governance teams
-## 4. [[How To Use This Vault]]
+## 4. [[04 How To Use This Vault]]
 
 Use this when you need to navigate the vault as a working system.
 
@@ -80,7 +80,7 @@ Best for:
 - consultants
 - repeat users
 - AI-assisted work sessions
-## 5. [[Recommended Reading Order]]
+## 5. [[05 Recommended Reading Order]]
 
 Use this when you want a progressive reading sequence.
 
@@ -89,7 +89,7 @@ Best for:
 - onboarding cohorts
 - self-study
 - new contributors
-## 6. [[Learning Paths]]
+## 6. [[06 Learning Paths]]
 
 Use this when you want a role-specific path.
 
@@ -108,21 +108,21 @@ Best for:
 
 | Reader Type | Start With | Then Read |
 |---|---|---|
-| Executive | [[Executive-Summary]] | [[AI-Governance]], [[Enterprise-AI-Operating-Model]], [[AI-Portfolio-Management]] |
-| IT Leader | [[Mental-Model-Reset]] | [[01 AI-Fundamentals-for-IT-Leaders]], [[Enterprise-AI-Operating-Model]] |
-| Enterprise Architect | [[Quick Start & Orientation]] | [[Enterprise-RAG]], [[Context-Engineering]], [[Enterprise-AI-Reference-Architecture]] |
-| AI Governance Lead | [[Executive-Summary]] | [[AI-Governance]], [[AI-Risk-Classification-Framework]], [[PromptOps]] |
-| Consultant | [[How To Use This Vault]] | [[AI-Adoption-Playbook]], [[AI-Use-Case-Prioritization-Framework]], [[AI-Platform-Evaluation-Framework]] |
-| Practitioner | [[Recommended Reading Order]] | [[02 AI-LLM-Fundamentals]], [[RAG-Implementation]], [[Prompt-Engineering-Basics]] |
-| New Contributor | [[How To Use This Vault]] | [[Metadata-Standards]], [[Lifecycle-States]], [[Maps-of-Content-Strategy]] |
+| Executive | [[02 Executive-Summary]] | [[AI-Governance]], [[Enterprise-AI-Operating-Model]], [[AI-Portfolio-Management]] |
+| IT Leader | [[03 Mental-Model-Reset]] | [[01 AI-Fundamentals-for-IT-Leaders]], [[Enterprise-AI-Operating-Model]] |
+| Enterprise Architect | [[01 Quick Start & Orientation]] | [[Enterprise-RAG]], [[Context-Engineering]], [[Enterprise-AI-Reference-Architecture]] |
+| AI Governance Lead | [[02 Executive-Summary]] | [[AI-Governance]], [[AI-Risk-Classification-Framework]], [[PromptOps]] |
+| Consultant | [[04 How To Use This Vault]] | [[AI-Adoption-Playbook]], [[AI-Use-Case-Prioritization-Framework]], [[AI-Platform-Evaluation-Framework]] |
+| Practitioner | [[05 Recommended Reading Order]] | [[02 AI-LLM-Fundamentals]], [[RAG-Implementation]], [[Prompt-Engineering-Basics]] |
+| New Contributor | [[04 How To Use This Vault]] | [[Metadata-Standards]], [[Lifecycle-States]], [[Maps-of-Content-Strategy]] |
 
 # Core Reading Sequence
 
 For most readers, use this order:
 
-1. [[Quick Start & Orientation]]
-2. [[Executive-Summary]]
-3. [[Mental-Model-Reset]]
+1. [[01 Quick Start & Orientation]]
+2. [[02 Executive-Summary]]
+3. [[03 Mental-Model-Reset]]
 4. [[01 AI-Fundamentals-for-IT-Leaders]]
 5. [[02 AI-LLM-Fundamentals]]
 6. [[03 Key-Architectures]]

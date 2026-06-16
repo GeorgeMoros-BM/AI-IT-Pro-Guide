@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00-Quick-Start/Learning Paths.md",
+                "file": "00-Quick-Start/00 Quick-Start-MOC.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Learning Paths"
+              "title": "00 Quick-Start-MOC"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00-Quick-Start/Learning Paths.md",
+                "file": "00-Quick-Start/00 Quick-Start-MOC.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Learning Paths"
+              "title": "Outline of 00 Quick-Start-MOC"
             }
           },
           {
@@ -195,23 +195,23 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b9a0ae8db1035638",
+  "active": "877aadd9f5cd2eed",
   "lastOpenFiles": [
-    "00-Quick-Start/Recommended Reading Order.md",
-    "00-Quick-Start/How To Use This Vault.md",
-    "00-Quick-Start/Mental-Model-Reset.md",
-    "00-Quick-Start/Executive-Summary.md",
-    "00-Quick-Start/Quick-Start-MOC.md",
-    "00-Quick-Start/Quick Start & Orientation.md",
+    "00-Quick-Start/04 How To Use This Vault.md",
+    "00-Quick-Start/00 Quick-Start-MOC.md",
+    "01-Foundation Knowledge/00 Foundation-Knowledge-MOC.md.md",
+    "00-System/AI-Agent-Interaction-Standards.md",
+    "index.md",
+    "00-Quick-Start/06 Learning Paths.md",
+    "00-Quick-Start/05 Recommended Reading Order.md",
+    "00-Quick-Start/03 Mental-Model-Reset.md",
+    "00-Quick-Start/02 Executive-Summary.md",
+    "00-Quick-Start/01 Quick Start & Orientation.md",
     "13-Operational-Systems/Agentic-Workflows.md",
     "04-Advanced-Topics/Agentic-Workflows.md",
-    "00-System/AI-Agent-Interaction-Standards.md",
     "00-System/AI-IT-Pro-Guide-Operating-Context.md",
     "00-System/AI-Workbench-Protocol.md",
-    "00-Quick-Start/Learning Paths.md",
     "01-Foundation Knowledge/01 AI-Fundamentals-for-IT-Leaders.md",
-    "01-Foundation Knowledge/Foundation-Knowledge-MOC.md.md",
-    "index.md",
     "Longitudinal-Themes.md",
     "07-Frameworks/AI-Misconceptions-to-Enterprise-Controls.md",
     "06-LLM-Specific/LLM-Provider-Comparison.md",

@@ -39,10 +39,10 @@ The goal is to help organizations:
 
 Recommended sequence:
 
-1. [[Executive-Summary]]
-2. [[Mental-Model-Reset]]
-3. [[Quick Start & Orientation]]
-4. [[How To Use This Vault]]
+1. [[02 Executive-Summary]]
+2. [[03 Mental-Model-Reset]]
+3. [[01 Quick Start & Orientation]]
+4. [[04 How To Use This Vault]]
 
 ---
 # Role-Based Learning Paths

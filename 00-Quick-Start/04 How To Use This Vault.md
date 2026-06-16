@@ -10,11 +10,11 @@ client_safe: true
 
 | Need | Use |
 |---|---|
-| Understand the vault | [[Quick Start & Orientation]] |
-| Understand the thesis | [[Executive-Summary]] |
-| Reset assumptions | [[Mental-Model-Reset]] |
-| Follow a structured sequence | [[Recommended Reading Order]] |
-| Follow a role-specific path | [[Learning Paths]] |
+| Understand the vault | [[01 Quick Start & Orientation]] |
+| Understand the thesis | [[02 Executive-Summary]] |
+| Reset assumptions | [[03 Mental-Model-Reset]] |
+| Follow a structured sequence | [[05 Recommended Reading Order]] |
+| Follow a role-specific path | [[06 Learning Paths]] |
 | Find canonical knowledge | MOCs and canonical documents |
 | Build something | Playbooks and practical implementation guides |
 | Create client-ready material | Executive assets and frameworks |

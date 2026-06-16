@@ -12,8 +12,8 @@ Structured learning sequences based on role and objective.
 # Executive Path
 
 Recommended sequence:
-1. [[Executive-Summary]]
-2. [[Mental-Model-Reset]]
+1. [[02 Executive-Summary]]
+2. [[03 Mental-Model-Reset]]
 3. [[AI-Governance]]
 4. [[Enterprise-AI-Operating-Model]]
 5. [[AI-Portfolio-Management]]
@@ -92,49 +92,85 @@ Focus:
 - retrieval systems
 - operational AI infrastructure
 ---
-# Software SME
-**Goal:** Build AI-powered features into applications
+# Software SME Path
 
-1. [[Mental Model Reset]] - Understand probabilistic vs deterministic thinking
-2. [[Prompt Engineering Basics]] - Craft effective prompts
-3. [[API Integration Guide]] - Connect to AI services securely
-4. [[RAG-Implementation]] - Connect AI to your data
-5. [[Agent Architecture]] - Build AI that uses tools
+Goal:
+Build AI-powered features into applications.
 
-**Time estimate:** 2 weeks to production-ready knowledge
+Recommended sequence:
+1. [[03 Mental-Model-Reset]]
+2. [[04 Prompt-Engineering-Basics]]
+3. [[API-Integration-Guide]]
+4. [[RAG-Implementation]]
+5. [[Agents-and-Tool-Use]]
+6. [[Evaluation-and-Testing]]
 
----
-# PowerBI/Business Analyst
-**Goal:** Use AI for data analysis and insights
-
-1. [[Mental Model Reset]] - How AI actually works
-2. [[Token Economics]] - Understand and optimize costs
-3. [[RAG-Implementation]] - Query your company's data with AI
-4. [[Prompt Engineering for Data]] - Get better answers from data
-5. [[Building AI Dashboards]] - Integrate AI into PowerBI
-
-**Time estimate:** 10 days to first AI-enhanced report
+Focus:
+- API integration
+- structured prompting
+- RAG
+- tool use
+- reliability testing
 
 ---
-# Infrastructure/DevOps
-**Goal:** Deploy, scale, and secure AI systems
+# PowerBI / Business Analyst Path
 
-1. [[AI Architecture Overview]] - What you're actually deploying
-2. [[Model Deployment Options]] - Cloud vs on-prem vs hybrid
-3. [[Security & Compliance]] - Protect data and meet regulations
-4. [[Cost Management]] - Token budgets and optimization
-5. [[Monitoring & Observability]] - Track AI system health
+Goal:
+Use AI for analysis, reporting, and insight generation.
 
-**Time estimate:** 1 week to deployment-ready
+Recommended sequence:
+1. [[03 Mental-Model-Reset]]
+2. [[AI-for-Data-Analysts]]
+3. [[PowerBI-and-Fabric-AI]]
+4. [[Token-Cost-Quick-Reference]]
+5. [[Research-RAG-and-Evidence]]
+6. [[Evaluation-and-Testing]]
+
+Focus:
+- safe analysis
+- data interpretation
+- reporting workflows
+- evidence handling
+- cost awareness
 
 ---
-# Business Integration Leader
-**Goal:** Drive adoption and demonstrate ROI
+# Infrastructure / DevOps Path
 
-1. [[The Business Case for AI]] - Articulating value
-2. [[Vendor Evaluation Guide]] - Choosing the right partners
-3. [[Risk Management Framework]] - Governance and compliance
-4. [[Change Management]] - Getting teams on board
-5. [[Measuring Success]] - ROI metrics and KPIs
+Goal:
+Deploy, secure, monitor, and scale AI-enabled systems.
 
-**Time estimate:** 5 days to strategic plan
+Recommended sequence:
+1. [[03 Key-Architectures]]
+2. [[Local-vs-Cloud-Architecture]]
+3. [[Security-and-Privacy]]
+4. [[Cost-Management-and-ROI]]
+5. [[Model-Evaluation-and-TCO]]
+6. [[Troubleshooting-AI-Runbook]]
+
+Focus:
+- deployment model
+- security
+- cost control
+- operations
+- troubleshooting
+
+---
+# Business Integration Leader Path
+
+Goal:
+Drive adoption, business alignment, and measurable value.
+
+Recommended sequence:
+1. [[02 Executive-Summary]]
+2. [[AI-Adoption-Playbook]]
+3. [[Change-Management-and-Adoption]]
+4. [[AI-Use-Case-Prioritization-Framework]]
+5. [[AI-Portfolio-Management]]
+6. [[AI-Investment-Rationale-One-Pager]]
+
+Focus:
+- adoption
+- value realization
+- prioritization
+- stakeholder alignment
+- portfolio governance

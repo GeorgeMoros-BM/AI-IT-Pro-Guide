@@ -1,6 +1,6 @@
 ---
 title: The Enterprise AI Glossary
-tags: 
+tags:
   - reference
   - glossary
   - terminology
@@ -10,7 +10,7 @@ last_updated: 2026-04-25
 time_to_read: 10 minutes
 related:
   - "[[AI-LLM-Fundamentals]]"
-  - "[[Mental-Model-Reset]]"
+  - "[[03 Mental-Model-Reset]]"
 ---
 # The Enterprise AI Glossary
 

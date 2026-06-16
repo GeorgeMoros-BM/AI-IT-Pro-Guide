@@ -79,7 +79,7 @@ This structure intentionally supports:
 
 ## Executives
 Start with:
-- [[Executive-Summary]]
+- [[02 Executive-Summary]]
 - [[AI-Governance]]
 - [[Enterprise-AI-Operating-Model]]
 
@@ -109,11 +109,11 @@ The vault prioritizes:
 
 If you are new to the vault, continue with:
 
-1. [[Executive-Summary]]
-2. [[Mental-Model-Reset]]
-3. [[Recommended Reading Order]]
+1. [[02 Executive-Summary]]
+2. [[03 Mental-Model-Reset]]
+3. [[05 Recommended Reading Order]]
 
 If you are using the vault for active work, go to:
 
-- [[How To Use This Vault]]
-- [[Learning Paths]]
+- [[04 How To Use This Vault]]
+- [[06 Learning Paths]]
