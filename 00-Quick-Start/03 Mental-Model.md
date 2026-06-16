@@ -155,13 +155,11 @@ You need:
 - model version control
 - output quality rubrics
 - escalation paths
-
 ## Operating Principle
 
 AI systems require evaluation discipline, not blind trust or one-time testing.
 
 ---
-
 # Reset 3: Prompting Is Not the End State
 
 Early AI adoption focused heavily on prompts.
@@ -173,30 +171,18 @@ But mature enterprise AI does not depend primarily on clever prompts. It depends
 Prompt quality still matters, but it is only one layer.
 
 Enterprise reliability increasingly depends on:
-
 - context engineering
-    
 - retrieval systems
-    
 - metadata quality
-    
 - orchestration patterns
-    
 - tool boundaries
-    
 - evidence policies
-    
 - output contracts
-    
 - evaluation frameworks
-    
 - lifecycle governance
-    
 - human-in-the-loop controls
-    
 
 A better prompt can improve an interaction. A better architecture can improve an operating capability.
-
 ## Practical Implication
 
 Do not over-invest in prompt libraries while under-investing in retrieval, evaluation, governance, and workflow integration.
@@ -205,10 +191,9 @@ A prompt without source policy, ownership, evaluation, versioning, and review ru
 
 ## Operating Principle
 
-Prompts are useful. PromptOps makes them governable.
+Prompts are useful. [[PromptOps-Governance]] makes them governable.
 
 ---
-
 # Reset 4: Context Is More Important Than Cleverness
 
 AI systems are only as useful as the context they receive and the sources they can access.
@@ -216,57 +201,35 @@ AI systems are only as useful as the context they receive and the sources they c
 In enterprise environments, the problem is rarely that users cannot write elaborate prompts. The harder problem is that the organization has weak knowledge architecture.
 
 Common issues include:
-
 - outdated documents
-    
 - duplicate policies
-    
 - unclear ownership
-    
 - weak metadata
-    
 - poor folder structures
-    
 - inaccessible source systems
-    
 - inconsistent terminology
-    
 - stale knowledge bases
-    
 - conflicting “official” sources
-    
 - unmanaged local copies
-    
 
 When the context layer is weak, AI amplifies confusion.
-
 ## Practical Implication
 
 AI quality depends on information architecture.
 
 Before asking why the model gave a poor answer, ask:
-
 - Was the right source available?
-    
 - Was the source current?
-    
 - Was the source authoritative?
-    
 - Was the source retrievable?
-    
 - Was the source permissioned correctly?
-    
 - Was contradictory material present?
-    
 - Did the system know which source to prefer?
-    
-
 ## Operating Principle
 
 Context engineering is enterprise architecture for AI.
 
 ---
-
 # Reset 5: RAG Is Not a Feature; It Is a Knowledge Control Pattern
 
 Retrieval-augmented generation is often described as a way to “connect AI to your documents.”
@@ -276,40 +239,25 @@ That is true, but incomplete.
 In enterprise settings, RAG is a control pattern for grounding AI outputs in approved knowledge.
 
 A strong RAG system does more than retrieve text. It defines:
-
 - what sources are approved
-    
 - how content is chunked
-    
 - how metadata is applied
-    
 - how access permissions work
-    
 - how freshness is handled
-    
 - how source authority is ranked
-    
 - how citations are displayed
-    
 - how missing evidence is handled
-    
 - how stale content is retired
-    
 - how retrieval quality is evaluated
-    
-
 ## Practical Implication
 
 Do not treat RAG as a plug-in.
-
 Treat it as a governed knowledge-access architecture.
-
 ## Operating Principle
 
 The quality of enterprise AI depends less on the model alone and more on the reliability of the retrieval layer around it.
 
 ---
-
 # Reset 6: AI Is Moving From Assistance to Orchestration
 
 Early AI tools helped users draft, summarize, brainstorm, and rewrite.
@@ -317,64 +265,39 @@ Early AI tools helped users draft, summarize, brainstorm, and rewrite.
 The next stage is more operational.
 
 AI systems are increasingly being used to:
-
 - route work
-    
 - triage tickets
-    
 - search enterprise knowledge
-    
 - draft customer responses
-    
 - classify requests
-    
 - extract structured data
-    
 - recommend actions
-    
 - generate code
-    
 - trigger workflows
-    
 - interact with APIs
-    
 - coordinate multi-step processes
-    
 
 This changes the risk profile.
 
 A passive assistant produces text.  
 An orchestrated AI workflow can affect systems, customers, employees, data, money, controls, and reputation.
-
 ## Practical Implication
 
 The more an AI system can act, the more it needs:
-
 - tool boundaries
-    
 - least-privilege access
-    
 - approval gates
-    
 - audit logs
-    
 - rollback paths
-    
 - monitoring
-    
 - incident response
-    
 - ownership
-    
 - risk classification
-    
-
 ## Operating Principle
 
 As AI moves from answering to acting, governance must move from guidance to control design.
 
 ---
-
 # Reset 7: Most Enterprise AI Failures Are Operational
 
 Many AI failures are misdiagnosed as model failures.
@@ -382,38 +305,24 @@ Many AI failures are misdiagnosed as model failures.
 Sometimes the model is the issue. But in enterprise environments, the larger failures are usually operational.
 
 Common failure modes include:
-
 - unclear ownership
-    
 - weak governance
-    
 - fragmented tools
-    
 - poor workflow integration
-    
 - bad retrieval quality
-    
 - missing evaluation discipline
-    
 - unmanaged prompts
-    
 - no lifecycle management
-    
 - weak change control
-    
 - unclear risk thresholds
-    
 - poor stakeholder expectations
-    
 - lack of human review rules
-    
 
 The model is only one component.
 
 The enterprise AI system includes:
 
-```text
-Business Process
+**Business Process**
 → Use Case Definition
 → Data Sources
 → Retrieval Layer
@@ -425,24 +334,18 @@ Business Process
 → Evaluation
 → Monitoring
 → Lifecycle Governance
-```
-
 ## Practical Implication
 
 When an AI initiative fails, do not ask only:
-
 > Which model did we use?
 
 Ask:
-
 > Which operating controls were missing?
-
 ## Operating Principle
 
 AI success is an operating-model problem before it is a model-selection problem.
 
 ---
-
 # Reset 8: AI Changes Organizational Design
 
 Enterprise AI is not just a software deployment.
@@ -450,67 +353,40 @@ Enterprise AI is not just a software deployment.
 It affects how organizations structure work, ownership, governance, and knowledge.
 
 AI changes:
-
 - who owns workflows
-    
 - how knowledge is maintained
-    
 - how decisions are supported
-    
 - how policies are accessed
-    
 - how teams document work
-    
 - how systems exchange context
-    
 - how risk is reviewed
-    
 - how employees are trained
-    
 - how work is measured
-    
 - how platforms are governed
-    
 
 This is why AI cannot be left only to experimentation teams or tool-by-tool adoption.
-
 ## Practical Implication
 
 Organizations need an AI operating model.
 
 That operating model should define:
-
 - governance bodies
-    
 - platform ownership
-    
 - risk tiers
-    
 - data access rules
-    
 - use-case intake
-    
 - evaluation standards
-    
 - approved tools
-    
 - model-selection rules
-    
 - prompt and workflow ownership
-    
 - human review requirements
-    
 - incident response
-    
 - lifecycle management
-    
-
 ## Operating Principle
 
 AI adoption becomes durable only when it is embedded into the organization’s operating model.
 
 ---
-
 # Reset 9: AI Advantage Comes From Integration, Not Access
 
 Model access is becoming less scarce.
@@ -518,56 +394,33 @@ Model access is becoming less scarce.
 Many organizations can access capable models from major providers. The strategic difference is not simply who has the best chatbot.
 
 Sustainable advantage is more likely to come from:
-
 - proprietary data quality
-    
 - workflow integration
-    
 - retrieval architecture
-    
 - governance maturity
-    
 - evaluation discipline
-    
 - institutional learning
-    
 - change management
-    
 - operating model clarity
-    
 - reusable AI assets
-    
 - human-in-the-loop design
-    
 
 The model matters. But the moat is the system around the model.
-
 ## Practical Implication
 
 Do not measure AI maturity by tool count or user adoption alone.
 
 Measure:
-
 - workflow impact
-    
 - decision quality
-    
 - cycle-time reduction
-    
 - risk reduction
-    
 - retrieval accuracy
-    
 - reuse of AI assets
-    
 - governed adoption
-    
 - cost-to-value ratio
-    
 - user trust
-    
 - auditability
-    
 
 ## Operating Principle
 
