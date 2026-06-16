@@ -195,8 +195,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b9a0ae8db1035638",
+  "active": "877aadd9f5cd2eed",
   "lastOpenFiles": [
+    "01-Foundation Knowledge/01 AI-Fundamentals-for-IT-Leaders.md",
     "01-Foundation Knowledge/AI-Fundamentals-for-IT-Leaders.md",
     "07-Frameworks/AI-Misconceptions-to-Enterprise-Controls.md",
     "01-Foundation Knowledge/AI-LLM-Fundamentals.md",
@@ -222,7 +223,6 @@
     "03-Enterprise-Concerns/Prompt-Risk-Tiering.md",
     "03-Enterprise-Concerns/Managing-Shadow-AI.md",
     "03-Enterprise-Concerns/Governance-and-Risk.md",
-    "03-Enterprise-Concerns/Enterprise-Concerns-MOC.md",
     "06-LLM-Specific/xAI-Grok",
     "06-LLM-Specific/Google_Gemini",
     "06-LLM-Specific/Anthropic-Claude/Skills",

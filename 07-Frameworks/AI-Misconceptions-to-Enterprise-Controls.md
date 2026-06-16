@@ -29,7 +29,6 @@ Most AI risk does not come from users knowing nothing about AI. It comes from us
 These misconceptions create predictable operational failures: hallucinated facts, weak accountability, poor data handling, unmanaged bias, fragile workflows, and misplaced trust.
 
 This playbook translates foundational AI literacy into governance, architecture, and workflow controls for enterprise use.
-
 # 1. Misconceptions to Controls Matrix
 
 |  #  | Common Misconception                        | What Is Actually True                                                           | Enterprise Risk                                                  | Required Control                                                         |
@@ -159,7 +158,6 @@ The AI produces generic or incorrect answers because it lacks the right enterpri
 ### Implementation Standard
 
 AI quality is bounded by context quality. Poor knowledge architecture creates poor AI behavior.
-
 ## E. Autonomy Risk Control
 
 ### Failure Mode
@@ -186,7 +184,6 @@ The AI takes actions that affect systems, users, data, money, reputation, or com
 ### Implementation Standard
 
 AI should not perform irreversible or externally visible actions without explicit authorization.
-
 # 3. Enterprise Risk Tiering
 
 Use this tiering model to decide how much control is required.
@@ -200,7 +197,6 @@ Use this tiering model to decide how much control is required.
 | 5 | Decision support | Legal, finance, HR, compliance analysis | High | Evidence, audit, expert review |
 | 6 | Autonomous action | Sending emails, changing records, executing transactions | High to critical | Approval gates, permissions, logs, rollback |
 | 7 | Regulated or safety-critical use | Medical, legal, credit, employment, cybersecurity response | Critical | Formal governance, validation, monitoring, compliance sign-off |
-
 # 4. Control Requirements by Deployment Pattern
 
 | Deployment Pattern | Typical Risk | Required Controls |
@@ -214,7 +210,6 @@ Use this tiering model to decide how much control is required.
 | Finance assistant | High | Data lineage, assumptions, model review |
 | Cybersecurity assistant | High to critical | Human approval, incident logging, playbook grounding |
 | Agentic workflow automation | High to critical | Permission boundaries, approvals, rollback, monitoring |
-
 # 5. The Practical Governance Rule
 
 AI control intensity should increase based on four factors:
@@ -233,7 +228,6 @@ Does the system touch confidential, regulated, personal, financial, legal, or se
 ## External Exposure
 
 Can the output reach customers, regulators, vendors, media, courts, auditors, or production systems?
-
 # 6. Misconception-to-Policy Translation
 
 |Misconception|Policy Translation|
@@ -248,7 +242,6 @@ Can the output reach customers, regulators, vendors, media, courts, auditors, or
 |AI can use any data|Data access must follow classification and permission rules|
 |AI tools are interchangeable|Model and vendor selection require architectural review|
 |AI success is adoption|Success must be measured by workflow outcomes, not usage volume|
-
 # 7. Minimum Viable Control Set
 
 For any enterprise AI deployment beyond personal productivity, apply these minimum controls:
