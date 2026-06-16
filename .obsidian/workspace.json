@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-Foundation Knowledge/AI-Fundamentals-for-IT-Leaders.md",
+                "file": "07-Frameworks/AI-Misconceptions-to-Enterprise-Controls.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AI-Fundamentals-for-IT-Leaders"
+              "title": "AI-Misconceptions-to-Enterprise-Controls"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-Foundation Knowledge/AI-Fundamentals-for-IT-Leaders.md",
+                "file": "07-Frameworks/AI-Misconceptions-to-Enterprise-Controls.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of AI-Fundamentals-for-IT-Leaders"
+              "title": "Outline of AI-Misconceptions-to-Enterprise-Controls"
             }
           },
           {
@@ -197,8 +197,9 @@
   },
   "active": "b9a0ae8db1035638",
   "lastOpenFiles": [
-    "01-Foundation Knowledge/AI-LLM-Fundamentals.md",
     "01-Foundation Knowledge/AI-Fundamentals-for-IT-Leaders.md",
+    "07-Frameworks/AI-Misconceptions-to-Enterprise-Controls.md",
+    "01-Foundation Knowledge/AI-LLM-Fundamentals.md",
     "06-LLM-Specific/Anthropic-Claude/Claude Fable 5 & Mythos 5.md",
     "06-LLM-Specific/Anthropic-Claude/anti-ai-writing-style.md",
     "06-LLM-Specific/Anthropic-Claude/Skills/frontend-design.md",
@@ -222,7 +223,6 @@
     "03-Enterprise-Concerns/Managing-Shadow-AI.md",
     "03-Enterprise-Concerns/Governance-and-Risk.md",
     "03-Enterprise-Concerns/Enterprise-Concerns-MOC.md",
-    "03-Enterprise-Concerns/Enterprise-AI-Operating-Model.md",
     "06-LLM-Specific/xAI-Grok",
     "06-LLM-Specific/Google_Gemini",
     "06-LLM-Specific/Anthropic-Claude/Skills",

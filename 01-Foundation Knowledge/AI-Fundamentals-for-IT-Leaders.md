@@ -606,14 +606,12 @@ Before deploying AI into a business process, confirm the following:
 - What test cases exist?
 - Are hallucination, bias, and failure modes tracked?
 - Is performance monitored after deployment?
-
 ## 8. Lifecycle
 
 - Who owns the system?
 - Who updates prompts, policies, retrieval sources, and evaluations?
 - What happens when the model changes?
 - What is the decommissioning process?
-
 # Implementation Pattern
 
 A reliable enterprise AI system usually requires more than a model.
