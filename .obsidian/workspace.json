@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00-Quick-Start/01 Quick Start & Orientation.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01 Quick Start & Orientation"
+              "title": "index"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00-Quick-Start/01 Quick Start & Orientation.md",
+                "file": "index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 01 Quick Start & Orientation"
+              "title": "Outline of index"
             }
           },
           {
@@ -195,18 +195,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "877aadd9f5cd2eed",
+  "active": "b9a0ae8db1035638",
   "lastOpenFiles": [
+    "README.md",
+    "index.md",
+    "00-Quick-Start/01 Quick Start & Orientation.md",
     "00-Quick-Start/00 Quick-Start-MOC.md",
     "00-Quick-Start/04 How To Use This Guide.md",
-    "00-Quick-Start/01 Quick Start & Orientation.md",
     "00-Quick-Start/03 Mental-Model-Reset.md",
     "99-Archived/03 Mental-Model-Reset.md",
     "00-Quick-Start/05 Recommended Reading Order.md",
     "00-Quick-Start/02 Executive-Summary.md",
     "01-Foundation Knowledge/00 Foundation-Knowledge-MOC.md.md",
     "00-System/AI-Agent-Interaction-Standards.md",
-    "index.md",
     "00-Quick-Start/06 Learning Paths.md",
     "13-Operational-Systems/Agentic-Workflows.md",
     "04-Advanced-Topics/Agentic-Workflows.md",
@@ -222,7 +223,6 @@
     "01-Foundation Knowledge/05 Model-Evaluation-and-TCO.md",
     "01-Foundation Knowledge/04 Prompt-Engineering-Basics.md",
     "01-Foundation Knowledge/03 Key-Architectures.md",
-    "01-Foundation Knowledge/02 AI-LLM-Fundamentals.md",
     "06-LLM-Specific/xAI-Grok",
     "06-LLM-Specific/Google_Gemini",
     "06-LLM-Specific/Anthropic-Claude/Skills",
