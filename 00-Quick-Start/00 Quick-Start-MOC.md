@@ -23,10 +23,10 @@ tags:
 ---
 ## Purpose
 
-This is the entry point for the AI-IT-Pro-Guide vault.
+This is the entry point for the AI-IT-Pro-Guide.
 
 Use this page to understand:
-- what the vault is
+- what the guide is
 - how it is organized
 - which path to follow
 - which documents are canonical starting points
@@ -40,7 +40,7 @@ This section is not a full knowledge domain. It is the onboarding and routing la
 
 Use this first.
 
-Explains the vault’s identity, purpose, structure, and evolution from a practical AI guide into an enterprise AI operating system and reusable consulting knowledge platform.
+Explains the guide’s identity, purpose, structure, and evolution from a practical AI guide into an enterprise AI operating system and reusable consulting knowledge platform.
 
 Best for:
 - first-time readers
@@ -69,9 +69,9 @@ Best for:
 - practitioners new to LLMs
 - stakeholders with unrealistic expectations
 - governance teams
-## 4. [[04 How To Use This Vault]]
+## [[04 How To Use This Guide]]
 
-Use this when you need to navigate the vault as a working system.
+Use this when you need to navigate the guide as a working system.
 
 Explains how to use canonical concepts, MOCs, lifecycle states, and the research-to-publication workflow.
 
@@ -80,7 +80,7 @@ Best for:
 - consultants
 - repeat users
 - AI-assisted work sessions
-## 5. [[05 Recommended Reading Order]]
+## [[05 Recommended Reading Order]]
 
 Use this when you want a progressive reading sequence.
 
@@ -89,7 +89,7 @@ Best for:
 - onboarding cohorts
 - self-study
 - new contributors
-## 6. [[06 Learning Paths]]
+## [[06 Learning Paths]]
 
 Use this when you want a role-specific path.
 
@@ -112,9 +112,9 @@ Best for:
 | IT Leader | [[99-Archived/03 Mental-Model-Reset]] | [[01 AI-Fundamentals-for-IT-Leaders]], [[Enterprise-AI-Operating-Model]] |
 | Enterprise Architect | [[01 Quick Start & Orientation]] | [[Enterprise-RAG]], [[Context-Engineering]], [[Enterprise-AI-Reference-Architecture]] |
 | AI Governance Lead | [[02 Executive-Summary]] | [[AI-Governance]], [[AI-Risk-Classification-Framework]], [[PromptOps]] |
-| Consultant | [[04 How To Use This Vault]] | [[AI-Adoption-Playbook]], [[AI-Use-Case-Prioritization-Framework]], [[AI-Platform-Evaluation-Framework]] |
+| Consultant | [[04 How To Use This guide]] | [[AI-Adoption-Playbook]], [[AI-Use-Case-Prioritization-Framework]], [[AI-Platform-Evaluation-Framework]] |
 | Practitioner | [[05 Recommended Reading Order]] | [[02 AI-LLM-Fundamentals]], [[RAG-Implementation]], [[Prompt-Engineering-Basics]] |
-| New Contributor | [[04 How To Use This Vault]] | [[Metadata-Standards]], [[Lifecycle-States]], [[Maps-of-Content-Strategy]] |
+| New Contributor | [[04 How To Use This guide]] | [[Metadata-Standards]], [[Lifecycle-States]], [[Maps-of-Content-Strategy]] |
 
 # Core Reading Sequence
 

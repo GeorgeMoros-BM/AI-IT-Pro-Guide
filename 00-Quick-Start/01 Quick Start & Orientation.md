@@ -115,5 +115,5 @@ If you are new to the vault, continue with:
 
 If you are using the vault for active work, go to:
 
-- [[04 How To Use This Vault]]
+- [[04 How To Use This Guide]]
 - [[06 Learning Paths]]

@@ -15,7 +15,7 @@ Read:
 1. [[01 Quick Start & Orientation]]
 2. [[02 Executive-Summary]]
 3. [[99-Archived/03 Mental-Model-Reset]]
-4. [[04 How To Use This Vault]]
+4. [[04 How To Use This Guide]]
 
 Objective:
 Understand what the vault is, why it exists, and how to navigate it.
