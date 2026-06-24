@@ -112,3 +112,21 @@ Left menu > Customize > Skills > + > Upload a skill.
 You don’t _have to_ build everything from scratch. Claude’s team makes pre-built Skills. To access it, do this:
 ![[Pasted image 20260624034449.png]]
 
+Step 1: You must be on the desktop app. Go to Customize > Personal plugins > Browse plugins inside the +
+
+![[Pasted image 20260624034602.png]]
+
+You can browse plugins. A plugin is just a bunch of skills for a task. You can click on anyone of them and download it
+
+![[Pasted image 20260624034703.png]]
+You now have all of these new skills to test, from this one plugin.
+
+## **Where Skills fall short** _(I’ll be honest)_.
+
+**The description is everything.** If you write a bad description, your Skill never fires. It just… doesn’t activate. You’ll wonder if it’s broken. It’s not. The description is just too vague. Use the debugging trick from Section 5.
+
+**Skills can hijack conversations.** If your description is too broad, your Skill fires when you don’t want it. You ask Claude a simple question and your LinkedIn Post Skill activates. The fix: add negative boundaries. _“Do NOT use for blog articles, newsletters, emails.”_
+
+**It still needs editing.** A Skill doesn’t produce perfection. It produces a consistent starting point, 80% there, every time, instead of starting from zero. You still review. You still push back. But the heavy lifting is done.
+
+**Usage still burns fast.** Skills don’t magically eliminate token usage _(beyond the efficiency gains from Trick #5)_. Cowork still eats your plan. If you’re using Cowork daily, consider the Max plan ($100/month). I’m being direct about this because I don’t want you surprised.
