@@ -92,3 +92,33 @@ The skill-creator produces:
 **Step 4: Claude even runs an evaluation for you to validate it.**
 
 It’s the most important step that most people will skip because they are either lazy or “lacking time”. Claude creates the evaluation of your new skill:
+
+![[Pasted image 20260624033455.png]]
+See the “View the eval results”. That’s how you test your skills before downloading it for good. **Take the time, it’s the most important step.**
+
+**Step 5: Save and install.**
+
+Once you’re happy with the skills, prompt it this:
+
+![[Pasted image 20260624033605.png]]
+
+Save the Skill folder. Then install it: Go to **Settings → Capabilities → Skills → Upload**.
+
+![[Pasted image 20260624033707.png]]
+Left menu > Customize > Skills > + > Upload a skill.
+
+#### Option 2: My consulting team made this for free.
+
+**Strategex** speeds up AI adoption across large  enterprises (e.g., training teams with a minimum of 100 people).
+
+And we made this free tool: **https://www.makemyskill.com.**
+
+As the name suggests, it helps build skills faster. The cool addition is to search the web for you before building the skill (in case you’re not exactly sure what you want the skill to have or not have).
+
+It also skips the “interview” part. It’s a faster, more convenient version, but with less control, of what Claude did.
+
+1. Go to https://www.makemyskill.com.
+    
+2. Describe the skill. The longer the better.
+    
+3. Download the skill & upload it to Claude.
