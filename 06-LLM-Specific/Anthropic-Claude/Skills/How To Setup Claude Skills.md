@@ -29,3 +29,22 @@ And you know context is much more important than the prompt (_but technically, c
 Let’s say you want to write a Linkedin post. You can either:
 
 **1 - Write a very long prompt that has the context** (who you are, the task that must be done, the precise steps to get there).
+![[Pasted image 20260624032540.png]]
+
+**2 - Or write a very long text file**, that you then upload to your favorite AI. 
+![[Pasted image 20260624032627.png]]
+
+**3 -** Both the very long prompt (instructions) and the very long text file (also instructions, but with more context about YOU) **can be uploaded inside a Project.**
+![[Pasted image 20260624032725.png]]
+
+4 - **And then you have Skills**. It’s all of this, but as a slash command.
+
+Context files need you to say _“read my file first”_ every time.
+
+Projects need you to open the right Project.
+
+But Skills fire _automatically_. Claude recognizes the task from what you type and activates the right Skill on its own. You don’t invoke a Skill. _It invokes itself._
+
+> **I will show you how it works so you understand. And in the next section of this guide, I will teach you exactly how I did it (so you can do it too).**
+
+![[Pasted image 20260624032854.png]]
