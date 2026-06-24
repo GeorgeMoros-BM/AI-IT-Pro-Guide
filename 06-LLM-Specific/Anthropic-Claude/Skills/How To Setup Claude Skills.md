@@ -55,12 +55,7 @@ I just type **“/linkedin”** anywhere on Claude, and it knows. Plus, even y
 
 ## **2 - How to build your first Skill.**
 
-You really have two simple options to build a skill.
-#### Option 1: Claude has a Skill Creator.
-
-Sounds obvious, but yes, Claude made a Skill creator to create skills for Claude.
-
-_Are you following?_
+**Claude has a Skill Creator.** Sounds obvious, but yes, Claude made a Skill creator to create skills for Claude.
 
 You describe the task, it interviews you, it generates everything. Same energy as the **[100-question taste interview](https://ruben.substack.com/p/i-am-just-a-text-file)**, but this time you’re capturing a _process_, not a _personality_.
 
