@@ -107,18 +107,8 @@ Save the Skill folder. Then install it: Go to **Settings → Capabilities → S
 ![[Pasted image 20260624033707.png]]
 Left menu > Customize > Skills > + > Upload a skill.
 
-#### Option 2: My consulting team made this for free.
+## **3 - Access Claude’s team skills.**
 
-**Strategex** speeds up AI adoption across large  enterprises (e.g., training teams with a minimum of 100 people).
+You don’t _have to_ build everything from scratch. Claude’s team makes pre-built Skills. To access it, do this:
+![[Pasted image 20260624034449.png]]
 
-And we made this free tool: **https://www.makemyskill.com.**
-
-As the name suggests, it helps build skills faster. The cool addition is to search the web for you before building the skill (in case you’re not exactly sure what you want the skill to have or not have).
-
-It also skips the “interview” part. It’s a faster, more convenient version, but with less control, of what Claude did.
-
-1. Go to https://www.makemyskill.com.
-    
-2. Describe the skill. The longer the better.
-    
-3. Download the skill & upload it to Claude.
