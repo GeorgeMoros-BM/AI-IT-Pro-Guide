@@ -7,10 +7,10 @@ tags:
   - evidence
   - grounding
 difficulty: intermediate
-last_updated: 2026-05-12
+last_updated: 2026-11-06
 time_to_read: 24 minutes
 related:
-  - "[[RAG-Implementation]]"
+  - "[[99-Archived/RAG-Implementation]]"
   - "[[Evaluation-and-Testing]]"
   - "[[Prompt-Engineering-Basics]]"
   - "[[Security-and-Privacy]]"
@@ -20,6 +20,20 @@ related:
 
 > **TL;DR for the Busy IT Pro:**  
 > RAG retrieves context; evidence policy determines what the AI is allowed to trust, cite, infer, or refuse to answer.
+
+---
+## Worked Example
+
+Take the handbook chatbot from [[99-Archived/RAG-Implementation]] and the same question: "How many vacation days can I carry into next year?" The system can find relevant text and still give a bad answer. The evidence policy decides what happens next.
+
+| What Retrieval Returns | Without an Evidence Policy | With an Evidence Policy |
+|---|---|---|
+| The current approved policy | "You can carry over up to 5 days. Section 4.2." | The same answer, citing the policy version and section |
+| An old handbook PDF that outranks the current policy | "You can carry over up to 10 days." The answer is fluent, cited, and wrong | Version and approval filters exclude the old PDF, so the answer comes from the current policy |
+| A handbook and a regional addendum that disagree | The model silently picks one | The answer cites both and flags the conflict |
+| Employee policy text when a contractor asks | The model stretches the closest passage into an answer | "The provided sources do not contain enough evidence to answer this." |
+
+The model can sound equally confident in all four rows. The evidence policy, not the model, decides which answers reach the user.
 
 ---
 ## What You'll Learn
@@ -277,6 +291,7 @@ Evaluate:
 - [ ] Test retrieval separately from final answers
 - [ ] Evaluate citation accuracy and answer faithfulness
 - [ ] Review top failure cases with a domain SME
+- [ ] Apply the Retrieval Corpus Lifecycle rule in [[PromptOps-Governance]] when sources change
 
 ---
 ## Anti-Patterns (Don't Do This)
@@ -303,7 +318,7 @@ Evaluate:
 ---
 ## Related Topics
 
-- [[RAG-Implementation]] - Building the retrieval pipeline
+- [[99-Archived/RAG-Implementation]] - Building the retrieval pipeline
 - [[Evaluation-and-Testing]] - Testing retrieval, grounding, and output quality
 - [[Security-and-Privacy]] - Access control, prompt injection, and data leakage
 - [[PromptOps-Governance]] - Versioning and lifecycle management
@@ -318,6 +333,7 @@ Evaluate:
 ---
 ## Changelog
 
+- **2026-11-06**: Added worked example; linked the Retrieval Corpus Lifecycle rule
 - **2026-05-12**: Created as practical evidence and grounded-answer companion to RAG implementation
 
 ---

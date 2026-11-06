@@ -10,7 +10,7 @@ Navigation hub for operational AI implementation guidance and deployment pattern
 
 - [[AI-Adoption-Playbook]]
 - [[Starter Projects and Quick Wins]]
-- [[Research-RAG-and-Evidence]]
+- [[99-Archived/Research-RAG-and-Evidence]]
 
 ---
 

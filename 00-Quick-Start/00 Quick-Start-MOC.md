@@ -113,7 +113,7 @@ Best for:
 | Enterprise Architect | [[01 Quick Start & Orientation]] | [[Enterprise-RAG]], [[Context-Engineering]], [[Enterprise-AI-Reference-Architecture]] |
 | AI Governance Lead | [[02 Executive-Summary]] | [[AI-Governance]], [[AI-Risk-Classification-Framework]], [[PromptOps]] |
 | Consultant | [[04 How To Use This guide]] | [[AI-Adoption-Playbook]], [[AI-Use-Case-Prioritization-Framework]], [[AI-Platform-Evaluation-Framework]] |
-| Practitioner | [[05 Recommended Reading Order]] | [[02 AI-LLM-Fundamentals]], [[RAG-Implementation]], [[Prompt-Engineering-Basics]] |
+| Practitioner | [[05 Recommended Reading Order]] | [[02 AI-LLM-Fundamentals]], [[99-Archived/RAG-Implementation]], [[Prompt-Engineering-Basics]] |
 | New Contributor | [[04 How To Use This guide]] | [[Metadata-Standards]], [[Lifecycle-States]], [[Maps-of-Content-Strategy]] |
 
 # Core Reading Sequence
@@ -147,7 +147,7 @@ Go to:
 
 Go to:
 - [[Practical-Implementation-MOC]]
-- [[RAG-Implementation]]
+- [[99-Archived/RAG-Implementation]]
 - [[API-Integration-Guide]]
 - [[AI-Adoption-Playbook]]
 - [[Starter-Projects-and-Quick-Wins]]

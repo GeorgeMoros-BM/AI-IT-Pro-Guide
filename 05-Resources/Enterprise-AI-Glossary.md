@@ -66,7 +66,7 @@ A cyberattack where a user sneaks malicious commands into the data being process
 **RAG (Retrieval-Augmented Generation)**
 The architecture of connecting an LLM to your private data. The system searches your database for relevant documents, pastes them into the prompt, and asks the AI to answer using *only* that text.
 * *IT Analogy:* An "Open-Book Exam" for the AI.
-* *Read more:* [[RAG-Implementation]]
+* *Read more:* [[99-Archived/RAG-Implementation]]
 
 ---
 ## 🔤 S-Z

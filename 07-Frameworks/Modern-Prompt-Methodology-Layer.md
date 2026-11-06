@@ -15,7 +15,7 @@ related:
   - "[[Prompt-Engineering-Basics]]"
   - "[[Prompt-Operating-Contracts]]"
   - "[[Evaluation-and-Testing]]"
-  - "[[RAG-Implementation]]"
+  - "[[99-Archived/RAG-Implementation]]"
   - "[[Agents-and-Tool-Use]]"
   - "[[Governance-and-Risk]]"
 ---
@@ -339,7 +339,7 @@ Metadata makes prompt assets searchable, governable, and testable.
 - [[Prompt-Engineering-Basics]] - The introductory primer
 - [[Prompt-Operating-Contracts]] - How to structure reusable prompts
 - [[Evaluation-and-Testing]] - How to measure reliability
-- [[RAG-Implementation]] - How to ground answers in enterprise data
+- [[99-Archived/RAG-Implementation]] - How to ground answers in enterprise data
 - [[Agents-and-Tool-Use]] - How prompts become executable systems
 - [[Governance-and-Risk]] - How to govern AI assets
 
@@ -347,7 +347,7 @@ Metadata makes prompt assets searchable, governable, and testable.
 ## Further Reading
 
 - [[Prompt-Patterns-and-Frameworks]] - Framework library and modernization map
-- [[Research-RAG-and-Evidence]] - Source hierarchy, freshness, and citation rules
+- [[99-Archived/Research-RAG-and-Evidence]] - Source hierarchy, freshness, and citation rules
 - [[PromptOps-Governance]] - Prompt registry, versioning, review cadence, and ownership
 
 ---

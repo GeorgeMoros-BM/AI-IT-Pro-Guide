@@ -101,7 +101,7 @@ Recommended sequence:
 1. [[99-Archived/03 Mental-Model-Reset]]
 2. [[04 Prompt-Engineering-Basics]]
 3. [[API-Integration-Guide]]
-4. [[RAG-Implementation]]
+4. [[99-Archived/RAG-Implementation]]
 5. [[Agents-and-Tool-Use]]
 6. [[Evaluation-and-Testing]]
 
@@ -123,7 +123,7 @@ Recommended sequence:
 2. [[AI-for-Data-Analysts]]
 3. [[PowerBI-and-Fabric-AI]]
 4. [[Token-Cost-Quick-Reference]]
-5. [[Research-RAG-and-Evidence]]
+5. [[99-Archived/Research-RAG-and-Evidence]]
 6. [[Evaluation-and-Testing]]
 
 Focus:

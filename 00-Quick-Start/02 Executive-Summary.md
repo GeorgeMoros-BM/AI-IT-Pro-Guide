@@ -51,7 +51,7 @@ If you already have AI applications in production, you are likely overpaying by 
 *Read how: [[Token-Cost-Quick-Reference]]*
 ### 3. Build Your First RAG Pipeline
 Pick one high-friction, low-risk internal process (e.g., HR benefits Q&A, IT runbook lookup). Extract the PDFs, convert them to vector embeddings, and connect an LLM to them. Prove the ROI internally before facing customers.
-*Read how: [[RAG-Implementation]]*
+*Read how: [[99-Archived/RAG-Implementation]]*
 
 ---
 ## How to Read This Guide

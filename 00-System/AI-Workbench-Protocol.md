@@ -8,7 +8,7 @@ difficulty: intermediate
 last updated: 2026-05-18
 time to read: 12 minutes
 related:
-  - "[[Research-RAG-and-Evidence]]"
+  - "[[99-Archived/Research-RAG-and-Evidence]]"
   - "[[PromptOps-Governance]]"
   - "[[Evaluation-and-Testing]]"
 ---
@@ -354,7 +354,7 @@ This restores ownership. AI helped produce the artifact, but you remain accounta
 ---
 ## Related Topics
 
-- [[Research-RAG-and-Evidence]]
+- [[99-Archived/Research-RAG-and-Evidence]]
 - [[PromptOps-Governance]]
 - [[Prompt-Risk-Tiering]]
 - [[Evaluation-and-Testing]]
@@ -370,7 +370,7 @@ This restores ownership. AI helped produce the artifact, but you remain accounta
 - [[AI Workbench Brief Template]] - Use this before asking AI for an important deliverable.
 - [[AI Output Critique Template]] - Use this to stress-test AI-generated drafts.
 - [[Human Judgment Checklist]] - Use this before shipping AI-assisted work.
-- [[Research-RAG-and-Evidence]] - Use this when source discipline and evidence quality matter.
+- [[99-Archived/Research-RAG-and-Evidence]] - Use this when source discipline and evidence quality matter.
 - [[PromptOps-Governance]] - Use this when scaling prompt workflows across a team.
 
 ---

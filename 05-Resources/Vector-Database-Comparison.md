@@ -1,6 +1,6 @@
 ---
-title: "Vector Database Comparison"
-tags: 
+title: Vector Database Comparison
+tags:
   - comparison
   - vendor
   - vector-db
@@ -9,7 +9,7 @@ tags:
 last_updated: 2026-04-25
 review_frequency: quarterly
 related:
-  - "[[RAG-Implementation]]"
+  - "[[99-Archived/RAG-Implementation]]"
   - "[[Advanced-RAG-Techniques]]"
 ---
 # Vector Database Comparison

@@ -165,7 +165,7 @@ Translate the text enclosed in the <user_text> tags below:
 ## Related Topics
 
 - [[Managing-Shadow-AI]] - How to give users a safe alternative
-- [[RAG-Implementation]] - How to securely connect data
+- [[99-Archived/RAG-Implementation]] - How to securely connect data
 - [[Token Economics]] - Managing the financial risk of API abuse
 
 ---

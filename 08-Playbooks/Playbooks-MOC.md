@@ -24,7 +24,7 @@ Operational execution layer for enterprise AI rollout, adoption, governance, and
 
 # Deployment
 
-- [[RAG-Implementation]]
+- [[99-Archived/RAG-Implementation]]
 - [[Enterprise-Copilot-Deployment]]
 - [[AI-Pilot-Framework]]
 

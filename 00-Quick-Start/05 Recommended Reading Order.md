@@ -51,7 +51,7 @@ Read:
 2. [[13-Operational-Systems/Context-Engineering|Context-Engineering]]
 3. [[AI-System-Architecture-Patterns]]
 4. [[Enterprise-AI-Reference-Architecture]]
-5. [[RAG-Implementation]]
+5. [[99-Archived/RAG-Implementation]]
 6. [[API-Integration-Guide]]
 
 Objective:

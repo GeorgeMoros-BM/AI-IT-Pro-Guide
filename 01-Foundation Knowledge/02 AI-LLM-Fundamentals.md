@@ -11,7 +11,7 @@ time_to_read: 15 minutes
 related:
   - "[[99-Archived/03 Mental-Model-Reset]]"
   - "[[Token-Cost-Quick-Reference]]"
-  - "[[RAG-Implementation]]"
+  - "[[99-Archived/RAG-Implementation]]"
 ---
 # AI/LLM Fundamentals (No PhD Required)
 
@@ -151,7 +151,7 @@ for token_id in tokens:
 ## Related Topics
 
 - [[Token-Cost-Quick-Reference]] - How these token counts translate to real money.
-- [[RAG-Implementation]] - How to put Embeddings and Vector Databases to use.
+- [[99-Archived/RAG-Implementation]] - How to put Embeddings and Vector Databases to use.
 - [[99-Archived/03 Mental-Model-Reset]] - Connecting this math back to probabilistic outputs.
 
 ---

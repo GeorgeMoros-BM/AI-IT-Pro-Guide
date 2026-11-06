@@ -15,8 +15,6 @@ related:
   - "[[Evaluation-and-Testing]]"
   - "[[Prompt-Operating-Contracts]]"
   - "[[Security-and-Privacy]]"
-  - "[[RAG-Implementation]]"
-  - "[[Research-RAG-and-Evidence]]"
 ---
 > **TL;DR for the Busy IT Pro:**  
 > Treat prompts, tools, retrieval settings, evals, and model choices as governed production assets, not private notes inside someone's chat history.
@@ -273,7 +271,7 @@ Re-embedding a changed document adds new chunks but doesn't remove the old ones.
 | Chunking strategy or embedding model changed | Rebuild the full index so all vectors come from one model and one chunking strategy | Full retrieval regression passes |
 | Source reaches its review date | Owner renews, updates, or withdraws it | Source metadata shows the new review date |
 
-Record a new corpus version with each release, in the format shown in Concept 3. The rule applies at every risk tier. The tier sets how much testing is required. Test design and the not-found response are in [[Research-RAG-and-Evidence]].
+Record a new corpus version with each release, in the format shown in Concept 3. The rule applies at every risk tier. The tier sets how much testing is required. Test design and the not-found response are in [[99-Archived/Research-RAG-and-Evidence]].
 
 **What's happening here:**
 
@@ -347,8 +345,8 @@ Record a new corpus version with each release, in the format shown in Concept 3.
 - [[Evaluation-and-Testing]] - Eval suites and release gates
 - [[Prompt-Operating-Contracts]] - Designing prompts as reusable contracts
 - [[Security-and-Privacy]] - Data boundary and prompt-injection controls
-- [[RAG-Implementation]] - Building the retrieval pipeline
-- [[Research-RAG-and-Evidence]] - Evidence policy and retrieval testing
+- [[99-Archived/RAG-Implementation]] - Building the retrieval pipeline
+- [[99-Archived/Research-RAG-and-Evidence]] - Evidence policy and retrieval testing
 
 ---
 ## Further Reading
