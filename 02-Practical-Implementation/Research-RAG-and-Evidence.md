@@ -3,7 +3,7 @@ title: Research, RAG & Evidence
 artifact_type: reference
 status: draft
 publish: false
-client_safe: false
+client_safe: true
 tags:
   - chapter
   - rag
