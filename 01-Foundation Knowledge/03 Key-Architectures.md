@@ -1,5 +1,9 @@
 ---
 title: Key Architectures You'll Actually Use
+artifact_type: reference
+status: draft
+publish: false
+client_safe: false
 tags:
   - chapter
   - architecture

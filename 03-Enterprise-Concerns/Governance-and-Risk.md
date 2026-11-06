@@ -1,5 +1,9 @@
 ---
 title: Governance & Risk Management
+artifact_type: reference
+status: draft
+publish: false
+client_safe: false
 tags: 
   - chapter
   - governance

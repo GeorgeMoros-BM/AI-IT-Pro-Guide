@@ -1,5 +1,9 @@
 ---
 title: Change Management & AI Adoption
+artifact_type: reference
+status: draft
+publish: false
+client_safe: false
 tags: 
   - chapter
   - change-management

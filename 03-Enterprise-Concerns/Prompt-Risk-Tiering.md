@@ -1,5 +1,9 @@
 ---
 title: Prompt Risk Tiering
+artifact_type: governance
+status: draft
+publish: false
+client_safe: false
 tags:
   - chapter
   - risk
