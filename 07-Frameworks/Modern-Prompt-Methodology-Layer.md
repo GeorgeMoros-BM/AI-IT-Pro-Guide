@@ -1,5 +1,9 @@
 ---
 title: Modern Prompt Methodology Layer
+artifact_type: framework
+status: canonical
+publish: false
+client_safe: false
 tags:
   - chapter
   - ai
@@ -12,10 +16,10 @@ difficulty: advanced
 last_updated: 2026-05-12
 time_to_read: 22 minutes
 related:
-  - "[[Prompt-Engineering-Basics]]"
+  - "[[04 Prompt-Engineering-Basics]]"
   - "[[Prompt-Operating-Contracts]]"
   - "[[Evaluation-and-Testing]]"
-  - "[[RAG-Implementation]]"
+  - "[[02-Practical-Implementation/RAG-Implementation]]"
   - "[[Agents-and-Tool-Use]]"
   - "[[Governance-and-Risk]]"
 ---
@@ -336,10 +340,10 @@ Metadata makes prompt assets searchable, governable, and testable.
 ---
 ## Related Topics
 
-- [[Prompt-Engineering-Basics]] - The introductory primer
+- [[04 Prompt-Engineering-Basics]] - The introductory primer
 - [[Prompt-Operating-Contracts]] - How to structure reusable prompts
 - [[Evaluation-and-Testing]] - How to measure reliability
-- [[RAG-Implementation]] - How to ground answers in enterprise data
+- [[02-Practical-Implementation/RAG-Implementation]] - How to ground answers in enterprise data
 - [[Agents-and-Tool-Use]] - How prompts become executable systems
 - [[Governance-and-Risk]] - How to govern AI assets
 
@@ -347,8 +351,8 @@ Metadata makes prompt assets searchable, governable, and testable.
 ## Further Reading
 
 - [[Prompt-Patterns-and-Frameworks]] - Framework library and modernization map
-- [[Research-RAG-and-Evidence]] - Source hierarchy, freshness, and citation rules
-- [[PromptOps-Governance]] - Prompt registry, versioning, review cadence, and ownership
+- [[02-Practical-Implementation/Research-RAG-and-Evidence]] - Source hierarchy, freshness, and citation rules
+- [[03-Enterprise-Concerns/PromptOps-Governance]] - Prompt registry, versioning, review cadence, and ownership
 
 ---
 ## Changelog

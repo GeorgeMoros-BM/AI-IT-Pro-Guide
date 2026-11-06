@@ -23,7 +23,7 @@ Central governance and operational navigation layer for enterprise AI deployment
 
 - [[Shadow-AI]]
 - [[AI-Security]]
-- [[PromptOps-Governance]]
+- [[03-Enterprise-Concerns/PromptOps-Governance]]
 - [[Prompt-Risk-Tiering]]
 
 ---

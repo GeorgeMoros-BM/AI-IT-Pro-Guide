@@ -6,11 +6,11 @@ tags:
   - terminology
   - beginner
 difficulty: beginner
-last_updated: 2026-04-25
+last_updated: 2026-11-05
 time_to_read: 10 minutes
 related:
   - "[[AI-LLM-Fundamentals]]"
-  - "[[99-Archived/03 Mental-Model-Reset]]"
+  - "[[00-Quick-Start/03 Mental-Model-Reset]]"
 ---
 # The Enterprise AI Glossary
 
@@ -60,13 +60,13 @@ A type of neural network trained on massive amounts of text to understand and ge
 
 **Prompt Injection**
 A cyberattack where a user sneaks malicious commands into the data being processed by the AI, causing the AI to ignore its original system instructions and do what the attacker wants.
-* *IT Analogy:* **SQL Injection**, but using conversational English instead of database syntax.
+* *IT Analogy:* A **confused deputy**, where a trusted service is tricked into using its own privileges for an attacker. Unlike **SQL injection**, it has no fix equivalent to parameterized queries, so you limit what the AI can do.
 * *Read more:* [[Security-and-Privacy]]
 
 **RAG (Retrieval-Augmented Generation)**
 The architecture of connecting an LLM to your private data. The system searches your database for relevant documents, pastes them into the prompt, and asks the AI to answer using *only* that text.
 * *IT Analogy:* An "Open-Book Exam" for the AI.
-* *Read more:* [[RAG-Implementation]]
+* *Read more:* [[02-Practical-Implementation/RAG-Implementation]]
 
 ---
 ## 🔤 S-Z
@@ -101,6 +101,7 @@ A specialized database designed to store, index, and search Embeddings. It power
 ---
 ## Changelog
 
+- **2026-11-05**: Replaced the SQL injection analogy for prompt injection
 - **2026-04-25**: Created initial enterprise glossary.
 
 ---

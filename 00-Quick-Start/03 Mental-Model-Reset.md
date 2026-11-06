@@ -191,7 +191,7 @@ A prompt without source policy, ownership, evaluation, versioning, and review ru
 
 ## Operating Principle
 
-Prompts are useful. [[PromptOps-Governance]] makes them governable.
+Prompts are useful. [[03-Enterprise-Concerns/PromptOps-Governance]] makes them governable.
 
 ---
 # Reset 4: Context Is More Important Than Cleverness

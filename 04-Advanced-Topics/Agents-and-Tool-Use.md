@@ -1,5 +1,9 @@
 ---
 title: Agents & Tool Use
+artifact_type: reference
+status: draft
+publish: false
+client_safe: false
 tags:
   - chapter
   - agents
@@ -12,7 +16,7 @@ last_updated: 2026-05-12
 time_to_read: 30 minutes
 related:
   - "[[API-Integration-Guide]]"
-  - "[[Prompt-Engineering-Basics]]"
+  - "[[04 Prompt-Engineering-Basics]]"
   - "[[Prompt-Operating-Contracts]]"
   - "[[Agentic-Workflows]]"
   - "[[Evaluation-and-Testing]]"

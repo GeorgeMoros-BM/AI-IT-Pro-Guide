@@ -1,5 +1,5 @@
 ---
-title: "Enterprise AI Governance Framework"
+title: Enterprise AI Governance Framework
 artifact_type: framework
 status: validated
 last_updated: 2026-05-18
@@ -17,7 +17,7 @@ maturity: advanced
 time_to_read: 25 minutes
 related:
   - "[[AI-Risk-Classification-Framework]]"
-  - "[[PromptOps-Governance]]"
+  - "[[03-Enterprise-Concerns/PromptOps-Governance]]"
   - "[[AI-Operating-Model-Framework]]"
 ---
 
@@ -208,7 +208,7 @@ Recommended controls:
 - risk classification
 
 Reference:
-[[PromptOps-Governance]]
+[[03-Enterprise-Concerns/PromptOps-Governance]]
 
 ---
 

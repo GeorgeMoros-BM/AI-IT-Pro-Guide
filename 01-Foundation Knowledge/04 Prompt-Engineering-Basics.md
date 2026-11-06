@@ -1,5 +1,9 @@
 ---
 title: Prompt Engineering Basics
+artifact_type: reference
+status: draft
+publish: false
+client_safe: false
 tags:
   - chapter
   - ai
@@ -13,7 +17,7 @@ related:
   - "[[Modern-Prompt-Methodology-Layer]]"
   - "[[Agents-and-Tool-Use]]"
   - "[[Evaluation-and-Testing]]"
-  - "[[RAG-Implementation]]"
+  - "[[02-Practical-Implementation/RAG-Implementation]]"
 ---
 # Prompt Engineering Basics
 
@@ -251,7 +255,7 @@ Escalate beyond prompting when:
 | Production reliability | PromptOps and automated testing |
 | Persistent business workflow | Governed AI application |
 
-See: [[Prompt-Operating-Contracts]], [[RAG-Implementation]], [[Agents-and-Tool-Use]], and [[Evaluation-and-Testing]].
+See: [[Prompt-Operating-Contracts]], [[02-Practical-Implementation/RAG-Implementation]], [[Agents-and-Tool-Use]], and [[Evaluation-and-Testing]].
 
 ---
 ## PromptOps Lifecycle
@@ -334,7 +338,7 @@ Without this lifecycle, prompt quality degrades silently as models, inputs, and 
 - [[Modern-Prompt-Methodology-Layer]] - The governing standard for prompt design
 - [[Agents-and-Tool-Use]] - Scaling prompts into executable workflows
 - [[Evaluation-and-Testing]] - Validating outputs before and after deployment
-- [[RAG-Implementation]] - Grounding prompts with enterprise data
+- [[02-Practical-Implementation/RAG-Implementation]] - Grounding prompts with enterprise data
 
 ---
 ## Further Reading

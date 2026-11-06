@@ -1,5 +1,9 @@
 ---
 title: Governance & Risk Management
+artifact_type: reference
+status: draft
+publish: false
+client_safe: false
 tags: 
   - chapter
   - governance
@@ -7,7 +11,7 @@ tags:
   - compliance
   - management
 difficulty: intermediate
-last_updated: 2026-04-24
+last_updated: 2026-11-05
 time_to_read: 15 minutes
 related:
   - "[[Security-and-Privacy]]"
@@ -65,7 +69,7 @@ Before any AI feature goes live, the product owner must document:
 5. **Kill Switch:** Can an admin disable the AI feature via a feature flag without a code deployment?
 
 ### Step 2: AI Incident Response Playbook
-Add an AI-specific path to your standard Incident Response (IR) plan:
+Add an AI-specific path to your standard Incident Response (IR) plan. These five steps are the summary, and [[AI-Incident-Response-Playbook]] has the full process:
 1. **Containment:** Immediately toggle the feature-flag kill switch. Do not attempt to "fix the prompt" in production while the bot is live.
 2. **Investigation:** Pull the audit logs to find the exact prompt sequence that triggered the failure. 
 3. **Evaluation:** Run the failing prompt against your offline eval testing suite to reproduce the error.
@@ -116,6 +120,7 @@ Add an AI-specific path to your standard Incident Response (IR) plan:
 - [[Security-and-Privacy]] - How to implement the PII scrubbing required by governance.
 - [[Evaluation-and-Testing]] - How to prove your models meet the governance baseline before launch.
 - [[API-Integration-Guide]] - How to implement fallbacks and timeouts.
+- [[AI-Incident-Response-Playbook]] - Roles, severity, notification, and scenario runbooks.
 
 ---
 ## Further Reading
@@ -126,6 +131,7 @@ Add an AI-specific path to your standard Incident Response (IR) plan:
 ---
 ## Changelog
 
+- **2026-11-05**: Linked the AI incident response playbook.
 - **2026-04-24**: Created initial governance document.
 - **2026-04-24**: Added Air Canada case study.
 

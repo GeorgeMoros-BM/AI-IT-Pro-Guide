@@ -9,6 +9,7 @@ Navigation layer for advanced AI orchestration, evaluation, retrieval, and archi
 
 - [[Agentic-Workflows]]
 - [[AI-System-Architecture-Patterns]]
+- [[Production-AI-Assistant-Stack]]
 - [[Tool-Use-Patterns]]
 
 ---

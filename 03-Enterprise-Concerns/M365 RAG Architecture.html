@@ -1,0 +1,530 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>M365 RAG Architecture</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: an engineering sheet. The wide diagram leads, reference tables follow in one column. */
+:root {
+  --bg: #f2f5f6;
+  --surface: #ffffff;
+  --fg: #16212a;
+  --muted: #4f5e6a;
+  --line: #c3ced6;
+  --ms: #1d5ea8;
+  --ms-soft: #e5eef8;
+  --az: #a34c08;
+  --az-soft: #faeee2;
+  --risk: #b3261e;
+  --ctl: #e8ecef;
+  --font-body: "IBM Plex Sans", "Segoe UI", Arial, sans-serif;
+  --font-mono: "IBM Plex Mono", Consolas, "Courier New", monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1518;
+    --surface: #182126;
+    --fg: #e6edf1;
+    --muted: #a3b4bf;
+    --line: #36454f;
+    --ms: #84b9f3;
+    --ms-soft: #15283b;
+    --az: #f0a660;
+    --az-soft: #2e2115;
+    --risk: #f4928a;
+    --ctl: #1b2429;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f1518;
+  --surface: #182126;
+  --fg: #e6edf1;
+  --muted: #a3b4bf;
+  --line: #36454f;
+  --ms: #84b9f3;
+  --ms-soft: #15283b;
+  --az: #f0a660;
+  --az-soft: #2e2115;
+  --risk: #f4928a;
+  --ctl: #1b2429;
+  color-scheme: dark;
+}
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.55;
+}
+.sheet {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding-block: 36px 64px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: grid;
+  gap: 40px;
+}
+.sheet > * { min-width: 0; }
+header { display: grid; gap: 12px; }
+h1 { margin: 0; font-size: clamp(30px, 4vw, 40px); line-height: 1.15; font-weight: 600; letter-spacing: -0.01em; text-wrap: balance; }
+h2 { margin: 0; font-size: 22px; line-height: 1.25; font-weight: 600; text-wrap: balance; }
+p { margin: 0; }
+.lede { max-width: 74ch; font-size: 18px; }
+.meta { color: var(--muted); font-size: 14px; }
+.start {
+  max-width: 74ch;
+  display: grid;
+  gap: 8px;
+}
+.start ol { margin: 0; padding-left: 22px; display: grid; gap: 4px; }
+section { display: grid; gap: 14px; }
+section > p { max-width: 74ch; }
+.label { font-family: var(--font-mono); font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+
+figure { margin: 0; display: grid; gap: 12px; }
+.scroll { overflow-x: auto; border-radius: 8px; }
+.scroll:focus-visible { outline: 2px solid var(--ms); outline-offset: 2px; }
+figure svg.arch { display: block; width: 100%; min-width: 980px; max-width: 100%; height: auto; }
+figcaption { max-width: 78ch; color: var(--muted); font-size: 15px; }
+.legend { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 22px; font-size: 14px; color: var(--muted); }
+.legend li { display: flex; align-items: center; gap: 8px; }
+.legend svg { flex: none; }
+.hint { display: none; font-size: 13px; color: var(--muted); }
+@media (max-width: 1000px) { .hint { display: block; } }
+
+/* Diagram marks */
+.z-ms { fill: var(--ms-soft); stroke: var(--ms); stroke-opacity: 0.4; }
+.z-az { fill: var(--az-soft); stroke: var(--az); stroke-opacity: 0.4; }
+.z-ctl { fill: var(--ctl); stroke: var(--line); }
+.box { fill: var(--surface); stroke: var(--line); stroke-width: 1; }
+.t { font: 600 13px var(--font-body); fill: var(--fg); }
+.d { font: 400 12px var(--font-body); fill: var(--muted); }
+.note-t { font: 600 12px var(--font-body); fill: var(--fg); }
+.zt { font: 600 12px var(--font-mono); letter-spacing: 0.06em; fill: var(--fg); }
+.zs { font: 400 12px var(--font-body); fill: var(--muted); text-anchor: end; }
+.e { fill: none; stroke-width: 2; }
+.e-ms { stroke: var(--ms); }
+.e-az { stroke: var(--az); }
+.e-ix { fill: none; stroke: var(--muted); stroke-width: 1.5; stroke-dasharray: 6 4; }
+.e-risk { fill: none; stroke: var(--risk); stroke-width: 1.5; stroke-dasharray: 3 4; }
+.e-plain { fill: none; stroke: var(--muted); stroke-width: 1.5; }
+.f-ms { fill: var(--ms); }
+.f-az { fill: var(--az); }
+.f-ix { fill: var(--muted); }
+.f-risk { fill: var(--risk); }
+.l { font: 500 11.5px var(--font-body); fill: var(--muted); }
+.l-ms { fill: var(--ms); }
+.l-az { fill: var(--az); }
+.l-risk { fill: var(--risk); font-weight: 600; }
+.mid { text-anchor: middle; }
+.end { text-anchor: end; }
+.b-t { font: 600 11px var(--font-mono); fill: var(--surface); text-anchor: middle; dominant-baseline: central; }
+
+/* Paths */
+.paths { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 16px 32px; }
+.path { display: grid; gap: 8px; align-content: start; min-width: 0; }
+.path h3 { margin: 0; font-size: 16px; font-weight: 600; }
+.path ol { margin: 0; padding-left: 24px; display: grid; gap: 6px; }
+.path.ms ol li::marker { color: var(--ms); font-weight: 600; }
+.path.az ol li::marker { color: var(--az); font-weight: 600; }
+
+/* Tables */
+.tw { overflow-x: auto; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; }
+table { width: 100%; min-width: 720px; border-collapse: collapse; font-size: 14.5px; line-height: 1.45; }
+th, td { padding: 10px 14px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); }
+tbody tr:last-child td { border-bottom: 0; }
+thead th { font-family: var(--font-mono); font-size: 12px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); }
+tbody th { font-weight: 600; }
+.grp th { font-family: var(--font-mono); font-size: 12px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; background: var(--ctl); }
+.grp.g-ms th { background: var(--ms-soft); color: var(--ms); }
+.grp.g-az th { background: var(--az-soft); color: var(--az); }
+.w-a { width: 21%; }
+.w-b { width: 40%; }
+code { font-family: var(--font-mono); font-size: 0.92em; }
+.chip { display: inline-block; padding: 0 6px; border: 1px solid currentColor; border-radius: 3px; font-family: var(--font-mono); font-size: 11px; font-weight: 500; color: var(--risk); white-space: nowrap; }
+a { color: var(--ms); text-underline-offset: 2px; }
+a:focus-visible { outline: 2px solid var(--ms); outline-offset: 2px; }
+.sources { margin: 0; padding-left: 20px; columns: 2 320px; column-gap: 32px; font-size: 14px; }
+.sources li { break-inside: avoid; margin-bottom: 4px; }
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto; } }
+</style>
+
+<main class="sheet">
+  <header>
+    <h1>M365 RAG Architecture</h1>
+    <p class="lede">Microsoft 365 Copilot doesn't deploy into your Azure subscription. Microsoft runs Copilot and its retrieval as a service. Azure holds what you add: a custom agent and a knowledge layer for content Copilot can't retrieve the way you need.</p>
+    <p class="meta">Checked against Microsoft documentation on November 5, 2026. Preview status changes often, so confirm it before you commit to a design.</p>
+  </header>
+
+  <figure>
+    <div class="scroll" tabindex="0" role="region" aria-label="Architecture diagram">
+      <svg class="arch" viewBox="0 0 1280 946" role="img" aria-label="RAG in Microsoft 365 has two retrieval paths under one identity. Copilot retrieves through Microsoft Graph and the semantic index inside Microsoft 365. A custom agent in Azure retrieves through Foundry IQ and Azure AI Search, and can query SharePoint live through the Retrieval API." xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <marker id="a-ms" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path class="f-ms" d="M0 0 10 5 0 10z"/></marker>
+          <marker id="a-az" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path class="f-az" d="M0 0 10 5 0 10z"/></marker>
+          <marker id="a-ix" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path class="f-ix" d="M0 0 10 5 0 10z"/></marker>
+          <marker id="a-risk" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path class="f-risk" d="M0 0 10 5 0 10z"/></marker>
+        </defs>
+
+        <!-- Trust zones -->
+        <rect class="z-ms" x="16" y="16" width="604" height="680" rx="6"/>
+        <rect class="z-az" x="700" y="16" width="564" height="680" rx="6"/>
+        <text class="zt" x="36" y="44">MICROSOFT 365 TENANT</text>
+        <text class="zs" x="604" y="44">Microsoft runs this service</text>
+        <text class="zt" x="716" y="44">YOUR AZURE SUBSCRIPTION</text>
+        <text class="zs" x="1248" y="44">You build, run, and pay for this</text>
+
+        <!-- Microsoft 365 boxes -->
+        <rect class="box" x="36" y="64" width="568" height="56" rx="4"/>
+        <text class="t" x="50" y="86">Copilot surfaces</text>
+        <text class="d" x="50" y="105">Take the prompt and show the answer: Copilot Chat, Teams, Word, Excel, Outlook</text>
+
+        <rect class="box" x="36" y="160" width="250" height="84" rx="4"/>
+        <text class="t" x="50" y="184">Copilot orchestrator</text>
+        <text class="d" x="50" y="204">Plans the response, gets grounding</text>
+        <text class="d" x="50" y="220">as the user, calls LLMs and agents</text>
+
+        <rect class="box" x="346" y="160" width="258" height="84" rx="4"/>
+        <text class="t" x="360" y="184">Agents built in Microsoft 365</text>
+        <text class="d" x="360" y="204">Declarative or Copilot Studio agents</text>
+        <text class="d" x="360" y="220">scope knowledge and actions</text>
+
+        <rect class="box" x="36" y="300" width="190" height="84" rx="4"/>
+        <text class="t" x="50" y="324">Foundation LLMs</text>
+        <text class="d" x="50" y="344">Generate the answer. A</text>
+        <text class="d" x="50" y="360">router picks the model.</text>
+
+        <rect class="box" x="250" y="300" width="354" height="84" rx="4"/>
+        <text class="t" x="264" y="324">Microsoft Graph and semantic index</text>
+        <text class="d" x="264" y="344">Find content by keyword and meaning, limited to</text>
+        <text class="d" x="264" y="360">what the user can already open</text>
+
+        <text class="note-t" x="36" y="458">What you control here</text>
+        <text class="d" x="36" y="476">No documented chunking or</text>
+        <text class="d" x="36" y="492">ranking tuning. You shape</text>
+        <text class="d" x="36" y="508">results with permissions,</text>
+        <text class="d" x="36" y="524">site scope, and content.</text>
+
+        <rect class="box" x="250" y="440" width="170" height="96" rx="4"/>
+        <text class="t" x="262" y="464">Microsoft 365 content</text>
+        <text class="d" x="262" y="484">SharePoint, OneDrive,</text>
+        <text class="d" x="262" y="500">mail, chats. Holds the</text>
+        <text class="d" x="262" y="516">permissions.</text>
+
+        <rect class="box" x="434" y="440" width="170" height="96" rx="4"/>
+        <text class="t" x="446" y="464">Copilot connectors</text>
+        <text class="d" x="446" y="484">Sync outside content</text>
+        <text class="d" x="446" y="500">and its ACLs, or fetch</text>
+        <text class="d" x="446" y="516">it live through MCP</text>
+
+        <!-- Azure boxes -->
+        <rect class="box" x="716" y="160" width="226" height="84" rx="4"/>
+        <text class="t" x="730" y="184">Azure Bot Service</text>
+        <text class="d" x="730" y="204">Relays the activity protocol</text>
+        <text class="d" x="730" y="220">between Microsoft 365 and agent</text>
+
+        <rect class="box" x="1022" y="160" width="226" height="84" rx="4"/>
+        <text class="t" x="1036" y="184">Foundry Agent Service</text>
+        <text class="d" x="1036" y="204">Runs your custom engine agent:</text>
+        <text class="d" x="1036" y="220">orchestration, tools, state</text>
+
+        <rect class="box" x="716" y="300" width="226" height="84" rx="4"/>
+        <text class="t" x="730" y="324">Foundry IQ knowledge base</text>
+        <text class="d" x="730" y="344">Queries sources, merges results,</text>
+        <text class="d" x="730" y="360">returns extracts and references</text>
+
+        <rect class="box" x="1022" y="300" width="226" height="84" rx="4"/>
+        <text class="t" x="1036" y="324">Foundry Models</text>
+        <text class="d" x="1036" y="344">Generate answers and create</text>
+        <text class="d" x="1036" y="360">embeddings for your index</text>
+
+        <rect class="box" x="716" y="440" width="226" height="96" rx="4"/>
+        <text class="t" x="730" y="464">Azure AI Search</text>
+        <text class="d" x="730" y="484">Stores chunks and vectors, runs</text>
+        <text class="d" x="730" y="500">hybrid and semantic ranking,</text>
+        <text class="d" x="730" y="516">and enforces document access</text>
+
+        <rect class="box" x="1022" y="440" width="226" height="96" rx="4"/>
+        <text class="t" x="1036" y="464">Indexer and skillset</text>
+        <text class="d" x="1036" y="484">Pull changes, chunk and embed</text>
+        <text class="d" x="1036" y="500">text, and sync metadata and</text>
+        <text class="d" x="1036" y="516">permissions</text>
+
+        <text class="note-t" x="716" y="600">What you own here</text>
+        <text class="d" x="716" y="618">Chunking, ranking, freshness,</text>
+        <text class="d" x="716" y="634">ACL sync, and removing old</text>
+        <text class="d" x="716" y="650">chunks. Apply the Retrieval</text>
+        <text class="d" x="716" y="666">Corpus Lifecycle rule.</text>
+
+        <rect class="box" x="1022" y="596" width="226" height="84" rx="4"/>
+        <text class="t" x="1036" y="620">Blob, ADLS, or OneLake</text>
+        <text class="d" x="1036" y="640">Hold the outside content you</text>
+        <text class="d" x="1036" y="656">chose to index</text>
+
+        <!-- Outside both zones -->
+        <rect class="box" x="436" y="728" width="812" height="60" rx="4"/>
+        <text class="t" x="450" y="751">Line-of-business systems</text>
+        <text class="d" x="450" y="771">ERP, project, and work-order data outside Microsoft 365. Each source stays the system of record.</text>
+
+        <!-- Control plane -->
+        <rect class="z-ctl" x="16" y="812" width="1248" height="120" rx="6"/>
+        <text class="zt" x="36" y="834">CONTROL PLANE</text>
+        <text class="zs" x="1244" y="834">Applies across both zones</text>
+
+        <rect class="box" x="36" y="846" width="287" height="72" rx="4"/>
+        <text class="t" x="50" y="868">Microsoft Entra ID</text>
+        <text class="d" x="50" y="886">Identifies users and agents. Use one</text>
+        <text class="d" x="50" y="902">tenant across Microsoft 365 and Azure</text>
+
+        <rect class="box" x="343" y="846" width="287" height="72" rx="4"/>
+        <text class="t" x="357" y="868">Microsoft Purview</text>
+        <text class="d" x="357" y="886">Labels, DLP, audit, and retention for</text>
+        <text class="d" x="357" y="902">content, prompts, and responses</text>
+
+        <rect class="box" x="650" y="846" width="287" height="72" rx="4"/>
+        <text class="t" x="664" y="868">Microsoft Agent 365</text>
+        <text class="d" x="664" y="886">Inventories agents, controls what each</text>
+        <text class="d" x="664" y="902">can reach, and shows what they do</text>
+
+        <rect class="box" x="957" y="846" width="287" height="72" rx="4"/>
+        <text class="t" x="971" y="868">Foundry Control Plane</text>
+        <text class="d" x="971" y="886">Evaluations, guardrails, compliance,</text>
+        <text class="d" x="971" y="902">and cost for Foundry agents</text>
+
+        <!-- Copilot path -->
+        <line class="e e-ms" x1="100" y1="120" x2="100" y2="160" marker-end="url(#a-ms)"/>
+        <circle class="f-ms" cx="100" cy="139" r="9"/><text class="b-t" x="100" y="139">1</text>
+        <text class="l l-ms" x="116" y="143">prompt</text>
+
+        <line class="e e-ms" x1="240" y1="160" x2="240" y2="120" marker-end="url(#a-ms)"/>
+        <circle class="f-ms" cx="240" cy="141" r="9"/><text class="b-t" x="240" y="141">4</text>
+        <text class="l l-ms" x="256" y="145">answer</text>
+
+        <line class="e e-ms" x1="268" y1="244" x2="268" y2="300" marker-end="url(#a-ms)"/>
+        <circle class="f-ms" cx="268" cy="270" r="9"/><text class="b-t" x="268" y="270">2</text>
+        <text class="l l-ms" x="284" y="274">query as the user</text>
+
+        <line class="e e-ms" x1="130" y1="244" x2="130" y2="300" marker-end="url(#a-ms)"/>
+        <circle class="f-ms" cx="130" cy="270" r="9"/><text class="b-t" x="130" y="270">3</text>
+        <text class="l l-ms" x="146" y="274">prompt + grounding</text>
+
+        <line class="e-plain" x1="346" y1="202" x2="286" y2="202" marker-end="url(#a-ix)"/>
+        <text class="l mid" x="316" y="194">extend</text>
+
+        <!-- Custom agent path -->
+        <path class="e e-az" d="M604 92 H829 V160" marker-start="url(#a-az)" marker-end="url(#a-az)"/>
+        <circle class="f-az" cx="640" cy="92" r="9"/><text class="b-t" x="640" y="92">A</text>
+        <circle class="f-az" cx="664" cy="92" r="9"/><text class="b-t" x="664" y="92">E</text>
+        <text class="l l-az" x="716" y="84">activity protocol, public endpoint</text>
+
+        <line class="e e-az" x1="942" y1="202" x2="1022" y2="202" marker-start="url(#a-az)" marker-end="url(#a-az)"/>
+        <text class="l l-az mid" x="982" y="194">messages</text>
+
+        <path class="e e-az" d="M1060 244 V272 H829 V300" marker-end="url(#a-az)"/>
+        <circle class="f-az" cx="900" cy="272" r="9"/><text class="b-t" x="900" y="272">B</text>
+        <text class="l l-az" x="916" y="266">retrieve + user token</text>
+        <text class="l l-risk" x="848" y="291">no token: results unfiltered</text>
+
+        <line class="e e-az" x1="1135" y1="244" x2="1135" y2="300" marker-end="url(#a-az)"/>
+        <circle class="f-az" cx="1135" cy="270" r="9"/><text class="b-t" x="1135" y="270">D</text>
+        <text class="l l-az" x="1151" y="274">extracts + prompt</text>
+
+        <line class="e e-az" x1="829" y1="384" x2="829" y2="440" marker-end="url(#a-az)"/>
+        <circle class="f-az" cx="829" cy="410" r="9"/><text class="b-t" x="829" y="410">C</text>
+        <text class="l l-az" x="845" y="414">hybrid query</text>
+
+        <line class="e e-az" x1="716" y1="342" x2="604" y2="342" marker-end="url(#a-az)"/>
+        <circle class="f-az" cx="660" cy="342" r="9"/><text class="b-t" x="660" y="342">C</text>
+        <text class="l l-az mid" x="660" y="322">Retrieval API</text>
+        <text class="l l-az mid" x="660" y="368">live, as user</text>
+        <text class="l l-az mid" x="660" y="383">(preview)</text>
+
+        <!-- Indexing paths -->
+        <line class="e-ix" x1="335" y1="440" x2="335" y2="384" marker-end="url(#a-ix)"/>
+        <text class="l" x="345" y="416">indexed automatically</text>
+
+        <line class="e-ix" x1="519" y1="440" x2="519" y2="384" marker-end="url(#a-ix)"/>
+        <text class="l" x="529" y="416">synced</text>
+
+        <line class="e-ix" x1="519" y1="728" x2="519" y2="536" marker-end="url(#a-ix)"/>
+        <text class="l end" x="509" y="640">Route 1: Copilot connector</text>
+
+        <line class="e-ix" x1="1135" y1="728" x2="1135" y2="680" marker-end="url(#a-ix)"/>
+        <text class="l end" x="1125" y="716">Route 2: export or push</text>
+
+        <line class="e-ix" x1="1135" y1="596" x2="1135" y2="536" marker-end="url(#a-ix)"/>
+        <text class="l" x="1145" y="570">pull on schedule</text>
+
+        <line class="e-ix" x1="1022" y1="488" x2="942" y2="488" marker-end="url(#a-ix)"/>
+        <text class="l mid" x="982" y="480">chunks, ACLs</text>
+
+        <line class="e-ix" x1="1135" y1="440" x2="1135" y2="384" marker-end="url(#a-ix)"/>
+        <text class="l" x="1145" y="416">embed</text>
+
+        <!-- The copy path to avoid -->
+        <path class="e-risk" d="M335 536 V562 H1060 V536" marker-end="url(#a-risk)"/>
+        <text class="l l-risk" x="632" y="554">SharePoint indexer: preview, not for production</text>
+      </svg>
+    </div>
+    <p class="hint">Scroll sideways to see the full diagram.</p>
+    <ul class="legend">
+      <li><svg width="34" height="8" aria-hidden="true"><line class="e e-ms" x1="0" y1="4" x2="34" y2="4"/></svg>Copilot path, steps 1 to 4</li>
+      <li><svg width="34" height="8" aria-hidden="true"><line class="e e-az" x1="0" y1="4" x2="34" y2="4"/></svg>Custom agent path, steps A to E</li>
+      <li><svg width="34" height="8" aria-hidden="true"><line class="e-ix" x1="0" y1="4" x2="34" y2="4"/></svg>Indexing, runs ahead of any question</li>
+      <li><svg width="34" height="8" aria-hidden="true"><line class="e-risk" x1="0" y1="4" x2="34" y2="4"/></svg>Copy path to avoid</li>
+    </ul>
+    <figcaption>Both paths answer from your content under one Entra identity. Only two request edges cross the boundary between Microsoft's service and your subscription, and each one needs a security decision.</figcaption>
+  </figure>
+
+  <section aria-labelledby="start">
+    <h2 id="start">Recommended build order</h2>
+    <p>This is my recommendation, not a Microsoft requirement. Each step adds operating work, so move on only when the previous one can't meet the need.</p>
+    <div class="start">
+      <ol>
+        <li>Fix SharePoint permissions and retire stale content, because Copilot answers from what each user can already open.</li>
+        <li>Use Copilot and declarative agents for Microsoft 365 content.</li>
+        <li>Add Copilot connectors for outside content.</li>
+        <li>Add Azure when you need custom chunking, ranking, or metadata filters, your own orchestration or models, or channels outside Microsoft 365.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section aria-labelledby="paths">
+    <h2 id="paths">How a question moves</h2>
+    <div class="paths">
+      <div class="path ms">
+        <h3>Copilot path</h3>
+        <ol>
+          <li>The employee sends a prompt from a Copilot surface.</li>
+          <li>Copilot queries Microsoft Graph and the semantic index as that user. Results are limited to what the user can open.</li>
+          <li>Copilot sends the prompt and grounding to a foundation LLM.</li>
+          <li>Copilot returns the answer to the surface.</li>
+        </ol>
+      </div>
+      <div class="path az">
+        <h3>Custom agent path</h3>
+        <ol type="A">
+          <li>The employee opens your agent in Copilot. The message travels through Azure Bot Service to the Foundry agent.</li>
+          <li>The agent calls the knowledge base and must pass the user's token.</li>
+          <li>The knowledge base queries Azure AI Search and, if configured, SharePoint through the Retrieval API.</li>
+          <li>The agent sends the extracts and the prompt to a Foundry model.</li>
+          <li>The answer returns through Azure Bot Service to the Copilot surface.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="roles">
+    <h2 id="roles">What each piece is responsible for</h2>
+    <div class="tw" tabindex="0" role="region" aria-label="Component responsibilities">
+      <table>
+        <thead>
+          <tr><th class="w-a" scope="col">Piece</th><th class="w-b" scope="col">Responsible for</th><th scope="col">Watch for</th></tr>
+        </thead>
+        <tbody>
+          <tr class="grp g-ms"><th colspan="3" scope="colgroup">Microsoft 365 tenant, run by Microsoft</th></tr>
+          <tr><th scope="row">Copilot surfaces</th><td>Take the prompt and show the answer in Copilot Chat, Teams, Word, Excel, and Outlook.</td><td>Copilot Chat without the add-on can't use organizational data through Microsoft Graph unless a pay-as-you-go agent provides it.</td></tr>
+          <tr><th scope="row">Copilot orchestrator</th><td>Decides how to answer, gets grounding as the user, and calls the model and any enabled agents.</td><td>You can't change its logic. Admins choose which agents are allowed.</td></tr>
+          <tr><th scope="row">Agents built in Microsoft 365</th><td>Declarative agents scope Copilot to set instructions, knowledge, and actions. Copilot Studio agents add low-code orchestration and can use Azure AI Search as a knowledge source.</td><td>Declarative agents inherit Microsoft 365 compliance. Shared tenant data is metered in Copilot Credits for users without the add-on. Copilot Studio's Azure AI Search page doesn't say whether results are trimmed per user.</td></tr>
+          <tr><th scope="row">Foundation LLMs</th><td>Generate the response. A real-time router selects the model by default.</td><td>Calls can route to other regions during high use. Prompts and responses aren't used to train foundation LLMs.</td></tr>
+          <tr><th scope="row">Microsoft Graph and semantic index</th><td>Connect Copilot to organizational content, and find it by keyword and meaning within the user's access.</td><td>New documents on accessible sites are indexed daily, and edits to indexed documents immediately. Microsoft documents no chunking or ranking tuning.</td></tr>
+          <tr><th scope="row">Microsoft 365 content</th><td>Stays the system of record for files, mail, chats, and their permissions.</td><td>Copilot can surface anything a user can view, so oversharing becomes a Copilot problem.</td></tr>
+          <tr><th scope="row">Copilot connectors</th><td>Synced connectors index outside content and its ACLs into Microsoft Graph. Federated connectors fetch it live through MCP.</td><td>Federated content stays in the source system. Custom connectors use the synced tenant configuration.</td></tr>
+
+          <tr class="grp g-az"><th colspan="3" scope="colgroup">Your Azure subscription, run by you</th></tr>
+          <tr><th scope="row">Azure Bot Service</th><td>Carries activity protocol messages between Microsoft 365 and your agent. Foundry creates it when you publish.</td><td>Microsoft 365 requires a publicly routable agent endpoint. Organization-wide publishing needs Microsoft 365 admin approval.</td></tr>
+          <tr><th scope="row">Foundry Agent Service</th><td>Runs your custom engine agent: orchestration, tools, conversation state, agent identity, and tracing.</td><td>You own compliance, responsible AI, and security for this agent.</td></tr>
+          <tr><th scope="row">Foundry IQ knowledge base</th><td>Gives agents one retrieval endpoint. Queries its sources, merges results, and returns extracts with references.</td><td>Stable API <code>2026-04-01</code> covers search index, Blob, OneLake, and web sources. LLM query planning, answer synthesis, and remote SharePoint are <span class="chip">Preview</span></td></tr>
+          <tr><th scope="row">Azure AI Search</th><td>Stores chunks and vectors, runs hybrid search and semantic ranking, and enforces document-level access.</td><td>Security filters are generally available, but they are a string match your app supplies. Token-based ACL and Purview label enforcement are <span class="chip">Preview</span></td></tr>
+          <tr><th scope="row">Indexer and skillset</th><td>Pull changes from sources, chunk and embed text, and sync metadata and permissions.</td><td>Source permission changes reach results only after a re-sync. Your Retrieval Corpus Lifecycle rule applies here.</td></tr>
+          <tr><th scope="row">Blob, ADLS, or OneLake</th><td>Hold outside content chosen for indexing.</td><td>This is a copy, so it needs its own access and retention design.</td></tr>
+          <tr><th scope="row">Foundry Models</th><td>Generate answers and create embeddings.</td><td>Chunks and questions must use the same embedding model. Changing it means rebuilding the index.</td></tr>
+
+          <tr class="grp"><th colspan="3" scope="colgroup">Outside both zones</th></tr>
+          <tr><th scope="row">Line-of-business systems</th><td>Stay the system of record for data outside Microsoft 365.</td><td>Questions about current records may suit an API call better than RAG.</td></tr>
+
+          <tr class="grp"><th colspan="3" scope="colgroup">Control plane</th></tr>
+          <tr><th scope="row">Microsoft Entra ID</th><td>Identifies users and agents, and supplies the user identity behind query-time trimming.</td><td>Remote SharePoint needs Microsoft 365 and Azure under one Entra tenant. OAuth passthrough needs the user in the project's tenant.</td></tr>
+          <tr><th scope="row">Microsoft Purview</th><td>Applies sensitivity labels, DLP, audit, retention, and eDiscovery to Copilot content and interactions.</td><td>Agents inherit their parent app's controls. Confirm coverage for each Foundry app.</td></tr>
+          <tr><th scope="row">Microsoft Agent 365</th><td>Inventories agents, controls which data and tools each can reach, and logs agent actions.</td><td>Licensed per user, either standalone or through Microsoft 365 E7.</td></tr>
+          <tr><th scope="row">Foundry Control Plane</th><td>Monitors Foundry agents: evaluations, guardrails, compliance posture, and cost.</td><td>Available through the Foundry portal only.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section aria-labelledby="routes">
+    <h2 id="routes">Where each source should go</h2>
+    <p>This routing is my recommendation. It keeps one index and one permission model for each source wherever possible.</p>
+    <div class="tw" tabindex="0" role="region" aria-label="Source routing">
+      <table>
+        <thead>
+          <tr><th class="w-a" scope="col">Source</th><th class="w-b" scope="col">Route</th><th scope="col">Why</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">SharePoint, OneDrive, mail, Teams</th><td>Leave in place. Copilot reaches it through Microsoft Graph.</td><td>Avoids a second index and a copy of the permissions.</td></tr>
+          <tr><th scope="row">SharePoint for a custom agent</th><td>Remote SharePoint knowledge source or the Work IQ tool <span class="chip">Preview</span></td><td>Queries live as the user, so no index or ACL sync is needed.</td></tr>
+          <tr><th scope="row">Outside content for Copilot users</th><td>Synced Copilot connector.</td><td>Microsoft runs the index and the permission filtering.</td></tr>
+          <tr><th scope="row">Live or sensitive outside data</th><td>Federated Copilot connector.</td><td>Data stays in the source system.</td></tr>
+          <tr><th scope="row">Outside content that needs custom retrieval</th><td>Azure AI Search through the indexer.</td><td>You get control of chunking, ranking, and filters, and you take on the operating work.</td></tr>
+          <tr><th scope="row">Current records and transactions</th><td>API or MCP action.</td><td>RAG retrieves passages. Live records need a direct query.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p><strong>Your evidence policy works differently on each path.</strong> On the Azure path, metadata filters can exclude unapproved or superseded chunks at query time. On the Copilot path, you don't control that filter step, so old versions have to leave the sites and libraries in scope. That is my reading of the documentation, so confirm it in your pilot.</p>
+  </section>
+
+  <section aria-labelledby="verify">
+    <h2 id="verify">Verify before you build</h2>
+    <div class="tw" tabindex="0" role="region" aria-label="Risks to verify">
+      <table>
+        <thead>
+          <tr><th class="w-a" scope="col">Risk</th><th class="w-b" scope="col">What Microsoft documents</th><th scope="col">What to do</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Permission trimming can fail open</th><td>"Without the token, permission-enabled sources return results unfiltered." I found no page confirming that the user's token reaches the knowledge base when Copilot calls a published agent.</td><td>Before any pilot, test with two users who have different access. Scope the project's managed identity narrowly.</td></tr>
+          <tr><th scope="row">Public agent endpoint</th><td>Microsoft 365 doesn't support private network connectivity for agents. Source IP filtering is defense in depth only.</td><td>Bring security into the design now, because this can block a private-only standard.</td></tr>
+          <tr><th scope="row">Citations may not reach the user</th><td>The network-isolated publishing article lists streaming and citations as not supported for published agents.</td><td>Test it. If it holds, have the agent write the source and section into the answer text.</td></tr>
+          <tr><th scope="row">Filters can fail silently</th><td>Invalid KQL in a Retrieval API filter runs without scoping and returns no error.</td><td>Add scoped queries to your release tests.</td></tr>
+          <tr><th scope="row">SharePoint indexer limits</th><td>It's in preview. It doesn't support tenants with Entra Conditional Access or private endpoints.</td><td>Don't plan on it for production. Microsoft points to remote SharePoint, or Copilot Studio first for production chat.</td></tr>
+          <tr><th scope="row">Retrieval limits and licensing</th><td>200 requests per user per hour and 25 results per query. Each remote SharePoint user needs the Copilot add-on or pay-as-you-go <span class="chip">Preview</span></td><td>Size the pilot against these limits and confirm who will be licensed.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section aria-labelledby="sources">
+    <h2 id="sources">Sources</h2>
+    <ul class="sources">
+      <li><a href="https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture" target="_blank" rel="noopener">How Microsoft Copilot works</a></li>
+      <li><a href="https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-privacy" target="_blank" rel="noopener">Data, privacy, and security for Copilot</a></li>
+      <li><a href="https://learn.microsoft.com/en-us/microsoftsearch/semantic-index-for-copilot" target="_blank" rel="noopener">Semantic indexing for Microsoft 365 Copilot</a></li>
+      <li><a href="https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agents-overview" target="_blank" rel="noopener">Compare declarative and custom engine agents</a></li>
+      <li><a href="https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/cost-considerations" target="_blank" rel="noopener">Licensing and cost for Copilot extensibility</a></li>
+      <li><a href="https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/overview" target="_blank" rel="noopener">Copilot connectors overview</a></li>
+      <li><a href="https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/api/ai-services/retrieval/overview" target="_blank" rel="noopener">Microsoft 365 Copilot Retrieval API</a></li>
+      <li><a href="https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-azure-ai-search" target="_blank" rel="noopener">Azure AI Search in Copilot Studio</a></li>
+      <li><a href="https://learn.microsoft.com/en-us/azure/foundry/agents/overview" target="_blank" rel="noopener">Foundry Agent Service</a></li>
+      <li><a href="https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/publish-copilot" target="_blank" rel="noopener">Publish Foundry agents to Copilot and Teams</a></li>
+      <li><a href="https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/publish-copilot-virtual-network" target="_blank" rel="noopener">Publish network-isolated agents</a></li>
+      <li><a href="https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/foundry-iq-connect" target="_blank" rel="noopener">Connect agents to Foundry IQ knowledge bases</a></li>
+      <li><a href="https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/mcp-authentication" target="_blank" rel="noopener">MCP authentication in Foundry</a></li>
+      <li><a href="https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/work-iq" target="_blank" rel="noopener">Work IQ in Foundry</a></li>
+      <li><a href="https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/what-is-foundry-iq" target="_blank" rel="noopener">What is Foundry IQ?</a></li>
+      <li><a href="https://learn.microsoft.com/en-us/azure/search/agentic-retrieval-how-to-migrate" target="_blank" rel="noopener">Agentic retrieval versions</a></li>
+      <li><a href="https://learn.microsoft.com/en-us/azure/search/agentic-knowledge-source-how-to-sharepoint-remote" target="_blank" rel="noopener">Remote SharePoint knowledge source</a></li>
+      <li><a href="https://learn.microsoft.com/en-us/azure/search/retrieval-augmented-generation-overview" target="_blank" rel="noopener">RAG in Azure AI Search</a></li>
+      <li><a href="https://learn.microsoft.com/en-us/azure/search/search-document-level-access-overview" target="_blank" rel="noopener">Document-level access in Azure AI Search</a></li>
+      <li><a href="https://learn.microsoft.com/en-us/azure/search/search-how-to-index-sharepoint-online" target="_blank" rel="noopener">SharePoint indexer</a></li>
+      <li><a href="https://learn.microsoft.com/en-us/purview/ai-m365-copilot" target="_blank" rel="noopener">Purview for Microsoft 365 Copilot</a></li>
+      <li><a href="https://learn.microsoft.com/en-us/purview/ai-microsoft-purview" target="_blank" rel="noopener">Purview for AI apps</a></li>
+      <li><a href="https://www.microsoft.com/en-us/microsoft-agent-365" target="_blank" rel="noopener">Microsoft Agent 365</a></li>
+      <li><a href="https://learn.microsoft.com/en-us/azure/foundry/control-plane/overview" target="_blank" rel="noopener">Foundry Control Plane</a></li>
+    </ul>
+  </section>
+</main>
+
+</body></html>

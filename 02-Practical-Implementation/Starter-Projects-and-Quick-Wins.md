@@ -1,5 +1,9 @@
 ---
 title: Starter Projects & Quick Wins
+artifact_type: reference
+status: draft
+publish: false
+client_safe: false
 tags:
   - chapter
   - quick-start
@@ -10,7 +14,7 @@ difficulty: beginner
 last_updated: 2026-04-25
 time_to_read: 15 minutes
 related:
-  - "[[RAG-Implementation]]"
+  - "[[02-Practical-Implementation/RAG-Implementation]]"
   - "[[01-Foundation Knowledge/Prompt-Engineering-Basics|Prompt-Engineering-Basics]]"
   - "[[Cost-Management-and-ROI]]"
 ---
@@ -43,7 +47,7 @@ You must build trust with the business first. The best way to do that is to auto
 
 ### Project 1: The IT Runbook "Deflector" Bot
 **The Problem:** Tier 1 IT support spends 40% of their day answering the exact same 20 questions (password resets, VPN configs, guest wifi).
-**The Architecture:** [[RAG-Implementation]]
+**The Architecture:** [[02-Practical-Implementation/RAG-Implementation]]
 **How it Works:** You embed your internal Confluence/IT wiki into a Vector DB. When a user creates a Jira or ServiceNow ticket, a webhook fires the ticket description to the AI. The AI searches the wiki and replies directly to the ticket.
 
 **The Starter Prompt:**

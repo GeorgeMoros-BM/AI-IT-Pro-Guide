@@ -1,5 +1,9 @@
 ---
 title: API Integration & Development
+artifact_type: reference
+status: draft
+publish: false
+client_safe: false
 tags: 
   - chapter
   - api

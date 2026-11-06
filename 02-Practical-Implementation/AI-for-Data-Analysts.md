@@ -1,5 +1,9 @@
 ---
 title: AI for Data Analysts - SQL & PowerBI
+artifact_type: reference
+status: draft
+publish: false
+client_safe: false
 tags:
   - chapter
   - data
@@ -9,8 +13,8 @@ difficulty: intermediate
 last_updated: 2026-04-24
 time_to_read: 15 minutes
 related:
-  - "[[99-Archived/03 Mental-Model-Reset]]"
-  - "[[RAG-Implementation]]"
+  - "[[00-Quick-Start/03 Mental-Model-Reset]]"
+  - "[[02-Practical-Implementation/RAG-Implementation]]"
 ---
 # AI for Data Analysts - SQL & PowerBI
 

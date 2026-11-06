@@ -14,7 +14,7 @@ Here's a progressive reading sequence that builds conceptual depth without overw
 Read:
 1. [[01 Quick Start & Orientation]]
 2. [[02 Executive-Summary]]
-3. [[99-Archived/03 Mental-Model-Reset]]
+3. [[00-Quick-Start/03 Mental-Model-Reset]]
 4. [[04 How To Use This Guide]]
 
 Objective:
@@ -51,7 +51,7 @@ Read:
 2. [[13-Operational-Systems/Context-Engineering|Context-Engineering]]
 3. [[AI-System-Architecture-Patterns]]
 4. [[Enterprise-AI-Reference-Architecture]]
-5. [[RAG-Implementation]]
+5. [[02-Practical-Implementation/RAG-Implementation]]
 6. [[API-Integration-Guide]]
 
 Objective:

@@ -1,5 +1,9 @@
 ---
 title: Prompt Operating Contracts
+artifact_type: framework
+status: draft
+publish: false
+client_safe: false
 tags:
   - chapter
   - ai
@@ -10,7 +14,7 @@ difficulty: intermediate
 last_updated: 2026-05-12
 time_to_read: 18 minutes
 related:
-  - "[[Prompt-Engineering-Basics]]"
+  - "[[04 Prompt-Engineering-Basics]]"
   - "[[Modern-Prompt-Methodology-Layer]]"
   - "[[Evaluation-and-Testing]]"
   - "[[Agents-and-Tool-Use]]"
@@ -346,7 +350,7 @@ Full contract belongs in the template file, not inside every chapter.
 ---
 ## Related Topics
 
-- [[Prompt-Engineering-Basics]] - Primer on prompts as executable instructions
+- [[04 Prompt-Engineering-Basics]] - Primer on prompts as executable instructions
 - [[Modern-Prompt-Methodology-Layer]] - Governing methodology
 - [[Evaluation-and-Testing]] - Testing prompt quality
 - [[Governance-and-Risk]] - Managing AI lifecycle risk

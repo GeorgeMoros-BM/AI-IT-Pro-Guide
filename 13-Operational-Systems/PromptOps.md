@@ -1,5 +1,5 @@
 ---
-title: "PromptOps"
+title: PromptOps
 artifact_type: canonical-concept
 status: canonical
 last_updated: 2026-05-18
@@ -9,7 +9,7 @@ domain:
   - prompt-engineering
   - governance
 related:
-  - "[[PromptOps-Governance]]"
+  - "[[03-Enterprise-Concerns/PromptOps-Governance]]"
   - "[[Modern-Prompt-Methodology-Layer]]"
 ---
 ## Definition

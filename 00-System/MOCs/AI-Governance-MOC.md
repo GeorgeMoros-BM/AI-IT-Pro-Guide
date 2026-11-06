@@ -15,7 +15,7 @@ Central governance index for enterprise AI governance, policy, security, and ris
 
 ## PromptOps
 
-- [[PromptOps-Governance]]
+- [[03-Enterprise-Concerns/PromptOps-Governance]]
 - [[Prompt-Risk-Tiering]]
 - [[Prompt-Version-Control]]
 

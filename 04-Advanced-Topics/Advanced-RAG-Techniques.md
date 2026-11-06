@@ -1,6 +1,10 @@
 ---
 title: Advanced RAG Techniques
-tags: 
+artifact_type: reference
+status: draft
+publish: false
+client_safe: false
+tags:
   - chapter
   - rag
   - advanced
@@ -10,7 +14,7 @@ difficulty: advanced
 last_updated: 2026-04-24
 time_to_read: 20 minutes
 related:
-  - "[[RAG-Implementation]]"
+  - "[[02-Practical-Implementation/RAG-Implementation]]"
   - "[[Agents-and-Tool-Use]]"
   - "[[Evaluation-and-Testing]]"
 ---
@@ -151,7 +155,7 @@ CRITICAL INSTRUCTIONS:
 ---
 ## Related Topics
 
-- [[RAG-Implementation]] - The baseline architecture you must build first.
+- [[02-Practical-Implementation/RAG-Implementation]] - The baseline architecture you must build first.
 - [[Agents-and-Tool-Use]] - Turning advanced RAG into a loop where the AI can search the DB multiple times.
 - [[Evaluation-and-Testing]] - How to prove your Re-ranker actually improved performance.
 

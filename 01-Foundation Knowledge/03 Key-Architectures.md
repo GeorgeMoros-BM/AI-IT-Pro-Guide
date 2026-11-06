@@ -1,5 +1,9 @@
 ---
 title: Key Architectures You'll Actually Use
+artifact_type: reference
+status: draft
+publish: false
+client_safe: false
 tags:
   - chapter
   - architecture
@@ -10,7 +14,7 @@ difficulty: beginner
 last_updated: 2026-04-24
 time_to_read: 15 minutes
 related:
-  - "[[RAG-Implementation]]"
+  - "[[02-Practical-Implementation/RAG-Implementation]]"
   - "[[Agents-and-Tool-Use]]"
   - "[[Prompt-Engineering-Playbook]]"
 ---
@@ -45,7 +49,7 @@ If a stakeholder says, "We need the AI to know our new HR policies," an unguided
 **What it is:** Connecting a search engine (Vector Database) to an LLM. 
 **How it works:** When a user asks a question, the system searches your corporate documents, retrieves the relevant paragraphs, pastes them into the LLM prompt, and says, "Answer the user's question using only this text."
 **When to use it:** Anytime the AI needs to know private, proprietary, or recently updated facts. 
-*👉 Deep dive: [[RAG-Implementation]]*
+*👉 Deep dive: [[02-Practical-Implementation/RAG-Implementation]]*
 
 ### Concept 2: Agents & Tool Use (Function Calling)
 **What it is:** Giving the LLM the ability to trigger your backend code.
@@ -140,7 +144,7 @@ Never start at the most complex architecture. Move up this ladder only when the 
 ---
 ## Related Topics
 
-- [[RAG-Implementation]] - How to build the knowledge engine.
+- [[02-Practical-Implementation/RAG-Implementation]] - How to build the knowledge engine.
 - [[Agents-and-Tool-Use]] - How to give the AI API access.
 - [[Prompt-Engineering-Playbook]] - The precursor to fine-tuning.
 - [[Cost-Management-and-ROI]] - How to budget for these different architectures.

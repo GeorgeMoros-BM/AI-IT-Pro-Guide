@@ -2,7 +2,7 @@
 title: "AI Risk Classification Framework"
 artifact_type: framework
 status: validated
-last_updated: 2026-05-18
+last_updated: 2026-11-05
 publish: false
 client_safe: true
 audience:
@@ -59,6 +59,19 @@ Questions:
 - Are rollback mechanisms available?
 
 ---
+## Outside Content
+Questions:
+- Does the AI read content your organization didn't write or approve?
+- Which tools can it use while reading that content?
+
+| If the AI Reads Outside Content and Can... | Minimum Tier |
+|---|---|
+| Read internal data | Tier 3 |
+| Write, send, or update records | Tier 4 |
+
+Scoring detail is in [[Prompt-Risk-Tiering]].
+
+---
 ## Governance Requirements
 
 | Tier | Minimum Controls |
@@ -77,6 +90,7 @@ Questions:
 - excessive governance for low-risk use
 - insufficient controls for automation
 - unclear accountability
+- missing outside content at intake
 
 ---
 # Strategic Recommendation

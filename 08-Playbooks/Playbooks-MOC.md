@@ -16,15 +16,16 @@ Operational execution layer for enterprise AI rollout, adoption, governance, and
 
 # Governance & Risk
 
-- [[PromptOps-Governance]]
+- [[03-Enterprise-Concerns/PromptOps-Governance]]
 - [[AI-Risk-Management]]
-- [[AI-Incident-Response]]
+- [[AI-Incident-Response-Playbook]]
+- [[AI-Incident-Notification-Reference]]
 
 ---
 
 # Deployment
 
-- [[RAG-Implementation]]
+- [[02-Practical-Implementation/RAG-Implementation]]
 - [[Enterprise-Copilot-Deployment]]
 - [[AI-Pilot-Framework]]
 

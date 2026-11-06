@@ -1,5 +1,5 @@
 ---
-title: "Enterprise RAG"
+title: Enterprise RAG
 artifact_type: canonical-concept
 status: canonical
 last_updated: 2026-05-18
@@ -10,7 +10,7 @@ domain:
   - enterprise-ai
 related:
   - "[[Enterprise-RAG-Architecture]]"
-  - "[[Research-RAG-and-Evidence]]"
+  - "[[02-Practical-Implementation/Research-RAG-and-Evidence]]"
 ---
 ## Definition
 

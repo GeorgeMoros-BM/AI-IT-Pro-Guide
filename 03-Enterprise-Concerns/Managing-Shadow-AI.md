@@ -1,5 +1,9 @@
 ---
 title: Managing Shadow AI & Secure Chatbots
+artifact_type: reference
+status: draft
+publish: false
+client_safe: false
 tags: 
   - chapter
   - governance

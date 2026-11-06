@@ -1,10 +1,9 @@
 ---
-## title: "The IT Professional's Guide to Enterprise AI"  
-artifact_type: homepage  
-status: canonical  
-publish: true  
-client_safe: true  
-last_updated: 2026-06-15
+artifact_type: homepage
+status: canonical
+publish: true
+client_safe: true
+last_updated: 2026-11-01
 ---
 # The IT Professional's Guide to Enterprise AI
 
@@ -23,7 +22,7 @@ This repository is designed as:
 
 The goal is not simply to document AI tools.
 
-The goal is to help organizations:
+The goal is to help the organization:
 - operationalize AI responsibly
 - integrate AI into enterprise workflows
 - govern AI systems effectively
@@ -64,7 +63,7 @@ Recommended sequence:
 1. [[Quick-Start-MOC]]
 2. [[Quick Start & Orientation]]
 3. [[Executive-Summary]]
-4. [[Mental-Model-Reset]]
+4. [[00-Quick-Start/03 Mental-Model-Reset]]
 5. [[How To Use This Vault]]
 6. [[Recommended Reading Order]]
 7. [[Learning Paths]]
@@ -74,7 +73,7 @@ If you only read three documents first:
 
 1. [[Quick Start & Orientation]]
 2. [[Executive-Summary]]
-3. [[Mental-Model-Reset]]
+3. [[00-Quick-Start/03 Mental-Model-Reset]]
 
 These explain what the vault is, why enterprise AI matters, and how to think about AI as governed operational infrastructure rather than chatbot experimentation.
 
@@ -93,7 +92,7 @@ Focus:
 
 Recommended:
 - [[Executive-Summary]]
-- [[Mental-Model-Reset]]
+- [[00-Quick-Start/03 Mental-Model-Reset]]
 - [[AI-Governance]]
 - [[Enterprise-AI-Operating-Model]]
 - [[AI-Portfolio-Management]]
@@ -132,7 +131,7 @@ Focus:
 Recommended:
 - [[AI-Governance]]
 - [[Governance-and-Risk]]
-- [[PromptOps-Governance]]
+- [[03-Enterprise-Concerns/PromptOps-Governance]]
 - [[AI-Risk-Classification-Framework]]
 - [[Enterprise-AI-Governance-Framework]]
 - [[Human-in-the-Loop]]
@@ -225,6 +224,7 @@ Start with:
 Provider-specific and model-specific intelligence for OpenAI, Anthropic, Google Gemini, xAI Grok, and head-to-head comparisons.
 
 Use with caution:
+- [[Current-Model-Register]]
 - [[LLM-Provider-Comparison]]
 
 Provider-specific content is volatile and should be validated against current official documentation before production decisions.
@@ -340,7 +340,7 @@ The guide increasingly focuses on:
 Start with:
 - [[Quick-Start-MOC]]
 - [[Quick Start & Orientation]]
-- [[Mental-Model-Reset]]
+- [[00-Quick-Start/03 Mental-Model-Reset]]
 
 ## If You Want Technical Foundations
 
@@ -362,7 +362,7 @@ Start with:
 Start with:
 - [[AI-Adoption-Playbook]]
 - [[Starter-Projects-and-Quick-Wins]]
-- [[RAG-Implementation]]
+- [[02-Practical-Implementation/RAG-Implementation]]
 - [[API-Integration-Guide]]
 
 ## If You Want Architecture Depth

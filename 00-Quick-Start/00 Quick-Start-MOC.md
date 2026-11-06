@@ -109,11 +109,11 @@ Best for:
 | Reader Type | Start With | Then Read |
 |---|---|---|
 | Executive | [[02 Executive-Summary]] | [[AI-Governance]], [[Enterprise-AI-Operating-Model]], [[AI-Portfolio-Management]] |
-| IT Leader | [[99-Archived/03 Mental-Model-Reset]] | [[01 AI-Fundamentals-for-IT-Leaders]], [[Enterprise-AI-Operating-Model]] |
+| IT Leader | [[00-Quick-Start/03 Mental-Model-Reset]] | [[01 AI-Fundamentals-for-IT-Leaders]], [[Enterprise-AI-Operating-Model]] |
 | Enterprise Architect | [[01 Quick Start & Orientation]] | [[Enterprise-RAG]], [[Context-Engineering]], [[Enterprise-AI-Reference-Architecture]] |
 | AI Governance Lead | [[02 Executive-Summary]] | [[AI-Governance]], [[AI-Risk-Classification-Framework]], [[PromptOps]] |
 | Consultant | [[04 How To Use This guide]] | [[AI-Adoption-Playbook]], [[AI-Use-Case-Prioritization-Framework]], [[AI-Platform-Evaluation-Framework]] |
-| Practitioner | [[05 Recommended Reading Order]] | [[02 AI-LLM-Fundamentals]], [[RAG-Implementation]], [[Prompt-Engineering-Basics]] |
+| Practitioner | [[05 Recommended Reading Order]] | [[02 AI-LLM-Fundamentals]], [[02-Practical-Implementation/RAG-Implementation]], [[04 Prompt-Engineering-Basics]] |
 | New Contributor | [[04 How To Use This guide]] | [[Metadata-Standards]], [[Lifecycle-States]], [[Maps-of-Content-Strategy]] |
 
 # Core Reading Sequence
@@ -122,7 +122,7 @@ For most readers, use this order:
 
 1. [[01 Quick Start & Orientation]]
 2. [[02 Executive-Summary]]
-3. [[99-Archived/03 Mental-Model-Reset]]
+3. [[00-Quick-Start/03 Mental-Model-Reset]]
 4. [[01 AI-Fundamentals-for-IT-Leaders]]
 5. [[02 AI-LLM-Fundamentals]]
 6. [[03 Key-Architectures]]
@@ -147,7 +147,7 @@ Go to:
 
 Go to:
 - [[Practical-Implementation-MOC]]
-- [[RAG-Implementation]]
+- [[02-Practical-Implementation/RAG-Implementation]]
 - [[API-Integration-Guide]]
 - [[AI-Adoption-Playbook]]
 - [[Starter-Projects-and-Quick-Wins]]
@@ -158,7 +158,7 @@ Go to:
 - [[Enterprise-Concerns-MOC]]
 - [[AI-Governance]]
 - [[Governance-and-Risk]]
-- [[PromptOps-Governance]]
+- [[03-Enterprise-Concerns/PromptOps-Governance]]
 - [[AI-Risk-Classification-Framework]]
 - [[Enterprise-AI-Governance-Framework]]
 

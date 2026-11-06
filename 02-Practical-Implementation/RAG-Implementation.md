@@ -1,18 +1,45 @@
 ---
 title: RAG Implementation - Knowledge Base Integration
-tags: [chapter, rag, practical, intermediate]
+artifact_type: reference
+status: draft
+publish: false
+client_safe: true
+tags:
+  - chapter
+  - rag
+  - practical
+  - intermediate
 difficulty: intermediate
-last_updated: 2026-04-24
+last_updated: 2026-11-05
 time_to_read: 25 minutes
 related:
-  - "[[Token Economics]]"
-  - "[[Prompt Engineering Basics]]"
-  - "[[Vector Databases Comparison]]"
+  - "[[Token-Cost-Quick-Reference]]"
+  - "[[04 Prompt-Engineering-Basics]]"
+  - "[[Vector-Database-Comparison]]"
+  - "[[02-Practical-Implementation/Research-RAG-and-Evidence]]"
+  - "[[03-Enterprise-Concerns/PromptOps-Governance]]"
 ---
 # RAG Implementation - Knowledge Base Integration
 
 > **TL;DR for the Busy IT Pro:**  
 > RAG (Retrieval Augmented Generation) lets AI answer questions using YOUR company's documents without expensive retraining. It's the #1 enterprise AI pattern for a reason.
+
+---
+## Worked Example
+
+An employee asks a handbook chatbot, "How many vacation days can I carry into next year?" The model has never seen your 600-page handbook. Pasting the whole handbook into every prompt may not fit, costs money on every question, and makes details buried in a long input easier to miss. RAG gives the model only the passages that matter.
+
+| Stage | What Happens | In This Example |
+|---|---|---|
+| Chunk | Split the document into small passages | 600 pages become thousands of chunks |
+| Embed | Convert each chunk into a vector that captures its meaning | Time-off chunks land near each other, far from expense-report chunks |
+| Store | Add the vectors to a searchable index | The index usually lives in a vector database |
+| Search | Embed the question and find the nearest chunks | "Unused paid leave rolls over" lands next to the question |
+| Answer | Send the top chunks, the question, and the instructions to the model | "You can carry over up to 5 days. Section 4.2." |
+
+A keyword search for "carry" and "vacation" could miss that passage because the wording is different. An embedding model places text on a map of meaning, so the question and the passage land close together even when they share few words.
+
+The model never learned the handbook. It received the right passage just before it answered. When HR changes the policy, you update the index instead of retraining the model (see Step 6).
 
 ---
 ## What You'll Learn
@@ -26,7 +53,7 @@ related:
 ---
 ## Why This Matters
 
-LLMs are trained on public internet data through early 2025. They don't know about:
+LLMs are trained on data up to a fixed cutoff date, and your private documents aren't part of it. They don't know about:
 - Your internal documentation
 - Your product specs
 - Your customer data
@@ -34,7 +61,7 @@ LLMs are trained on public internet data through early 2025. They don't know abo
 - Anything that happened after their training cutoff
 
 **Real-world scenario:**  
-> Your VP wants a chatbot that can answer "What's our policy on remote work for contractors in Canada?" The answer is in a 500-page HR manual. Fine-tuning a model on that manual would cost thousands and take weeks. RAG can do it in an afternoon for under $50.
+> Your VP wants a chatbot that can answer "What's our policy on remote work for contractors in Canada?" The answer is in a 500-page HR manual. Fine-tuning a model on that manual would cost thousands and take weeks. A RAG prototype can be running in an afternoon for under $50. A production deployment takes longer because it also needs access controls, metadata, and testing.
 
 ---
 ## Core Concepts
@@ -42,10 +69,7 @@ LLMs are trained on public internet data through early 2025. They don't know abo
 ### What is RAG?
 
 **Simple explanation:**
-1. User asks a question
-2. System searches your documents for relevant chunks
-3. Relevant chunks get inserted into the LLM prompt
-4. LLM answers using that context
+RAG means retrieve first, then generate. The model doesn't learn your documents. It receives the relevant passages just before it answers.
 
 **The analogy:**
 It's like open-book vs closed-book exam. Instead of forcing the AI to memorize everything, you let it look up answers in real-time.
@@ -59,178 +83,119 @@ It's like open-book vs closed-book exam. Instead of forcing the AI to memorize e
 - Chunks are injected into LLM context window
 
 **Why it works this way:**
-LLMs have a limited context window (like RAM). We can't fit all company docs, so we fetch only what's relevant for each query. The embedding/vector approach lets us find semantically similar content, not just keyword matches.
+LLMs have a limited context window (like RAM). We can't fit all company docs, so we fetch only what's relevant for each query. Even when a document fits, you pay to process all of it on every question, and details buried in a long input are easier to miss. The embedding/vector approach lets us find semantically similar content, not just keyword matches.
 
 ---
 ## Hands-On Implementation
 
+> [!note] Illustrative Pseudocode
+> These steps show the logic of a RAG pipeline. They are not runnable code and are not tied to a provider. Replace `extract_pages()`, `split()`, `embed()`, `index`, and `llm` with the tools your team selects.
+
 ### Step 1: Document Preparation
 
-```python
-from pathlib import Path
-import PyPDF2
-
-def extract_text_from_pdf(pdf_path):
-    """Extract clean text from PDF"""
-    with open(pdf_path, 'rb') as file:
-        reader = PyPDF2.PdfReader(file)
-        text = ""
-        for page in reader.pages:
-            text += page.extract_text() + "\n\n"
-    return text
-
-# Extract all PDFs in a directory
-docs_dir = Path("company_docs")
+```text
 documents = []
 
-for pdf_file in docs_dir.glob("*.pdf"):
-    text = extract_text_from_pdf(pdf_file)
-    documents.append({
-        "source": pdf_file.name,
-        "content": text
-    })
+FOR each file IN company_docs:
+    FOR each page IN extract_pages(file):
+        documents.add(
+            text    = page.text,
+            source  = file.title,
+            page    = page.number,
+            section = page.section_heading
+        )
 ```
 
 **What's happening here:**
-We're converting documents to plain text because embeddings work on text, not PDF formatting. We track the source filename so we can cite it later.
+We're converting documents to plain text because embeddings work on text, not PDF formatting. We keep the source, page, and section so we can cite them later.
 
 ### Step 2: Chunking Strategy
 
-```python
-def chunk_text(text, chunk_size=500, overlap=50):
-    """
-    Split text into overlapping chunks
-    
-    chunk_size: tokens per chunk (500 ≈ 375 words)
-    overlap: tokens of overlap between chunks
-    """
-    # For simplicity, using words as proxy for tokens
-    # In production, use tiktoken for accurate token counting
-    words = text.split()
-    chunks = []
-    
-    for i in range(0, len(words), chunk_size - overlap):
-        chunk = ' '.join(words[i:i + chunk_size])
-        chunks.append(chunk)
-    
-    return chunks
+```text
+chunks = []
 
-# Apply to all documents
-all_chunks = []
-for doc in documents:
-    chunks = chunk_text(doc["content"])
-    for i, chunk in enumerate(chunks):
-        all_chunks.append({
-            "text": chunk,
-            "source": doc["source"],
-            "chunk_id": f"{doc['source']}_chunk_{i}"
-        })
+FOR each document IN documents:
+    # Count tokens with a tokenizer. 500 tokens is about 375 words.
+    pieces = split(document.text, size = 500 tokens, overlap = 50 tokens)
 
-print(f"Created {len(all_chunks)} chunks from {len(documents)} documents")
+    FOR each piece IN pieces:
+        chunks.add(
+            id       = unique chunk ID,
+            text     = piece,
+            metadata = source, page, section, and evidence fields
+        )
 ```
 
 **What's happening here:**
 - We split long documents into manageable pieces
 - Overlap ensures we don't lose context at chunk boundaries
-- We track metadata (source, chunk ID) for citations
+- Each chunk carries metadata for citations and filtering. Use the schema in [[02-Practical-Implementation/Research-RAG-and-Evidence]], which adds version, approval status, and access group
 
 ### Step 3: Generate Embeddings
 
-```python
-from anthropic import Anthropic
-
-client = Anthropic(api_key="your-api-key")
-
-def get_embedding(text):
-    """Get embedding vector for text"""
-    # Using a hypothetical embedding endpoint
-    # In practice, use OpenAI's embeddings or similar
-    response = client.embeddings.create(
-        model="text-embedding-3-small",
-        input=text
-    )
-    return response.data[0].embedding
-
-# Generate embeddings for all chunks
-for chunk in all_chunks:
-    chunk["embedding"] = get_embedding(chunk["text"])
-
-print("Embeddings generated!")
+```text
+FOR each chunk IN chunks:
+    chunk.embedding = embed(chunk.text)
 ```
+
+**What's happening here:**
+- `embed()` sends text to an embedding model and returns a vector
+- Chunks and questions must use the same embedding model, because vectors from different models can't be compared
+- Your embedding provider can differ from your LLM provider. Anthropic, for example, doesn't offer its own embedding model
 
 ### Step 4: Store in Vector Database
 
-```python
-import chromadb
+```text
+index = vector_database.create_index("company_docs")
 
-# Initialize ChromaDB (local vector database)
-chroma_client = chromadb.Client()
-collection = chroma_client.create_collection(name="company_docs")
-
-# Add chunks to database
-collection.add(
-    embeddings=[chunk["embedding"] for chunk in all_chunks],
-    documents=[chunk["text"] for chunk in all_chunks],
-    metadatas=[{
-        "source": chunk["source"],
-        "chunk_id": chunk["chunk_id"]
-    } for chunk in all_chunks],
-    ids=[chunk["chunk_id"] for chunk in all_chunks]
-)
-
-print("Vector database populated!")
+FOR each chunk IN chunks:
+    index.add(
+        id       = chunk.id,
+        vector   = chunk.embedding,
+        text     = chunk.text,
+        metadata = chunk.metadata
+    )
 ```
 
 ### Step 5: Query the Knowledge Base
 
-```python
-def query_knowledge_base(question, n_results=3):
-    """
-    Query the knowledge base and return relevant chunks
-    """
-    # Get embedding for the question
-    question_embedding = get_embedding(question)
-    
-    # Search for similar chunks
-    results = collection.query(
-        query_embeddings=[question_embedding],
-        n_results=n_results
+```text
+FUNCTION answer(question, user):
+    results = index.search(
+        vector = embed(question),
+        limit  = 3,
+        filter = approval_status is "approved"
+                 AND user belongs to access_group
     )
-    
-    return results
 
-# Example query
-question = "What is our remote work policy for Canadian contractors?"
-results = query_knowledge_base(question)
+    relevant = results WHERE relevance >= minimum_relevance
 
-# Build context from results
-context = "\n\n---\n\n".join(results["documents"][0])
+    IF relevant is empty:
+        RETURN "The provided sources do not contain enough evidence to answer this."
 
-# Create prompt with context
-prompt = f"""Using the following information from our company documents:
+    # Instructions: Answer using only this context and cite the section.
+    # If the context doesn't contain the answer, say so.
+    prompt = instructions + relevant chunks + question
 
-{context}
+    RETURN llm.generate(prompt)
 
-Please answer this question: {question}
 
-If the information isn't in the provided context, say so.
-"""
-
-# Send to LLM
-response = client.messages.create(
-    model="claude-sonnet-4-20250514",
-    max_tokens=1000,
-    messages=[{"role": "user", "content": prompt}]
-)
-
-print(response.content[0].text)
+answer("How many vacation days can I carry into next year?", current_user)
 ```
 
 **What's happening here:**
-1. User question gets embedded the same way documents were
-2. Vector similarity search finds relevant chunks
-3. We inject those chunks into the LLM prompt as context
-4. LLM answers using only that context
+1. The question gets embedded the same way the documents were
+2. The filter limits the search to approved content the user may read
+3. Vector similarity search finds the nearest chunks
+4. The relevance threshold catches questions your documents can't answer, because search returns its closest chunks even when none contain the answer
+5. We inject the remaining chunks into the LLM prompt as context
+6. LLM answers using only that context
+
+This example is vector-only. See the hybrid search tip below for exact terms such as policy numbers. Calibrate `minimum_relevance` with the retrieval tests in [[02-Practical-Implementation/Research-RAG-and-Evidence]].
+
+### Step 6: Keep the Index Current
+
+A policy change doesn't require retraining. Re-embed the changed pages, then follow the Retrieval Corpus Lifecycle rule in [[03-Enterprise-Concerns/PromptOps-Governance]]. Re-embedding alone leaves the old chunks retrievable.
 
 ---
 ## Tips & Tricks
@@ -239,7 +204,7 @@ print(response.content[0].text)
 > Start with 500 tokens, test with 300 and 800. Smaller chunks = more precise but may lose context. Larger chunks = more context but less precise retrieval. Your sweet spot depends on your document type.
 
 > [!tip] Pro Tip - Hybrid Search
-> Combine vector search (semantic) with keyword search (BM25). Vector finds "related" content, keywords catch exact matches. ChromaDB supports this out of the box.
+> Combine vector search (semantic) with keyword search (BM25). Vector finds "related" content, keywords catch exact matches. Support varies by product and deployment, so confirm it for your vector database.
 
 > [!warning] Watch Out - PDF Extraction Quality
 > Tables, headers, and multi-column layouts often extract as gibberish. Use `pdfplumber` instead of `PyPDF2` for complex PDFs, or consider using Claude's PDF vision capabilities to extract structured content first.
@@ -262,12 +227,14 @@ print(response.content[0].text)
 - [ ] **Hybrid search** configured (vector + keyword)
 - [ ] **Embedding model** matches your domain (general vs code vs legal)
 - [ ] **Retrieval count** tuned (3-5 chunks typical, test more for complex queries)
+- [ ] **Relevance threshold** set, so weak matches return a not-found response
+- [ ] **Index updates** follow the Retrieval Corpus Lifecycle rule in [[03-Enterprise-Concerns/PromptOps-Governance]]
 - [ ] **Cost monitoring** in place (log tokens per query)
 
 ---
 ## Anti-Patterns (Don't Do This)
 
-| ❌ Don't | ✅ Do Instead | Why |
+| Do Not | Do Instead | Why |
 |---------|--------------|-----|
 | Send entire docs to LLM | Use RAG to fetch relevant chunks | Cost + context limit |
 | Use fixed chunk size for all docs | Tune per document type | Tables need different chunking than prose |
@@ -278,10 +245,11 @@ print(response.content[0].text)
 ---
 ## Related Topics
 
-- [[Token Economics]] - Understanding RAG costs
-- [[Vector Databases Comparison]] - Choosing the right DB
-- [[Prompt Engineering for RAG]] - How to structure the final prompt
-- [[Advanced RAG Techniques]] - Multi-hop reasoning, re-ranking
+- [[Token-Cost-Quick-Reference]] - Understanding RAG costs
+- [[Vector-Database-Comparison]] - Choosing the right DB
+- [[02-Practical-Implementation/Research-RAG-and-Evidence]] - Evidence rules and how to structure the final prompt
+- [[03-Enterprise-Concerns/PromptOps-Governance]] - Versioning and the retrieval corpus lifecycle
+- [[Advanced-RAG-Techniques]] - Multi-hop reasoning, re-ranking
 
 ---
 ## Further Reading
@@ -294,6 +262,7 @@ print(response.content[0].text)
 ---
 ## Changelog
 
+- **2026-11-05**: Added worked example; converted code to illustrative pseudocode; added relevance threshold, metadata filter, and index update step; corrected links
 - **2026-04-24**: Created initial version
 - **2026-04-20**: Added hybrid search tip
 - **2026-04-15**: Updated embedding model recommendations

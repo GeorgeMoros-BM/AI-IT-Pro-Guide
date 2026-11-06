@@ -17,7 +17,6 @@ into:
 - institutional memory
 
 ---
-
 # Typical Contents
 
 - longitudinal trend analysis

@@ -1,5 +1,9 @@
 ---
 title: Microsoft Power BI & Fabric AI Deep Dive
+artifact_type: reference
+status: draft
+publish: false
+client_safe: false
 tags: 
   - chapter
   - PowerBI

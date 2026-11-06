@@ -5,7 +5,6 @@
 Operational index for weekly AI intelligence gathering, evidence ledgers, synthesis, and newsletters.
 
 ---
-
 # Operating System
 
 - [[Weekly-Research-Workflow]]
@@ -13,7 +12,6 @@ Operational index for weekly AI intelligence gathering, evidence ledgers, synthe
 - [[Signal-Classification-Framework]]
 
 ---
-
 # Raw Intelligence
 
 - [[AI-X-Scans]]
@@ -21,7 +19,6 @@ Operational index for weekly AI intelligence gathering, evidence ledgers, synthe
 - [[Geopolitical-Scans]]
 
 ---
-
 # Evidence Ledgers
 
 - [[AI-Weekly-Evidence-Ledger]]
@@ -29,7 +26,6 @@ Operational index for weekly AI intelligence gathering, evidence ledgers, synthe
 - [[Macro-Regime-Ledger]]
 
 ---
-
 # Syntheses & Newsletters
 
 - [[Weekly-AI-Synthesis]]
@@ -37,14 +33,12 @@ Operational index for weekly AI intelligence gathering, evidence ledgers, synthe
 - [[Executive-AI-Brief]]
 
 ---
-
 # Quality Assurance
 
 - [[AI-Weekly-QA-Review]]
 - [[Editorial-Review-Checklist]]
 
 ---
-
 # Related Areas
 
 - [[Longitudinal-Themes]]
