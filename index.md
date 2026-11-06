@@ -22,7 +22,7 @@ This repository is designed as:
 
 The goal is not simply to document AI tools.
 
-The goal is to help organizations:
+The goal is to help the organization:
 - operationalize AI responsibly
 - integrate AI into enterprise workflows
 - govern AI systems effectively
