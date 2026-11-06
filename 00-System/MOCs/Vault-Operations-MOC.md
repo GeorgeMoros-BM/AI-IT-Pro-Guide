@@ -31,6 +31,7 @@ Central navigation layer for vault governance, operational systems, metadata sta
 - [[Decision-Log]]
 - [[Current-Priorities]]
 - [[Consulting-IP-Dashboard]]
+- [[Vault-Check]]
 
 ---
 

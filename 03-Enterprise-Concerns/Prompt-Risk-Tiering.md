@@ -308,6 +308,7 @@ Review date:
 - [[Evaluation-and-Testing]] - Testing by risk tier
 - [[Agents-and-Tool-Use]] - Tool permissions and approval gates
 - [[Production-AI-Assistant-Stack]] - Matching controls to each layer of an assistant
+- [[AI-Incident-Response-Playbook]] - The playbook this chapter requires from Tier 3
 
 ---
 ## Further Reading
@@ -319,6 +320,7 @@ Review date:
 ---
 ## Changelog
 
+- **2026-11-05**: Linked the AI incident response playbook
 - **2026-11-05**: Added outside content as a risk driver, triage question, and minimum tier
 - **2026-05-12**: Created prompt risk-tiering chapter
 

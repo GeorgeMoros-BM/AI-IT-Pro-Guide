@@ -13,6 +13,8 @@ Scroll sideways to see the full diagram.
 
 Both paths answer from your content under one Entra identity. Only two request edges cross the boundary between Microsoft's service and your subscription, and each one needs a security decision.
 
+For the vendor-neutral version of this design, see [[Enterprise-RAG-Architecture]].
+
 ## Recommended build order
 
 This is my recommendation, not a Microsoft requirement. Each step adds operating work, so move on only when the previous one can't meet the need.

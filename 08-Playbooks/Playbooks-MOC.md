@@ -18,7 +18,7 @@ Operational execution layer for enterprise AI rollout, adoption, governance, and
 
 - [[03-Enterprise-Concerns/PromptOps-Governance]]
 - [[AI-Risk-Management]]
-- [[AI-Incident-Response]]
+- [[AI-Incident-Response-Playbook]]
 
 ---
 

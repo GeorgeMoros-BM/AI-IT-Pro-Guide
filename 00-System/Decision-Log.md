@@ -66,6 +66,20 @@ Reason:
 Chapters lacked fields that dashboards, retrieval, and publishing rely on. Chapters listed in Canonical-Documents are marked canonical. All other chapters are marked draft with client_safe false until they are reviewed. No last_updated dates changed, because no chapter content changed.
 
 ---
+## 2026-11-05
+### Added an automated vault check
+
+Reason:
+Broken links and metadata gaps were accumulating faster than manual review could find them. The check runs daily on GitHub instead of on every push, because Obsidian Git pushes every five minutes. It records existing issues in a baseline and fails only on new ones.
+
+---
+## 2026-11-05
+### Added the Enterprise RAG Architecture and AI Incident Response Playbook
+
+Reason:
+The RAG architecture note was an empty stub that navigation already pointed to. Prompt Risk Tiering requires an incident playbook from Tier 3, but the vault had only a five-step summary.
+
+---
 # Governance Rule
 
 Major structural decisions should be logged when they materially affect:

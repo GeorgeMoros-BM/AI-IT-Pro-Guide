@@ -476,6 +476,8 @@ ON any change to prompt, model, router, tools, corpus, guardrails, or cache poli
 - [[Cost-Management-and-ROI]] - Total cost of ownership and routing economics
 - [[Tip-Prompt-Caching]] - Prompt cache savings and when to skip it
 - [[M365 RAG Architecture]] - How this stack looks in a Microsoft 365 and Azure environment
+- [[Enterprise-RAG-Architecture]] - The vendor-neutral design for the knowledge layer
+- [[AI-Incident-Response-Playbook]] - What to do when a layer fails in production
 
 ---
 ## Further Reading
@@ -493,6 +495,7 @@ ON any change to prompt, model, router, tools, corpus, guardrails, or cache poli
 ---
 ## Changelog
 
+- **2026-11-05**: Linked the RAG reference architecture and the incident playbook
 - **2026-11-05**: Aligned with the outside content and response cache rules
 - **2026-11-05**: Created initial version
 

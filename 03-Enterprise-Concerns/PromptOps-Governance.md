@@ -160,6 +160,8 @@ When an AI system fails, governance must answer:
 - Who approved deployment?
 - How can the feature be disabled?
 
+See: [[AI-Incident-Response-Playbook]]
+
 ---
 ## Hands-On Implementation
 
@@ -377,6 +379,7 @@ Record a new corpus version with each release, in the format shown in Concept 3.
 ---
 ## Changelog
 
+- **2026-11-05**: Linked the AI incident response playbook
 - **2026-11-05**: Added routing rules and response cache policy to versioning, change control, and the Retrieval Corpus Lifecycle rule
 - **2026-11-05**: Added worked example and Retrieval Corpus Lifecycle rule
 - **2026-05-12**: Created PromptOps governance chapter
