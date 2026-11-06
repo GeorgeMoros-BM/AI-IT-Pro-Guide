@@ -30,7 +30,7 @@ They establish:
 
 - [[AI-Workbench-Protocol]]
 - [[Modern-Prompt-Methodology-Layer]]
-- [[PromptOps-Governance]]
+- [[99-Archived/PromptOps-Governance]]
 - [[Evaluation-and-Testing]]
 
 ---

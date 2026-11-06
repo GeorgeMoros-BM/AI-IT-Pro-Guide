@@ -14,7 +14,7 @@ related:
   - "[[Evaluation-and-Testing]]"
   - "[[Prompt-Engineering-Basics]]"
   - "[[Security-and-Privacy]]"
-  - "[[PromptOps-Governance]]"
+  - "[[99-Archived/PromptOps-Governance]]"
 ---
 # Research, RAG & Evidence
 
@@ -291,7 +291,7 @@ Evaluate:
 - [ ] Test retrieval separately from final answers
 - [ ] Evaluate citation accuracy and answer faithfulness
 - [ ] Review top failure cases with a domain SME
-- [ ] Apply the Retrieval Corpus Lifecycle rule in [[PromptOps-Governance]] when sources change
+- [ ] Apply the Retrieval Corpus Lifecycle rule in [[99-Archived/PromptOps-Governance]] when sources change
 
 ---
 ## Anti-Patterns (Don't Do This)
@@ -321,7 +321,7 @@ Evaluate:
 - [[99-Archived/RAG-Implementation]] - Building the retrieval pipeline
 - [[Evaluation-and-Testing]] - Testing retrieval, grounding, and output quality
 - [[Security-and-Privacy]] - Access control, prompt injection, and data leakage
-- [[PromptOps-Governance]] - Versioning and lifecycle management
+- [[99-Archived/PromptOps-Governance]] - Versioning and lifecycle management
 
 ---
 ## Further Reading

@@ -348,7 +348,7 @@ Metadata makes prompt assets searchable, governable, and testable.
 
 - [[Prompt-Patterns-and-Frameworks]] - Framework library and modernization map
 - [[99-Archived/Research-RAG-and-Evidence]] - Source hierarchy, freshness, and citation rules
-- [[PromptOps-Governance]] - Prompt registry, versioning, review cadence, and ownership
+- [[99-Archived/PromptOps-Governance]] - Prompt registry, versioning, review cadence, and ownership
 
 ---
 ## Changelog

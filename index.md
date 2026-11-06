@@ -1,10 +1,9 @@
 ---
-## title: "The IT Professional's Guide to Enterprise AI"  
-artifact_type: homepage  
-status: canonical  
-publish: true  
-client_safe: true  
-last_updated: 2026-06-15
+artifact_type: homepage
+status: canonical
+publish: true
+client_safe: true
+last_updated: 2026-11-01
 ---
 # The IT Professional's Guide to Enterprise AI
 
@@ -132,7 +131,7 @@ Focus:
 Recommended:
 - [[AI-Governance]]
 - [[Governance-and-Risk]]
-- [[PromptOps-Governance]]
+- [[99-Archived/PromptOps-Governance]]
 - [[AI-Risk-Classification-Framework]]
 - [[Enterprise-AI-Governance-Framework]]
 - [[Human-in-the-Loop]]

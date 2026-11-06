@@ -10,7 +10,7 @@ difficulty: intermediate
 last_updated: 2026-05-12
 time_to_read: 18 minutes
 related:
-  - "[[PromptOps-Governance]]"
+  - "[[99-Archived/PromptOps-Governance]]"
   - "[[Governance-and-Risk]]"
   - "[[Security-and-Privacy]]"
   - "[[Evaluation-and-Testing]]"
@@ -270,7 +270,7 @@ Review date:
 ---
 ## Related Topics
 
-- [[PromptOps-Governance]] - Registry, versioning, and lifecycle controls
+- [[99-Archived/PromptOps-Governance]] - Registry, versioning, and lifecycle controls
 - [[Governance-and-Risk]] - Enterprise AI governance and incident response
 - [[Security-and-Privacy]] - Data boundary, injection, and access controls
 - [[Evaluation-and-Testing]] - Testing by risk tier

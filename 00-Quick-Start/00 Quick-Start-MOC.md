@@ -158,7 +158,7 @@ Go to:
 - [[Enterprise-Concerns-MOC]]
 - [[AI-Governance]]
 - [[Governance-and-Risk]]
-- [[PromptOps-Governance]]
+- [[99-Archived/PromptOps-Governance]]
 - [[AI-Risk-Classification-Framework]]
 - [[Enterprise-AI-Governance-Framework]]
 

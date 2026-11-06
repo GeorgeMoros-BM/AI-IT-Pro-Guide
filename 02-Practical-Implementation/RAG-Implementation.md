@@ -13,7 +13,7 @@ related:
   - "[[Prompt-Engineering-Basics]]"
   - "[[Vector-Database-Comparison]]"
   - "[[99-Archived/Research-RAG-and-Evidence]]"
-  - "[[PromptOps-Governance]]"
+  - "[[99-Archived/PromptOps-Governance]]"
 ---
 # RAG Implementation - Knowledge Base Integration
 
@@ -191,7 +191,7 @@ This example is vector-only. See the hybrid search tip below for exact terms suc
 
 ### Step 6: Keep the Index Current
 
-A policy change doesn't require retraining. Re-embed the changed pages, then follow the Retrieval Corpus Lifecycle rule in [[PromptOps-Governance]]. Re-embedding alone leaves the old chunks retrievable.
+A policy change doesn't require retraining. Re-embed the changed pages, then follow the Retrieval Corpus Lifecycle rule in [[99-Archived/PromptOps-Governance]]. Re-embedding alone leaves the old chunks retrievable.
 
 ---
 ## Tips & Tricks
@@ -224,7 +224,7 @@ A policy change doesn't require retraining. Re-embed the changed pages, then fol
 - [ ] **Embedding model** matches your domain (general vs code vs legal)
 - [ ] **Retrieval count** tuned (3-5 chunks typical, test more for complex queries)
 - [ ] **Relevance threshold** set, so weak matches return a not-found response
-- [ ] **Index updates** follow the Retrieval Corpus Lifecycle rule in [[PromptOps-Governance]]
+- [ ] **Index updates** follow the Retrieval Corpus Lifecycle rule in [[99-Archived/PromptOps-Governance]]
 - [ ] **Cost monitoring** in place (log tokens per query)
 
 ---
@@ -244,7 +244,7 @@ A policy change doesn't require retraining. Re-embed the changed pages, then fol
 - [[Token-Cost-Quick-Reference]] - Understanding RAG costs
 - [[Vector-Database-Comparison]] - Choosing the right DB
 - [[99-Archived/Research-RAG-and-Evidence]] - Evidence rules and how to structure the final prompt
-- [[PromptOps-Governance]] - Versioning and the retrieval corpus lifecycle
+- [[99-Archived/PromptOps-Governance]] - Versioning and the retrieval corpus lifecycle
 - [[Advanced-RAG-Techniques]] - Multi-hop reasoning, re-ranking
 
 ---

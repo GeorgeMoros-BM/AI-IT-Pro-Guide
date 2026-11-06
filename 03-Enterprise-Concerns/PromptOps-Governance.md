@@ -7,7 +7,7 @@ tags:
   - risk
   - ai-operations
 difficulty: intermediate
-last_updated: 2026-05-12
+last_updated: 2026-11-06
 time_to_read: 22 minutes
 related:
   - "[[Governance-and-Risk]]"
@@ -20,12 +20,28 @@ related:
 > Treat prompts, tools, retrieval settings, evals, and model choices as governed production assets, not private notes inside someone's chat history.
 
 ---
+## Worked Example
+
+HR lowers the vacation rollover limit from 5 days to 3. The HR Policy Assistant's prompt doesn't change, but its answers must. PromptOps treats the policy update as a production change.
+
+| Stage | What Happens | In This Example |
+|---|---|---|
+| Identify | Find the affected asset and its risk tier | PR-002 HR Policy Assistant, Tier 3 |
+| Update | Apply the Retrieval Corpus Lifecycle rule (Step 6) | Re-embed Section 4.2 and supersede the old chunks |
+| Test | Run a known-answer retrieval test | "How many vacation days can I carry into next year?" returns 3 days and cites the new version |
+| Release | Record the new bundle version | v0.8.0 becomes v0.8.1 with a new knowledge base date and the same prompt |
+| Trace | Keep the evidence for audit | If an employee disputes an answer, the logs show which corpus version produced it |
+
+If you governed only the prompt, this release would be invisible.
+
+---
 ## What You'll Learn
 
 - [ ] What PromptOps means in an enterprise AI program
 - [ ] How to register and version prompt assets
 - [ ] What metadata belongs in a prompt registry
 - [ ] How to approve, monitor, and retire prompts
+- [ ] How to keep a retrieval corpus current when sources change
 - [ ] How PromptOps connects governance, security, evals, and agents
 
 ---
@@ -93,7 +109,6 @@ Track changes to:
 - safety filters
 
 **Versioning example:**
-
 ```text
 Customer-Support-Agent v2.3.1
 - Prompt: support-agent-prompt v4.2
@@ -147,6 +162,7 @@ Start with a simple Markdown or spreadsheet registry.
 |---|---|---|---:|---|---|---|---|---|---|---|
 | PR-001 | Executive Summary Generator | Comms | 1 | production | 1.2.0 | GPT-5.5 | none | false | smoke-tested | 2026-05-01 |
 | PR-002 | HR Policy Assistant | HR / IT | 3 | pilot | 0.8.0 | GPT-5.5 | search_kb | true | regression-tested | 2026-05-08 |
+
 ```
 
 **What's happening here:**
@@ -161,7 +177,6 @@ Start with a simple Markdown or spreadsheet registry.
 Use the template in [[promptops-metadata-template]].
 
 Minimum fields:
-
 ```yaml
 ---
 title:
@@ -203,6 +218,7 @@ Use different depth by risk tier:
 | New model version | Regression eval |
 | New tool access | Security review |
 | New data source | Data owner approval |
+| Source, chunking, or embedding change | Retrieval Corpus Lifecycle (Step 6) |
 | External action | Human approval gate |
 
 ---
@@ -216,6 +232,7 @@ Before a prompt or agent is promoted to production, confirm:
 - prohibited use cases documented
 - model and version identified
 - retrieval corpus identified, if any
+- superseded chunks removed or excluded from retrieval, if any
 - tool permissions reviewed, if any
 - eval suite passed
 - logging and monitoring configured
@@ -234,6 +251,32 @@ Retire or review when:
 - incident occurs
 - owner leaves role
 - prompt has not been reviewed by its review date
+
+---
+### Step 6: Apply the Retrieval Corpus Lifecycle
+
+Re-embedding a changed document adds new chunks but doesn't remove the old ones. Unless someone acts, both versions stay retrievable.
+
+**Retrieval Corpus Lifecycle rule:** A source change isn't complete until its old content can no longer reach an answer. Remove or supersede the old chunks in the same release as the new ones, and prove the result with a retrieval test.
+
+- **Remove:** Delete the chunks from the index.
+- **Supersede:** Keep the chunks for audit, set `approval_status` to `superseded`, and exclude them with a retrieval filter.
+
+| Event | Required Action | Proof |
+|---|---|---|
+| Source updated | Re-embed the changed content, then remove or supersede its old chunks | Known-answer test returns only the new version |
+| Source withdrawn | Remove or supersede all of its chunks | Known-answer test returns the not-found response |
+| New source added | Get data owner approval and add the required metadata | Known-answer test retrieves the new source |
+| Chunking strategy or embedding model changed | Rebuild the full index so all vectors come from one model and one chunking strategy | Full retrieval regression passes |
+| Source reaches its review date | Owner renews, updates, or withdraws it | Source metadata shows the new review date |
+
+Record a new corpus version with each release, in the format shown in Concept 3. The rule applies at every risk tier. The tier sets how much testing is required. Test design and the not-found response are in [[99-Archived/Research-RAG-and-Evidence]].
+
+**What's happening here:**
+
+- Old content leaves retrieval in the same release that adds the new content.
+- A retrieval test proves the change instead of assuming it.
+- Corpus versions show what the system could retrieve on a given date.
 
 ---
 ## Tips & Tricks
@@ -261,6 +304,7 @@ Retire or review when:
 - [ ] Maintain a central prompt and agent registry
 - [ ] Assign business and technical owners
 - [ ] Version prompts, models, tools, retrieval corpora, and eval suites
+- [ ] Remove or supersede old chunks in the same release as any source change
 - [ ] Apply risk tiering to every AI asset
 - [ ] Require evals before production release
 - [ ] Log prompt version and model version at runtime
@@ -278,6 +322,7 @@ Retire or review when:
 | Treat all prompts the same | Apply risk tiers | Controls should match impact |
 | Skip evals for small wording changes | Run smoke tests at minimum | Small changes can alter behavior |
 | Keep stale prompts indefinitely | Add review and retirement dates | Prevents silent decay |
+| Re-embed a changed source and leave old chunks in the index | Remove or supersede old chunks in the same release | Both versions stay retrievable |
 
 ---
 ## Common Failure Modes
@@ -289,6 +334,7 @@ Retire or review when:
 | Risky prompt used in wrong context | No approved/prohibited use cases | Document scope |
 | Incident cannot be reconstructed | Missing logs and versions | Log prompt/model/tool/corpus versions |
 | Duplicate prompts multiply risk | No catalogue governance | Consolidate and deprecate |
+| Superseded content still appears in answers | Old chunks left in the index | Apply the Retrieval Corpus Lifecycle |
 
 ---
 ## Related Topics
@@ -298,6 +344,8 @@ Retire or review when:
 - [[Evaluation-and-Testing]] - Eval suites and release gates
 - [[Prompt-Operating-Contracts]] - Designing prompts as reusable contracts
 - [[Security-and-Privacy]] - Data boundary and prompt-injection controls
+- [[99-Archived/RAG-Implementation]] - Building the retrieval pipeline
+- [[99-Archived/Research-RAG-and-Evidence]] - Evidence policy and retrieval testing
 
 ---
 ## Further Reading
@@ -309,6 +357,7 @@ Retire or review when:
 ---
 ## Changelog
 
+- **2026-11-06**: Added worked example and Retrieval Corpus Lifecycle rule
 - **2026-05-12**: Created PromptOps governance chapter
 
 ---
