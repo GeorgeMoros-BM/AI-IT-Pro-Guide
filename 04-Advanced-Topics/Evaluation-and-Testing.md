@@ -10,7 +10,7 @@ difficulty: advanced
 last_updated: 2026-05-12
 time_to_read: 32 minutes
 related:
-  - "[[Prompt-Engineering-Basics]]"
+  - "[[04 Prompt-Engineering-Basics]]"
   - "[[Modern-Prompt-Methodology-Layer]]"
   - "[[Prompt-Operating-Contracts]]"
   - "[[Agents-and-Tool-Use]]"
@@ -425,7 +425,7 @@ A prompt, RAG pipeline, or agent can move to pilot only if:
 ---
 ## Related Topics
 
-- [[Prompt-Engineering-Basics]] - Designing instructions that can be tested
+- [[04 Prompt-Engineering-Basics]] - Designing instructions that can be tested
 - [[Prompt-Operating-Contracts]] - Defining success criteria upfront
 - [[02-Practical-Implementation/RAG-Implementation]] - Building grounded systems that need retrieval evaluation
 - [[Agents-and-Tool-Use]] - Evaluating tool selection and execution

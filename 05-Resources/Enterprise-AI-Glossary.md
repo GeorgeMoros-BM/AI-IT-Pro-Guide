@@ -6,7 +6,7 @@ tags:
   - terminology
   - beginner
 difficulty: beginner
-last_updated: 2026-04-25
+last_updated: 2026-11-05
 time_to_read: 10 minutes
 related:
   - "[[AI-LLM-Fundamentals]]"
@@ -60,7 +60,7 @@ A type of neural network trained on massive amounts of text to understand and ge
 
 **Prompt Injection**
 A cyberattack where a user sneaks malicious commands into the data being processed by the AI, causing the AI to ignore its original system instructions and do what the attacker wants.
-* *IT Analogy:* **SQL Injection**, but using conversational English instead of database syntax.
+* *IT Analogy:* A **confused deputy**, where a trusted service is tricked into using its own privileges for an attacker. Unlike **SQL injection**, it has no fix equivalent to parameterized queries, so you limit what the AI can do.
 * *Read more:* [[Security-and-Privacy]]
 
 **RAG (Retrieval-Augmented Generation)**
@@ -101,6 +101,7 @@ A specialized database designed to store, index, and search Embeddings. It power
 ---
 ## Changelog
 
+- **2026-11-05**: Replaced the SQL injection analogy for prompt injection
 - **2026-04-25**: Created initial enterprise glossary.
 
 ---

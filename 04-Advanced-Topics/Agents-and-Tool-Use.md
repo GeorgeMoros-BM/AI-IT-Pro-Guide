@@ -12,7 +12,7 @@ last_updated: 2026-05-12
 time_to_read: 30 minutes
 related:
   - "[[API-Integration-Guide]]"
-  - "[[Prompt-Engineering-Basics]]"
+  - "[[04 Prompt-Engineering-Basics]]"
   - "[[Prompt-Operating-Contracts]]"
   - "[[Agentic-Workflows]]"
   - "[[Evaluation-and-Testing]]"

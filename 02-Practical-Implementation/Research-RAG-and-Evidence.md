@@ -12,7 +12,7 @@ time_to_read: 24 minutes
 related:
   - "[[02-Practical-Implementation/RAG-Implementation]]"
   - "[[Evaluation-and-Testing]]"
-  - "[[Prompt-Engineering-Basics]]"
+  - "[[04 Prompt-Engineering-Basics]]"
   - "[[Security-and-Privacy]]"
   - "[[03-Enterprise-Concerns/PromptOps-Governance]]"
 ---

@@ -63,7 +63,7 @@ Recommended sequence:
 1. [[Quick-Start-MOC]]
 2. [[Quick Start & Orientation]]
 3. [[Executive-Summary]]
-4. [[Mental-Model-Reset]]
+4. [[00-Quick-Start/03 Mental-Model-Reset]]
 5. [[How To Use This Vault]]
 6. [[Recommended Reading Order]]
 7. [[Learning Paths]]
@@ -73,7 +73,7 @@ If you only read three documents first:
 
 1. [[Quick Start & Orientation]]
 2. [[Executive-Summary]]
-3. [[Mental-Model-Reset]]
+3. [[00-Quick-Start/03 Mental-Model-Reset]]
 
 These explain what the vault is, why enterprise AI matters, and how to think about AI as governed operational infrastructure rather than chatbot experimentation.
 
@@ -92,7 +92,7 @@ Focus:
 
 Recommended:
 - [[Executive-Summary]]
-- [[Mental-Model-Reset]]
+- [[00-Quick-Start/03 Mental-Model-Reset]]
 - [[AI-Governance]]
 - [[Enterprise-AI-Operating-Model]]
 - [[AI-Portfolio-Management]]
@@ -339,7 +339,7 @@ The guide increasingly focuses on:
 Start with:
 - [[Quick-Start-MOC]]
 - [[Quick Start & Orientation]]
-- [[Mental-Model-Reset]]
+- [[00-Quick-Start/03 Mental-Model-Reset]]
 
 ## If You Want Technical Foundations
 

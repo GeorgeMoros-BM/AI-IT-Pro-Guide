@@ -52,6 +52,13 @@ Reason:
 Stale content can keep reaching users after a source changes. Outside content can steer any tool the model holds. Routers and response caches change what users receive. PromptOps-Governance now holds the Retrieval Corpus Lifecycle rule and versions routers and cache policies. Prompt-Risk-Tiering now sets a minimum tier for outside content.
 
 ---
+## 2026-11-05
+### Aligned the chapter template with Metadata Standards
+
+Reason:
+New chapters should carry the metadata that retrieval and publishing depend on. The template now also includes the Worked Example and Common Failure Modes sections that recent chapters use. Existing chapters were not retrofitted.
+
+---
 # Governance Rule
 
 Major structural decisions should be logged when they materially affect:

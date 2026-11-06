@@ -12,7 +12,7 @@ difficulty: advanced
 last_updated: 2026-05-12
 time_to_read: 22 minutes
 related:
-  - "[[Prompt-Engineering-Basics]]"
+  - "[[04 Prompt-Engineering-Basics]]"
   - "[[Prompt-Operating-Contracts]]"
   - "[[Evaluation-and-Testing]]"
   - "[[02-Practical-Implementation/RAG-Implementation]]"
@@ -336,7 +336,7 @@ Metadata makes prompt assets searchable, governable, and testable.
 ---
 ## Related Topics
 
-- [[Prompt-Engineering-Basics]] - The introductory primer
+- [[04 Prompt-Engineering-Basics]] - The introductory primer
 - [[Prompt-Operating-Contracts]] - How to structure reusable prompts
 - [[Evaluation-and-Testing]] - How to measure reliability
 - [[02-Practical-Implementation/RAG-Implementation]] - How to ground answers in enterprise data
