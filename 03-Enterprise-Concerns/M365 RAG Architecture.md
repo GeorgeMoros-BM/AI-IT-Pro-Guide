@@ -67,6 +67,27 @@ This is my recommendation, not a Microsoft requirement. Each step adds operating
 | Microsoft Agent 365                    | Inventories agents, controls which data and tools each can reach, and logs agent actions.                                                                                         | Licensed per user, either standalone or through Microsoft 365 E7.                                                                                                                                                           |
 | Foundry Control Plane                  | Monitors Foundry agents: evaluations, guardrails, compliance posture, and cost.                                                                                                   | Available through the Foundry portal only.                                                                                                                                                                                  |
 
+## Who runs each layer
+
+[[Production-AI-Assistant-Stack]] breaks a production assistant into eight layers. This table shows who runs each one in this architecture. The split is my reading of Microsoft's documentation, not a Microsoft responsibility matrix. On the custom agent path Microsoft hosts the Azure services, but you configure and operate them.
+
+| Layer | Copilot path: Microsoft runs | Copilot path: you run | Custom agent path: you run |
+| --- | --- | --- | --- |
+| System prompt | The orchestrator, which you can't change | Declarative agent instructions | Agent instructions in Foundry |
+| RAG | Semantic index and retrieval, with no documented chunking or ranking tuning | SharePoint permissions, content freshness, and Copilot connectors | Foundry IQ, Azure AI Search, the indexer, chunking, and embeddings |
+| Tools | Calling the agents you enable | Agent actions, and which agents are allowed | Agent tools, MCP servers, and the limits inside them |
+| Identity | Querying Microsoft Graph as the user | Entra configuration, permissions, and licensing | Passing the user's token, scoping the managed identity, and testing with two users |
+| Guardrails | Harmful content filters, plus jailbreak and XPIA classifiers | Purview DLP and sensitivity labels, plus hard limits in any API you own | Foundry guardrails, with agent guardrails in Preview, plus hard limits in your tools |
+| Cost | Model selection through a real-time router | Licenses and Copilot Credits | Model choice, Foundry model router or your own routing, budgets, and any response cache |
+| Observability | Capturing prompts and responses in the unified audit log | Purview audit, retention, and eDiscovery, plus Copilot usage reports | Foundry tracing, the agent monitoring dashboard, and Foundry Control Plane |
+| Release gate | Model updates on Microsoft's schedule | Agent Evaluations CLI tests of your agents | Foundry evaluations in CI/CD, the bundle version, and rollback |
+
+**Microsoft controls part of the release gate on the Copilot path.** Microsoft says the models behind Copilot are regularly updated, and that updates don't change your security, privacy, or compliance settings. My inference is that they can still change answers, and that you can't block them. Run your regression tests on a schedule as well as before your own changes.
+
+**Microsoft's injection protection isn't a hard limit.** Microsoft says its classifiers help block high-risk prompts and may not be available in all Copilot scenarios. On either path, put limits that must hold in the API or tool behind the action.
+
+**Any response cache on the custom agent path is yours to secure.** If you add Azure API Management semantic caching, use `vary-by` with user or group identifiers. Microsoft warns that similarity matching can surface incorrect, outdated, or unsafe responses. Your Retrieval Corpus Lifecycle rule applies to the cache too.
+
 ## Where each source should go
 
 This routing is my recommendation. It keeps one index and one permission model for each source wherever possible.
@@ -119,3 +140,8 @@ This routing is my recommendation. It keeps one index and one permission model f
 - [Purview for AI apps](https://learn.microsoft.com/en-us/purview/ai-microsoft-purview)
 - [Microsoft Agent 365](https://www.microsoft.com/en-us/microsoft-agent-365)
 - [Foundry Control Plane](https://learn.microsoft.com/en-us/azure/foundry/control-plane/overview)
+- [Guardrails and controls in Foundry](https://learn.microsoft.com/en-us/azure/foundry/guardrails/guardrails-overview)
+- [Foundry capability reference](https://learn.microsoft.com/en-us/azure/foundry/concepts/capability-reference)
+- [Model router in Foundry](https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-router)
+- [Semantic cache lookup policy](https://learn.microsoft.com/en-us/azure/api-management/llm-semantic-cache-lookup-policy)
+- [Agent Evaluations CLI](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/evaluations-cli-reference)

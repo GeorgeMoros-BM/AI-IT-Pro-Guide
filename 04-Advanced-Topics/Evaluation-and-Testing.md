@@ -1,5 +1,9 @@
 ---
 title: Evaluation & Testing
+artifact_type: reference
+status: canonical
+publish: false
+client_safe: false
 tags:
   - chapter
   - ai

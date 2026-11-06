@@ -1,5 +1,9 @@
 ---
 title: Modern Prompt Methodology Layer
+artifact_type: framework
+status: canonical
+publish: false
+client_safe: false
 tags:
   - chapter
   - ai

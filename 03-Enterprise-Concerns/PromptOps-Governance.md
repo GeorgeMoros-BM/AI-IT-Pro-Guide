@@ -1,5 +1,9 @@
 ---
 title: PromptOps Governance
+artifact_type: governance
+status: canonical
+publish: false
+client_safe: false
 tags:
   - chapter
   - promptops

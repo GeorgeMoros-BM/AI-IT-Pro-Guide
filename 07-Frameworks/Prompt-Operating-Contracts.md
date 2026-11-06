@@ -1,5 +1,9 @@
 ---
 title: Prompt Operating Contracts
+artifact_type: framework
+status: draft
+publish: false
+client_safe: false
 tags:
   - chapter
   - ai

@@ -1,5 +1,9 @@
 ---
 title: Agentic Workflows
+artifact_type: reference
+status: draft
+publish: false
+client_safe: false
 tags:
   - chapter
   - agents

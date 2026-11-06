@@ -1,5 +1,9 @@
 ---
 title: Building a Local LLM Workstation for Enterprise AI
+artifact_type: reference
+status: draft
+publish: false
+client_safe: false
 tags: [chapter, local-llm, workstation, infrastructure, hardware]
 difficulty: intermediate/advanced
 last_updated: 2026-04-26

@@ -59,6 +59,13 @@ Reason:
 New chapters should carry the metadata that retrieval and publishing depend on. The template now also includes the Worked Example and Common Failure Modes sections that recent chapters use. Existing chapters were not retrofitted.
 
 ---
+## 2026-11-05
+### Added required metadata to existing chapters
+
+Reason:
+Chapters lacked fields that dashboards, retrieval, and publishing rely on. Chapters listed in Canonical-Documents are marked canonical. All other chapters are marked draft with client_safe false until they are reviewed. No last_updated dates changed, because no chapter content changed.
+
+---
 # Governance Rule
 
 Major structural decisions should be logged when they materially affect:
