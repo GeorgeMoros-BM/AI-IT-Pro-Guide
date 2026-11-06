@@ -224,6 +224,7 @@ Start with:
 Provider-specific and model-specific intelligence for OpenAI, Anthropic, Google Gemini, xAI Grok, and head-to-head comparisons.
 
 Use with caution:
+- [[Current-Model-Register]]
 - [[LLM-Provider-Comparison]]
 
 Provider-specific content is volatile and should be validated against current official documentation before production decisions.

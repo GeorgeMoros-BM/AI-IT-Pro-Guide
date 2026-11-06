@@ -10,7 +10,7 @@ domain:
 status: draft
 maturity: advanced
 last_updated: 2026-11-05
-time_to_read: 13 minutes
+time_to_read: 12 minutes
 publish: false
 client_safe: true
 ---
@@ -83,6 +83,7 @@ One person can hold several roles on a small team, but the commander shouldn't a
 - [ ] Each system has a documented fallback
 - [ ] Vendor contacts and contract notice terms are on file
 - [ ] A named person decides on legal notification, with a backup
+- [ ] Counsel has reviewed [[AI-Incident-Notification-Reference]] for your jurisdictions
 - [ ] A tabletop exercise has been run in the last 12 months
 
 ---
@@ -105,7 +106,7 @@ Answer these in the first 15 minutes:
 5. Who is affected, and how many?
 6. What severity applies?
 
-Open an incident record and note when your organization became aware. Some reporting clocks run from that moment.
+Open an incident record and note when your organization became aware. Later, note when it determined that a reportable event occurred. Different reporting clocks run from each moment.
 
 ---
 
@@ -198,19 +199,12 @@ Return the system to service through the normal release gate:
 
 The privacy and legal lead makes this decision, and it runs alongside the other phases. Don't wait for the root cause before you start.
 
-| Regime | Trigger | Who Reports | Clock |
-|---|---|---|---|
-| PIPEDA (Canada) | A breach of security safeguards with a real risk of significant harm | Organization to the Commissioner and affected individuals | As soon as feasible |
-| GDPR Article 33 (EU) | A personal data breach, unless a risk to individuals is unlikely | Controller to the supervisory authority. Processor to the controller | Without undue delay, and where feasible within 72 hours of awareness. Processors notify without undue delay |
-| EU AI Act Article 73 | A serious incident involving a high-risk AI system | Provider to national authorities. Deployers inform the provider | 15 days by default, 10 days for a death, 2 days for widespread incidents or serious critical infrastructure disruption |
-| Contracts | Terms in customer and vendor agreements | As written | As written |
-| Sector and local rules | Varies by industry and region | Confirm with counsel | Confirm with counsel |
+Use [[AI-Incident-Notification-Reference]] to find which duties may apply. It covers Canada, the United States, and the EU by trigger, recipient, and clock. Some clocks are measured in hours, so check it in the first hour of a SEV1.
 
 Keep these points in mind:
-- **PIPEDA records:** Keep a record of every breach for 24 months after you determine that it occurred, including breaches you don't report.
-- **PIPEDA reports:** The regulations list the required content, and you can send updates after the first report.
-- **Article 73 start date:** This is unsettled. Article 113 suggests 2 August 2026, because Chapter IX isn't among its exceptions. Regulation (EU) 2026/1744 moved the high-risk requirements to December 2027 and August 2028, and some sources say Article 73 follows those dates. Agree on a written position with counsel now, because a two-day clock leaves no time to settle it.
-- **Commission guidance:** The latest version reviewed for this note is the September 2025 draft. Check for a final version.
+- **Record the moments:** Clocks can run from awareness, discovery, determination, or reasonable belief.
+- **Settle positions early:** Agree on your reading of unsettled rules with counsel before an incident, not during one.
+- **Keep records:** Some regimes require a record of every breach, including breaches you don't report.
 - **No legal clock:** A wrong-answer incident may trigger no report, but people who relied on the answer still need a correction.
 
 Each message should say what happened, who is affected, what you've done, what they should do, and who to contact. Don't speculate about the cause.
@@ -311,6 +305,7 @@ Commander:
 
 Time detected:
 Time of awareness:
+Time of determination:
 Time contained:
 Time recovered:
 
@@ -339,6 +334,7 @@ Due date:
 
 # Related Notes
 
+- [[AI-Incident-Notification-Reference]]
 - [[Governance-and-Risk]]
 - [[03-Enterprise-Concerns/PromptOps-Governance]]
 - [[Prompt-Risk-Tiering]]
@@ -353,11 +349,3 @@ Due date:
 # Sources
 
 - [NIST SP 800-61r3: Incident Response Recommendations and Considerations for Cybersecurity Risk Management](https://nvlpubs.nist.gov/nistpubs/specialpublications/nist.sp.800-61r3.pdf)
-- [Breach of Security Safeguards Regulations (SOR/2018-64)](https://gazette.gc.ca/rp-pr/p2/2018/2018-04-18/html/sor-dors64-eng.html)
-- [GDPR Article 33](https://gdpr-info.eu/art-33/)
-- [European Commission: Draft guidance and reporting template for serious AI incidents](https://digital-strategy.ec.europa.eu/en/consultations/ai-act-commission-issues-draft-guidance-and-reporting-template-serious-ai-incidents-and-seeks)
-- [Regulation (EU) 2026/1744 in the Official Journal](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ%3AL_202601744)
-- [Digital Omnibus on AI: Published (Cuatrecasas)](https://www.cuatrecasas.com/en/global/intellectual-property/art/digital-omnibus-ai-has-been-published)
-- [Article 73 reporting clocks (CIO)](https://www.cio.com/article/4218777/the-eu-ai-act-just-gave-you-a-breach-notification-clock-you-didnt-know-about.html)
-- [When Article 73 starts applying (Kovrr)](https://www.kovrr.com/blog-post/the-ai-incident-reporting-duty-nobody-can-date)
-- [Article 73 dates after the omnibus (iLert)](https://www.ilert.com/blog/eu-ai-act-2026-incident-response)

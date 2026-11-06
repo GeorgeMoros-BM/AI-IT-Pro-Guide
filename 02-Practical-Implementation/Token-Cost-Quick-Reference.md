@@ -1,7 +1,7 @@
 ---
 title: Token Cost Optimization - Quick Reference
 tags: [quick-ref, cost-optimization, tokens]
-last_updated: 2026-04-24
+last_updated: 2026-11-05
 ---
 # Token Cost Optimization Quick Reference Card
 
@@ -16,8 +16,8 @@ graph TD
     B -->|Yes| C[Enable Prompt Caching<br/>Save 90%]
     B -->|No| D[Sending full documents?]
     D -->|Yes| E[Implement RAG<br/>Save 70-90%]
-    D -->|No| F[Using GPT-4o for everything?]
-    F -->|Yes| G[Switch simple tasks to mini<br/>Save 95%]
+    D -->|No| F[Using a premium model for everything?]
+    F -->|Yes| G[Route simple tasks to a small model<br/>Save 85-95%]
     F -->|No| H[Check output verbosity]
     H --> I[Use max_tokens limits<br/>Save 20-40%]
 ```
@@ -29,7 +29,7 @@ graph TD
 |---------|--------|---------|-------------------|
 | **1. Enable Prompt Caching** | Low | 40-90% | 15 min |
 | **2. Implement RAG** | Medium | 70-90% | 4 hours |
-| **3. Switch to -mini for simple tasks** | Low | 85-95% | 30 min |
+| **3. Route simple tasks to a small model** | Low | 85-95% | 30 min |
 | **4. Set max_tokens limits** | Low | 20-40% | 10 min |
 | **5. Compress prompts** | Medium | 30-50% | 2 hours |
 | **6. Use cheaper models** | Low | 50-80% | 20 min |
@@ -53,7 +53,7 @@ system=[
 ```python
 # Prevent runaway costs
 response = client.messages.create(
-    model="claude-sonnet-4-20250514",
+    model=MODEL_ID,  # See Current-Model-Register
     max_tokens=500,  # Set explicit limit
     messages=[...]
 )
@@ -63,14 +63,16 @@ response = client.messages.create(
 ```python
 import tiktoken
 
-def count_tokens(text, model="gpt-4"):
-    encoding = tiktoken.encoding_for_model(model)
+def estimate_tokens(text):
+    # An estimate only. Use your provider's token counter for exact figures.
+    encoding = tiktoken.get_encoding("o200k_base")
     return len(encoding.encode(text))
 
 # Check before sending
+input_price_per_million = 3.00  # Illustrative. See Current-Model-Register
 prompt = "Your prompt here..."
-token_count = count_tokens(prompt)
-print(f"This will cost approximately ${token_count * 0.003 / 1000:.4f}")
+token_count = estimate_tokens(prompt)
+print(f"Estimated input cost: ${token_count * input_price_per_million / 1_000_000:.4f}")
 ```
 
 ---
@@ -78,13 +80,14 @@ print(f"This will cost approximately ${token_count * 0.003 / 1000:.4f}")
 
 **Basic Cost Calculation:**
 ```
-Cost = (Input Tokens × Input Price/1K) + (Output Tokens × Output Price/1K)
+Cost = (Input Tokens ÷ 1M × Input Price) + (Output Tokens ÷ 1M × Output Price)
 ```
 
 **With Caching:**
 ```
 First Request = Full Input Cost + Output Cost
-Cached Requests = (Input × 0.10) + Output Cost
+Cached Requests = (Input Cost × Cache Read Rate) + Output Cost
+Cache Read Rate = Cached Input Price ÷ Input Price
 ```
 
 **ROI of Optimization:**
@@ -105,15 +108,16 @@ But at 100M tokens/mo:
 - Payback: 400/240 = 1.7 months ✅ (worth it!)
 
 ---
-## Model Cost At-a-Glance
+## Model Roles
 
-| Model | Input $/1M | Output $/1M | Best For |
-|-------|-----------|-------------|----------|
-| **GPT-4o-mini** | $0.15 | $0.60 | High volume, simple tasks |
-| **Gemini 1.5 Flash** | $0.075 | $0.30 | Cheapest general purpose |
-| **GPT-4o** | $2.50 | $10.00 | Balanced quality/cost |
-| **Claude 3.5 Sonnet** | $3.00 | $15.00 | Quality-critical tasks |
-| **Claude Haiku** | $0.25 | $1.25 | Fast, simple tasks |
+| Role | Best For |
+|------|----------|
+| **Small** | High volume, simple tasks |
+| **Mid** | Everyday work |
+| **Premium** | Hard reasoning, coding, and analysis |
+| **Frontier** | The hardest, highest-value work |
+
+Current models, prices, and cost traps are in [[Current-Model-Register]]. Prices in this note's examples are illustrative.
 
 ---
 ## Optimization Checklist
@@ -121,7 +125,7 @@ But at 100M tokens/mo:
 - [ ] **Audit current usage** - Know your baseline (tokens/day, cost/query)
 - [ ] **Enable prompt caching** - If sending same context >2x
 - [ ] **Implement RAG** - If sending full documents every query
-- [ ] **Use tiered models** - mini for simple, premium for complex
+- [ ] **Use tiered models** - small for simple, premium for complex
 - [ ] **Set max_tokens** - Prevent runaway responses
 - [ ] **Compress system prompts** - Remove fluff, keep substance
 - [ ] **Batch requests** - Combine similar queries when possible
@@ -134,7 +138,7 @@ But at 100M tokens/mo:
 |----------|-------------|-----------|
 | Same 50K context in every request | Not using caching | Enable prompt caching |
 | Sending entire PDFs to LLM | Not using RAG | Implement chunking + retrieval |
-| Using GPT-4o for "yes/no" answers | Overkill model | Switch to mini |
+| Using a premium model for "yes/no" answers | Overkill model | Route to a small model |
 | Average response is 2000 tokens | No output limit | Set max_tokens=500 |
 | $1000/mo but <10K requests | Inefficient prompts | Audit and compress |
 
@@ -151,9 +155,9 @@ But at 100M tokens/mo:
 
 **Example 2: Code Review Bot**
 - Volume: 500 reviews/day
-- Before: GPT-4o for all reviews
+- Before: A premium model for all reviews, at an illustrative $2.50/1M
 - Cost: 500 × 5K tokens × $2.50/1M = $6.25/day
-- **Fix:** Use mini for simple linting, GPT-4o for complex logic
+- **Fix:** Use a small model for simple linting, at an illustrative $0.15/1M, and keep the premium model for complex logic
 - After: (400 × 5K × $0.15/1M) + (100 × 5K × $2.50/1M) = $0.30 + $1.25 = $1.55/day
 - **Savings:** $4.70/day = $141/month
 
@@ -167,6 +171,7 @@ But at 100M tokens/mo:
 ---
 ## See Full Guides
 
+- [[Current-Model-Register]]
 - [[Token Economics - Deep Dive]]
 - [[Prompt Caching Tutorial]]
 - [[RAG Implementation Guide]]
@@ -175,4 +180,4 @@ But at 100M tokens/mo:
 ---
 ## Last Updated
 
-April 24, 2026 - Pricing current as of this date, verify with providers before major decisions
+November 5, 2026 - Moved model names and prices to [[Current-Model-Register]]. Examples use illustrative prices.

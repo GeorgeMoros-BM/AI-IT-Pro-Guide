@@ -11,10 +11,11 @@ tags:
   - finops
   - business
 difficulty: intermediate
-last_updated: 2026-04-24
+last_updated: 2026-11-05
 time_to_read: 15 minutes
 related:
   - "[[Token-Cost-Quick-Reference]]"
+  - "[[Current-Model-Register]]"
   - "[[Vendor & Tool Directory]]"
   - "[[Managing-Shadow-AI]]"
 ---
@@ -73,7 +74,7 @@ Before approving an internal "Build" project, force the product owner to fill ou
 *   Avg Input Tokens per request: `5,000`
 *   Avg Output Tokens per request: `500`
 *   Requests per month: `50,000`
-*   *Calculation:* (50k * 5k * $0.15/1M [mini model]) + (50k * 500 * $0.60/1M) = **$52.50 / mo**
+*   *Calculation:* (50k * 5k * $0.15/1M [illustrative small model rate]) + (50k * 500 * $0.60/1M) = **$52.50 / mo**
 
 **2. Infrastructure Costs:**
 *   Vector DB (Managed): **$70.00 / mo**
@@ -92,7 +93,7 @@ Do not use one master API key for the whole company. Route all AI traffic throug
 ```python
 # Example: Sending a tag to Anthropic/OpenAI via a Gateway proxy
 response = client.chat.completions.create(
-    model="gpt-4o",
+    model=MODEL_ID,  # See Current-Model-Register
     messages=[{"role": "user", "content": "Analyze this data."}],
     extra_headers={
         "x-department-tag": "marketing",
@@ -109,7 +110,7 @@ At the end of the month, IT bills the Marketing department for their exact usage
 > Set up Hard Caps and Billing Alerts on Day 1. In Azure OpenAI or Anthropic Console, set a monthly spend limit that is 20% higher than your expected budget. If a developer accidentally writes an infinite loop, the API will cut them off before it costs you $10,000.
 
 >[!tip] Pro Tip
-> Use "Cascading Routing" to save money. Send every query to a cheap, fast model (like `Claude 3 Haiku` or `GPT-4o-mini`) first. If the cheap model determines the query is too complex (using an eval prompt), route it to the expensive frontier model. This routinely cuts API bills by 60%.
+> Use "Cascading Routing" to save money. Send every query to a small model first. If the cheap model determines the query is too complex (using an eval prompt), route it to the expensive frontier model. This routinely cuts API bills by 60%.
 
 >[!warning] Watch Out
 > Avoid "Per-User" SaaS pricing if only 10% of users actually use the tool. Paying $30/mo for 1,000 Microsoft Copilot licenses is $360,000/year. If only 100 people use it daily, you are wasting money. Audit adoption rates relentlessly.
@@ -128,7 +129,7 @@ At the end of the month, IT bills the Marketing department for their exact usage
 - [ ] Practice 1: **Establish a FinOps Dashboard.** Visibility into cost-per-project is mandatory before scaling.
 - [ ] Practice 2: **Calculate "Cost of Error."** Add a penalty to your ROI calculations for hallucinated answers that require human remediation.
 - [ ] Practice 3: **Audit Orphaned Vector DBs.** Vector DBs charge for storage and RAM. Delete indexes for abandoned proof-of-concepts immediately.
-- [ ] Practice 4: **Evaluate Model Downgrades.** Every 3 months, test your app against the newest "small/cheap" models. A task that required GPT-4 last year can likely be done by GPT-4o-mini today for 95% less money.
+- [ ] Practice 4: **Evaluate Model Downgrades.** Every 3 months, test your app against the newest "small/cheap" models. A task that needed a premium model last year can often run on a small model today at far lower cost. Check current rates in [[Current-Model-Register]].
 
 ---
 ## Anti-Patterns (Don't Do This)
@@ -143,6 +144,7 @@ At the end of the month, IT bills the Marketing department for their exact usage
 ## Related Topics
 
 - [[Token-Cost-Quick-Reference]] - The exact token math for your TCO calculations.
+- [[Current-Model-Register]] - Current models, prices, and cost traps.
 - [[Evaluation-and-Testing]] - How to measure the "Cost of Error" automatically.
 - [[Vendor & Tool Directory]] - Where to buy standard SaaS so you don't have to build.
 
@@ -155,6 +157,7 @@ At the end of the month, IT bills the Marketing department for their exact usage
 ---
 ## Changelog
 
+- **2026-11-05**: Replaced model names and prices with roles and a link to the model register.
 - **2026-04-24**: Created initial Cost Management guide.
 - **2026-04-24**: Added Build vs. Buy framework.
 

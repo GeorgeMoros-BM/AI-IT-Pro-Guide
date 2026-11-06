@@ -80,6 +80,20 @@ Reason:
 The RAG architecture note was an empty stub that navigation already pointed to. Prompt Risk Tiering requires an incident playbook from Tier 3, but the vault had only a five-step summary.
 
 ---
+## 2026-11-05
+### Made the Current Model Register the only source for current model facts
+
+Reason:
+Model names and prices were repeated across notes and went stale. Chapters now use roles and link to the register, starting with the two cost notes. Other notes move over when they are next edited. Dated records stay as written.
+
+---
+## 2026-11-05
+### Moved notification clocks into a separate reference
+
+Reason:
+Legal rules change faster than the incident process. Keeping them in one reference lets the playbook stay stable, and gives the rules their own review cycle. The reference covers Canada, the United States, and the EU.
+
+---
 # Governance Rule
 
 Major structural decisions should be logged when they materially affect:
