@@ -2,7 +2,7 @@
 title: "Decision Log"
 artifact_type: governance
 status: canonical
-last_updated: 2026-05-18
+last_updated: 2026-11-05
 publish: false
 client_safe: true
 ---
@@ -43,6 +43,13 @@ Vault is intended to become:
 - reusable consulting IP
 - executive knowledge platform
 - publishable enterprise AI ecosystem
+
+---
+## 2026-11-05
+### Extended governance to retrieval freshness, outside content, routers, and response caches
+
+Reason:
+Stale content can keep reaching users after a source changes. Outside content can steer any tool the model holds. Routers and response caches change what users receive. PromptOps-Governance now holds the Retrieval Corpus Lifecycle rule and versions routers and cache policies. Prompt-Risk-Tiering now sets a minimum tier for outside content.
 
 ---
 # Governance Rule

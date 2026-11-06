@@ -1,5 +1,9 @@
 ---
 title: Production AI Assistant Stack - From Branded Chatbot to Governed Agent
+artifact_type: reference
+status: draft
+publish: false
+client_safe: false
 tags:
   - chapter
   - architecture
@@ -165,7 +169,7 @@ The word "cache" covers three different things:
 
 - "Refund limit for a damaged parcel" and "refund limit for a lost parcel" sit close together but can have different answers, so test the similarity threshold on real traffic.
 - A cached answer must never cross a permission boundary. Researchers have also shown that an attacker can craft prompts that collide with a victim's query in a shared semantic cache and serve the victim a chosen response. Per-user namespaces prevent this at the cost of fewer hits.
-- A superseded policy can survive in a response cache after it leaves the index. The Retrieval Corpus Lifecycle rule in [[03-Enterprise-Concerns/PromptOps-Governance]] covers the index, so apply the same discipline to response caches.
+- A superseded policy can survive in a response cache after it leaves the index. The Retrieval Corpus Lifecycle rule in [[03-Enterprise-Concerns/PromptOps-Governance]] covers cached answers as well as the index.
 
 **Routers need the same discipline:**
 
@@ -223,11 +227,11 @@ Small edits can reverse earlier fixes, and each layer can change on its own sche
 | Read-only knowledge | Policy Q&A | System prompt, RAG, identity on retrieval, tracing, release gate | Tier 1-3, by topic |
 | Read-only tools | Parcel status lookup | Add tools and delegated identity | Tier 2-3 |
 | Write tools | Refunds and tickets | Add hard limits, approval gates, and injection tests | Tier 4 |
-| Reads outside content | Customer email triage | Add privilege drop and a separate extraction step | Tier 4 |
+| Reads outside content | Customer email triage | Add privilege drop and a separate extraction step | Tier 3 with read tools, Tier 4 with write tools |
 | Autonomous workflow | Multi-step execution with limited supervision | Add formal governance and continuous monitoring | Tier 5 |
 
 **What's happening here:**  
-The tier sets the depth of each control, using the definitions in [[Prompt-Risk-Tiering]]. That chapter doesn't score outside content as a risk driver yet, so Tier 4 for that row is a recommendation. This chapter assumes a production assistant, so tracing and a release gate apply from the first release, even at Tier 1 where the control matrix leaves logging optional. Add cost layers when the numbers call for them.
+The tier sets the depth of each control, using the definitions in [[Prompt-Risk-Tiering]]. That chapter sets the minimum tier for outside content. This chapter assumes a production assistant, so tracing and a release gate apply from the first release, even at Tier 1 where the control matrix leaves logging optional. Add cost layers when the numbers call for them.
 
 ### Step 2: Version the Whole Bundle
 
@@ -244,7 +248,7 @@ Nova v1.4.2
 ```
 
 **What's happening here:**
-- This extends the versioning example in [[03-Enterprise-Concerns/PromptOps-Governance]]
+- This follows the versioning format in [[03-Enterprise-Concerns/PromptOps-Governance]]
 - The router and cache policy are included because both change what users receive
 - Every trace records this bundle version
 
@@ -489,6 +493,7 @@ ON any change to prompt, model, router, tools, corpus, guardrails, or cache poli
 ---
 ## Changelog
 
+- **2026-11-05**: Aligned with the outside content and response cache rules
 - **2026-11-05**: Created initial version
 
 ---

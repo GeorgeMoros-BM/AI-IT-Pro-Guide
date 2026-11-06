@@ -13,7 +13,7 @@ related:
   - "[[Agents-and-Tool-Use]]"
   - "[[Evaluation-and-Testing]]"
   - "[[Prompt-Operating-Contracts]]"
-  - "[[99-Archived/RAG-Implementation]]"
+  - "[[02-Practical-Implementation/RAG-Implementation]]"
   - "[[Security-and-Privacy]]"
 ---
 > [!note] Scope
@@ -370,7 +370,7 @@ Review cadence:
 - [[Agents-and-Tool-Use]] - Implementing tool calls safely
 - [[Evaluation-and-Testing]] - Testing workflows and agent trajectories
 - [[Prompt-Operating-Contracts]] - Defining operating contracts before implementation
-- [[99-Archived/RAG-Implementation]] - Retrieval workflows for enterprise data
+- [[02-Practical-Implementation/RAG-Implementation]] - Retrieval workflows for enterprise data
 - [[Security-and-Privacy]] - Securing agentic systems
 
 ---

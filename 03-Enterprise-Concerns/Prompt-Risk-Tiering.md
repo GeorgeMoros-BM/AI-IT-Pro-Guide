@@ -7,10 +7,10 @@ tags:
   - promptops
   - controls
 difficulty: intermediate
-last_updated: 2026-05-12
+last_updated: 2026-11-05
 time_to_read: 18 minutes
 related:
-  - "[[99-Archived/PromptOps-Governance]]"
+  - "[[03-Enterprise-Concerns/PromptOps-Governance]]"
   - "[[Governance-and-Risk]]"
   - "[[Security-and-Privacy]]"
   - "[[Evaluation-and-Testing]]"
@@ -26,6 +26,7 @@ related:
 
 - [ ] How to classify prompts and agents by risk
 - [ ] Which risk drivers matter most
+- [ ] How outside content changes a use case's risk
 - [ ] What controls belong at each tier
 - [ ] How to create a lightweight intake process
 - [ ] How to avoid over-governing low-risk productivity use
@@ -53,6 +54,7 @@ Risk drivers:
 - legal or policy impact
 - external communication
 - system/tool access
+- outside content the AI reads
 - autonomy level
 - reversibility of action
 - reliance without human review
@@ -103,6 +105,20 @@ Any tool that can read, write, send, delete, approve, buy, book, or update recor
 | Infrastructure action | Very high |
 
 ---
+### Concept 5: Outside Content Changes What Tools Can Do
+
+Outside content is anything your organization didn't write or approve: emails, web pages, uploaded files, support tickets, and data returned from external systems. It can carry hidden instructions, and the model may follow them with whatever access it holds. The UK's NCSC warns that this risk may never be fully mitigated, so the tier has to reflect what the AI reads together with what it can do.
+
+| If the AI Reads Outside Content and Can... | Worst Case | Minimum Tier |
+|---|---|---:|
+| Only produce output a person reviews | Misleading output | Score normally |
+| Read internal data | Internal data leaks | 3 |
+| Write, send, or update records | An attacker triggers the action | 4 |
+
+**Why it works this way:**
+A user can be fully authorized and still not have asked for the action. A permission check can't catch that, so the controls have to assume the model may be steered.
+
+---
 ## Risk Tier Model
 
 | Tier | Name | Description | Examples | Minimum Controls |
@@ -142,6 +158,9 @@ Any tool that can read, write, send, delete, approve, buy, book, or update recor
 
 7. Can the action be reversed?
    - Yes / Partially / No
+
+8. Does the AI read content your organization didn't write or approve?
+   - No / Yes, no tools / Yes, read tools / Yes, write or send tools
 ```
 
 **What's happening here:**
@@ -167,6 +186,11 @@ Increase tier if:
 - No human review before use: +1
 - Regulated domain: +2
 - Irreversible action: +2
+- Processes outside content: +1
+
+Minimum tier for outside content:
+- With tools that read internal data: Tier 3
+- With tools that write, send, or update: Tier 4
 
 Final tier:
 - Cap at Tier 5.
@@ -176,6 +200,7 @@ Final tier:
 **What's happening here:**
 
 - Teams get a simple first-pass classification.
+- The minimum tier stops a low score from hiding an injection path.
 - Governance can override where needed.
 
 ---
@@ -238,6 +263,7 @@ Review date:
 
 - [ ] Assign a risk tier before pilot use
 - [ ] Reassess risk when tools or data sources change
+- [ ] Apply the minimum tier when AI reads outside content with tools
 - [ ] Use lightweight controls for low-risk prompts
 - [ ] Require evidence policy for decision-support prompts
 - [ ] Require security review for sensitive data or internal tools
@@ -253,6 +279,7 @@ Review date:
 | Apply the same approval process to every prompt | Use tiered controls | Avoids bottlenecks |
 | Classify only by prompt topic | Classify by data, action, audience, consequence | Risk is contextual |
 | Ignore tool permissions | Re-tier when tools are added | Tools change impact |
+| Score tools without asking what the AI reads | Score tools and outside content together | Outside content can steer any tool |
 | Treat drafting and sending as the same risk | Separate draft-only from external action | Sending creates liability |
 | Set tier once forever | Reassess on change or review date | AI systems evolve |
 
@@ -264,27 +291,31 @@ Review date:
 | Over-governance | Low-risk prompts routed through heavy review | Tier 0-1 fast path |
 | Under-governance | Sensitive use case treated as productivity | Triage data and consequence |
 | Tier drift | Tool or data changes not reviewed | Re-tier on material change |
+| Hidden injection path | Outside content missed at intake | Ask triage question 8 and apply the minimum tier |
 | Hidden external impact | Drafts copied directly to customers | Add audience and approval checks |
 | No accountability | No owner or approver | Require owner fields |
 
 ---
 ## Related Topics
 
-- [[99-Archived/PromptOps-Governance]] - Registry, versioning, and lifecycle controls
+- [[03-Enterprise-Concerns/PromptOps-Governance]] - Registry, versioning, and lifecycle controls
 - [[Governance-and-Risk]] - Enterprise AI governance and incident response
 - [[Security-and-Privacy]] - Data boundary, injection, and access controls
 - [[Evaluation-and-Testing]] - Testing by risk tier
 - [[Agents-and-Tool-Use]] - Tool permissions and approval gates
+- [[Production-AI-Assistant-Stack]] - Matching controls to each layer of an assistant
 
 ---
 ## Further Reading
 
 - [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) - Best for: risk taxonomy and governance framing
 - [OWASP Top 10 for LLM Applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/) - Best for: LLM-specific risk patterns
+- [NCSC: Prompt injection is not SQL injection](https://www.ncsc.gov.uk/blog-post/prompt-injection-is-not-sql-injection) - Best for: Why outside content stays a residual risk
 
 ---
 ## Changelog
 
+- **2026-11-05**: Added outside content as a risk driver, triage question, and minimum tier
 - **2026-05-12**: Created prompt risk-tiering chapter
 
 ---

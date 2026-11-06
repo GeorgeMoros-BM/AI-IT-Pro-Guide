@@ -9,7 +9,7 @@ domain:
   - prompt-engineering
   - governance
 related:
-  - "[[99-Archived/PromptOps-Governance]]"
+  - "[[03-Enterprise-Concerns/PromptOps-Governance]]"
   - "[[Modern-Prompt-Methodology-Layer]]"
 ---
 ## Definition

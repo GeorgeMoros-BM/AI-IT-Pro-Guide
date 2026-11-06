@@ -15,7 +15,7 @@ related:
   - "[[Prompt-Operating-Contracts]]"
   - "[[Agents-and-Tool-Use]]"
   - "[[Agentic-Workflows]]"
-  - "[[99-Archived/RAG-Implementation]]"
+  - "[[02-Practical-Implementation/RAG-Implementation]]"
   - "[[Governance-and-Risk]]"
 ---
 # Evaluation & Testing
@@ -427,7 +427,7 @@ A prompt, RAG pipeline, or agent can move to pilot only if:
 
 - [[Prompt-Engineering-Basics]] - Designing instructions that can be tested
 - [[Prompt-Operating-Contracts]] - Defining success criteria upfront
-- [[99-Archived/RAG-Implementation]] - Building grounded systems that need retrieval evaluation
+- [[02-Practical-Implementation/RAG-Implementation]] - Building grounded systems that need retrieval evaluation
 - [[Agents-and-Tool-Use]] - Evaluating tool selection and execution
 - [[Agentic-Workflows]] - Choosing workflow patterns to evaluate
 - [[Governance-and-Risk]] - Connecting evals to approval and audit

@@ -131,7 +131,7 @@ Focus:
 Recommended:
 - [[AI-Governance]]
 - [[Governance-and-Risk]]
-- [[99-Archived/PromptOps-Governance]]
+- [[03-Enterprise-Concerns/PromptOps-Governance]]
 - [[AI-Risk-Classification-Framework]]
 - [[Enterprise-AI-Governance-Framework]]
 - [[Human-in-the-Loop]]
@@ -361,7 +361,7 @@ Start with:
 Start with:
 - [[AI-Adoption-Playbook]]
 - [[Starter-Projects-and-Quick-Wins]]
-- [[99-Archived/RAG-Implementation]]
+- [[02-Practical-Implementation/RAG-Implementation]]
 - [[API-Integration-Guide]]
 
 ## If You Want Architecture Depth

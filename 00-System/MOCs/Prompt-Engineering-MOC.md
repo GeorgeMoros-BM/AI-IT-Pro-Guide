@@ -21,7 +21,7 @@ Navigation layer for prompt engineering methods, PromptOps, evaluation, and agen
 
 ## PromptOps
 
-- [[99-Archived/PromptOps-Governance]]
+- [[03-Enterprise-Concerns/PromptOps-Governance]]
 - [[Prompt-Risk-Tiering]]
 - [[Prompt-Version-Control]]
 

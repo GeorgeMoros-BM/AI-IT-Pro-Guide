@@ -8,8 +8,8 @@ difficulty: intermediate
 last updated: 2026-05-18
 time to read: 12 minutes
 related:
-  - "[[99-Archived/Research-RAG-and-Evidence]]"
-  - "[[99-Archived/PromptOps-Governance]]"
+  - "[[02-Practical-Implementation/Research-RAG-and-Evidence]]"
+  - "[[03-Enterprise-Concerns/PromptOps-Governance]]"
   - "[[Evaluation-and-Testing]]"
 ---
 # AI Workbench Protocol
@@ -354,8 +354,8 @@ This restores ownership. AI helped produce the artifact, but you remain accounta
 ---
 ## Related Topics
 
-- [[99-Archived/Research-RAG-and-Evidence]]
-- [[99-Archived/PromptOps-Governance]]
+- [[02-Practical-Implementation/Research-RAG-and-Evidence]]
+- [[03-Enterprise-Concerns/PromptOps-Governance]]
 - [[Prompt-Risk-Tiering]]
 - [[Evaluation-and-Testing]]
 - [[Agents-and-Tool-Use]]
@@ -370,8 +370,8 @@ This restores ownership. AI helped produce the artifact, but you remain accounta
 - [[AI Workbench Brief Template]] - Use this before asking AI for an important deliverable.
 - [[AI Output Critique Template]] - Use this to stress-test AI-generated drafts.
 - [[Human Judgment Checklist]] - Use this before shipping AI-assisted work.
-- [[99-Archived/Research-RAG-and-Evidence]] - Use this when source discipline and evidence quality matter.
-- [[99-Archived/PromptOps-Governance]] - Use this when scaling prompt workflows across a team.
+- [[02-Practical-Implementation/Research-RAG-and-Evidence]] - Use this when source discipline and evidence quality matter.
+- [[03-Enterprise-Concerns/PromptOps-Governance]] - Use this when scaling prompt workflows across a team.
 
 ---
 ## Changelog

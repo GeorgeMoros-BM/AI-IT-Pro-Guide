@@ -9,7 +9,7 @@ tags:
 last_updated: 2026-04-25
 review_frequency: quarterly
 related:
-  - "[[99-Archived/RAG-Implementation]]"
+  - "[[02-Practical-Implementation/RAG-Implementation]]"
   - "[[Advanced-RAG-Techniques]]"
 ---
 # Vector Database Comparison

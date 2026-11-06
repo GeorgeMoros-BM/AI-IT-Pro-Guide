@@ -6,14 +6,14 @@ tags:
   - practical
   - intermediate
 difficulty: intermediate
-last_updated: 2026-11-06
+last_updated: 2026-11-05
 time_to_read: 25 minutes
 related:
   - "[[Token-Cost-Quick-Reference]]"
-  - "[[Prompt-Engineering-Basics]]"
+  - "[[04 Prompt-Engineering-Basics]]"
   - "[[Vector-Database-Comparison]]"
-  - "[[99-Archived/Research-RAG-and-Evidence]]"
-  - "[[99-Archived/PromptOps-Governance]]"
+  - "[[02-Practical-Implementation/Research-RAG-and-Evidence]]"
+  - "[[03-Enterprise-Concerns/PromptOps-Governance]]"
 ---
 # RAG Implementation - Knowledge Base Integration
 
@@ -125,7 +125,7 @@ FOR each document IN documents:
 **What's happening here:**
 - We split long documents into manageable pieces
 - Overlap ensures we don't lose context at chunk boundaries
-- Each chunk carries metadata for citations and filtering. Use the schema in [[99-Archived/Research-RAG-and-Evidence]], which adds version, approval status, and access group
+- Each chunk carries metadata for citations and filtering. Use the schema in [[02-Practical-Implementation/Research-RAG-and-Evidence]], which adds version, approval status, and access group
 
 ### Step 3: Generate Embeddings
 
@@ -187,11 +187,11 @@ answer("How many vacation days can I carry into next year?", current_user)
 5. We inject the remaining chunks into the LLM prompt as context
 6. LLM answers using only that context
 
-This example is vector-only. See the hybrid search tip below for exact terms such as policy numbers. Calibrate `minimum_relevance` with the retrieval tests in [[99-Archived/Research-RAG-and-Evidence]].
+This example is vector-only. See the hybrid search tip below for exact terms such as policy numbers. Calibrate `minimum_relevance` with the retrieval tests in [[02-Practical-Implementation/Research-RAG-and-Evidence]].
 
 ### Step 6: Keep the Index Current
 
-A policy change doesn't require retraining. Re-embed the changed pages, then follow the Retrieval Corpus Lifecycle rule in [[99-Archived/PromptOps-Governance]]. Re-embedding alone leaves the old chunks retrievable.
+A policy change doesn't require retraining. Re-embed the changed pages, then follow the Retrieval Corpus Lifecycle rule in [[03-Enterprise-Concerns/PromptOps-Governance]]. Re-embedding alone leaves the old chunks retrievable.
 
 ---
 ## Tips & Tricks
@@ -224,7 +224,7 @@ A policy change doesn't require retraining. Re-embed the changed pages, then fol
 - [ ] **Embedding model** matches your domain (general vs code vs legal)
 - [ ] **Retrieval count** tuned (3-5 chunks typical, test more for complex queries)
 - [ ] **Relevance threshold** set, so weak matches return a not-found response
-- [ ] **Index updates** follow the Retrieval Corpus Lifecycle rule in [[99-Archived/PromptOps-Governance]]
+- [ ] **Index updates** follow the Retrieval Corpus Lifecycle rule in [[03-Enterprise-Concerns/PromptOps-Governance]]
 - [ ] **Cost monitoring** in place (log tokens per query)
 
 ---
@@ -243,8 +243,8 @@ A policy change doesn't require retraining. Re-embed the changed pages, then fol
 
 - [[Token-Cost-Quick-Reference]] - Understanding RAG costs
 - [[Vector-Database-Comparison]] - Choosing the right DB
-- [[99-Archived/Research-RAG-and-Evidence]] - Evidence rules and how to structure the final prompt
-- [[99-Archived/PromptOps-Governance]] - Versioning and the retrieval corpus lifecycle
+- [[02-Practical-Implementation/Research-RAG-and-Evidence]] - Evidence rules and how to structure the final prompt
+- [[03-Enterprise-Concerns/PromptOps-Governance]] - Versioning and the retrieval corpus lifecycle
 - [[Advanced-RAG-Techniques]] - Multi-hop reasoning, re-ranking
 
 ---
@@ -258,7 +258,7 @@ A policy change doesn't require retraining. Re-embed the changed pages, then fol
 ---
 ## Changelog
 
-- **2026-11-06**: Added worked example; converted code to illustrative pseudocode; added relevance threshold, metadata filter, and index update step; corrected links
+- **2026-11-05**: Added worked example; converted code to illustrative pseudocode; added relevance threshold, metadata filter, and index update step; corrected links
 - **2026-04-24**: Created initial version
 - **2026-04-20**: Added hybrid search tip
 - **2026-04-15**: Updated embedding model recommendations

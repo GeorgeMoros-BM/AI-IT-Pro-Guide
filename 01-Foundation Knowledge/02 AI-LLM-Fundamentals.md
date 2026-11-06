@@ -9,9 +9,9 @@ difficulty: beginner
 last_updated: 2026-04-24
 time_to_read: 15 minutes
 related:
-  - "[[99-Archived/03 Mental-Model-Reset]]"
+  - "[[00-Quick-Start/03 Mental-Model-Reset]]"
   - "[[Token-Cost-Quick-Reference]]"
-  - "[[99-Archived/RAG-Implementation]]"
+  - "[[02-Practical-Implementation/RAG-Implementation]]"
 ---
 # AI/LLM Fundamentals (No PhD Required)
 
@@ -151,8 +151,8 @@ for token_id in tokens:
 ## Related Topics
 
 - [[Token-Cost-Quick-Reference]] - How these token counts translate to real money.
-- [[99-Archived/RAG-Implementation]] - How to put Embeddings and Vector Databases to use.
-- [[99-Archived/03 Mental-Model-Reset]] - Connecting this math back to probabilistic outputs.
+- [[02-Practical-Implementation/RAG-Implementation]] - How to put Embeddings and Vector Databases to use.
+- [[00-Quick-Start/03 Mental-Model-Reset]] - Connecting this math back to probabilistic outputs.
 
 ---
 ## Changelog

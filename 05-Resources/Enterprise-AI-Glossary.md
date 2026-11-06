@@ -10,7 +10,7 @@ last_updated: 2026-04-25
 time_to_read: 10 minutes
 related:
   - "[[AI-LLM-Fundamentals]]"
-  - "[[99-Archived/03 Mental-Model-Reset]]"
+  - "[[00-Quick-Start/03 Mental-Model-Reset]]"
 ---
 # The Enterprise AI Glossary
 
@@ -66,7 +66,7 @@ A cyberattack where a user sneaks malicious commands into the data being process
 **RAG (Retrieval-Augmented Generation)**
 The architecture of connecting an LLM to your private data. The system searches your database for relevant documents, pastes them into the prompt, and asks the AI to answer using *only* that text.
 * *IT Analogy:* An "Open-Book Exam" for the AI.
-* *Read more:* [[99-Archived/RAG-Implementation]]
+* *Read more:* [[02-Practical-Implementation/RAG-Implementation]]
 
 ---
 ## 🔤 S-Z

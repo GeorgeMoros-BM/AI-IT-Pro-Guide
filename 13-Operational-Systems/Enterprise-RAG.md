@@ -10,7 +10,7 @@ domain:
   - enterprise-ai
 related:
   - "[[Enterprise-RAG-Architecture]]"
-  - "[[99-Archived/Research-RAG-and-Evidence]]"
+  - "[[02-Practical-Implementation/Research-RAG-and-Evidence]]"
 ---
 ## Definition
 

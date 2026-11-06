@@ -17,7 +17,7 @@ maturity: advanced
 time_to_read: 25 minutes
 related:
   - "[[AI-Risk-Classification-Framework]]"
-  - "[[99-Archived/PromptOps-Governance]]"
+  - "[[03-Enterprise-Concerns/PromptOps-Governance]]"
   - "[[AI-Operating-Model-Framework]]"
 ---
 
@@ -208,7 +208,7 @@ Recommended controls:
 - risk classification
 
 Reference:
-[[99-Archived/PromptOps-Governance]]
+[[03-Enterprise-Concerns/PromptOps-Governance]]
 
 ---
 

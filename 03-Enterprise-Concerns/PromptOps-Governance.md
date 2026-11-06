@@ -7,7 +7,7 @@ tags:
   - risk
   - ai-operations
 difficulty: intermediate
-last_updated: 2026-11-06
+last_updated: 2026-11-05
 time_to_read: 22 minutes
 related:
   - "[[Governance-and-Risk]]"
@@ -84,6 +84,8 @@ A production AI capability is a bundle of assets.
 | Model and version | Affects output quality and drift |
 | Tool schemas | Define what actions are possible |
 | Retrieval corpus | Defines what knowledge is available |
+| Routing rules | Decide which model answers each request |
+| Response cache policy | Decides which stored answers are reused |
 | Safety filters | Reduce misuse and leakage |
 | Eval suite | Measures reliability |
 | Logs and traces | Support audit and incident response |
@@ -100,9 +102,11 @@ Track changes to:
 - system instructions
 - examples
 - model version
+- model routing rules
 - retrieval corpus
 - embedding model
 - chunking strategy
+- response cache policy
 - tool schema
 - approval gates
 - eval cases
@@ -113,13 +117,15 @@ Track changes to:
 Customer-Support-Agent v2.3.1
 - Prompt: support-agent-prompt v4.2
 - Model: gpt-5.5-2026-05
+- Router: support-router v1.2
 - Tool schema: support-tools v1.8
 - Knowledge base: support-kb-prod 2026-05-01
+- Cache policy: support-cache v1.0
 - Eval suite: support-evals v3.0
 ```
 
 **Why it works this way:**
-When behavior changes, you need to know whether the cause was the prompt, the model, the data, the tools, or the eval standard.
+When behavior changes, you need to know whether the cause was the prompt, the model, the router, the data, the cache, the tools, or the eval standard.
 
 ---
 ### Concept 4: Risk Tier Determines Governance Depth
@@ -216,9 +222,11 @@ Use different depth by risk tier:
 | Wording cleanup | Peer review |
 | Output format change | Smoke test |
 | New model version | Regression eval |
+| Routing rule change | Regression eval on every route |
 | New tool access | Security review |
 | New data source | Data owner approval |
 | Source, chunking, or embedding change | Retrieval Corpus Lifecycle (Step 6) |
+| Response cache policy change | Cache isolation and stale-answer tests |
 | External action | Human approval gate |
 
 ---
@@ -231,8 +239,10 @@ Before a prompt or agent is promoted to production, confirm:
 - allowed use cases documented
 - prohibited use cases documented
 - model and version identified
+- routing rules identified and every route evaluated, if any
 - retrieval corpus identified, if any
 - superseded chunks removed or excluded from retrieval, if any
+- cached answers built on superseded content invalidated, if any
 - tool permissions reviewed, if any
 - eval suite passed
 - logging and monitoring configured
@@ -257,10 +267,11 @@ Retire or review when:
 
 Re-embedding a changed document adds new chunks but doesn't remove the old ones. Unless someone acts, both versions stay retrievable.
 
-**Retrieval Corpus Lifecycle rule:** A source change isn't complete until its old content can no longer reach an answer. Remove or supersede the old chunks in the same release as the new ones, and prove the result with a retrieval test.
+**Retrieval Corpus Lifecycle rule:** A source change isn't complete until its old content can no longer reach an answer. Remove or supersede the old chunks in the same release as the new ones, invalidate any response cache entries built on them, and prove the result with a retrieval test.
 
 - **Remove:** Delete the chunks from the index.
 - **Supersede:** Keep the chunks for audit, set `approval_status` to `superseded`, and exclude them with a retrieval filter.
+- **Invalidate:** Clear the affected response cache entries, or include the corpus version in the cache key so old entries can't match.
 
 | Event | Required Action | Proof |
 |---|---|---|
@@ -270,11 +281,14 @@ Re-embedding a changed document adds new chunks but doesn't remove the old ones.
 | Chunking strategy or embedding model changed | Rebuild the full index so all vectors come from one model and one chunking strategy | Full retrieval regression passes |
 | Source reaches its review date | Owner renews, updates, or withdraws it | Source metadata shows the new review date |
 
-Record a new corpus version with each release, in the format shown in Concept 3. The rule applies at every risk tier. The tier sets how much testing is required. Test design and the not-found response are in [[99-Archived/Research-RAG-and-Evidence]].
+Every event that updates or withdraws content also requires the Invalidate step. Run known-answer tests through the response cache as well as against the index, so a stale cached answer can't pass. Provider prompt caches need no action, because they only match an identical prompt prefix.
+
+Record a new corpus version with each release, in the format shown in Concept 3. The rule applies at every risk tier. The tier sets how much testing is required. Test design and the not-found response are in [[02-Practical-Implementation/Research-RAG-and-Evidence]].
 
 **What's happening here:**
 
 - Old content leaves retrieval in the same release that adds the new content.
+- Cached answers leave with the chunks behind them.
 - A retrieval test proves the change instead of assuming it.
 - Corpus versions show what the system could retrieve on a given date.
 
@@ -303,8 +317,8 @@ Record a new corpus version with each release, in the format shown in Concept 3.
 
 - [ ] Maintain a central prompt and agent registry
 - [ ] Assign business and technical owners
-- [ ] Version prompts, models, tools, retrieval corpora, and eval suites
-- [ ] Remove or supersede old chunks in the same release as any source change
+- [ ] Version prompts, models, routers, tools, retrieval corpora, cache policies, and eval suites
+- [ ] Remove or supersede old chunks and invalidate cached answers in the same release as any source change
 - [ ] Apply risk tiering to every AI asset
 - [ ] Require evals before production release
 - [ ] Log prompt version and model version at runtime
@@ -323,6 +337,7 @@ Record a new corpus version with each release, in the format shown in Concept 3.
 | Skip evals for small wording changes | Run smoke tests at minimum | Small changes can alter behavior |
 | Keep stale prompts indefinitely | Add review and retirement dates | Prevents silent decay |
 | Re-embed a changed source and leave old chunks in the index | Remove or supersede old chunks in the same release | Both versions stay retrievable |
+| Update a source and leave its answers in a response cache | Invalidate cached answers in the same release | The old policy keeps reaching users |
 
 ---
 ## Common Failure Modes
@@ -334,7 +349,7 @@ Record a new corpus version with each release, in the format shown in Concept 3.
 | Risky prompt used in wrong context | No approved/prohibited use cases | Document scope |
 | Incident cannot be reconstructed | Missing logs and versions | Log prompt/model/tool/corpus versions |
 | Duplicate prompts multiply risk | No catalogue governance | Consolidate and deprecate |
-| Superseded content still appears in answers | Old chunks left in the index | Apply the Retrieval Corpus Lifecycle |
+| Superseded content still appears in answers | Old chunks or cached answers left in place | Apply the Retrieval Corpus Lifecycle |
 
 ---
 ## Related Topics
@@ -344,8 +359,9 @@ Record a new corpus version with each release, in the format shown in Concept 3.
 - [[Evaluation-and-Testing]] - Eval suites and release gates
 - [[Prompt-Operating-Contracts]] - Designing prompts as reusable contracts
 - [[Security-and-Privacy]] - Data boundary and prompt-injection controls
-- [[99-Archived/RAG-Implementation]] - Building the retrieval pipeline
-- [[99-Archived/Research-RAG-and-Evidence]] - Evidence policy and retrieval testing
+- [[02-Practical-Implementation/RAG-Implementation]] - Building the retrieval pipeline
+- [[02-Practical-Implementation/Research-RAG-and-Evidence]] - Evidence policy and retrieval testing
+- [[Production-AI-Assistant-Stack]] - How routers, caches, and release gates fit together
 
 ---
 ## Further Reading
@@ -357,7 +373,8 @@ Record a new corpus version with each release, in the format shown in Concept 3.
 ---
 ## Changelog
 
-- **2026-11-06**: Added worked example and Retrieval Corpus Lifecycle rule
+- **2026-11-05**: Added routing rules and response cache policy to versioning, change control, and the Retrieval Corpus Lifecycle rule
+- **2026-11-05**: Added worked example and Retrieval Corpus Lifecycle rule
 - **2026-05-12**: Created PromptOps governance chapter
 
 ---

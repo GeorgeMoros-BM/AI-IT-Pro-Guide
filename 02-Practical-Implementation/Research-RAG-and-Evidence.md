@@ -7,14 +7,14 @@ tags:
   - evidence
   - grounding
 difficulty: intermediate
-last_updated: 2026-11-06
+last_updated: 2026-11-05
 time_to_read: 24 minutes
 related:
-  - "[[99-Archived/RAG-Implementation]]"
+  - "[[02-Practical-Implementation/RAG-Implementation]]"
   - "[[Evaluation-and-Testing]]"
   - "[[Prompt-Engineering-Basics]]"
   - "[[Security-and-Privacy]]"
-  - "[[99-Archived/PromptOps-Governance]]"
+  - "[[03-Enterprise-Concerns/PromptOps-Governance]]"
 ---
 # Research, RAG & Evidence
 
@@ -24,7 +24,7 @@ related:
 ---
 ## Worked Example
 
-Take the handbook chatbot from [[99-Archived/RAG-Implementation]] and the same question: "How many vacation days can I carry into next year?" The system can find relevant text and still give a bad answer. The evidence policy decides what happens next.
+Take the handbook chatbot from [[02-Practical-Implementation/RAG-Implementation]] and the same question: "How many vacation days can I carry into next year?" The system can find relevant text and still give a bad answer. The evidence policy decides what happens next.
 
 | What Retrieval Returns | Without an Evidence Policy | With an Evidence Policy |
 |---|---|---|
@@ -291,7 +291,7 @@ Evaluate:
 - [ ] Test retrieval separately from final answers
 - [ ] Evaluate citation accuracy and answer faithfulness
 - [ ] Review top failure cases with a domain SME
-- [ ] Apply the Retrieval Corpus Lifecycle rule in [[99-Archived/PromptOps-Governance]] when sources change
+- [ ] Apply the Retrieval Corpus Lifecycle rule in [[03-Enterprise-Concerns/PromptOps-Governance]] when sources change
 
 ---
 ## Anti-Patterns (Don't Do This)
@@ -318,10 +318,10 @@ Evaluate:
 ---
 ## Related Topics
 
-- [[99-Archived/RAG-Implementation]] - Building the retrieval pipeline
+- [[02-Practical-Implementation/RAG-Implementation]] - Building the retrieval pipeline
 - [[Evaluation-and-Testing]] - Testing retrieval, grounding, and output quality
 - [[Security-and-Privacy]] - Access control, prompt injection, and data leakage
-- [[99-Archived/PromptOps-Governance]] - Versioning and lifecycle management
+- [[03-Enterprise-Concerns/PromptOps-Governance]] - Versioning and lifecycle management
 
 ---
 ## Further Reading
@@ -333,7 +333,7 @@ Evaluate:
 ---
 ## Changelog
 
-- **2026-11-06**: Added worked example; linked the Retrieval Corpus Lifecycle rule
+- **2026-11-05**: Added worked example; linked the Retrieval Corpus Lifecycle rule
 - **2026-05-12**: Created as practical evidence and grounded-answer companion to RAG implementation
 
 ---
